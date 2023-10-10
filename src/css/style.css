@@ -1,0 +1,105 @@
+:root{
+    --primary-color: #433a77;
+    --orange: rgb(251, 123, 72);
+}
+.gap-3{
+    gap: 30px;
+}
+a{
+    text-decoration: none;
+}
+.w-35{
+    width: 35%;
+}
+.w-45{
+    width: 45%;
+}
+.prl-2{
+    padding: 10px 10px;
+}
+.gap-15{
+    gap: 15px;
+}
+a:hover{
+    text-decoration: none;
+}
+.hover_orange:hover{
+    color: var(--orange);
+}
+.free-shiping{
+    font-size: 14px;
+}
+.font-size-13{
+    font-size: 13px;
+}
+.tracking-png{
+    width: 22px;
+    margin-right: 5px;
+}
+.profile-png{
+    margin-right: 5px;
+    width: 18px;
+}
+.items-png{
+    margin-right: 5px;
+    width: 16px;
+}
+.header-first-sec{
+    width: 34%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0px;
+}
+.right-sideheader{
+    width: 45%;
+    justify-content: space-around;
+    align-items: center;
+    color: #6c757d;
+}
+.dropdown-item{
+    padding: 5px 5px;
+}
+.dropdown-menu{
+    min-width: 4rem;
+}
+.topbar{
+    margin: 6px auto;
+    width: 96%;
+}
+.main_wrapper{
+    margin: 20px auto;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+}
+.search-select-box{
+    width: 37%;
+}
+.connect{
+    width: 42px;
+    border: solid 1px #dbdbdb;
+    border-radius: 2px;
+    padding: 8px;
+}
+.small-sub-text{
+    font-size: 14px;
+    color: #7c7c7c;
+}
+.navbar-color{
+    background-color: #433a77;
+    color: white;
+    font-size: 13px;
+}
+.main-navbar{
+    position: sticky;
+    top: 0;
+}
+.nav-item {
+    transition: 1s;
+}
+.nav-item:hover {
+    border-bottom: 4px solid #ff0000;
+}
+header{
+    height: 200vh;
+}
