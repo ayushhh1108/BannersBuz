@@ -1,6 +1,7 @@
 :root {
   --primary-color: #433a77;
   --orange: rgb(251, 123, 72);
+  --primary2-color: #2f60fc;
 }
 .gap-3 {
   gap: 30px;
@@ -111,19 +112,15 @@ a:hover {
   border-bottom: none !important;
 }
 .Carousel-box .carousel-indicators .active {
-  background-color: rgb(251, 123, 72) !important;
+  background-color: var(--primary2-color) !important;
   box-shadow: rgb(255, 255, 255) 0px 0px 0px 2px inset,
-    rgb(251, 123, 72) 0px 0px 0px 2px !important;
+    var(--primary2-color) 0px 0px 2px !important;
 }
 .order-select {
   background: transparent !important;
   color: black !important;
   border-color: #dee2e6 !important;
   box-shadow: none !important;
-}
-.orange-Border {
-  border: 2px solid var(--orange);
-  outline-color: var(--orange);
 }
 .startBox {
   margin: 0px 15px 0px 0px;
@@ -188,35 +185,13 @@ a:hover {
   font-size: 22px;
   margin: 10px 10px 0px;
 }
-.btnPrimary {
-  background: #fb7b48;
-  border-color: #fb7b48;
-  color: #fff;
-  transition: all 0.5s ease;
-  cursor: pointer;
-  padding: 9px 28px;
-  font-size: 12px;
-  border-radius: 2px;
-}
-.btnPrimary:hover {
-  background: #ff956b;
-  border-color: #ff956b;
-  color: #fff;
-}
-.form-select:focus {
-  border-color: var(--orange);
-  box-shadow: none !important;
-}
-.form-control:focus {
-  border-color: #dee2e6;
-  box-shadow: none !important;
-}
+
 .breadcrum-color {
   display: inline-block;
   margin: 0px 10px 0px 0px;
   line-height: 18px;
   font-size: 12px;
-  color: var(--orange);
+  color: var(--primary2-color);
 }
 .breadcrum-box {
   display: inline-block;
@@ -231,7 +206,7 @@ a:hover {
   cursor: pointer;
 }
 .breadcrum-box:hover span {
-  color: var(--orange);
+  color: var(--primary2-color);
 }
 .breadcrum-box::before {
   content: ">";
@@ -243,4 +218,22 @@ a:hover {
   margin: 20px 0;
   font-weight: 400;
   color: #4e4e4e;
+}
+.primary-hover {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.primary-hover:hover {
+  color: var(--primary2-color);
+}
+.test-dec {
+  font-size: 12px;
+  color: gray;
+}
+.card-box {
+  border-color: transparent;
+  transition: all 0.5s;
+}
+.card-box:hover {
+  border-color: rgba(0, 0, 0, 0.125);
 }
