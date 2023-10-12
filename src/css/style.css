@@ -3,14 +3,27 @@
   --orange: rgb(251, 123, 72);
   --primary2-color: #2f60fc;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 .gap-3 {
   gap: 30px;
 }
 a {
   text-decoration: none;
 }
+.w-12{
+  width: 12% !important;
+}
+.w-15{
+  width: 15% !important;
+}
 .w-35 {
   width: 35%;
+}
+.w-33 {
+  width: 33%;
 }
 .w-45 {
   width: 45%;
@@ -23,6 +36,9 @@ a {
 }
 a:hover {
   text-decoration: none;
+}
+.height-fitcontant {
+  height: fit-content;
 }
 .hover_orange:hover {
   color: var(--orange);
@@ -62,6 +78,10 @@ a:hover {
 }
 .dropdown-menu {
   min-width: 4rem;
+}
+.w-cm {
+  margin: 0px auto;
+  width: 96%;
 }
 .topbar {
   margin: 6px auto;
@@ -236,4 +256,84 @@ a:hover {
 }
 .card-box:hover {
   border-color: rgba(0, 0, 0, 0.125);
+}
+
+
+/* home page */
+
+.copy-icon {
+  width: 18px;
+}
+
+.small-calander {
+  border-radius: 10px !important;
+  width: 20%;
+  height: fit-content;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+.copy-side {
+  background-color: #f2f2f2;
+}
+.shop-now-btn {
+  background-color: var(--orange);
+  color: white;
+}
+.carosal-bottum-part {
+  background: url("../assets/carosalDown.svg");
+  border-bottom: 2px solid rgb(173, 173, 173);
+}
+.sameday-shiping {
+  background: url("../assets/CarosalOptions.svg") left bottom no-repeat !important;
+  background-size: 65px !important;
+}
+.h4-heading {
+  padding-left: 72px !important;
+  padding-top: 20px !important;
+}
+/* card slider */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-title{
+  font-size: 16px;
+}
+
+.select-product-box{
+  background-color: #eeeeee;
+  border-radius: 10px;
+}
+.slider-customize-hover{
+  transition: all 0.8s;
+}
+.slider-customize-hover:hover{
+  background-color: #73a1e4c7;
+  color: white;
+  border-radius: 5px;
+}
+.ways-png-width{
+  width: 70px !important;
 }
