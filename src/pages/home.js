@@ -4,14 +4,18 @@ import copy from "../assets/copy.png";
 import uploadPng from "../assets/upload.png";
 import hirePng from "../assets/candidate.png";
 import designPng from "../assets/web-design.png";
+import poster1 from "../assets/poster-1.jpg";
+import poster2 from "../assets/poster-2.jpg";
 import Carousal from "../components/Slider/Carosal";
 import {
   SliderCard,
   VerticalImgCardSlider,
 } from "../components/Slider/SliderCard";
 import { Button, Form } from "react-bootstrap";
+import ProductBox from "../components/product-box";
 
 const HomePage = () => {
+  const arrayOfTen = [1,2,3,4,5,6,7,8,9,10];
   return (
     <div>
       <Header />
@@ -97,7 +101,7 @@ const HomePage = () => {
             <VerticalImgCardSlider />
             <Button variant="outline-primary">View All</Button>
           </div>
-          <div className="w-100 border rounded my-3">
+          <div className="w-100 border rounded my-5">
             <div className=" w-75 d-flex justify-content-between mx-auto py-3 px-2 ">
               <h3 className="w-25">Ways to get the Right Print</h3>
               <div className="d-flex align-item-center">
@@ -141,6 +145,17 @@ const HomePage = () => {
               </div>
             </div>
           </div>
+          <h3 className="text-center w-100 mt-3">Our Best Sellers</h3>
+          <span className="text-center w-100 sub-gray-text">Boost Sales with Top-Charting Categories</span>
+          <div className="my-5 d-flex flex-wrap justify-content-around">
+            {arrayOfTen.map((i)=><ProductBox />)}
+          </div>
+          <div className="w-100 d-flex justify-content-around poster-box my-4">
+            <img src={poster1} alt="poster" className="w-49 rounded overflow-hidden" />
+            <img src={poster2} alt="poster" className="w-49 rounded overflow-hidden" />
+          </div>
+          <h3 className="text-center w-100 mt-3">Customer Picks</h3>
+          <span className="text-center w-100 sub-gray-text">Explore Our Most Popular Products</span>
         </div>
       </div>
     </div>

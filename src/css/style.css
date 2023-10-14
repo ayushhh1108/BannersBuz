@@ -10,6 +10,15 @@
 .gap-3 {
   gap: 30px;
 }
+.sub-gray-text{
+  color: #606060 !important;
+}
+.f-size-18{
+  font-size: 18px !important;
+}
+.cursor-pointer{
+  cursor: pointer !important;
+}
 a {
   text-decoration: none;
 }
@@ -19,6 +28,9 @@ a {
 .w-15{
   width: 15% !important;
 }
+.w-18{
+  width: 18% !important;
+}
 .w-35 {
   width: 35%;
 }
@@ -27,6 +39,9 @@ a {
 }
 .w-45 {
   width: 45%;
+}
+.w-49{
+  width: 49%;
 }
 .prl-2 {
   padding: 10px 10px;
@@ -294,6 +309,9 @@ a:hover {
   padding-left: 72px !important;
   padding-top: 20px !important;
 }
+.poster-box{
+  height: 300px !important;
+}
 /* card slider */
 .swiper {
   width: 100%;
@@ -336,4 +354,7 @@ a:hover {
 }
 .ways-png-width{
   width: 70px !important;
+}
+.product-box:hover .product-label{
+  color: #2f60fc;
 }
