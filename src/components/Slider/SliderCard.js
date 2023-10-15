@@ -9,6 +9,7 @@ import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Card } from "react-bootstrap";
+import { OnHBorderBtnCard } from "../product-box";
 const SliderCard = () => {
   const [array, setArray] = useState([1, 2, 3, 4, 4, 5, 6, 7, 8, 9]);
   return (
@@ -117,4 +118,26 @@ const VerticalImgCardSlider = () => {
   );
 };
 
-export {SliderCard , VerticalImgCardSlider};
+const OnHBorderBtnCardSlider = ({secound}) => {
+  const array = [1, 2, 3, 4, 4, 5, 6, 7, 8, 9];
+  return (
+    <>
+      <Swiper
+        slidesPerView={4}
+        spaceBetween={30}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper p-5"
+        style={{height:"fit-content"}}
+      >
+        {array.map((i) => (
+          <SwiperSlide style={{height:"fit-content"}}>
+            <OnHBorderBtnCard secound={secound}/>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </>
+  );
+};
+
+export {SliderCard , VerticalImgCardSlider, OnHBorderBtnCardSlider};
