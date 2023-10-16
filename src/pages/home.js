@@ -7,15 +7,21 @@ import designPng from "../assets/web-design.png";
 import poster1 from "../assets/poster-1.jpg";
 import poster2 from "../assets/poster-2.jpg";
 import Carousal from "../components/Slider/Carosal";
+import item from "../assets/1banner.png";
+import star from "../assets/star.svg";
+import halfstar from "../assets/half-start.svg";
+import item1 from "../assets/2banner.png";
+import reviewLogo from "../assets/reviewLogo.png";
 import {
+  OnHBorderBtnCardSlider,
   SliderCard,
   VerticalImgCardSlider,
 } from "../components/Slider/SliderCard";
 import { Button, Form } from "react-bootstrap";
-import ProductBox from "../components/product-box";
+import { ProductBox } from "../components/product-box";
 
 const HomePage = () => {
-  const arrayOfTen = [1,2,3,4,5,6,7,8,9,10];
+  const arrayOfTen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   return (
     <div>
       <Header />
@@ -125,37 +131,234 @@ const HomePage = () => {
                 />
                 <div className="p-2">
                   <span className="font-weight-bold d-block">
-                  Upload Artwork
+                    Upload Artwork
                   </span>
                   <p className="mb-0 d-inline">Perfect Print</p>
                 </div>
               </div>
               <div className="d-flex align-item-center">
-                <img
-                  src={hirePng}
-                  alt="hirePng"
-                  className="ways-png-width"
-                />
+                <img src={hirePng} alt="hirePng" className="ways-png-width" />
                 <div className="p-2">
                   <span className="font-weight-bold d-block">
-                  Hire a Designer
+                    Hire a Designer
                   </span>
-                  <p className="mb-0 d-inline">Starts <b> @ $9.99</b></p>
+                  <p className="mb-0 d-inline">
+                    Starts <b> @ $9.99</b>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <h3 className="text-center w-100 mt-3">Our Best Sellers</h3>
-          <span className="text-center w-100 sub-gray-text">Boost Sales with Top-Charting Categories</span>
+          <span className="text-center w-100 sub-gray-text">
+            Boost Sales with Top-Charting Categories
+          </span>
           <div className="my-5 d-flex flex-wrap justify-content-around">
-            {arrayOfTen.map((i)=><ProductBox />)}
+            {arrayOfTen.map((i) => (
+              <ProductBox />
+            ))}
           </div>
           <div className="w-100 d-flex justify-content-around poster-box my-4">
-            <img src={poster1} alt="poster" className="w-49 rounded overflow-hidden" />
-            <img src={poster2} alt="poster" className="w-49 rounded overflow-hidden" />
+            <img
+              src={poster1}
+              alt="poster"
+              className="w-49 rounded overflow-hidden"
+            />
+            <img
+              src={poster2}
+              alt="poster"
+              className="w-49 rounded overflow-hidden"
+            />
           </div>
           <h3 className="text-center w-100 mt-3">Customer Picks</h3>
-          <span className="text-center w-100 sub-gray-text">Explore Our Most Popular Products</span>
+          <span className="text-center w-100 sub-gray-text">
+            Explore Our Most Popular Products
+          </span>
+          <OnHBorderBtnCardSlider />
+          <Button variant="outline-primary mx-auto mb-3">View All</Button>
+          <div
+            className="w-100 text-center py-2"
+            style={{ background: "rgb(247, 247, 255)" }}
+          >
+            <h3 className="text-center w-100 mt-3">New Arrivals</h3>
+            <span className="text-center w-100 sub-gray-text">
+              Check Out Our Latest Products
+            </span>
+            <OnHBorderBtnCardSlider secound={true} />
+          </div>
+          <container className="d-flex w-100 flex-wrap justify-content-around my-5">
+            <div
+              className="w-48 d-flex align-items-center justify-content-between p-1830 rounded my-2"
+              style={{
+                border: "1px solid rgb(238, 238, 238)",
+                backgroundImage:
+                  "linear-gradient(to right bottom, #fef9dc, #f2fce3, #eafdec, #e6fef5, #e7fdfb, #e5fdfc, #e3fdfc, #e1fdfd, #dbfef6, #daffec, #dffedf, #eafbd1)",
+              }}
+            >
+              <div className="poster-side1 d-flex flex-wrap">
+                <strong className="f-size-28 w-100">Banners</strong>
+                <p className="f-size-28 mb-0 w-100">
+                  Starting at <strong>$2.25</strong>
+                </p>
+                <Button
+                  variant="dark"
+                  className="my-3"
+                  style={{ height: "fit-content" }}
+                >
+                  Explore More
+                </Button>
+              </div>
+              <div className="poster-side2">
+                <img src={item} alt="poster" className="w-90" />
+              </div>
+            </div>
+            <div
+              className="w-48 d-flex align-items-center justify-content-between p-1830 rounded my-2"
+              style={{
+                border: "1px solid rgb(238, 238, 238)",
+                backgroundImage:
+                  "linear-gradient(to right bottom, #fef9dc, #f2fce3, #eafdec, #e6fef5, #e7fdfb, #e5fdfc, #e3fdfc, #e1fdfd, #dbfef6, #daffec, #dffedf, #eafbd1)",
+              }}
+            >
+              <div className="poster-side1 d-flex flex-wrap">
+                <strong className="f-size-28 w-100">Banners</strong>
+                <p className="f-size-28 mb-0 w-100">
+                  Starting at <strong>$2.25</strong>
+                </p>
+                <Button
+                  variant="dark"
+                  className="my-3"
+                  style={{ height: "fit-content" }}
+                >
+                  Explore More
+                </Button>
+              </div>
+              <div className="poster-side2">
+                <img src={item1} alt="poster" className="w-90" />
+              </div>
+            </div>
+            <div
+              className="w-48 d-flex align-items-center justify-content-between p-1830 rounded my-2"
+              style={{
+                border: "1px solid rgb(238, 238, 238)",
+                backgroundImage:
+                  "linear-gradient(to right bottom, #fef9dc, #f2fce3, #eafdec, #e6fef5, #e7fdfb, #e5fdfc, #e3fdfc, #e1fdfd, #dbfef6, #daffec, #dffedf, #eafbd1)",
+              }}
+            >
+              <div className="poster-side2">
+                <img src={item1} alt="poster" className="w-90" />
+              </div>
+              <div className="poster-side1 d-flex flex-wrap text-right justify-content-end">
+                <strong className="f-size-28 w-100">Banners</strong>
+                <p className="f-size-28 mb-0 w-100">
+                  Starting at <strong>$2.25</strong>
+                </p>
+                <Button
+                  variant="dark"
+                  className="my-3"
+                  style={{ height: "fit-content" }}
+                >
+                  Explore More
+                </Button>
+              </div>
+            </div>
+            <div
+              className="w-48 d-flex align-items-center justify-content-between p-1830 rounded my-2"
+              style={{
+                border: "1px solid rgb(238, 238, 238)",
+                backgroundImage:
+                  "linear-gradient(to right bottom, #fef9dc, #f2fce3, #eafdec, #e6fef5, #e7fdfb, #e5fdfc, #e3fdfc, #e1fdfd, #dbfef6, #daffec, #dffedf, #eafbd1)",
+              }}
+            >
+              <div className="poster-side2">
+                <img src={item} alt="poster" className="w-90" />
+              </div>
+              <div className="poster-side1 d-flex flex-wrap justify-content-end text-right">
+                <strong className="f-size-28 w-100">Banners</strong>
+                <p className="f-size-28 mb-0 w-100">
+                  Starting at <strong>$2.25</strong>
+                </p>
+                <Button
+                  variant="dark"
+                  className="my-3"
+                  style={{ height: "fit-content" }}
+                >
+                  Explore More
+                </Button>
+              </div>
+            </div>
+          </container>
+          <container className="w-100 d-flex justify-content-around">
+            <div
+              className="w-49 rounded d-flex flex-wrap"
+              style={{ backgroundColor: "#fffdec" }}
+            >
+              <h3 className="text-center w-100 mt-3 font-weight-light d-block">
+                Reviews & Ratings
+              </h3>
+              <div className="d-flex justify-content-around w-90 mx-auto my-5">
+                <img
+                  src={reviewLogo}
+                  alt="reviews"
+                  className=""
+                  style={{ width: "65px" }}
+                />
+                <div className="w-33">
+                  <strong className="f-size-20 w-100 d-block">Banners</strong>
+                  <span className="">Customer Reviews</span>
+                </div>
+                <div className="w-33">
+                  <div className="d-flex align-items-center justify-content-center w-50 d-block">
+                    <span className="ms-1">
+                      <strong className="f-size-20 w-100">4.5</strong>
+                    </span>
+                    <img src={star} alt="star" />
+                    <img src={star} alt="star" />
+                    <img src={star} alt="star" />
+                    <img src={star} alt="star" />
+                    <img src={halfstar} alt="star" />
+                  </div>
+                  <span className="">Customer Reviews</span>
+                </div>
+              </div>
+            </div>
+            <div
+              className="w-49 rounded"
+              style={{ backgroundColor: "#f2f2f2" }}
+            >
+              <h3 className="text-center w-100 mt-3 font-weight-light">
+                Our customers speak for us!
+              </h3>
+              <p className="mb-0 w-75 mx-auto text-center mt-4">
+                I comeback to those who provide outstanding quality and this is
+                one of those companies that go above and beyond for you. Easy
+                designing and the codes they provide for you to save even more
+                is awesome. I'll definitely be coming back again! Thanks for
+                being great to me!
+              </p>
+              <div className="d-flex justify-content-around w-45 mx-auto my-4" style={{height:"fit-content"}}>
+                <img
+                  src={reviewLogo}
+                  alt="reviews"
+                  className=""
+                  style={{ width: "55px" }}
+                />
+                <div className="w-75">
+                  <strong className="f-size-20 w-100 d-block ml-1">Banners</strong>
+                  <div className="d-flex align-items-center justify-content-start w-50 d-block">
+                    <span className="ms-1 mr-2">
+                      5.0
+                    </span>
+                    <img src={star} alt="star" />
+                    <img src={star} alt="star" />
+                    <img src={star} alt="star" />
+                    <img src={star} alt="star" />
+                    <img src={star} alt="star" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </container>
         </div>
       </div>
     </div>

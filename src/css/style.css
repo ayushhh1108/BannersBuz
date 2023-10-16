@@ -16,6 +16,18 @@
 .f-size-18 {
   font-size: 18px !important;
 }
+.f-size-16 {
+  font-size: 16px !important;
+}
+.f-size-14 {
+  font-size: 14px !important;
+}
+.f-size-28 {
+  font-size: 28px !important;
+}
+.f-size-20 {
+  font-size: 20px !important;
+}
 .cursor-pointer {
   cursor: pointer !important;
 }
@@ -42,6 +54,15 @@ a {
 }
 .w-49 {
   width: 49%;
+}
+.w-48 {
+  width: 48%;
+}
+.w-90 {
+  width: 90% !important;
+}
+.p-1830 {
+  padding: 18px 30px !important;
 }
 .prl-2 {
   padding: 10px 10px;
@@ -357,6 +378,25 @@ a:hover {
 .product-box:hover .product-label {
   color: #2f60fc;
 }
+.product-h-box {
+  transition: all 0.7s;
+}
+.product-h-box:hover {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.product-h-box:hover .card-img-box {
+  border-bottom: none !important;
+}
+.product-h-box:hover .costomize-text {
+  visibility: visible !important;
+}
+/* linear-gradient(90deg, rgb(239, 239, 239) -2.81%, rgb(250, 230, 208) 98.25%) */
+/* linear-gradient(90deg, rgb(239, 239, 239) -2.81%, rgb(241, 223, 248) 98.25%)
+linear-gradient(90deg, rgb(234, 251, 208) -2.81%, rgb(237, 251, 255) 98.25%)
+linear-gradient(90deg, rgb(255, 249, 218) -2.81%, rgb(237, 251, 255) 98.25%) */
 .country-head {
   color: #4e4e4e;
 }
