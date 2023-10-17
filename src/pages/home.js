@@ -11,6 +11,8 @@ import item from "../assets/1banner.png";
 import star from "../assets/star.svg";
 import halfstar from "../assets/half-start.svg";
 import item1 from "../assets/2banner.png";
+import priceTag from "../assets/price-tag (1).png";
+import badge from "../assets/badge (1).png";
 import reviewLogo from "../assets/reviewLogo.png";
 import {
   OnHBorderBtnCardSlider,
@@ -18,7 +20,8 @@ import {
   VerticalImgCardSlider,
 } from "../components/Slider/SliderCard";
 import { Button, Form } from "react-bootstrap";
-import { ProductBox } from "../components/product-box";
+import { ProductBox, TipsSuggetionCard } from "../components/product-box";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
   const arrayOfTen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -202,8 +205,7 @@ const HomePage = () => {
                 </p>
                 <Button
                   variant="dark"
-                  className="my-3"
-                  style={{ height: "fit-content" }}
+                  className="my-3 height-fitcontant"
                 >
                   Explore More
                 </Button>
@@ -227,8 +229,7 @@ const HomePage = () => {
                 </p>
                 <Button
                   variant="dark"
-                  className="my-3"
-                  style={{ height: "fit-content" }}
+                  className="my-3 height-fitcontant"
                 >
                   Explore More
                 </Button>
@@ -255,15 +256,14 @@ const HomePage = () => {
                 </p>
                 <Button
                   variant="dark"
-                  className="my-3"
-                  style={{ height: "fit-content" }}
+                  className="my-3 height-fitcontant"
                 >
                   Explore More
                 </Button>
               </div>
             </div>
-            <div
-              className="w-48 d-flex align-items-center justify-content-between p-1830 rounded my-2"
+            <divstify-con
+              className="w-48 d-flex align-items-center jutent-between p-1830 rounded my-2"
               style={{
                 border: "1px solid rgb(238, 238, 238)",
                 backgroundImage:
@@ -280,15 +280,14 @@ const HomePage = () => {
                 </p>
                 <Button
                   variant="dark"
-                  className="my-3"
-                  style={{ height: "fit-content" }}
+                  className="my-3 height-fitcontant"
                 >
                   Explore More
                 </Button>
               </div>
-            </div>
+            </divstify-con>
           </container>
-          <container className="w-100 d-flex justify-content-around">
+          <container className="w-100 d-flex justify-content-around my-3">
             <div
               className="w-49 rounded d-flex flex-wrap"
               style={{ backgroundColor: "#fffdec" }}
@@ -300,8 +299,8 @@ const HomePage = () => {
                 <img
                   src={reviewLogo}
                   alt="reviews"
-                  className=""
-                  style={{ width: "65px" }}
+                  className="height-fitcontant"
+                  style={{ width: "65px"}}
                 />
                 <div className="w-33">
                   <strong className="f-size-20 w-100 d-block">Banners</strong>
@@ -336,7 +335,9 @@ const HomePage = () => {
                 is awesome. I'll definitely be coming back again! Thanks for
                 being great to me!
               </p>
-              <div className="d-flex justify-content-around w-45 mx-auto my-4" style={{height:"fit-content"}}>
+              <div
+                className="d-flex justify-content-around height-fitcontant w-45 mx-auto my-4"
+              >
                 <img
                   src={reviewLogo}
                   alt="reviews"
@@ -344,11 +345,11 @@ const HomePage = () => {
                   style={{ width: "55px" }}
                 />
                 <div className="w-75">
-                  <strong className="f-size-20 w-100 d-block ml-1">Banners</strong>
+                  <strong className="f-size-20 w-100 d-block ml-1">
+                    Banners
+                  </strong>
                   <div className="d-flex align-items-center justify-content-start w-50 d-block">
-                    <span className="ms-1 mr-2">
-                      5.0
-                    </span>
+                    <span className="ms-1 mr-2">5.0</span>
                     <img src={star} alt="star" />
                     <img src={star} alt="star" />
                     <img src={star} alt="star" />
@@ -359,6 +360,62 @@ const HomePage = () => {
               </div>
             </div>
           </container>
+          <container className="w-100 my-3 text-center">
+            <h3 className="text-center w-100 mt-3 mx-auto">
+              Check out our Blog For Printing Tips & Suggestions
+            </h3>
+            <div className="w-100 d-flex my-4 justify-content-around">
+              <TipsSuggetionCard />
+              <TipsSuggetionCard />
+              <TipsSuggetionCard />
+              <TipsSuggetionCard />
+            </div>
+            <Button variant="outline-primary" className="mx-auto my-3">
+              View All
+            </Button>
+          </container>
+          <container className="w-100 text-left">
+            <h5 className="pl-3 w-100 mt-3 f-size-20">
+              Check out our Blog For Printing Tips & Suggestions
+            </h5>
+            <p className="pl-3 w-100">
+              BannerBuzz is a leading e-commerce company that is dedicated to
+              making your brand/business visible with quality printed signage
+              solutions. We aspire to be the most customer-focused organization
+              and are proud to be acknowledged every day by our customers for
+              our customized products. Customers can buy and showcase their
+              products in any event in a grandeur way and use the best marketing
+              materials that aid in creatively promoting their brand. To name a
+              few, customized banners are very helpful for directing customers
+              in HoReCa (Hotel, Restaurant, Catering) establishments, as well as
+              for greeting and directing patients and visitors in hospitals. You
+              can customize our products as per your choice that resonates with
+              the brand/event and get them delivered to your
+            </p>
+          </container>
+          <container className="w-100 text-center d-flex justify-content-around p-3">
+              <div className="w-33 my-3 px-3">
+                <img src={priceTag} alt="alt" className="" style={{width:"55px"}}/>
+                <span className="f-size-20 font-weight-bold pl-3">Best Price</span>
+                <p className="pt-3">BannerBuzz offers the industry’s best prices while using only the highest</p>
+              </div>
+              <div className="w-33 my-3 px-3 design-center-div">
+                <img src={designPng} alt="alt" className="" style={{width:"55px"}}/>
+                <span className="f-size-20 font-weight-bold pl-3">Free Design Proof</span>
+                <p className="pt-3">Our industry-leading designers provide free proofs so you can be sure</p>
+              </div>
+              <div className="w-33 px-3 my-3">
+                <img src={badge} alt="alt" className="" style={{width:"55px"}}/>
+                <span className="f-size-20 font-weight-bold pl-3">Best Quality</span>
+                <p className="pt-3">If you’re not satisfied, we’re not satisfied. We’ll reprint or refund your order - guaranteed</p>
+              </div>
+          </container>
+          <container className="w-100 text-center d-flex align-items-center justify-content-evenly p-3" style={{backgroundColor:"#4383b8",color:"white"}}>
+            <p className="w-33">Subscribe to our newsletter and get 20% OFF on Your First Order + Free Shipping.</p>
+            <Form.Control type="text" className="w-45 height-fitcontant" placeholder="Normal text" />
+            <Button variant="light" className="height-fitcontant px-2">SUBSCRIBE</Button>
+          </container>
+          <Footer />
         </div>
       </div>
     </div>
