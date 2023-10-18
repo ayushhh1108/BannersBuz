@@ -6,6 +6,7 @@ import StandPage from './pages/stands';
 import OrderStatus from './pages/orderstatus';
 import Country from './pages/country';
 import Reviews from './pages/reviews';
+import Coupons from './pages/coupons';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/orderstatus' element={<OrderStatus />} />
         <Route path='/country' element={<Country />} />
         <Route path='/reviews' element={<Reviews />} />
+        <Route path='/coupons' element={<Coupons />} />
       </Route>
     </Routes>
   );
