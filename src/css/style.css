@@ -13,7 +13,7 @@
 .sub-gray-text {
   color: #606060 !important;
 }
-.light-grey{
+.light-grey {
   color: rgb(94, 94, 94) !important;
 }
 .f-size-18 {
@@ -25,7 +25,7 @@
 .f-size-14 {
   font-size: 14px !important;
 }
-.f-size-12{
+.f-size-12 {
   font-size: 12px !important;
 }
 .f-size-28 {
@@ -49,7 +49,7 @@ a {
 .w-18 {
   width: 18% !important;
 }
-.w-24{
+.w-24 {
   width: 24% !important;
 }
 .w-35 {
@@ -405,7 +405,7 @@ a:hover {
 .product-h-box:hover .costomize-text {
   visibility: visible !important;
 }
-.design-center-div{
+.design-center-div {
   border-left: 1px solid #606060;
   border-right: 1px solid #606060;
 }
@@ -758,6 +758,7 @@ a:hover {
   max-width: 400px;
 }
 .list-items ul,
-.list-items ul li {
+.list-items ul li,
+.fancyCheck li {
   list-style: disc;
 }
