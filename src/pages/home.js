@@ -215,7 +215,7 @@ const HomePage = () => {
               </div>
             </div>
             <div
-              className="w-48 d-flex align-items-center justify-content-between p-1830 rounded my-2"
+              className="height-fitcontant w-48 d-flex align-items-center justify-content-between p-1830 rounded my-2"
               style={{
                 border: "1px solid rgb(238, 238, 238)",
                 backgroundImage:
@@ -239,7 +239,7 @@ const HomePage = () => {
               </div>
             </div>
             <div
-              className="w-48 d-flex align-items-center justify-content-between p-1830 rounded my-2"
+              className="w-48 height-fitcontant d-flex align-items-center justify-content-between p-1830 rounded my-2"
               style={{
                 border: "1px solid rgb(238, 238, 238)",
                 backgroundImage:
@@ -262,8 +262,8 @@ const HomePage = () => {
                 </Button>
               </div>
             </div>
-            <divstify-con
-              className="w-48 d-flex align-items-center jutent-between p-1830 rounded my-2"
+            <div
+              className="w-48 height-fitcontant d-flex align-items-center jutent-between p-1830 rounded my-2"
               style={{
                 border: "1px solid rgb(238, 238, 238)",
                 backgroundImage:
@@ -285,7 +285,7 @@ const HomePage = () => {
                   Explore More
                 </Button>
               </div>
-            </divstify-con>
+            </div>
           </container>
           <container className="w-100 d-flex justify-content-around my-3">
             <div

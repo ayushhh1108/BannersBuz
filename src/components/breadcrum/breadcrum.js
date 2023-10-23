@@ -32,4 +32,22 @@ function BreadCrum() {
     );
 }
 
-export default BreadCrum;
+function OnlyBreadCrum() {
+    return (
+        <div className='container'>
+            <div className='row p-3'>
+                <div className='d-flex align-items-center'>
+                    <div className='breadcrum-box'>
+                        <span>Home</span>
+                    </div>
+                    <div className='breadcrum-box'>
+                        <span>StandPage</span>
+                    </div>
+                    <span className='breadcrum-color'>Magnetic Signs</span>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export {BreadCrum,OnlyBreadCrum};

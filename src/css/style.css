@@ -67,8 +67,11 @@ a {
 .w-49 {
   width: 49%;
 }
+.w-65{
+  width: 65% !important;
+}
 .w-48 {
-  width: 48%;
+  width: 48% !important;
 }
 .w-90 {
   width: 90% !important;
@@ -86,7 +89,7 @@ a:hover {
   text-decoration: none;
 }
 .height-fitcontant {
-  height: fit-content;
+  height: fit-content !important;
 }
 .hover_orange:hover {
   color: var(--orange);
