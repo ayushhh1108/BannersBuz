@@ -34,20 +34,17 @@ function BreadCrum() {
 
 function OnlyBreadCrum() {
     return (
-        <div className='container'>
-            <div className='row p-3'>
-                <div className='d-flex align-items-center'>
-                    <div className='breadcrum-box'>
-                        <span>Home</span>
-                    </div>
-                    <div className='breadcrum-box'>
-                        <span>StandPage</span>
-                    </div>
-                    <span className='breadcrum-color'>Magnetic Signs</span>
-                </div>
+        <div className='col-12 p-3 d-flex align-items-center'>
+            <div className='breadcrum-box'>
+                <span>Home</span>
             </div>
+            <div className='breadcrum-box'>
+                <span>StandPage</span>
+            </div>
+            <span className='breadcrum-color'>Magnetic Signs</span>
         </div>
+
     );
 }
 
-export {BreadCrum,OnlyBreadCrum};
+export { BreadCrum, OnlyBreadCrum };
