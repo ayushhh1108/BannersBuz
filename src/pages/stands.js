@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/header/Header";
 import IntervalCarousel from "../components/carousel/carousel";
 import OrderBar from "../components/order-bar/OrderBar";
-import BreadCrum from "../components/breadcrum/breadcrum";
+import {BreadCrum} from "../components/breadcrum/breadcrum";
 import Accordions from "../components/Accordion/Accordion";
 import ProductCard from "../components/product-card/ProductCard";
 

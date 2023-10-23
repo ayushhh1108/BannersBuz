@@ -11,6 +11,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsandConditions from './pages/TermsandConditions';
 import Contactus from './pages/Contactus';
 import Faq from './pages/Faqs';
+import PhotoMegnets from './pages/PhotoMagnets';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path="/">
         <Route index element={<HomePage />} />
         <Route path='/stands-and-displays' element={<StandPage />} />
+        <Route path='/photo-magnets' element={<PhotoMegnets />} />
         <Route path='/orderstatus' element={<OrderStatus />} />
         <Route path='/country' element={<Country />} />
         <Route path='/reviews' element={<Reviews />} />

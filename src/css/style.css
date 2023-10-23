@@ -67,6 +67,9 @@ a {
 .w-49 {
   width: 49%;
 }
+.w-65{
+  width: 65% !important;
+}
 .w-48 {
   width: 48% !important;
 }
