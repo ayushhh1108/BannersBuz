@@ -10,7 +10,7 @@ import { FreeMode, Navigation, Thumbs } from "swiper/modules"
 
 const ThumbsSlider = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  return (<>
+  return (<div className="ThumbsSlider">
     <Swiper
       style={{
         '--swiper-navigation-color': '#fff',
@@ -94,6 +94,6 @@ const ThumbsSlider = () => {
         <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
       </SwiperSlide>
     </Swiper>
-  </>);
+  </div>);
 };
 export default ThumbsSlider;
