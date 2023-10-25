@@ -12,6 +12,7 @@ import TermsandConditions from './pages/TermsandConditions';
 import Contactus from './pages/Contactus';
 import Faq from './pages/Faqs';
 import PhotoMegnets from './pages/PhotoMagnets';
+import Banner from './pages/BannersPage';
 import BlogPage from './pages/BlogPage';
 import BlogByCategoryPage from './pages/BlogsByCategory';
 import CategoryWithBlog from './pages/CategoryWithBlog';
@@ -32,6 +33,7 @@ function App() {
         <Route path='/terms-and-conditions' element={<TermsandConditions />} />
         <Route path='/contact-us' element={<Contactus />} />
         <Route path='/faqs' element={<Faq />} />
+        <Route path='/banner' element={<Banner />} />
         <Route path='/blogs' element={<BlogPage />} />
         <Route path='/blogs/category' element={<BlogByCategoryPage />} />
         <Route path='/blogs/category/:id' element={<CategoryWithBlog />} />
