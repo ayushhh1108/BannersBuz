@@ -15,6 +15,7 @@ import PhotoMegnets from './pages/PhotoMagnets';
 import BlogPage from './pages/BlogPage';
 import BlogByCategoryPage from './pages/BlogsByCategory';
 import CategoryWithBlog from './pages/CategoryWithBlog';
+import AffiliateProgram from './pages/AffiliateProgram';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path='/blogs' element={<BlogPage />} />
         <Route path='/blogs/category' element={<BlogByCategoryPage />} />
         <Route path='/blogs/category/:id' element={<CategoryWithBlog />} />
+        <Route path='/affiliate-program' element={<AffiliateProgram />} />
       </Route>
     </Routes>
   );

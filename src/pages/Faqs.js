@@ -66,7 +66,6 @@ const Faq = () => {
                             BannerBuzz's website displays an estimated delivery date for your product based on the selected shipping method. Please use the correct payment option when you reach the checkout. Unless there were issues with the shipping company, we have fulfilled over 85% of orders by the expected delivery date.
                         </Accordion.Body>
                     </Accordion.Item>
-
                 </Accordion>
 
                 <h4 className='mt-5'>All about Products, Quality, and Materials</h4>
