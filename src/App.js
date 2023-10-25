@@ -12,6 +12,7 @@ import TermsandConditions from './pages/TermsandConditions';
 import Contactus from './pages/Contactus';
 import Faq from './pages/Faqs';
 import PhotoMegnets from './pages/PhotoMagnets';
+import BlogPage from './pages/BlogPage';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path='/terms-and-conditions' element={<TermsandConditions />} />
         <Route path='/contact-us' element={<Contactus />} />
         <Route path='/faqs' element={<Faq />} />
+        <Route path='/blogs' element={<BlogPage />} />
       </Route>
     </Routes>
   );

@@ -22,6 +22,7 @@ import {
 import { Button, Form } from "react-bootstrap";
 import { ProductBox, TipsSuggetionCard } from "../components/product-box";
 import Footer from "../components/Footer";
+import SubscribeSection from "../components/SecoundLast";
 
 const HomePage = () => {
   const arrayOfTen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -365,10 +366,10 @@ const HomePage = () => {
               Check out our Blog For Printing Tips & Suggestions
             </h3>
             <div className="w-100 d-flex my-4 justify-content-around">
-              <TipsSuggetionCard />
-              <TipsSuggetionCard />
-              <TipsSuggetionCard />
-              <TipsSuggetionCard />
+              <TipsSuggetionCard width="w-24" />
+              <TipsSuggetionCard width="w-24" />
+              <TipsSuggetionCard width="w-24" />
+              <TipsSuggetionCard width="w-24" />
             </div>
             <Button variant="outline-primary" className="mx-auto my-3">
               View All
@@ -410,11 +411,7 @@ const HomePage = () => {
                 <p className="pt-3">If you’re not satisfied, we’re not satisfied. We’ll reprint or refund your order - guaranteed</p>
               </div>
           </container>
-          <container className="w-100 text-center d-flex align-items-center justify-content-evenly p-3" style={{backgroundColor:"#4383b8",color:"white"}}>
-            <p className="w-33">Subscribe to our newsletter and get 20% OFF on Your First Order + Free Shipping.</p>
-            <Form.Control type="text" className="w-45 height-fitcontant" placeholder="Normal text" />
-            <Button variant="light" className="height-fitcontant px-2">SUBSCRIBE</Button>
-          </container>
+          <SubscribeSection />
           <Footer />
         </div>
       </div>
