@@ -16,6 +16,9 @@
 .light-grey {
   color: rgb(94, 94, 94) !important;
 }
+.black-color {
+  color: rgb(0, 0, 0) !important;
+}
 .f-size-18 {
   font-size: 18px !important;
 }
@@ -27,6 +30,9 @@
 }
 .f-size-12 {
   font-size: 12px !important;
+}
+.f-size-13 {
+  font-size: 13px !important;
 }
 .f-size-28 {
   font-size: 28px !important;
@@ -103,6 +109,9 @@ a:hover {
 .height-fitcontant {
   height: fit-content !important;
 }
+.w-fit-content{
+  width: fit-content !important;
+}
 .hover_orange:hover {
   color: var(--orange);
 }
@@ -170,9 +179,12 @@ a:hover {
   color: #7c7c7c;
 }
 .navbar-color {
-  background-color: #433a77;
+  background-color: #4383b8;
   color: white;
   font-size: 13px;
+}
+.heading-color{
+  color: #3c4458 !important;
 }
 .main-navbar {
   position: sticky;
