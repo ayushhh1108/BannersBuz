@@ -15,10 +15,10 @@ import logo from "../../assets/logo.svg";
 import searchIcon from "../../assets/search.svg";
 import "../../css/style.css";
 import CreatableSelect from "react-select/creatable";
-const Header = () => {
+const Header = ({upperLineNone}) => {
   return (
     <header>
-      <div className="topbar d-flex justify-content-between">
+      {!upperLineNone?<div className="topbar d-flex justify-content-between">
         <div className="toppbar_left d-flex align-items-center header-first-sec">
           <p className="mb-0 free-shiping">
             Free Super Saver shipping for orders over $99.00
@@ -141,7 +141,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div>:""}
       <div className="main_wrapper">
         <div>
           <img src={logo} className="" alt="logo" />
