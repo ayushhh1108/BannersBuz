@@ -4,6 +4,10 @@ import tipsImg from "../../assets/Untitled.webp";
 import rightArrow from "../../assets/right-arrow.png";
 import logo from "../../assets/logo.svg";
 import { Button } from "react-bootstrap";
+import facebookIcon from "../../assets/facebook.png";
+import tweeterIcon from "../../assets/twitter-icon.png";
+import mailIcon from "../../assets/mail.png";
+import categoryPoster from "../../assets/custom-vinyl.jpg";
 
 const ProductBox = () => {
   return (
@@ -98,7 +102,10 @@ const AboutBannerCard = () => {
 
 const NewsLatterBox = () => {
   return (
-    <div className="py-3 mt-5 mx-4 text-center rounded" style={{backgroundColor:"aliceblue"}}>
+    <div
+      className="py-3 mt-5 mx-4 text-center rounded"
+      style={{ backgroundColor: "aliceblue" }}
+    >
       <h5 className="py-1 light-grey bb-grey mb-4 d-inline">Newsletter</h5>
       <p className="py-1 mx-4 mb-1 sub-gray-text f-size-12 text-center px-4 my-3">
         Get Latest News and Updates From BannerBuzz Enter YourEmail Address
@@ -109,10 +116,61 @@ const NewsLatterBox = () => {
   );
 };
 
+const ShopCategoryBox = () => {
+  return (
+    <div className="mx-4 py-2 mb-1">
+      <img src={categoryPoster} className="w-100" alt="img" />
+      <p className="py-2 mb-1 light-grey">Vinyl Banners</p>
+    </div>
+  );
+};
+
+const SocialMediaShareBox = () => {
+  return (
+    <div className="d-flex my-5">
+    <span
+      className="px-2 py-1 rounded d-flex w-fit-content mr-2 cursor-pointer"
+      style={{ backgroundColor: "#1877f2", color: "#fff" }}
+    >
+      <img
+        src={facebookIcon}
+        alt="facebook"
+        className="mr-1"
+        style={{ width: "15px" }}
+      />{" "}
+      Share 0
+    </span>
+    <span
+      className="px-2 py-1 rounded d-flex w-fit-content mx-2 cursor-pointer"
+      style={{ backgroundColor: "#55acee", color: "#fff" }}
+    >
+      <img
+        src={tweeterIcon}
+        alt="facebook"
+        className="mr-1"
+        style={{ width: "20px" }}
+      />
+      Tweet
+    </span>
+    <span className="px-2 py-1 rounded d-flex w-fit-content border mx-2 cursor-pointer">
+      <img
+        src={mailIcon}
+        alt="mail"
+        className="mr-1"
+        style={{ width: "20px" }}
+      />{" "}
+      Email
+    </span>
+  </div>
+  );
+};
+
 export {
   ProductBox,
   OnHBorderBtnCard,
   TipsSuggetionCard,
   AboutBannerCard,
   NewsLatterBox,
+  ShopCategoryBox,
+  SocialMediaShareBox
 };

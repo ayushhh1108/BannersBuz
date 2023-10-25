@@ -13,6 +13,8 @@ import Contactus from './pages/Contactus';
 import Faq from './pages/Faqs';
 import PhotoMegnets from './pages/PhotoMagnets';
 import BlogPage from './pages/BlogPage';
+import BlogByCategoryPage from './pages/BlogsByCategory';
+import CategoryWithBlog from './pages/CategoryWithBlog';
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
         <Route path='/contact-us' element={<Contactus />} />
         <Route path='/faqs' element={<Faq />} />
         <Route path='/blogs' element={<BlogPage />} />
+        <Route path='/blogs/category' element={<BlogByCategoryPage />} />
+        <Route path='/blogs/category/:id' element={<CategoryWithBlog />} />
       </Route>
     </Routes>
   );
