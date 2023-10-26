@@ -43,6 +43,9 @@
 .f-size-20 {
   font-size: 20px !important;
 }
+.f-size-70 {
+  font-size: 70px !important;
+}
 .cursor-pointer {
   cursor: pointer !important;
 }
@@ -54,6 +57,9 @@ a {
 }
 .w-15 {
   width: 15% !important;
+}
+.w-20 {
+  width: 20% !important;
 }
 .w-18 {
   width: 18% !important;
@@ -87,6 +93,9 @@ a {
 }
 .w-48 {
   width: 48% !important;
+}
+.w-80 {
+  width: 80% !important;
 }
 .w-90 {
   width: 90% !important;
@@ -195,9 +204,6 @@ a:hover {
 }
 .nav-item {
   transition: 1s;
-}
-.nav-item:hover {
-  border-bottom: 4px solid #ff0000;
 }
 .Carousel-box .carousel-indicators {
   bottom: -55px;
