@@ -17,8 +17,11 @@ import BlogPage from './pages/BlogPage';
 import BlogByCategoryPage from './pages/BlogsByCategory';
 import CategoryWithBlog from './pages/CategoryWithBlog';
 import AffiliateProgram from './pages/AffiliateProgram';
+import SampleKit from './pages/SampleKit';
 import LocalStoresPage from './pages/LocalStores';
 import CharityBannerPage from './pages/CharityBanner';
+import DealerRegistration from './pages/DealerRegistration';
+import DealerRegistrationForm from './pages/DealerRegistrationForm';
 
 function App() {
   return (
@@ -36,6 +39,9 @@ function App() {
         <Route path='/contact-us' element={<Contactus />} />
         <Route path='/faqs' element={<Faq />} />
         <Route path='/banner' element={<Banner />} />
+        <Route path='/sampal-kit' element={<SampleKit />} />
+        <Route path='/dealer-registration' element={<DealerRegistration />} />
+        <Route path='/dealerregistration' element={<DealerRegistrationForm />} />
         <Route path='/blogs' element={<BlogPage />} />
         <Route path='/blogs/category' element={<BlogByCategoryPage />} />
         <Route path='/blogs/category/:id' element={<CategoryWithBlog />} />
