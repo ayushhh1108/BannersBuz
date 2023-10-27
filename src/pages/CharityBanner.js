@@ -8,6 +8,8 @@ import rightArrow from "../assets/right-arrow.png";
 import Header from "../components/header/Header";
 import { Button, Container, Form } from "react-bootstrap";
 import { OnlyBreadCrum } from "../components/breadcrum/breadcrum";
+import SubscribeSection from "../components/SecoundLast";
+import Footer from "../components/Footer";
 
 const CharityBannerPage = () => {
   return (
@@ -94,7 +96,7 @@ const CharityBannerPage = () => {
           </p>
         </Container>
         <Container className="d-flex justify-content-between">
-          <div className="w-48">
+          <div className="w-48 mb-5">
             <form>
               <h5 className="bb-grey py-4 mb-2">Your Details</h5>
               <div className="form-row mt-3">
@@ -232,6 +234,8 @@ const CharityBannerPage = () => {
           </div>
         </Container>
       </div>
+      <SubscribeSection />
+      <Footer />
     </div>
   );
 };
