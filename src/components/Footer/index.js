@@ -198,7 +198,7 @@ const Footer = () => {
         >
           © 2020 Copyright:
           <a className="" href="https://mdbootstrap.com/">
-            MDBootstrap.com
+            
           </a>
         </div>
       </footer>
