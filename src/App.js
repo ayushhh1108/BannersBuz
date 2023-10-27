@@ -22,6 +22,7 @@ import LocalStoresPage from './pages/LocalStores';
 import CharityBannerPage from './pages/CharityBanner';
 import DealerRegistration from './pages/DealerRegistration';
 import DealerRegistrationForm from './pages/DealerRegistrationForm';
+import LoginPage from './pages/Login';
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
         <Route path='/affiliate-program' element={<AffiliateProgram />} />
         <Route path='/local' element={<LocalStoresPage />} />
         <Route path='/free-charity-banner' element={<CharityBannerPage />} />
+        <Route path='/login' element={<LoginPage />} />
       </Route>
     </Routes>
   );

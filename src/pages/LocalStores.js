@@ -51,7 +51,7 @@ const LocalStoresPage = () => {
             return <span className="p-2">{i}</span>;
           })}
         </p>
-        <div className="w-100 d-flex">
+        <div className="w-100 d-flex flex-wrap">
           <div className="w-100 d-flex my-4">
             <div className="w-20 f-size-70 heading-color">A</div>
             <div className="w-80 d-flex flex-wrap">
