@@ -11,7 +11,6 @@ import twitterIcon from "../assets/twitter-icon.png";
 import SecurityBudgeFooter from "../components/SecurityBudgeFooter";
 
 const LoginPage = () => {
-  const arrayOfTen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
   return (
     <div>
       <Header upperLineNone={true} searchNone={true} categoryNone={true} />
