@@ -13,6 +13,9 @@
 .sub-gray-text {
   color: #606060 !important;
 }
+.primary-color{
+  color: var(--primary-color) !important;
+}
 .light-grey {
   color: rgb(94, 94, 94) !important;
 }
@@ -1097,4 +1100,9 @@ a:hover {
 #bar-one {
   width: 0;
   background-color: #ff8b5a;
+}
+ /* right side arrow */
+.rightArrow{
+  width: 75px !important;
+  height: fit-content !important;
 }

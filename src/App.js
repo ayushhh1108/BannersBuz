@@ -18,6 +18,7 @@ import BlogByCategoryPage from './pages/BlogsByCategory';
 import CategoryWithBlog from './pages/CategoryWithBlog';
 import AffiliateProgram from './pages/AffiliateProgram';
 import LocalStoresPage from './pages/LocalStores';
+import CharityBannerPage from './pages/CharityBanner';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path='/blogs/category/:id' element={<CategoryWithBlog />} />
         <Route path='/affiliate-program' element={<AffiliateProgram />} />
         <Route path='/local' element={<LocalStoresPage />} />
+        <Route path='/free-charity-banner' element={<CharityBannerPage />} />
       </Route>
     </Routes>
   );
