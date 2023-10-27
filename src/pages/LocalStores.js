@@ -1,11 +1,8 @@
 import React from "react";
 import Header from "../components/header/Header";
-import { Accordion, Button, Container, Tab, Tabs } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Footer from "../components/Footer";
 import SubscribeSection from "../components/SecoundLast";
-import checkIcon from "../assets/checked.png";
-import posterBlog from "../assets/shutterstock_108294335.jpg";
-import Banner from "../assets/banner.png";
 import { OnlyBreadCrum } from "../components/breadcrum/breadcrum";
 
 const LocalStoresPage = () => {

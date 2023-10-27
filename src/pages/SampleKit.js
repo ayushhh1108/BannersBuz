@@ -6,7 +6,6 @@ import ThumbsSlider from "../components/ThumbsSlider";
 import star from '../assets/star.svg'
 import halfstar from '../assets/half-start.svg'
 import { Tab, Tabs } from "react-bootstrap";
-import Tooltip from 'react-bootstrap/Tooltip';
 import Form from 'react-bootstrap/Form';
 import cardImg from "../assets/pexels.jpg";
 import Col from 'react-bootstrap/Col';
