@@ -19,6 +19,7 @@ import CategoryWithBlog from './pages/CategoryWithBlog';
 import AffiliateProgram from './pages/AffiliateProgram';
 import SampleKit from './pages/SampleKit';
 import LocalStoresPage from './pages/LocalStores';
+import CharityBannerPage from './pages/CharityBanner';
 import DealerRegistration from './pages/DealerRegistration';
 import DealerRegistrationForm from './pages/DealerRegistrationForm';
 
@@ -46,6 +47,7 @@ function App() {
         <Route path='/blogs/category/:id' element={<CategoryWithBlog />} />
         <Route path='/affiliate-program' element={<AffiliateProgram />} />
         <Route path='/local' element={<LocalStoresPage />} />
+        <Route path='/free-charity-banner' element={<CharityBannerPage />} />
       </Route>
     </Routes>
   );
