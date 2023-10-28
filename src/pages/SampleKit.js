@@ -546,7 +546,7 @@ const SampleKit = () => {
 
             </div>
             <Footer />
-        </div >
+        </div>
     );
 };
 

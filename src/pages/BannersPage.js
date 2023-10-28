@@ -274,7 +274,7 @@ const Banner = () => {
                                     </div>
                                     <div class="quantity">
                                         <button class="minus" aria-label="Decrease">&minus;</button>
-                                        <input type="number" class="input-box" value="1" min="1" max="10" />
+                                        <input type="number" class="input-box-1" value="1" min="1" max="10" />
                                         <button class="plus" aria-label="Increase">+</button>
                                     </div>
                                 </div>
