@@ -33,6 +33,7 @@ import ProfileAddress from './pages/ProfileAddress';
 import ProfileWalletPage from './pages/ProfileWallet';
 import ProfileSupportPage from './pages/ProfileSupport';
 import ProfileDesignPage from './pages/ProfileDesign';
+import Quickrfq from './pages/Quickrfq';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
         <Route path='/faqs' element={<Faq />} />
         <Route path='/banner' element={<Banner />} />
         <Route path='/sampal-kit' element={<SampleKit />} />
+        <Route path='/quickrfq' element={<Quickrfq />} />
         <Route path='/dealer-registration' element={<DealerRegistration />} />
         <Route path='/dealerregistration' element={<DealerRegistrationForm />} />
         <Route path='/blogs' element={<BlogPage />} />
