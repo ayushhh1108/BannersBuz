@@ -58,6 +58,9 @@ a {
 .w-12 {
   width: 12% !important;
 }
+.w-10 {
+  width: 10% !important;
+}
 .w-15 {
   width: 15% !important;
 }
@@ -108,6 +111,9 @@ a {
 }
 .w-24px{
   width: 24px !important;
+}
+.w-35px{
+  width: 35px !important;
 }
 .p-1830 {
   padding: 18px 30px !important;
@@ -1111,4 +1117,20 @@ a:hover {
 .rightArrow{
   width: 75px !important;
   height: fit-content !important;
+}
+
+.dashboard-shadow{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px !important;
+  transition: all 0.6s;
+}
+.active-box{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+}
+.dashboard-shadow:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px !important;
+}
+/* profile-boxx-css */
+.card-profile{
+	border: none;
+	border-radius: 20px;
 }

@@ -24,6 +24,15 @@ import DealerRegistration from './pages/DealerRegistration';
 import DealerRegistrationForm from './pages/DealerRegistrationForm';
 import LoginPage from './pages/Login';
 import SignUPPage from './pages/SignUPPage';
+import DashboardPage from './pages/ProfileDashboard';
+import ProfileOrderPage from './pages/ProfileOrder';
+import ProfileQuotesPage from './pages/ProfileQuote';
+import ProfileCreditPage from './pages/ProfileCredit';
+import ProfilePage from './pages/ProfilePage';
+import ProfileAddress from './pages/ProfileAddress';
+import ProfileWalletPage from './pages/ProfileWallet';
+import ProfileSupportPage from './pages/ProfileSupport';
+import ProfileDesignPage from './pages/ProfileDesign';
 
 function App() {
   return (
@@ -52,6 +61,15 @@ function App() {
         <Route path='/free-charity-banner' element={<CharityBannerPage />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/sign-up' element={<SignUPPage />} />
+        <Route path='/customer/account' element={<DashboardPage />} />
+        <Route path='/customer/order' element={<ProfileOrderPage />} />
+        <Route path='/customer/quotations' element={<ProfileQuotesPage />} />
+        <Route path='/customer/credit' element={<ProfileCreditPage />} />
+        <Route path='/customer/address' element={<ProfileAddress />} />
+        <Route path='/customer/account/edit' element={<ProfilePage />} />
+        <Route path='/customer/wallet' element={<ProfileWalletPage />} />
+        <Route path='/customer/tickets' element={<ProfileSupportPage />} />
+        <Route path='/customer/design' element={<ProfileDesignPage />} />
       </Route>
     </Routes>
   );
