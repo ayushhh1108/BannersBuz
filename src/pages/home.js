@@ -61,7 +61,7 @@ const HomePage = () => {
                 <p className="mb-0">FLASH</p>
                 <img src={copy} alt="copy" className="copy-icon" />
               </div>
-              <button type="button" class="btn shop-now-btn">
+              <button type="button" className="btn shop-now-btn">
                 Shop now
               </button>
             </div>

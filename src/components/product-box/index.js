@@ -170,29 +170,29 @@ const SocialMediaShareBox = () => {
 
 const CartItemBox = () => {
   return (
-    <div class="card rounded-3 mb-4">
-      <div class="card-body p-3">
-        <div class="row d-flex justify-content-between align-items-center">
-          <div class="col-md-2 col-lg-2 col-xl-2">
+    <div className="card rounded-3 mb-4">
+      <div className="card-body p-3">
+        <div className="row d-flex justify-content-between align-items-center">
+          <div className="col-md-2 col-lg-2 col-xl-2">
             <img
               src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
-              class="img-fluid rounded-3"
+              className="img-fluid rounded-3"
               alt="Cotton T-shirt"
             />
           </div>
-          <div class="col-md-5 col-lg-5 col-xl-5">
-            <p class="lead fw-normal mb-1 f-size-16">
+          <div className="col-md-5 col-lg-5 col-xl-5">
+            <p className="lead fw-normal mb-1 f-size-16">
               8 ft x 8 ft Step and Repeat Straight Pillow Case Backdrop -
               Graphic
             </p>
             <p>
-              <span class="text-muted f-size-12 d-block">
+              <span className="text-muted f-size-12 d-block">
                 Size (W X H) : 8 Ft x 8 Ft (FT) | $280.70
               </span>
-              <span class="text-muted f-size-12 d-block">
+              <span className="text-muted f-size-12 d-block">
                 Side: Single Sided
               </span>
-              <span class="text-muted f-size-12 d-block">
+              <span className="text-muted f-size-12 d-block">
                 Patterns: 1 Logo Basic
               </span>
             </p>
@@ -215,10 +215,10 @@ const CartItemBox = () => {
               </tr>
             </table>
           </div>
-          <div class="col-md-2 col-lg-2 col-xl-2 d-flex flex-wrap justify-content-center">
+          <div className="col-md-2 col-lg-2 col-xl-2 d-flex flex-wrap justify-content-center">
             <p className="w-100 text-center mb-2">Qty</p>
             <button
-              class="btn btn-link px-2"
+              className="btn btn-link px-2"
               onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
             >
               <MinusIcon />
@@ -230,24 +230,24 @@ const CartItemBox = () => {
               name="quantity"
               value="2"
               type="number"
-              class="form-control form-control-sm w-50 text-center"
+              className="form-control form-control-sm w-50 text-center"
             />
 
             <button
-              class="btn btn-link px-2"
+              className="btn btn-link px-2"
               onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
             >
               <PlusIcon />
             </button>
           </div>
-          <div class="col-md-2 col-lg-2 col-xl-2 text-right">
-            <p class="lead fw-normal mb-1 f-size-18">$499.00</p>
-            <span class="text-muted f-size-12 d-block">
+          <div className="col-md-2 col-lg-2 col-xl-2 text-right">
+            <p className="lead fw-normal mb-1 f-size-18">$499.00</p>
+            <span className="text-muted f-size-12 d-block">
               Estimated delivery Wed, Nov 8th 2023
             </span>
           </div>
-          <div class="text-end w-fit-content">
-            <a href="#!" class="text-danger">
+          <div className="text-end w-fit-content">
+            <a href="#!" className="text-danger">
               <CrossIcon />
             </a>
           </div>
