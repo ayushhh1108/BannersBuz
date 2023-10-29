@@ -8,6 +8,9 @@ import facebookIcon from "../../assets/facebook.png";
 import tweeterIcon from "../../assets/twitter-icon.png";
 import mailIcon from "../../assets/mail.png";
 import categoryPoster from "../../assets/custom-vinyl.jpg";
+import CrossIcon from "../../assets/crossIcon";
+import PlusIcon from "../../assets/Plus";
+import MinusIcon from "../../assets/Minus";
 
 const ProductBox = () => {
   return (
@@ -128,40 +131,129 @@ const ShopCategoryBox = () => {
 const SocialMediaShareBox = () => {
   return (
     <div className="d-flex my-5">
-    <span
-      className="px-2 py-1 rounded d-flex w-fit-content mr-2 cursor-pointer"
-      style={{ backgroundColor: "#1877f2", color: "#fff" }}
-    >
-      <img
-        src={facebookIcon}
-        alt="facebook"
-        className="mr-1"
-        style={{ width: "15px" }}
-      />{" "}
-      Share 0
-    </span>
-    <span
-      className="px-2 py-1 rounded d-flex w-fit-content mx-2 cursor-pointer"
-      style={{ backgroundColor: "#55acee", color: "#fff" }}
-    >
-      <img
-        src={tweeterIcon}
-        alt="facebook"
-        className="mr-1"
-        style={{ width: "20px" }}
-      />
-      Tweet
-    </span>
-    <span className="px-2 py-1 rounded d-flex w-fit-content border mx-2 cursor-pointer">
-      <img
-        src={mailIcon}
-        alt="mail"
-        className="mr-1"
-        style={{ width: "20px" }}
-      />{" "}
-      Email
-    </span>
-  </div>
+      <span
+        className="px-2 py-1 rounded d-flex w-fit-content mr-2 cursor-pointer"
+        style={{ backgroundColor: "#1877f2", color: "#fff" }}
+      >
+        <img
+          src={facebookIcon}
+          alt="facebook"
+          className="mr-1"
+          style={{ width: "15px" }}
+        />{" "}
+        Share 0
+      </span>
+      <span
+        className="px-2 py-1 rounded d-flex w-fit-content mx-2 cursor-pointer"
+        style={{ backgroundColor: "#55acee", color: "#fff" }}
+      >
+        <img
+          src={tweeterIcon}
+          alt="facebook"
+          className="mr-1"
+          style={{ width: "20px" }}
+        />
+        Tweet
+      </span>
+      <span className="px-2 py-1 rounded d-flex w-fit-content border mx-2 cursor-pointer">
+        <img
+          src={mailIcon}
+          alt="mail"
+          className="mr-1"
+          style={{ width: "20px" }}
+        />{" "}
+        Email
+      </span>
+    </div>
+  );
+};
+
+const CartItemBox = () => {
+  return (
+    <div class="card rounded-3 mb-4">
+      <div class="card-body p-3">
+        <div class="row d-flex justify-content-between align-items-center">
+          <div class="col-md-2 col-lg-2 col-xl-2">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
+              class="img-fluid rounded-3"
+              alt="Cotton T-shirt"
+            />
+          </div>
+          <div class="col-md-5 col-lg-5 col-xl-5">
+            <p class="lead fw-normal mb-1 f-size-16">
+              8 ft x 8 ft Step and Repeat Straight Pillow Case Backdrop -
+              Graphic
+            </p>
+            <p>
+              <span class="text-muted f-size-12 d-block">
+                Size (W X H) : 8 Ft x 8 Ft (FT) | $280.70
+              </span>
+              <span class="text-muted f-size-12 d-block">
+                Side: Single Sided
+              </span>
+              <span class="text-muted f-size-12 d-block">
+                Patterns: 1 Logo Basic
+              </span>
+            </p>
+            <table className="w-100 f-size-12">
+              <tr>
+                <th>Qty:</th>
+                <td>2 - 5</td>
+                <td>6 - 10</td>
+                <td>11 - 15</td>
+                <td>16 - 20</td>
+                <td>{`> 20`}</td>
+              </tr>
+              <tr>
+                <th>Price:</th>
+                <td>$210.53</td>
+                <td>$110.53</td>
+                <td>$90.53</td>
+                <td>$50.53</td>
+                <td>$200.53</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 d-flex flex-wrap justify-content-center">
+            <p className="w-100 text-center mb-2">Qty</p>
+            <button
+              class="btn btn-link px-2"
+              onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+            >
+              <MinusIcon />
+            </button>
+
+            <input
+              id="form1"
+              min="0"
+              name="quantity"
+              value="2"
+              type="number"
+              class="form-control form-control-sm w-50 text-center"
+            />
+
+            <button
+              class="btn btn-link px-2"
+              onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+            >
+              <PlusIcon />
+            </button>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 text-right">
+            <p class="lead fw-normal mb-1 f-size-18">$499.00</p>
+            <span class="text-muted f-size-12 d-block">
+              Estimated delivery Wed, Nov 8th 2023
+            </span>
+          </div>
+          <div class="text-end w-fit-content">
+            <a href="#!" class="text-danger">
+              <CrossIcon />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
@@ -172,5 +264,6 @@ export {
   AboutBannerCard,
   NewsLatterBox,
   ShopCategoryBox,
-  SocialMediaShareBox
+  SocialMediaShareBox,
+  CartItemBox
 };

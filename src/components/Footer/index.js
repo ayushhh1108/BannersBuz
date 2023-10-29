@@ -1,8 +1,13 @@
+import FacebookIcon from "../../assets/facebookSvg";
+import InstagramIcon from "../../assets/instaSvg";
+import YoutubeIcon from "../../assets/youtubeSvg";
+import SecurityBudgeFooter from "../SecurityBudgeFooter";
+
 const Footer = () => {
   return (
     <div className="container mw-100 m-0 p-0">
       <footer className=" text-center text-lg-start  w-100 ">
-        <div className="container mw-100 p-4">
+        <div className="container mw-100 p-4 pb-0">
           <div className="row my-4 justify-content-between">
             <div className="col-lg-2 col-md-6 mb-4 mb-md-0">
               <h5 className="text-uppercase mb-4 f-size-18">Get in touch</h5>
@@ -175,17 +180,17 @@ const Footer = () => {
               <ul className="list-unstyled d-flex flex-row justify-content-center">
                 <li>
                   <a className=" px-2" href="#!">
-                    <i className="fab fa-facebook-square"></i>
+                    <FacebookIcon />
                   </a>
                 </li>
                 <li>
                   <a className=" px-2" href="#!">
-                    <i className="fab fa-instagram"></i>
+                    <InstagramIcon />
                   </a>
                 </li>
                 <li>
                   <a className=" ps-2" href="#!">
-                    <i className="fab fa-youtube"></i>
+                    <YoutubeIcon />
                   </a>
                 </li>
               </ul>
@@ -193,13 +198,10 @@ const Footer = () => {
           </div>
         </div>
         <div
-          className="text-center p-3"
+          className="text-center p-3 d-flex pt-0"
           style={{ backgroundColor: "gba(0, 0, 0, 0.2)" }}
         >
-          © 2020 Copyright:
-          <a className="" href="https://mdbootstrap.com/">
-            
-          </a>
+          <div className="w-25"><SecurityBudgeFooter mainFooter IsCard={true} /></div>
         </div>
       </footer>
     </div>

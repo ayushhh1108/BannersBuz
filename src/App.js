@@ -34,6 +34,7 @@ import ProfileWalletPage from './pages/ProfileWallet';
 import ProfileSupportPage from './pages/ProfileSupport';
 import ProfileDesignPage from './pages/ProfileDesign';
 import Quickrfq from './pages/Quickrfq';
+import CheckoutCartPage from './pages/Cart';
 
 function App() {
   return (
@@ -72,6 +73,7 @@ function App() {
         <Route path='/customer/wallet' element={<ProfileWalletPage />} />
         <Route path='/customer/tickets' element={<ProfileSupportPage />} />
         <Route path='/customer/design' element={<ProfileDesignPage />} />
+        <Route path='/checkout/cart' element={<CheckoutCartPage />} />
       </Route>
     </Routes>
   );
