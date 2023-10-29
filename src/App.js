@@ -35,6 +35,7 @@ import ProfileSupportPage from './pages/ProfileSupport';
 import ProfileDesignPage from './pages/ProfileDesign';
 import Quickrfq from './pages/Quickrfq';
 import CheckoutCartPage from './pages/Cart';
+import OrdersStatusPage from './pages/OrdersStatus';
 
 function App() {
   return (
@@ -74,6 +75,7 @@ function App() {
         <Route path='/customer/tickets' element={<ProfileSupportPage />} />
         <Route path='/customer/design' element={<ProfileDesignPage />} />
         <Route path='/checkout/cart' element={<CheckoutCartPage />} />
+        <Route path='/order/status' element={<OrdersStatusPage />} />
       </Route>
     </Routes>
   );
