@@ -36,6 +36,7 @@ import ProfileDesignPage from './pages/ProfileDesign';
 import Quickrfq from './pages/Quickrfq';
 import CheckoutCartPage from './pages/Cart';
 import OrdersStatusPage from './pages/OrdersStatus';
+import CheckoutSuccessPage from './pages/CheckoutSuccess';
 
 function App() {
   return (
@@ -75,6 +76,7 @@ function App() {
         <Route path='/customer/tickets' element={<ProfileSupportPage />} />
         <Route path='/customer/design' element={<ProfileDesignPage />} />
         <Route path='/checkout/cart' element={<CheckoutCartPage />} />
+        <Route path='/checkout/success' element={<CheckoutSuccessPage />} />
         <Route path='/order/status' element={<OrdersStatusPage />} />
       </Route>
     </Routes>
