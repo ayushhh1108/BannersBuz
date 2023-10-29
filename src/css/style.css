@@ -1349,3 +1349,30 @@ a:hover {
   font-size: 14px;
   box-shadow: none !important;
 }
+
+/* header responsive  */
+
+@media only screen and (max-width: 1200px) {
+  .chat-now-box{
+    width: 30% !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .chat-now-box{
+    width: 50% !important;
+  }
+  .header-first-sec{
+    width: 45%;
+  }
+  .right-sideheader{
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .chatBox{
+    width: 40%;
+  }
+  .callUsBox{
+    width: 55%;
+  }
+}

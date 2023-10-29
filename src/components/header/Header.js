@@ -21,13 +21,13 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
       {!upperLineNone ? (
         <div className="topbar d-flex justify-content-between">
           <div className="toppbar_left d-flex align-items-center header-first-sec">
-            <p className="mb-0 free-shiping">
+            <p className="mb-0 free-shiping f-size-13">
               Free Super Saver shipping for orders over $99.00
             </p>
             <div className="quick_links">
-              <div class="dropdown show">
+              <div className="dropdown show">
                 <Link
-                  class="dropdown-toggle text-muted font-size-13"
+                  className="dropdown-toggle text-muted font-size-13"
                   to="#"
                   role="button"
                   id="dropdownMenuLink"
@@ -38,16 +38,16 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
                   Quick links
                 </Link>
                 <div
-                  class="dropdown-menu font-size-13"
+                  className="dropdown-menu font-size-13"
                   aria-labelledby="dropdownMenuLink"
                 >
-                  <Link class="dropdown-item" to="#">
+                  <Link className="dropdown-item" to="#">
                     Action
                   </Link>
-                  <Link class="dropdown-item" to="#">
+                  <Link className="dropdown-item" to="#">
                     Another action
                   </Link>
-                  <Link class="dropdown-item" to="#">
+                  <Link className="dropdown-item" to="#">
                     Something else here
                   </Link>
                 </div>
@@ -74,9 +74,9 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
               <img src={items} alt="items" className="items-png" /> Item(s){" "}
               <span>$0.00</span>{" "}
             </Link>
-            <div class="dropdown show pr-1">
+            <div className="dropdown show pr-1">
               <Link
-                class="dropdown-toggle text-muted"
+                className="dropdown-toggle text-muted"
                 to="#"
                 role="button"
                 id="dropdownMenuLink"
@@ -87,10 +87,10 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
                 <img src={usa} alt="usa-map" className="small-png" />
               </Link>
               <div
-                class="dropdown-menu dropdown-menu-end "
+                className="dropdown-menu dropdown-menu-end "
                 aria-labelledby="dropdownMenuLink"
               >
-                <Link class="dropdown-item" to="#">
+                <Link className="dropdown-item" to="#">
                   {" "}
                   <img
                     src={uk}
@@ -100,7 +100,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
                   />{" "}
                   UK{" "}
                 </Link>
-                <Link class="dropdown-item" to="#">
+                <Link className="dropdown-item" to="#">
                   {" "}
                   <img
                     src={au}
@@ -110,7 +110,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
                   />{" "}
                   AU{" "}
                 </Link>
-                <Link class="dropdown-item" to="#">
+                <Link className="dropdown-item" to="#">
                   {" "}
                   <img
                     src={nz}
@@ -120,7 +120,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
                   />{" "}
                   NZ{" "}
                 </Link>
-                <Link class="dropdown-item" to="#">
+                <Link className="dropdown-item" to="#">
                   {" "}
                   <img
                     src={ca}
@@ -130,7 +130,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
                   />{" "}
                   CA{" "}
                 </Link>
-                <Link class="dropdown-item" to="#">
+                <Link className="dropdown-item" to="#">
                   {" "}
                   <img
                     src={ind}
@@ -172,12 +172,12 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
             ""
           )}
         </div>
-        <div className="d-flex w-25 justify-content-around">
-          <div className="d-flex justify-content-between align-items-center w-35">
+        <div className="d-flex w-25 justify-content-around chat-now-box">
+          <div className="d-flex justify-content-between align-items-center w-35 chatBox">
             <img src={chat} alt="chat" className="chat-now connect" />
             <span className="small-sub-text">Chat now</span>
           </div>
-          <div className="d-flex justify-content-between align-items-center w-45">
+          <div className="d-flex justify-content-between align-items-center w-45 callUsBox">
             <img src={callUs} alt="callUs" className="call-us connect" />
             <span className="small-sub-text">
               Call us
