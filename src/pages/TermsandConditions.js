@@ -1,11 +1,13 @@
 import React from 'react'
 import Header from '../components/header/Header'
+import SubscribeSection from '../components/SecoundLast'
+import Footer from '../components/Footer'
 
 const TermsandConditions = () => {
     return (
         <div>
             <Header />
-            <div className='container'>
+            <div className='container mb-4'>
                 <div className='row'>
                     <div className='d-flex align-items-center mt-3'>
                         <div className='breadcrum-box'>
@@ -194,6 +196,9 @@ const TermsandConditions = () => {
                     </div>
                 </div>
             </div>
+
+            <SubscribeSection />
+            <Footer />
         </div>
     )
 }

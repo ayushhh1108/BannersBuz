@@ -1,5 +1,7 @@
 import React from 'react'
 import Header from '../components/header/Header'
+import SubscribeSection from '../components/SecoundLast'
+import Footer from '../components/Footer'
 
 const Contactus = () => {
     return (
@@ -15,7 +17,7 @@ const Contactus = () => {
                     </div>
                 </div>
             </div>
-            <section class="Material-contact-section section-padding section-dark">
+            <section class="Material-contact-section section-padding section-dark mb-4">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 mt-5 wow animated fadeInLeft" data-wow-delay=".2s">
@@ -86,6 +88,9 @@ const Contactus = () => {
                     </div>
                 </div>
             </section>
+
+            <SubscribeSection />
+            <Footer />
         </div>
     )
 }

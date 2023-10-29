@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Footer from '../components/Footer';
+import SubscribeSection from '../components/SecoundLast';
 
 const DealerRegistrationForm = () => {
 
@@ -179,6 +180,7 @@ const DealerRegistrationForm = () => {
                     <p>By creating an account, you agree to our Terms and Conditions of Use and Privacy Policy.</p>
                 </div>
             </div>
+            <SubscribeSection />
             <Footer />
         </div>
     )

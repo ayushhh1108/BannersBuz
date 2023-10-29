@@ -5,6 +5,7 @@ import Contactus from '../assets/contact-us.svg'
 import CallUs from '../assets/call-us.svg';
 import Network from '../assets/globle.png';
 import Footer from '../components/Footer';
+import SubscribeSection from '../components/SecoundLast';
 
 const DealerRegistration = () => {
 
@@ -129,6 +130,7 @@ const DealerRegistration = () => {
                     </div>
                 </div>
             </div>
+            <SubscribeSection />
             <Footer />
         </div>
     )
