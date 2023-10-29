@@ -2,9 +2,11 @@ import React from "react";
 import Header from "../components/header/Header";
 import IntervalCarousel from "../components/carousel/carousel";
 import OrderBar from "../components/order-bar/OrderBar";
-import {BreadCrum} from "../components/breadcrum/breadcrum";
+import { BreadCrum } from "../components/breadcrum/breadcrum";
 import Accordions from "../components/Accordion/Accordion";
 import ProductCard from "../components/product-card/ProductCard";
+import SubscribeSection from "../components/SecoundLast";
+import Footer from "../components/Footer";
 
 const StandPage = () => {
   return (
@@ -13,7 +15,7 @@ const StandPage = () => {
       <IntervalCarousel />
       <OrderBar />
       <BreadCrum />
-      <div className="mt-4 container">
+      <div className="my-4 container">
         <div className="row">
           <div className="col-3 sticky-top">
             <Accordions />
@@ -291,14 +293,15 @@ const StandPage = () => {
                 <p className="w-90 mb-0 f-size-14 text-left mx-auto px-1 font-weight-lighter light-grey">
                   Halloween ranks as one of the most consumer-driven holidays in
                   the calendar year, second in prominence only to Christmas.
-                  Families and 
+                  Families and
                 </p>
               </div>
             </div>
           </div>
-          <quillbot-extension-portal></quillbot-extension-portal>
         </div>
       </div>
+      <SubscribeSection />
+      <Footer />
     </div>
   );
 };

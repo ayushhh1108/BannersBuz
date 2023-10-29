@@ -20,6 +20,7 @@ import ChatIcon from '../assets/chat-now.svg';
 import CreateChatIcon from '../assets/blogs.svg';
 import cardImg from "../assets/pexels.jpg";
 import { Card } from "react-bootstrap";
+import SubscribeSection from "../components/SecoundLast";
 
 const Banner = () => {
     const renderTooltip = (props) => (
@@ -889,6 +890,8 @@ const Banner = () => {
                 </div>
 
             </div>
+
+            <SubscribeSection />
             <Footer />
         </div>
     );

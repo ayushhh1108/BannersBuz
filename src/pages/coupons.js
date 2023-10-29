@@ -3,6 +3,8 @@ import Header from '../components/header/Header'
 import banner from '../assets/customerreviewsbanner.jpg'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
+import Footer from '../components/Footer';
+import SubscribeSection from '../components/SecoundLast';
 
 const Coupons = () => {
 
@@ -249,7 +251,7 @@ const Coupons = () => {
                 </article>
 
             </div>
-            <div className='container list-items'>
+            <div className='container list-items mb-4'>
                 <div >
                     <h2>Exclusive Deals &amp; Coupons- Extra Savings are Just a Click Away!</h2>
                     <p>At BannerBuzz, we value your money just as much as your time. Besides offering you a complete range of high-quality printed signage and advertising products, we also take pride in crafting exclusive deals for you. We strive to offer enhanced visibility to your brand/business via our signs &amp; displays. While these printed signs help you to put across an impactful message and promote your business, our monthly deals/coupons help you save additional money while purchasing with us. We work tirelessly to make your every purchase budgeted and impactful via a user-friendly online banner ordering experience and liberal saving opportunities.</p>
@@ -268,6 +270,8 @@ const Coupons = () => {
                 </div>
             </div>
 
+            <SubscribeSection />
+            <Footer />
         </div>
     )
 }

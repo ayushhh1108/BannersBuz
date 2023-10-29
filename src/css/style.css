@@ -1343,7 +1343,7 @@ a:hover {
 }
 
 /* accordion css  */
-.bg-transparent .accordion-button{
+.bg-transparent .accordion-button {
   background-color: transparent !important;
   padding: 5px 1px !important;
   font-size: 14px;
