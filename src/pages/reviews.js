@@ -3,6 +3,8 @@ import Header from '../components/header/Header'
 import banner from '../assets/customerreviewsbanner.jpg'
 import star from '../assets/star.svg'
 import halfstar from '../assets/half-start.svg'
+import SubscribeSection from '../components/SecoundLast'
+import Footer from '../components/Footer'
 
 const Reviews = () => {
     return (
@@ -38,7 +40,7 @@ const Reviews = () => {
                 </div>
                 <hr />
             </div>
-            <div class="container">
+            <div class="container mb-5">
                 <div class="review-list">
                     <ul>
                         <li>
@@ -228,6 +230,9 @@ const Reviews = () => {
                     </ul>
                 </div>
             </div>
+
+            <SubscribeSection />
+            <Footer />
         </div>
     )
 }

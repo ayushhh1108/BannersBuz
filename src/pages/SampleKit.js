@@ -14,6 +14,7 @@ import CreateChatIcon from '../assets/blogs.svg';
 import Row from 'react-bootstrap/Row';
 
 import { Card } from "react-bootstrap";
+import SubscribeSection from "../components/SecoundLast";
 const SampleKit = () => {
     return (
         <div>
@@ -545,6 +546,7 @@ const SampleKit = () => {
                 </div>
 
             </div>
+            <SubscribeSection />
             <Footer />
         </div>
     );

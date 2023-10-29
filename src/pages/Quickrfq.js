@@ -6,6 +6,7 @@ import QualityBar from "../components/QualityBar/QualityBar";
 import { Dropdown } from 'react-bootstrap';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
+import SubscribeSection from "../components/SecoundLast";
 
 const Quickrfq = () => {
     const renderTooltip = (props) => (
@@ -165,6 +166,7 @@ const Quickrfq = () => {
 
                 </div>
             </div>
+            <SubscribeSection />
             <Footer />
         </div>
     );

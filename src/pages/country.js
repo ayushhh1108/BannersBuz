@@ -19,12 +19,14 @@ import cu16 from '../assets/cu-16.svg'
 import cu17 from '../assets/cu-17.svg'
 import cu18 from '../assets/cu-18.svg'
 import cu19 from '../assets/cu-19.svg'
+import Footer from '../components/Footer'
+import SubscribeSection from '../components/SecoundLast'
 
 const Country = () => {
     return (
         <div>
             <Header />
-            <div className='container'>
+            <div className='container mb-5'>
                 <div className='row'>
                     <div className='col-8'>
                         <div className='d-flex align-items-center mt-3'>
@@ -209,6 +211,9 @@ const Country = () => {
                     </div>
                 </div>
             </div>
+
+            <SubscribeSection />
+            <Footer />
         </div>
     )
 }
