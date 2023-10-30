@@ -28,7 +28,7 @@ const Country = () => {
             <Header />
             <div className='container mb-5'>
                 <div className='row'>
-                    <div className='col-8'>
+                    <div className='col-12 col-md-8'>
                         <div className='d-flex align-items-center mt-3'>
                             <div className='breadcrum-box'>
                                 <span>Home</span>
@@ -46,7 +46,7 @@ const Country = () => {
                         </div>
                         <h5>$0.99/SF for all banners over 200 sq.ft.</h5>
                         <h6 className='mb-4'>Shipping Charges:</h6>
-                        <table class="table mb-5">
+                        <table class="table d-none d-md-block mb-5">
                             <thead>
                                 <tr>
                                     <th scope="col">ORDER VALUE ($)</th>
@@ -94,8 +94,34 @@ const Country = () => {
                                 </tr>
                             </tbody>
                         </table>
+                        <table class="table d-block d-md-none mb-5">
+                            <tbody>
+                                <tr>
+                                    <th scope="col">PRIORITY</th>
+                                    <td >$28.93</td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">ORDER VALUE ($)</th>
+                                    <td  >$47.78</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="col">EXPRESS</th>
+                                    <td  >$65.18</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="col">STANDARD GROUND</th>
+                                    <td  >$14.43</td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">SUPER SAVER</th>
+                                    <td>Free Shipping</td>
+                                </tr>
+                            </tbody>
+                        </table>
                         <h5>Got question? Just give us a call, anytime.</h5>
-                        <div className="d-flex justify-content-between mb-5">
+                        <div className="d-flex justify-content-between mb-5 flex-wrap">
                             <div className="">
                                 <h6>USA/CANADA</h6>
                                 <a href="tel:1800-580-4489">1800-580-4489</a> / <a href="mailto:sales@bannerbuzz.com">sales@bannerbuzz.com</a>
@@ -112,7 +138,7 @@ const Country = () => {
                         <button type="button" class="btn btn-primary"> Got it. Place order. </button>
                         <p>Prices mentioned are in USD. Your local taxes and duties may still be applicable.</p>
                     </div>
-                    <div className='col-4'>
+                    <div className='col-12 fancyCheck col-md-4'>
                         <h6 className='mt-5'>All about shipping to Finland</h6>
                         <hr />
                         <ul>
@@ -132,7 +158,7 @@ const Country = () => {
                             <li>We follow US holiday-schedule. Please add US holidays when calculating delivery dates.</li>
                         </ul>
                     </div>
-                    <div className='d-flex flex-wrap text-center'>
+                    <div className='d-flex flex-wrap mt-2 mt-md-0 justify-content-center justify-content-md-start text-center'>
                         <div className='w-124 me-2'>
                             <img alt='country-img' src={cu1} />
                             <p>Finland</p>

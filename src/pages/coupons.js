@@ -40,7 +40,7 @@ const Coupons = () => {
                             <div style={{ color: '#2f60fc' }}>HURRY, THIS OFFER ENDS SOON</div>
                             <span>Valid till 22nd October, 2023</span>
                         </div>
-                        <div className='d-flex justify-content-between flex-wrap align-items-center'>
+                        <div className='d-flex justify-content-between flex-wrap align-items-center mt-2 mt-md-0'>
                             <button className='btn btn-primary'> Shop </button>
                             <OverlayTrigger
                                 placement="top"
@@ -79,7 +79,7 @@ const Coupons = () => {
                             <div style={{ color: '#2f60fc' }}>HURRY, THIS OFFER ENDS SOON</div>
                             <span>Valid till 22nd October, 2023</span>
                         </div>
-                        <div className='d-flex justify-content-between flex-wrap align-items-center'>
+                        <div className='d-flex justify-content-between flex-wrap align-items-center mt-2 mt-md-0'>
                             <button className='btn btn-primary'> Shop </button>
                             <OverlayTrigger
                                 placement="top"
@@ -117,7 +117,7 @@ const Coupons = () => {
                             <div style={{ color: '#2f60fc' }}>HURRY, THIS OFFER ENDS SOON</div>
                             <span>Valid till 22nd October, 2023</span>
                         </div>
-                        <div className='d-flex justify-content-between flex-wrap align-items-center'>
+                        <div className='d-flex justify-content-between flex-wrap align-items-center mt-2 mt-md-0'>
                             <button className='btn btn-primary'> Shop </button>
                             <OverlayTrigger
                                 placement="top"
@@ -155,7 +155,7 @@ const Coupons = () => {
                             <div style={{ color: '#2f60fc' }}>HURRY, THIS OFFER ENDS SOON</div>
                             <span>Valid till 22nd October, 2023</span>
                         </div>
-                        <div className='d-flex justify-content-between flex-wrap align-items-center'>
+                        <div className='d-flex justify-content-between flex-wrap align-items-center mt-2 mt-md-0'>
                             <button className='btn btn-primary'> Shop </button>
                             <OverlayTrigger
                                 placement="top"
@@ -193,7 +193,7 @@ const Coupons = () => {
                             <div style={{ color: '#2f60fc' }}>HURRY, THIS OFFER ENDS SOON</div>
                             <span>Valid till 22nd October, 2023</span>
                         </div>
-                        <div className='d-flex justify-content-between flex-wrap align-items-center'>
+                        <div className='d-flex justify-content-between flex-wrap align-items-center mt-2 mt-md-0'>
                             <button className='btn btn-primary'> Shop </button>
                             <OverlayTrigger
                                 placement="top"
@@ -231,7 +231,7 @@ const Coupons = () => {
                             <div style={{ color: '#2f60fc' }}>HURRY, THIS OFFER ENDS SOON</div>
                             <span>Valid till 22nd October, 2023</span>
                         </div>
-                        <div className='d-flex justify-content-between flex-wrap align-items-center'>
+                        <div className='d-flex justify-content-between flex-wrap align-items-center mt-2 mt-md-0'>
                             <button className='btn btn-primary'> Shop </button>
                             <OverlayTrigger
                                 placement="top"

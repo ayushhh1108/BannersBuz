@@ -6,10 +6,10 @@ function IntervalCarousel() {
         <div className='mb-5 Carousel-box'>
             <Carousel data-bs-theme="dark">
                 <Carousel.Item interval={10000}>
-                    <img src={CarouselImg} />
+                    <img src={CarouselImg} width='100%' />
                 </Carousel.Item>
                 <Carousel.Item interval={10000}>
-                    <img src={CarouselImg} />
+                    <img src={CarouselImg} width='100%' />
                 </Carousel.Item>
             </Carousel>
         </div>

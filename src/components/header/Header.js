@@ -15,6 +15,14 @@ import logo from "../../assets/logo.svg";
 import searchIcon from "../../assets/search.svg";
 import "../../css/style.css";
 import CreatableSelect from "react-select/creatable";
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+
 const Header = ({ upperLineNone, categoryNone, searchNone }) => {
   return (
     <header>
@@ -151,7 +159,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
         <div>
           <img src={logo} className="" alt="logo" />
         </div>
-        <div className="search-select-box d-flex align-items-center">
+        <div className="search-select-box d-none d-md-flex align-items-center">
           {!searchNone ? (
             <CreatableSelect
               components={{
@@ -172,7 +180,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
             ""
           )}
         </div>
-        <div className="d-flex w-25 justify-content-around chat-now-box">
+        <div className="d-none d-md-flex w-25 justify-content-around chat-now-box">
           <div className="d-flex justify-content-between align-items-center w-35 chatBox">
             <img src={chat} alt="chat" className="chat-now connect" />
             <span className="small-sub-text">Chat now</span>
@@ -185,8 +193,40 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
             </span>
           </div>
         </div>
+
+        {/* <Navbar key={false} expand={false} className="bg-body-tertiary mb-3">
+          <Container fluid>
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${false}`} />
+            <Navbar.Offcanvas
+              id={`offcanvasNavbar-expand-${false}`}
+              aria-labelledby={`offcanvasNavbarLabel-expand-${false}`}
+              placement="end"
+            >
+              <Offcanvas.Body>
+                <Nav className="justify-content-end flex-grow-1 pe-3">
+                  <Nav.Link href="#action1">Home</Nav.Link>
+                  <Nav.Link href="#action2">Link</Nav.Link>
+                  <NavDropdown
+                    title="Dropdown"
+                    id={`offcanvasNavbarDropdown-expand-${false}`}
+                  >
+                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                      Another action
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action5">
+                      Something else here
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                </Nav>
+
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
+          </Container>
+        </Navbar> */}
       </div>
-      {!categoryNone&&<div className="main-navbar d-flex navbar-color justify-content-around">
+      {!categoryNone && <div className="main-navbar d-none d-md-flex navbar-color justify-content-around">
         <div className="prl-2 nav-item"> Banners </div>
         <div className="prl-2 nav-item"> Stands & Displays </div>
         <div className="prl-2 nav-item"> Table Covers & Displays </div>

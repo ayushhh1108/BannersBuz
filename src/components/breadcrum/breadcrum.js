@@ -3,7 +3,7 @@ import DownArrow from '.././../assets/down-arrow.svg'
 
 function BreadCrum() {
     return (
-        <div className='container'>
+        <div className='container overflow-hidden'>
             <div className='row'>
                 <div className='d-flex align-items-center'>
                     <div className='breadcrum-box'>
@@ -19,7 +19,7 @@ function BreadCrum() {
                 <div className='p-3'></div>
                 <div className='mb-3'>
                     <div className='float-end d-flex align-items-center'>
-                        <span className='fw-light mr-3' style={{ fontSize: '12px' }}>Sort by</span>
+                        <span className='fw-light d-none d-md-block mr-3' style={{ fontSize: '12px' }}>Sort by</span>
                         <Form.Select className='mr-3' style={{ width: "220px" }}>
                             <option>Best Seller</option>
                         </Form.Select>

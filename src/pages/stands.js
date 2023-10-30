@@ -7,6 +7,9 @@ import Accordions from "../components/Accordion/Accordion";
 import ProductCard from "../components/product-card/ProductCard";
 import SubscribeSection from "../components/SecoundLast";
 import Footer from "../components/Footer";
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 
 const StandPage = () => {
   return (
@@ -15,70 +18,80 @@ const StandPage = () => {
       <IntervalCarousel />
       <OrderBar />
       <BreadCrum />
+      <div className="container dr-box d-block d-lg-none">
+        <DropdownButton
+          key={'Primary'}
+          id={`dropdown-variants-Primary`}
+          variant={'Primary'.toLowerCase()}
+          title={'Filter'}
+        >
+          <Accordions />
+        </DropdownButton>
+      </div>
       <div className="my-4 container">
         <div className="row">
-          <div className="col-3 sticky-top">
+          <div className="col-3 d-none d-lg-block">
             <Accordions />
           </div>
-          <div className="col-9 d-flex flex-wrap">
-            <div className="col-3 p-2">
+          <div className="col-12 col-lg-9 d-flex flex-wrap">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>
-            <div className="col-3 p-2">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>
-            <div className="col-3 p-2">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>
-            <div className="col-3 p-2">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>
-            <div className="col-3 p-2">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>
-            <div className="col-3 p-2">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>
-            <div className="col-3 p-2">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>
-            <div className="col-3 p-2">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>
-            <div className="col-3 p-2">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>{" "}
-            <div className="col-3 p-2">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>
-            <div className="col-3 p-2">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>
-            <div className="col-3 p-2">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>
-            <div className="col-3 p-2">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>
-            <div className="col-3 p-2">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>
-            <div className="col-3 p-2">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>
-            <div className="col-3 p-2">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>
-            <div className="col-3 p-2">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>
-            <div className="col-3 p-2">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>
-            <div className="col-3 p-2">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>
-            <div className="col-3 p-2">
+            <div className="col-6 col-md-4 col-lg-3 p-2">
               <ProductCard />
             </div>
           </div>

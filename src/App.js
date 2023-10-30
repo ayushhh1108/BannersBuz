@@ -44,16 +44,16 @@ function App() {
     <Routes>
       <Route path="/">
         <Route index element={<HomePage />} />
-        <Route path='/stands-and-displays' element={<StandPage />} />
-        <Route path='/photo-magnets' element={<PhotoMegnets />} />
-        <Route path='/orderstatus' element={<OrderStatus />} />
-        <Route path='/country' element={<Country />} />
-        <Route path='/reviews' element={<Reviews />} />
-        <Route path='/coupons' element={<Coupons />} />
-        <Route path='/privacy-policy' element={<PrivacyPolicy />} />
-        <Route path='/terms-and-conditions' element={<TermsandConditions />} />
-        <Route path='/contact-us' element={<Contactus />} />
-        <Route path='/faqs' element={<Faq />} />
+        <Route path='/stands-and-displays' element={<StandPage />} />                   // done
+        <Route path='/photo-magnets' element={<PhotoMegnets />} />                        // done
+        <Route path='/orderstatus' element={<OrderStatus />} />                           // done
+        <Route path='/country' element={<Country />} />                                         //done
+        <Route path='/reviews' element={<Reviews />} />                                      //done
+        <Route path='/coupons' element={<Coupons />} />                                       // done
+        <Route path='/privacy-policy' element={<PrivacyPolicy />} />                        // done
+        <Route path='/terms-and-conditions' element={<TermsandConditions />} />             //done
+        <Route path='/contact-us' element={<Contactus />} />                              // done
+        <Route path='/faqs' element={<Faq />} />                                            // done
         <Route path='/banner' element={<Banner />} />
         <Route path='/sampal-kit' element={<SampleKit />} />
         <Route path='/quickrfq' element={<Quickrfq />} />

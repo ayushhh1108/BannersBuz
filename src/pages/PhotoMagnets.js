@@ -18,6 +18,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { ProductBox } from "../components/product-box";
 import products from "../assets/468.jpg";
 import SubscribeSection from "../components/SecoundLast";
+import Accordion from 'react-bootstrap/Accordion';
 
 const PhotoMegnets = () => {
   const arrayOfTen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -33,10 +34,10 @@ const PhotoMegnets = () => {
         <OnlyBreadCrum />
         <div className="container-fluid">
           <div className="row">
-            <div className="col-4">
+            <div className=" col-12 col-md-5 col-lg-4">
               <ThumbsSlider />
             </div>
-            <div className="col-5">
+            <div className="col-12 col-md-7 col-lg-5">
               <h1>Photo Magnets</h1>
               <div className="d-flex flex-wrap align-items-center">
                 <div className="me-4 d-flex align-items-center">
@@ -53,15 +54,15 @@ const PhotoMegnets = () => {
                   <span>SKU : BBPTMT01</span>
                 </div>
               </div>
-              <div className="my-4 fancyCheck d-flex py-3" style={{ backgroundColor: '#f5f5f5' }}>
-                <div className="col-6">
+              <div className="my-4 fancyCheck d-flex flex-wrap py-3" style={{ backgroundColor: '#f5f5f5' }}>
+                <div className="col-12 col-sm-6">
                   <ul>
                     <li>Flexible magnetic sheet makes the photo magnets durable.</li>
                     <li>High-quality UV printing provides a bright finish.</li>
                     <li>Available in a varied range of sizes to meet your needs.</li>
                   </ul>
                 </div>
-                <div className="col-6">
+                <div className="col-12 col-sm-6">
                   <ul>
                     <li>Lightweight, the metal photo magnets are portable.</li>
                     <li>Installation is quick and simple, without the need for tools.</li>
@@ -76,7 +77,7 @@ const PhotoMegnets = () => {
                   overlay={renderTooltip}
                 ><button type="button" class="btn btn-light">?</button></OverlayTrigger>
               </div>
-              <div className="d-flex align-items-center my-4">
+              <div className="d-flex flex-wrap align-items-center my-4">
                 <span className='me-4'>Size (W X H)</span>
                 <Form.Select className='me-2' style={{ width: "120px" }}>
                   <option>3 x 3</option>
@@ -85,7 +86,7 @@ const PhotoMegnets = () => {
                   <option>ft</option>
                 </Form.Select>
               </div>
-              <div className="d-flex align-items-center my-4">
+              <div className="d-flex flex-wrap align-items-center my-4">
                 <span className='me-5'>Quantity</span>
                 <Form.Control
                   type="text"
@@ -97,32 +98,32 @@ const PhotoMegnets = () => {
               <p className="text-sm">Price per quantity discounts for Bulk orders</p>
               <div className="border">
                 <p className="px-2" style={{ backgroundColor: 'rgb(245, 245, 245)' }}>Save More on Bulk Orders</p>
-                <div className="d-flex justify-content-between mb-3">
-                  <div className="d-flex flex-column align-items-center"><p className="m-0 text-center">Min 2 for
+                <div className="d-flex justify-content-around justify-content-sm-between mb-3 flex-wrap flex-sm-nowrap">
+                  <div className="d-flex flex-column align-items-center px-2 px-sm-0"><p className="m-0 text-center">Min 2 for
                     $21.06/unit</p>
                     <span class="badge bg-success">Save 25%</span>
                   </div>
-                  <div className="d-flex flex-column align-items-center"><p className="m-0 text-center">Min 2 for
+                  <div className="d-flex flex-column align-items-center px-2 px-sm-0"><p className="m-0 text-center">Min 2 for
                     $21.06/unit</p>
                     <span class="badge bg-success">Save 25%</span>
                   </div>
-                  <div className="d-flex flex-column align-items-center"><p className="m-0 text-center">Min 2 for
+                  <div className="d-flex flex-column align-items-center px-2 px-sm-0"><p className="m-0 text-center">Min 2 for
                     $21.06/unit</p>
                     <span class="badge bg-success">Save 25%</span>
                   </div>
-                  <div className="d-flex flex-column align-items-center"><p className="m-0 text-center">Min 2 for
+                  <div className="d-flex flex-column align-items-center px-2 px-sm-0"><p className="m-0 text-center">Min 2 for
                     $21.06/unit</p>
                     <span class="badge bg-success">Save 25%</span>
                   </div>
-                  <div className="d-flex flex-column align-items-center"><p className="m-0 text-center">Min 2 for
+                  <div className="d-flex flex-column align-items-center px-2 px-sm-0"><p className="m-0 text-center">Min 2 for
                     $21.06/unit</p>
                     <span class="badge bg-success">Save 25%</span>
                   </div>
                 </div>
               </div>
               <hr className="hr" />
-              <div className="d-flex align-items-center my-4">
-                <span className='me-4 col-3'>Size (W X H)</span>
+              <div className="d-flex flex-wrap align-items-center my-4">
+                <span className='me-4 col-12 col-sm-3'>Size (W X H)</span>
                 <Form.Select className='me-2' style={{ width: "250px" }}>
                   <option>3 x 3</option>
                 </Form.Select><OverlayTrigger
@@ -132,8 +133,8 @@ const PhotoMegnets = () => {
                 ><button type="button" class="btn btn-light">?</button></OverlayTrigger>
 
               </div>
-              <div className="d-flex align-items-center my-4">
-                <span className='me-4 col-3'>Pantone + Color Bridge Coated (optional)</span>
+              <div className="d-flex flex-wrap align-items-center my-4">
+                <span className='me-4 col-12 col-sm-3'>Pantone + Color Bridge Coated (optional)</span>
                 <Form.Control
                   type="text" className='me-2'
                   style={{ width: "250px" }}
@@ -147,16 +148,49 @@ const PhotoMegnets = () => {
 
               </div>
               <hr className="hr" />
-              <div className="d-flex align-items-center my-4">
-                <span className='me-4 col-3'>Specific Instructions (optional)</span>
+              <div className="d-flex flex-wrap align-items-center my-4">
+                <span className='me-4 col-12 col-sm-3'>Specific Instructions (optional)</span>
                 <Form.Control className='me-2'
                   style={{ width: "250px" }}
                   as="textarea" rows={3}
                 />
 
               </div>
+              <div className="border d-block d-lg-none p-4 ">
+                <div className="text-center">
+                  <span className="text-decoration-line-through fw-bold ">$ 39.32</span>
+                  <h3>$ 23.43</h3>
+                </div>
+                <hr />
+                <Form.Check className="mb-2" type={'radio'} id={`check-api-radio`}>
+                  <Form.Check.Input type={'radio'} />
+                  <Form.Check.Label>Upload Artwork</Form.Check.Label>
+
+                  <div>Upload your designs and get the design proofing done</div>
+
+                </Form.Check>
+                <hr />
+                <Form.Check className="mb-2" type={'radio'} id={`check-api-radio`}>
+                  <Form.Check.Input type={'radio'} />
+                  <Form.Check.Label>Upload Artwork</Form.Check.Label>
+
+                  <div>Upload your designs and get the design proofing done</div>
+
+                </Form.Check>
+                <hr />
+                <Form.Check className="mb-2" type={'radio'} id={`check-api-radio`}>
+                  <Form.Check.Input type={'radio'} />
+                  <Form.Check.Label>Upload Artwork</Form.Check.Label>
+
+                  <div>Upload your designs and get the design proofing done</div>
+
+                </Form.Check>
+                <hr />
+                <button className="btn btn-primary w-100">UPLOAD ARTWORK & CHECKOUT</button>
+
+              </div>
             </div>
-            <div className="col-3">
+            <div className="col-3 d-none d-lg-block">
               <div className="border p-4 ">
                 <div className="text-center">
                   <span className="text-decoration-line-through fw-bold ">$ 39.32</span>
@@ -187,7 +221,7 @@ const PhotoMegnets = () => {
 
                 </Form.Check>
                 <hr />
-                <button className="btn btn-primary">UPLOAD ARTWORK & CHECKOUT</button>
+                <button className="btn btn-primary w-100">UPLOAD ARTWORK & CHECKOUT</button>
 
               </div>
             </div>
@@ -278,7 +312,7 @@ const PhotoMegnets = () => {
 
 
             </div>
-            <div className="col-12">
+            <div className="col-12 d-none d-md-block">
               <Nav variant="underline" defaultActiveKey="/home">
                 <Nav.Item>
                   <Nav.Link className="fs-5" href="/home">Description</Nav.Link>
@@ -308,6 +342,34 @@ const PhotoMegnets = () => {
               <p>To get a bulk discount, order&nbsp;refrigerator magnets in quantities of as little as 2 or over 500. Order according to your business needs and budgets, as well as the size of your company. Our bulk order service meets the needs of both large and small enterprises.</p>
               <p>Shop for Photo Magnets for your business online at BannerBuzz.&nbsp;</p>
             </div>
+
+            <div className="col-12  d-block d-md-none">
+              <Accordion>
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>Description</Accordion.Header>
+                  <Accordion.Body>
+                    <h2 className="mt-5"><strong>Decorate Metal Surfaces with Photo Magnets</strong></h2>
+                    <h2>High-Quality Photo Magnets are Durable and Customizable</h2>
+                    <p>Advertisements and promotions are excellent marketing tools to influence and inform customers about your business and products. Our picture magnets are a convenient way to market who you are and the services you provide. For effective communication of business messages, place the magnets on vehicles, refrigerators, lockers, and file cabinets to grab the attention of passersby.</p>
+                    <p>Constructed with flexible magnetic sheet film material with an 800-micron thickness, the refrigerator magnets are durable. Our magnets are ideal for both indoor and outdoor applications. The magnets are long-lasting and can withstand everyday wear and tear.</p>
+                    <p>The 600 DPI UV printing on the substrate ensures that every detail is visible from a distance. Full-color UV printing on the metal photo magnets produces vibrant prints with good light-fastness. Our high-quality prints attract the attention of passersby whilst making any metal surface appealing.</p>
+                    <p>Select from a wide range of sizes or tailor the size of the refrigerator magnets to meet your specific needs. You also have the option to add Pantone (PMS) Color Match. Customize the product to fulfill your brand's requirements by uploading your own artwork, designing online using the templates, or letting our designers create layouts for you.</p>
+                    <h2>Portable Photo Magnets offer Easy Installation</h2>
+                    <p>Lightweight material makes the picture magnets portable. Easy to remove, store and reapply, you can use them again and again. This helps boost the ROI, as the magnets are a onetime purchase.</p>
+                    <p>Made of material with magnetic properties, the metal photo magnets attach to steel and iron surfaces, such as refrigerators, vehicles, and lockers. The magnets are easy to place and do not require any additional installation tools.</p>
+                    <h2>Order Photo Magnets in Bulk</h2>
+                    <p>To get a bulk discount, order&nbsp;refrigerator magnets in quantities of as little as 2 or over 500. Order according to your business needs and budgets, as well as the size of your company. Our bulk order service meets the needs of both large and small enterprises.</p>
+                    <p>Shop for Photo Magnets for your business online at BannerBuzz.&nbsp;</p>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header>Product Specifications</Accordion.Header>
+                  <Accordion.Body>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </div>
+
 
             <div className="text-center py-5">
               <h2>Related Products</h2>
@@ -452,6 +514,22 @@ const PhotoMegnets = () => {
                   navigation={true}
                   modules={[Pagination, Navigation]}
                   className="mySwiper p-5"
+                  breakpoints={
+                    {
+                      300: {
+                        slidesPerView: 1,
+                        spaceBetween: 30,
+                      },
+                      500: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                      },
+                      700: {
+                        slidesPerView: 5,
+                        spaceBetween: 30,
+                      },
+                    }
+                  }
                 >
 
                   <SwiperSlide>

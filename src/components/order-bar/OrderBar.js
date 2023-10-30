@@ -6,7 +6,7 @@ function OrderBar() {
     return (
         <div className='container my-4 pt-3' style={{ maxWidth: "1200px" }}>
             <div className='row align-items-center'>
-                <div className='col-5 d-flex'>
+                <div className='col-12 mb-3 mb-lg-0 col-lg-5 d-flex'>
                     <div class="startBox"><span>Start</span>Your Order:</div>
                     <Dropdown className='input-box'>
                         <Dropdown.Toggle variant='info' className='w-100 d-flex justify-content-between align-items-center order-select' id="dropdown-basic">
@@ -20,7 +20,7 @@ function OrderBar() {
                         </Dropdown.Menu>
                     </Dropdown>
                 </div>
-                <div className='col-7 d-flex size-box align-items-center justify-content-between'>
+                <div className='col-12 col-lg-7 d-flex flex-wrap size-box align-items-center justify-content-between'>
                     <div className='d-flex'>
                         <span className='size'>Size (W X H)</span>
                         <Form.Select className='me-2' style={{ width: "120px" }}>
@@ -40,7 +40,7 @@ function OrderBar() {
                         />
                     </InputGroup>
 
-                    <div class="priceBox"><div class="pricesBox"><span class="priceLabel">Price</span><span class="oldPrice">$9.79</span><span class="newPrice">$6.99</span></div></div>
+                    <div class="priceBox"><div class="pricesBox my-3"><span class="priceLabel">Price</span><span class="oldPrice">$9.79</span><span class="newPrice">$6.99</span></div></div>
                     <button className='btn  btn-primary' >BUY NOW</button>
                 </div>
             </div>
