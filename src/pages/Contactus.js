@@ -44,7 +44,7 @@ const Contactus = () => {
                             <div class="find-widget">
                                 Program: <a href="#">Mon to Sat: 09:30 AM - 10.30 PM</a>
                             </div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14879.232056221374!2d72.86359727382654!3d21.19978430932327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04fae4c1324ed%3A0xb92305741dc247bd!2sUnity%20Hospital%2FUnity%20Trauma%20Center%20and%20ICU!5e0!3m2!1sen!2sin!4v1697738990463!5m2!1sen!2sin" width="600" height="450" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14879.232056221374!2d72.86359727382654!3d21.19978430932327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04fae4c1324ed%3A0xb92305741dc247bd!2sUnity%20Hospital%2FUnity%20Trauma%20Center%20and%20ICU!5e0!3m2!1sen!2sin!4v1697738990463!5m2!1sen!2sin" width="100%" className='map-box' style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
                             <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">

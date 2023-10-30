@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 
 function Accordions() {
     return (
-        <Accordion>
+        <Accordion className='top-0 sticky-top'>
             <Accordion.Item eventKey="0">
                 <Accordion.Header>Category</Accordion.Header>
                 <Accordion.Body>

@@ -263,7 +263,7 @@ a:hover {
   width: calc(100% - 115px);
 }
 .pricesBox {
-  width: auto;
+  width: 107px;
   float: left;
   height: auto;
   margin: 3px 0px 0px;
@@ -1314,6 +1314,14 @@ a:hover {
   color: #fff;
 }
 
+.map-box {
+  height: 450px;
+}
+
+.dr-box .dropdown-menu {
+  width: 300px;
+}
+
 @media (max-width: 576px) {
   .flex-sm-nowrap .step .step-icon-wrap::before,
   .flex-sm-nowrap .step .step-icon-wrap::after {
@@ -1353,26 +1361,29 @@ a:hover {
 /* header responsive  */
 
 @media only screen and (max-width: 1200px) {
-  .chat-now-box{
+  .chat-now-box {
     width: 30% !important;
   }
 }
 @media only screen and (max-width: 992px) {
-  .chat-now-box{
+  .chat-now-box {
     width: 50% !important;
   }
-  .header-first-sec{
+  .header-first-sec {
     width: 45%;
   }
-  .right-sideheader{
+  .right-sideheader {
     width: 55%;
   }
 }
 @media only screen and (max-width: 768px) {
-  .chatBox{
+  .chatBox {
     width: 40%;
   }
-  .callUsBox{
+  .callUsBox {
     width: 55%;
+  }
+  .map-box {
+    height: 300px;
   }
 }
