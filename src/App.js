@@ -56,7 +56,7 @@ function App() {
         <Route path='/faqs' element={<Faq />} />                                            // done
         <Route path='/banner' element={<Banner />} />                                       // done
         <Route path='/sampal-kit' element={<SampleKit />} />
-        <Route path='/quickrfq' element={<Quickrfq />} />
+        <Route path='/quickrfq' element={<Quickrfq />} />                                 //done
         <Route path='/dealer-registration' element={<DealerRegistration />} />
         <Route path='/dealerregistration' element={<DealerRegistrationForm />} />
         <Route path='/blogs' element={<BlogPage />} />
