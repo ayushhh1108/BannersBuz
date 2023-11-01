@@ -55,10 +55,10 @@ function App() {
         <Route path='/contact-us' element={<Contactus />} />                              // done
         <Route path='/faqs' element={<Faq />} />                                            // done
         <Route path='/banner' element={<Banner />} />                                       // done
-        <Route path='/sampal-kit' element={<SampleKit />} />
-        <Route path='/quickrfq' element={<Quickrfq />} />
-        <Route path='/dealer-registration' element={<DealerRegistration />} />
-        <Route path='/dealerregistration' element={<DealerRegistrationForm />} />
+        <Route path='/sampal-kit' element={<SampleKit />} />                              // done
+        <Route path='/quickrfq' element={<Quickrfq />} />                                 //done
+        <Route path='/dealer-registration' element={<DealerRegistration />} />            // done
+        <Route path='/dealerregistration' element={<DealerRegistrationForm />} />         // done
         <Route path='/blogs' element={<BlogPage />} />
         <Route path='/blogs/category' element={<BlogByCategoryPage />} />
         <Route path='/blogs/category/:id' element={<CategoryWithBlog />} />
@@ -77,7 +77,7 @@ function App() {
         <Route path='/customer/tickets' element={<ProfileSupportPage />} />
         <Route path='/customer/design' element={<ProfileDesignPage />} />
         <Route path='/checkout/cart' element={<CheckoutCartPage />} />
-        <Route path='/onepagecheckout' element={<OnePageCheckout />} />
+        <Route path='/onepagecheckout' element={<OnePageCheckout />} />                           // done
         <Route path='/checkout/success' element={<CheckoutSuccessPage />} />
         <Route path='/order/status' element={<OrdersStatusPage />} />
       </Route>

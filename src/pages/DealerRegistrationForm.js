@@ -11,28 +11,28 @@ const DealerRegistrationForm = () => {
     return (
         <div>
             <Header />
-            <div className='d-flex align-items-center'>
-                <div className='breadcrum-box p-3'>
+            <div className='d-flex align-items-center p-3'>
+                <div className='breadcrum-box '>
                     <span>Home</span>
                 </div>
                 <span className='breadcrum-color'>Dealer Registration</span>
             </div>
             <div className='container'>
-                <div className='text-center my-5'>
+                <div className='text-center my-0 my-md-5'>
                     <h1>Dealer Registration</h1> </div>
             </div>
 
-            <div className='py-5 px-5'>
+            <div className='py-2 py-md-5 px-2 px-md-5'>
                 <h5>Account Details</h5>
                 <hr />
-                <div className='col-6'>
+                <div className='col-12 col-md-8 col-lg-6'>
                     <Row className="mb-3">
-                        <Form.Group as={Col} controlId="formGridEmail">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridEmail">
                             <Form.Label>Email<span className="text-danger">*</span></Form.Label>
                             <Form.Control type="text" placeholder="Enter name" />
                         </Form.Group>
 
-                        <Form.Group as={Col} controlId="formGridPassword">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridPassword">
                             <Form.Label>Password<span className="text-danger">*</span></Form.Label>
                             <Form.Control type="text" placeholder="Enter Email" />
                         </Form.Group>
@@ -41,53 +41,53 @@ const DealerRegistrationForm = () => {
                 </div>
                 <h5 className='mt-5'>Company Details</h5>
                 <hr />
-                <div className='col-6'>
+                <div className='col-12 col-md-10 col-lg-6'>
                     <Row className="mb-3">
-                        <Form.Group as={Col} controlId="formGridEmail">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridEmail">
                             <Form.Label>Company/Individual Name<span className="text-danger">*</span></Form.Label>
                             <Form.Control type="text" placeholder="Enter name" />
                         </Form.Group>
 
-                        <Form.Group as={Col} controlId="formGridPassword">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridPassword">
                             <Form.Label>Company/Individual Phone Number<span className="text-danger">*</span></Form.Label>
                             <Form.Control type="text" placeholder="Enter Email" />
                         </Form.Group>
                     </Row>
                     <Row className="mb-3">
-                        <Form.Group as={Col} controlId="formGridEmail">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridEmail">
                             <Form.Label>Position<span className="text-danger">*</span></Form.Label>
                             <Form.Control type="text" placeholder="Enter name" />
                         </Form.Group>
 
-                        <Form.Group as={Col} controlId="formGridPassword">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridPassword">
                             <Form.Label>WebSite<span className="text-danger">*</span></Form.Label>
                             <Form.Control type="text" placeholder="Enter Email" />
                         </Form.Group>
                     </Row>
                     <Row className="mb-3">
-                        <Form.Group as={Col} controlId="formGridEmail">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridEmail">
                             <Form.Label>Mobile<span className="text-danger">*</span></Form.Label>
                             <Form.Control type="text" placeholder="Enter name" />
                         </Form.Group>
                     </Row>
                     <Row className="mb-3">
-                        <Form.Group as={Col} controlId="formGridEmail">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridEmail">
                             <Form.Label>First Name<span className="text-danger">*</span></Form.Label>
                             <Form.Control type="text" placeholder="Enter name" />
                         </Form.Group>
 
-                        <Form.Group as={Col} controlId="formGridPassword">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridPassword">
                             <Form.Label>Last Name<span className="text-danger">*</span></Form.Label>
                             <Form.Control type="text" placeholder="Enter Email" />
                         </Form.Group>
                     </Row>
                     <Row className="mb-3">
-                        <Form.Group as={Col} controlId="formGridEmail">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridEmail">
                             <Form.Label>Sales Certificate<span className="text-danger">*</span></Form.Label>
                             <button className='btn btn-primary d-block'>Select Files</button>
                         </Form.Group>
 
-                        <Form.Group as={Col} controlId="formGridPassword">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridPassword">
                             <Form.Label>Business License<span className="text-danger">*</span></Form.Label>
                             <button className='btn btn-primary d-block'>Select Files</button>
 
@@ -98,26 +98,26 @@ const DealerRegistrationForm = () => {
 
                 <h5 className='mt-5'>Billing Address</h5>
                 <hr />
-                <div className='col-6'>
+                <div className='col-12 col-md-10 col-lg-6'>
                     <Row className="mb-3">
-                        <Form.Group as={Col} controlId="formGridEmail">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridEmail">
                             <Form.Label>Address<span className="text-danger">*</span></Form.Label>
                             <Form.Control type="text" placeholder="Enter name" />
                         </Form.Group>
 
-                        <Form.Group as={Col} controlId="formGridPassword">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridPassword">
                             <Form.Label>Zip code<span className="text-danger">*</span></Form.Label>
                             <Form.Control type="text" placeholder="Enter Email" />
                         </Form.Group>
                     </Row>
 
                     <Row className="mb-3">
-                        <Form.Group as={Col} controlId="formGridEmail">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridEmail">
                             <Form.Label>City<span className="text-danger">*</span></Form.Label>
                             <Form.Control type="text" placeholder="Enter name" />
                         </Form.Group>
 
-                        <Form.Group as={Col} controlId="formGridPassword">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridPassword">
                             <Form.Label>state<span className="text-danger">*</span></Form.Label>
                             <Form.Select >
                                 <option>3 x 3</option>
@@ -125,14 +125,14 @@ const DealerRegistrationForm = () => {
                         </Form.Group>
                     </Row>
                     <Row className="mb-3">
-                        <Form.Group as={Col} controlId="formGridEmail">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridEmail">
                             <Form.Label>Country<span className="text-danger">*</span></Form.Label>
                             <Form.Select >
                                 <option>3 x 3</option>
                             </Form.Select>
                         </Form.Group>
 
-                        <Form.Group as={Col} controlId="formGridPassword">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridPassword">
 
                         </Form.Group>
                     </Row>
@@ -142,9 +142,9 @@ const DealerRegistrationForm = () => {
 
                 <h5 className='mt-5'>Industry Details</h5>
                 <hr />
-                <div className='col-6'>
+                <div className='col-12 col-md-10 col-lg-6'>
                     <Row className="mb-3">
-                        <Form.Group as={Col} controlId="formGridEmail">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridEmail">
                             <Form.Label>
                                 Retail or Resellers<span className="text-danger">*</span></Form.Label>
                             <Form.Select >
@@ -152,7 +152,7 @@ const DealerRegistrationForm = () => {
                             </Form.Select>
                         </Form.Group>
 
-                        <Form.Group as={Col} controlId="formGridPassword">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridPassword">
                             <Form.Label>Industry Type<span className="text-danger">*</span></Form.Label>
                             <Form.Select >
                                 <option>3 x 3</option>
@@ -161,13 +161,13 @@ const DealerRegistrationForm = () => {
                     </Row>
 
                     <Row className="mb-3">
-                        <Form.Group as={Col} controlId="formGridPassword">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridPassword">
                             <Form.Label>How did you find us?<span className="text-danger">*</span></Form.Label>
                             <Form.Select >
                                 <option>3 x 3</option>
                             </Form.Select>
                         </Form.Group>
-                        <Form.Group as={Col} controlId="formGridEmail">
+                        <Form.Group className='col-12 col-sm-6' controlId="formGridEmail">
                             <Form.Label>Company Tax ID
                                 <span className="text-danger">*</span></Form.Label>
                             <Form.Control type="text" placeholder="Enter name" />
