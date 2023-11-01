@@ -1340,17 +1340,19 @@ a:hover {
   }
 }
 
-@media (max-width: 768px) {
-  .flex-md-nowrap .step .step-icon-wrap::before,
-  .flex-md-nowrap .step .step-icon-wrap::after {
-    display: none;
-  }
-}
-
 @media (max-width: 991px) {
   .flex-lg-nowrap .step .step-icon-wrap::before,
   .flex-lg-nowrap .step .step-icon-wrap::after {
     display: none;
+  }
+  .w-card {
+    width: 100%;
+  }
+  .w-man-1 {
+    width: 60% !important;
+  }
+  .w-man-2 {
+    width: 40% !important;
   }
 }
 
@@ -1387,7 +1389,16 @@ a:hover {
     width: 55%;
   }
 }
+
 @media only screen and (max-width: 768px) {
+  .flex-md-nowrap .step .step-icon-wrap::before,
+  .flex-md-nowrap .step .step-icon-wrap::after {
+    display: none;
+  }
+  .w-man-1,
+  .w-man-2 {
+    width: 100% !important;
+  }
   .chatBox {
     width: 40%;
   }

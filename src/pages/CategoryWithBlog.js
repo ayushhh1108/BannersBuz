@@ -12,8 +12,8 @@ const CategoryWithBlog = () => {
   return (
     <div>
       <Header upperLineNone={true} />
-      <Container className="my-5 w-1100 d-flex">
-        <div className="w-70 d-flex justify-content-between flex-wrap height-fitcontant">
+      <Container className="my-5 container d-flex flex-wrap">
+        <div className="w-70 w-man-1 d-flex justify-content-between flex-wrap height-fitcontant">
           <div className="w-100">
             <span className="d-inline f-size-12">BANNERBUZZ</span>
             <p className="d-inline pl-1 sub-gray-text f-size-12">
@@ -85,7 +85,7 @@ const CategoryWithBlog = () => {
             <p className="text-center">Comments are closed.</p>
           </div>
         </div>
-        <div className="w-30">
+        <div className="w-30 w-man-2">
           <BlogSideBaar shopByCategory={true} />
         </div>
       </Container>

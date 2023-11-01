@@ -3,7 +3,7 @@ import { Pagination } from "react-bootstrap";
 function Paginationn() {
   return (
     <div className="mx-auto">
-      <Pagination className="mx-auto my-4">
+      <Pagination className="mx-auto my-4 flex-wrap">
         <Pagination.First />
         <Pagination.Prev />
         <Pagination.Item>{1}</Pagination.Item>

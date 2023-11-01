@@ -62,7 +62,6 @@ const TipsSuggetionCard = ({ width }) => {
       className={"cursor-pointer text-center " + width}
       style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}
     >
-      {console.log(width, "width")}
       <div className={"text-center pt-3"}>
         <img src={tipsImg} alt="alt" className="w-90" />
       </div>

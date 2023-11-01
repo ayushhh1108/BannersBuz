@@ -59,9 +59,9 @@ function App() {
         <Route path='/quickrfq' element={<Quickrfq />} />                                 //done
         <Route path='/dealer-registration' element={<DealerRegistration />} />            // done
         <Route path='/dealerregistration' element={<DealerRegistrationForm />} />         // done
-        <Route path='/blogs' element={<BlogPage />} />
-        <Route path='/blogs/category' element={<BlogByCategoryPage />} />
-        <Route path='/blogs/category/:id' element={<CategoryWithBlog />} />
+        <Route path='/blogs' element={<BlogPage />} />                                      // done
+        <Route path='/blogs/category' element={<BlogByCategoryPage />} />                     // done
+        <Route path='/blogs/category/:id' element={<CategoryWithBlog />} />                      // done
         <Route path='/affiliate-program' element={<AffiliateProgram />} />
         <Route path='/local' element={<LocalStoresPage />} />
         <Route path='/free-charity-banner' element={<CharityBannerPage />} />
