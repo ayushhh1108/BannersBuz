@@ -487,6 +487,9 @@ a:hover {
   height: 32px;
   display: inline-block;
 }
+.review-list ul {
+  padding: 0;
+}
 .review-list ul li .left {
   flex: none;
   max-width: none;
@@ -1332,10 +1335,18 @@ a:hover {
   width: 300px;
 }
 
+.input-qes {
+  width: 40%;
+  min-width: 250px;
+}
+
 @media (max-width: 576px) {
   .flex-sm-nowrap .step .step-icon-wrap::before,
   .flex-sm-nowrap .step .step-icon-wrap::after {
     display: none;
+  }
+  .email-ad {
+    font-size: 18px;
   }
 }
 
@@ -1390,14 +1401,11 @@ a:hover {
   }
 }
 @media only screen and (max-width: 768px) {
-  .chat-now-box {
-    width: 100% !important;
-  }
   .chatBox {
     width: 40%;
   }
   .callUsBox {
-    width: 55%;
+    width: 70% !important;
   }
   .map-box {
     height: 300px;
@@ -1416,5 +1424,12 @@ a:hover {
   }
   .Subscribe-box .w-45{
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .input-qes {
+    width: 100%;
+    min-width: auto;
   }
 }

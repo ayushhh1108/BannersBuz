@@ -35,10 +35,12 @@ const Banner = () => {
                 <OnlyBreadCrum />
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-5">
-                            <ThumbsSlider />
+                        <div className="col-12 col-md-5">
+                            <div className="position-sticky top-0">
+                                <ThumbsSlider />
+                            </div>
                         </div>
-                        <div className="col-7">
+                        <div className="col-12 col-md-7">
                             <h1>Photo Magnets</h1>
                             <div className="d-flex flex-wrap align-items-center">
                                 <div className="me-4 d-flex align-items-center">
@@ -160,6 +162,22 @@ const Banner = () => {
                                     navigation={true}
                                     modules={[Pagination, Navigation]}
                                     className="mySwiper p-5"
+                                    breakpoints={
+                                        {
+                                            300: {
+                                                slidesPerView: 2,
+                                                spaceBetween: 30,
+                                            },
+                                            700: {
+                                                slidesPerView: 3,
+                                                spaceBetween: 30,
+                                            },
+                                            1200: {
+                                                slidesPerView: 5,
+                                                spaceBetween: 30,
+                                            },
+                                        }
+                                    }
                                 >
 
                                     <SwiperSlide>
@@ -219,10 +237,6 @@ const Banner = () => {
                                             <span className="price-box">$ 0.00</span>
                                         </div>
                                     </SwiperSlide>
-
-
-
-
                                 </Swiper>
                             </div>
                             <p className="fw-bold mt-5 mb-4">Lamination
@@ -266,7 +280,7 @@ const Banner = () => {
                                 as="textarea" rows={3}
                             />
 
-                            <div className="d-flex align-items-center justify-content-between flex-wrap border p-3 my-3">
+                            <div className="d-flex align-items-center justify-content-between flex-wrap border p-3 my-3 bg-white position-sticky bottom-0" style={{ zIndex: 12000 }}>
                                 <div className="d-flex align-items-center flex-wrap">
                                     <p className="m-0 me-4">$ 6.99</p>
                                     <div className="me-4">
@@ -279,13 +293,13 @@ const Banner = () => {
                                         <button class="plus" aria-label="Increase">+</button>
                                     </div>
                                 </div>
-                                <button className="btn btn-primary">Select Design Method</button>
+                                <button className="btn btn-primary mt-2 mt-sm-0">Select Design Method</button>
 
                             </div>
 
 
                         </div>
-                        <div className="px-5">
+                        <div className="px-2 px-sm-5">
                             <Nav variant="tabs" defaultActiveKey="/home">
                                 <Nav.Item>
                                     <Nav.Link href="/home">Description</Nav.Link>
@@ -299,7 +313,7 @@ const Banner = () => {
                             </Nav>
                             <div style={{ background: '#fafafa' }}>
                                 <div className=" mt-4 right">
-                                    <img src="https://cdn.bannerbuzz.com/media/wysiwyg/new-description/custom-vinyl-banner.png" width='520px' className="float-start" alt="" />
+                                    <img src="https://cdn.bannerbuzz.com/media/wysiwyg/new-description/custom-vinyl-banner.png" width='520px' className="float-start mw-100" alt="" />
                                     <h2>Buy Premium Custom Vinyl Banners to Maximize Your Brand Visibility</h2>
                                     <p>From grand openings to store sales, you can advertise your cause with our versatile vinyl banners. We offer a huge inventory of pre-designed <strong>custom vinyl banners</strong> to suit your advertising needs. You can get the most out of these banners through custom sizing and personalizing. Get creative and create a persistent impression on your potential customers now.</p>
                                     <p>Our business banners can last for a long time as they are made of sturdy material. They are durable enough to withstand outdoor elements over a period. We make them with high-quality PVC flex. Their graphic weight is 13 Oz and becomes 16 Oz after upgrading to a UV-resistant print.</p>
@@ -333,7 +347,7 @@ const Banner = () => {
                             <div className="my-5">
                                 <h2>Printing Options</h2>
                                 <div className="col-12 d-flex flex-wrap mt-5">
-                                    <div className="col-6 d-flex my-3">
+                                    <div className="col-12 col-lg-6 flex-wrap flex-sm-nowrap d-flex my-3">
                                         <img src="https://cdn.bannerbuzz.com/media/wysiwyg/new-description/single-sided-banner.jpg" width='160px' className="rounded me-4" height='160px' />
                                         <div>
                                             <h4>Single Sided Printing</h4>
@@ -341,14 +355,14 @@ const Banner = () => {
                                         </div>
                                     </div>
 
-                                    <div className="col-6 d-flex my-3">
+                                    <div className="col-12 col-lg-6 flex-wrap flex-sm-nowrap d-flex my-3">
                                         <img src="https://cdn.bannerbuzz.com/media/wysiwyg/new-description/single-sided-banner.jpg" width='160px' className="rounded me-4" height='160px' />
                                         <div>
                                             <h4>Single Sided Printing</h4>
                                             <p>The standard single-sided printing option prints on one side, with white on the front and gray on the back.</p>
                                         </div>
                                     </div>
-                                    <div className="col-6 d-flex my-3">
+                                    <div className="col-12 col-lg-6 flex-wrap flex-sm-nowrap d-flex my-3">
                                         <img src="https://cdn.bannerbuzz.com/media/wysiwyg/new-description/single-sided-banner.jpg" width='160px' className="rounded me-4" height='160px' />
                                         <div>
                                             <h4>Single Sided Printing</h4>
@@ -363,7 +377,7 @@ const Banner = () => {
                             <div className="my-5">
                                 <h2>Customer Reviews</h2>
                                 <div className="d-flex justify-content-between flex-wrap">
-                                    <div className="col-5">
+                                    <div className="col-md-5 col-12">
                                         <div class="inner">
                                             <div class="rating">
                                                 <span class="rating-num">4.0</span>
@@ -432,7 +446,7 @@ const Banner = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-7 d-flex flex-column align-items-end">
+                                    <div className="col-12 col-md-7 d-flex flex-column align-items-end">
                                         <button className="btn btn-light my-2"><img src={CreateChatIcon} /> Write a Review</button>
                                         <button className="btn btn-light"><img src={ChatIcon} /> ask a Question</button>
                                     </div>
@@ -725,7 +739,7 @@ const Banner = () => {
                                         <Form.Label>Email<span className="text-danger">*</span></Form.Label>
                                         <Form.Control type="text" placeholder="Email" />
                                     </Form.Group>
-                                    <Form.Group className="mb-3 me-2" style={{ width: '40%' }} controlId="formGroupEmail">
+                                    <Form.Group className="mb-3 me-2 input-qes" controlId="formGroupEmail">
                                         <Form.Label>What do you want to know?<span className="text-danger">*</span></Form.Label>
                                         <Form.Control type="text" placeholder="name" />
                                     </Form.Group>
@@ -744,10 +758,30 @@ const Banner = () => {
                                         navigation={true}
                                         modules={[Pagination, Navigation]}
                                         className="mySwiper p-5"
+                                        breakpoints={
+                                            {
+                                                300: {
+                                                    slidesPerView: 1,
+                                                    spaceBetween: 30,
+                                                },
+                                                700: {
+                                                    slidesPerView: 2,
+                                                    spaceBetween: 30,
+                                                },
+                                                900: {
+                                                    slidesPerView: 3,
+                                                    spaceBetween: 30,
+                                                },
+                                                1200: {
+                                                    slidesPerView: 5,
+                                                    spaceBetween: 30,
+                                                },
+                                            }
+                                        }
                                     >
 
                                         <SwiperSlide>
-                                            <div className=" rounded border  suggest-box">
+                                            <div className=" rounded border  suggest-box mx-auto">
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
                                                     <div className="img-container w-100 px-5 py-3">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />
@@ -774,7 +808,7 @@ const Banner = () => {
                                             </div>
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <div className=" rounded border  suggest-box">
+                                            <div className=" rounded border  suggest-box mx-auto">
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
                                                     <div className="img-container w-100 px-5 py-3">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />
@@ -801,7 +835,7 @@ const Banner = () => {
                                             </div>
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <div className=" rounded border  suggest-box">
+                                            <div className=" rounded border  suggest-box mx-auto">
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
                                                     <div className="img-container w-100 px-5 py-3">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />
@@ -828,7 +862,7 @@ const Banner = () => {
                                             </div>
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <div className=" rounded border  suggest-box">
+                                            <div className=" rounded border  suggest-box mx-auto">
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
                                                     <div className="img-container w-100 px-5 py-3">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />
@@ -855,7 +889,7 @@ const Banner = () => {
                                             </div>
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <div className=" rounded border  suggest-box">
+                                            <div className=" rounded border  suggest-box mx-auto">
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
                                                     <div className="img-container w-100 px-5 py-3">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />

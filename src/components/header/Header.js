@@ -15,16 +15,7 @@ import logo from "../../assets/logo.svg";
 import searchIcon from "../../assets/search.svg";
 import "../../css/style.css";
 import CreatableSelect from "react-select/creatable";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Offcanvas from "react-bootstrap/Offcanvas";
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import { Modal } from "react-bootstrap";
 import CartModel from "../Model";
-
 const Header = ({ upperLineNone, categoryNone, searchNone }) => {
   const [cart, setCart] = useState(false);
   const handleClose = () => {
@@ -276,7 +267,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
         <div>
           <img src={logo} className="" alt="logo" />
         </div>
-        <div className="search-select-box d-none d-md-flex align-items-center">
+        <div className="search-select-box d-flex align-items-center">
           {!searchNone ? (
             <CreatableSelect
               components={{

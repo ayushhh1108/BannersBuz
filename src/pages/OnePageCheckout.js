@@ -20,10 +20,10 @@ const OnePageCheckout = () => {
                 <QualityBar />
                 <div className="container">
                     <div className="row">
-                        <div className="col-8">
+                        <div className="col-12 col-lg-8">
                             <div className="py-5">
                                 <h5 className="fs-6 mb-4">ACCOUNT DETAILS</h5>
-                                <p>Welcome<span className="fw-bold">, Akshil</span></p>
+                                <p>Welcome<span className="fw-bold">, Test</span></p>
                                 <p className="mb-0">Email</p>
                                 <p className="text-primary">test@gmail.com</p>
                             </div>
@@ -129,28 +129,28 @@ const OnePageCheckout = () => {
                                 <h5 className="fs-6 mb-4">SHIPPING METHOD</h5>
 
                                 <div className="d-flex flex-wrap">
-                                    <div className="col-6 d-flex justify-content-between align-items-center border p-2 px-3 ">
+                                    <div className="col-12 col-sm-6 d-flex justify-content-between align-items-center border p-2 px-3 ">
                                         <div>
                                             <p className="m-0">Priority Overnight</p>
                                             <p className="m-0">Tue, Oct 31st</p>
                                         </div>
                                         <div>$48.52</div>
                                     </div>
-                                    <div className="col-6 d-flex justify-content-between align-items-center border p-2 px-3 ">
+                                    <div className="col-12 col-sm-6 d-flex justify-content-between align-items-center border p-2 px-3 ">
                                         <div>
                                             <p className="m-0">Priority Overnight</p>
                                             <p className="m-0">Tue, Oct 31st</p>
                                         </div>
                                         <div>$48.52</div>
                                     </div>
-                                    <div className="col-6 d-flex justify-content-between align-items-center border p-2 px-3 ">
+                                    <div className="col-12 col-sm-6 d-flex justify-content-between align-items-center border p-2 px-3 ">
                                         <div>
                                             <p className="m-0">Priority Overnight</p>
                                             <p className="m-0">Tue, Oct 31st</p>
                                         </div>
                                         <div>$48.52</div>
                                     </div>
-                                    <div className="col-6 d-flex justify-content-between align-items-center border p-2 px-3 ">
+                                    <div className="col-12 col-sm-6 d-flex justify-content-between align-items-center border p-2 px-3 ">
                                         <div>
                                             <p className="m-0">Priority Overnight</p>
                                             <p className="m-0">Tue, Oct 31st</p>
@@ -228,7 +228,7 @@ const OnePageCheckout = () => {
                                 </Tabs>
                             </div>
                         </div>
-                        <div className="col-4 py-5" >
+                        <div className="col-12 col-lg-4 py-5" >
                             <div className="p-3" style={{ backgroundColor: "aliceblue" }}>
                                 <h5 className="fs-6 mb-4">ORDER SUMMARY
                                 </h5>
