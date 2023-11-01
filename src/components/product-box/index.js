@@ -62,7 +62,6 @@ const TipsSuggetionCard = ({ width }) => {
       className={"cursor-pointer text-center " + width}
       style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}
     >
-      {console.log(width, "width")}
       <div className={"text-center pt-3"}>
         <img src={tipsImg} alt="alt" className="w-90" />
       </div>
@@ -168,10 +167,10 @@ const SocialMediaShareBox = () => {
   );
 };
 
-const CartItemBox = () => {
+const CartItemBox = ({cartModel}) => {
   return (
     <div className="card rounded-3 mb-4">
-      <div className="card-body p-3">
+      <div className="card-body p-3">{console.log(cartModel,"cartModel")}
         <div className="row d-flex justify-content-between align-items-center">
           <div className="col-md-2 col-lg-2 col-xl-2">
             <img
@@ -196,7 +195,7 @@ const CartItemBox = () => {
                 Patterns: 1 Logo Basic
               </span>
             </p>
-            <table className="w-100 f-size-12">
+            {!cartModel?<table className="w-100 f-size-12">
               <tr>
                 <th>Qty:</th>
                 <td>2 - 5</td>
@@ -213,7 +212,7 @@ const CartItemBox = () => {
                 <td>$50.53</td>
                 <td>$200.53</td>
               </tr>
-            </table>
+            </table>:""}
           </div>
           <div className="col-md-2 col-lg-2 col-xl-2 d-flex flex-wrap justify-content-center">
             <p className="w-100 text-center mb-2">Qty</p>

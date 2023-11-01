@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import usa from "../../assets/usa.svg";
 import account from "../../assets/account.svg";
@@ -15,23 +15,118 @@ import logo from "../../assets/logo.svg";
 import searchIcon from "../../assets/search.svg";
 import "../../css/style.css";
 import CreatableSelect from "react-select/creatable";
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
+import { Modal } from "react-bootstrap";
+import CartModel from "../Model";
 
 const Header = ({ upperLineNone, categoryNone, searchNone }) => {
+  const [cart, setCart] = useState(false);
+  const handleClose = () => {
+    setCart(false);
+  };
+  const menuItems = [
+    "Banners",
+    "Stands & Displays",
+    "Table Covers & Displays",
+    "Custom Flags",
+    "Compliance Signs",
+    "Signs & Decals",
+    "Clothing",
+    "Marketing Materials",
+    "Accessories",
+  ];
+  const CategoryData = [
+    {
+      category: "Category 1",
+      subcategories: [
+        "Subcategory 1.1",
+        "Subcategory 1.2",
+        "Subcategory 1.3",
+        "Subcategory 1.4",
+        "Subcategory 1.5",
+      ],
+    },
+    {
+      category: "Category 1",
+      subcategories: [
+        "Subcategory 1.1",
+        "Subcategory 1.2",
+        "Subcategory 1.3",
+        "Subcategory 1.4",
+        "Subcategory 1.5",
+      ],
+    },
+    {
+      category: "Category 1",
+      subcategories: [
+        "Subcategory 1.1",
+        "Subcategory 1.2",
+        "Subcategory 1.3",
+        "Subcategory 1.4",
+        "Subcategory 1.5",
+      ],
+    },
+    {
+      category: "Category 2",
+      subcategories: [
+        "Subcategory 2.1",
+        "Subcategory 2.2",
+        "Subcategory 2.3",
+        "Subcategory 2.4",
+        "Subcategory 2.5",
+      ],
+    },
+    {
+      category: "Category 2",
+      subcategories: [
+        "Subcategory 2.1",
+        "Subcategory 2.2",
+        "Subcategory 2.3",
+        "Subcategory 2.4",
+        "Subcategory 2.5",
+      ],
+    },
+    {
+      category: "Category 2",
+      subcategories: [
+        "Subcategory 2.1",
+        "Subcategory 2.2",
+        "Subcategory 2.3",
+        "Subcategory 2.4",
+        "Subcategory 2.5",
+      ],
+    },
+    {
+      category: "Category 3",
+      subcategories: [
+        "Subcategory 3.1",
+        "Subcategory 3.2",
+        "Subcategory 3.3",
+        "Subcategory 3.4",
+        "Subcategory 3.5",
+      ],
+    },
+  ];
   return (
     <header>
       {!upperLineNone ? (
         <div className="topbar d-flex justify-content-between">
           <div className="toppbar_left d-flex align-items-center header-first-sec">
-            <p className="mb-0 free-shiping f-size-13">
-              Free Super Saver shipping for orders over $99.00
-            </p>
+            <Link to="" className="text-muted font-size-13">
+              {" "}
+              <img
+                src={order_track}
+                alt="order-tracking"
+                className="tracking-png"
+              />{" "}
+              Order Tracking
+            </Link>
             <div className="quick_links">
               <div className="dropdown show">
                 <Link
@@ -49,13 +144,13 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
                   className="dropdown-menu font-size-13"
                   aria-labelledby="dropdownMenuLink"
                 >
-                  <Link className="dropdown-item" to="#">
+                  <Link className="dropdown-item px-2" to="#">
                     Action
                   </Link>
-                  <Link className="dropdown-item" to="#">
+                  <Link className="dropdown-item px-2" to="#">
                     Another action
                   </Link>
-                  <Link className="dropdown-item" to="#">
+                  <Link className="dropdown-item px-2" to="#">
                     Something else here
                   </Link>
                 </div>
@@ -63,21 +158,43 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
             </div>
           </div>
           <div className="topbar_right d-flex font-size-13 right-sideheader w-46">
-            <Link to="" className="text-muted">
-              {" "}
-              <img
-                src={order_track}
-                alt="order-tracking"
-                className="tracking-png"
-              />{" "}
-              Order Tracking
-            </Link>
-            <Link to="" className="text-muted">
+            <Link
+              className="dropdown-toggle text-muted font-size-13"
+              to="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
               {" "}
               <img src={account} alt="account" className="profile-png" /> Hi,
               Vraj
             </Link>
-            <Link to="" className="hover_orange text-muted">
+            <div
+              className="dropdown-menu font-size-13 py-0"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <Link className="dropdown-item px-3" to="#">
+                My Account
+              </Link>
+              <Link className="dropdown-item px-3" to="#">
+                My design
+              </Link>
+              <Link
+                className="dropdown-item px-3 bg-secondary text-light"
+                to="#"
+              >
+                Logout
+              </Link>
+            </div>
+            <Link
+              to=""
+              className="hover_orange text-muted"
+              onClick={() => {
+                setCart(true);
+              }}
+            >
               {" "}
               <img src={items} alt="items" className="items-png" /> Item(s){" "}
               <span>$0.00</span>{" "}
@@ -180,12 +297,8 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
             ""
           )}
         </div>
-        <div className="d-none d-md-flex w-25 justify-content-around chat-now-box">
-          <div className="d-flex justify-content-between align-items-center w-35 chatBox">
-            <img src={chat} alt="chat" className="chat-now connect" />
-            <span className="small-sub-text">Chat now</span>
-          </div>
-          <div className="d-flex justify-content-between align-items-center w-45 callUsBox">
+        <div className="d-none d-md-flex w-20 justify-content-around chat-now-box">
+          <div className="d-flex justify-content-between align-items-center w-50 callUsBox">
             <img src={callUs} alt="callUs" className="call-us connect" />
             <span className="small-sub-text">
               Call us
@@ -193,50 +306,44 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
             </span>
           </div>
         </div>
-
-        {/* <Navbar key={false} expand={false} className="bg-body-tertiary mb-3">
-          <Container fluid>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${false}`} />
-            <Navbar.Offcanvas
-              id={`offcanvasNavbar-expand-${false}`}
-              aria-labelledby={`offcanvasNavbarLabel-expand-${false}`}
-              placement="end"
-            >
-              <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Link</Nav.Link>
-                  <NavDropdown
-                    title="Dropdown"
-                    id={`offcanvasNavbarDropdown-expand-${false}`}
-                  >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    </NavDropdown.Item>
-                  </NavDropdown>
-                </Nav>
-
-              </Offcanvas.Body>
-            </Navbar.Offcanvas>
-          </Container>
-        </Navbar> */}
       </div>
-      {!categoryNone && <div className="main-navbar d-none d-md-flex navbar-color justify-content-around">
-        <div className="prl-2 nav-item"> Banners </div>
-        <div className="prl-2 nav-item"> Stands & Displays </div>
-        <div className="prl-2 nav-item"> Table Covers & Displays </div>
-        <div className="prl-2 nav-item"> Custom Flags </div>
-        <div className="prl-2 nav-item"> Compliance Signs </div>
-        <div className="prl-2 nav-item"> Signs & Decals </div>
-        <div className="prl-2 nav-item"> Clothing </div>
-        <div className="prl-2 nav-item"> Marketing Materials </div>
-        <div className="prl-2 nav-item"> Accessories </div>
-      </div>}
+      {!categoryNone && (
+        <div className="main-navbar d-none d-md-flex navbar-color justify-content-around">
+          {menuItems.map((item) => (
+            <>
+              <Link
+                className="dropdown-toggle text-light d-flex align-items-center"
+                to="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <div className="prl-2 nav-item cursor-pointer">{item}</div>
+              </Link>
+              <div
+                className="dropdown-menu font-size-13 p-2 w-65"
+                aria-labelledby="dropdownMenuLink"
+              >
+                <div className="w-100 d-flex flex-wrap">
+                  {CategoryData.map((i) => (
+                    <div className="w-20 py-2">
+                      <p className="px-3 py-1 mb-0 text-center d-flex justify-content-between cursor-pointer f-size-16 text-primary">
+                        {i.category}
+                      </p>
+                      {i.subcategories.map((sub) => (
+                        <p className="text-secondary mb-0 px-3">{sub}</p>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </>
+          ))}
+        </div>
+      )}
+      <CartModel open={cart} handleClose={handleClose} />
     </header>
   );
 };

@@ -167,13 +167,13 @@ a:hover {
   width: 16px;
 }
 .header-first-sec {
-  width: 34%;
+  width: 18%;
   justify-content: space-between;
   align-items: center;
   padding: 4px 0px;
 }
 .right-sideheader {
-  width: 45%;
+  width: 30%;
   justify-content: space-around;
   align-items: center;
   color: #6c757d;
@@ -199,7 +199,7 @@ a:hover {
   justify-content: space-between;
 }
 .search-select-box {
-  width: 37%;
+  width: 55%;
 }
 .connect {
   width: 42px;
@@ -226,6 +226,16 @@ a:hover {
 .nav-item {
   transition: 1s;
 }
+.nav-category{
+  position: relative;
+}
+.nav-category-menu{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+}
+
 .Carousel-box .carousel-indicators {
   bottom: -55px;
 }
@@ -1367,7 +1377,7 @@ a:hover {
 }
 @media only screen and (max-width: 992px) {
   .chat-now-box {
-    width: 50% !important;
+    width: 43% !important;
   }
   .header-first-sec {
     width: 45%;
@@ -1375,8 +1385,14 @@ a:hover {
   .right-sideheader {
     width: 55%;
   }
+  .main-navbar{
+    overflow-x: scroll;
+  }
 }
 @media only screen and (max-width: 768px) {
+  .chat-now-box {
+    width: 100% !important;
+  }
   .chatBox {
     width: 40%;
   }
@@ -1385,5 +1401,20 @@ a:hover {
   }
   .map-box {
     height: 300px;
+  }
+  .main-navbar{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .Subscribe-box{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Subscribe-box .w-33{
+    width: 100%;
+  }
+  .Subscribe-box .w-45{
+    width: 100%;
   }
 }
