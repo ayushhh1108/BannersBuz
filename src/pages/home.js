@@ -204,10 +204,7 @@ const HomePage = () => {
                 <p className="f-size-28 mb-0 w-100">
                   Starting at <strong>$2.25</strong>
                 </p>
-                <Button
-                  variant="dark"
-                  className="my-3 height-fitcontant"
-                >
+                <Button variant="dark" className="my-3 height-fitcontant">
                   Explore More
                 </Button>
               </div>
@@ -228,10 +225,7 @@ const HomePage = () => {
                 <p className="f-size-28 mb-0 w-100">
                   Starting at <strong>$2.25</strong>
                 </p>
-                <Button
-                  variant="dark"
-                  className="my-3 height-fitcontant"
-                >
+                <Button variant="dark" className="my-3 height-fitcontant">
                   Explore More
                 </Button>
               </div>
@@ -255,10 +249,7 @@ const HomePage = () => {
                 <p className="f-size-28 mb-0 w-100">
                   Starting at <strong>$2.25</strong>
                 </p>
-                <Button
-                  variant="dark"
-                  className="my-3 height-fitcontant"
-                >
+                <Button variant="dark" className="my-3 height-fitcontant">
                   Explore More
                 </Button>
               </div>
@@ -279,10 +270,7 @@ const HomePage = () => {
                 <p className="f-size-28 mb-0 w-100">
                   Starting at <strong>$2.25</strong>
                 </p>
-                <Button
-                  variant="dark"
-                  className="my-3 height-fitcontant"
-                >
+                <Button variant="dark" className="my-3 height-fitcontant">
                   Explore More
                 </Button>
               </div>
@@ -301,7 +289,7 @@ const HomePage = () => {
                   src={reviewLogo}
                   alt="reviews"
                   className="height-fitcontant"
-                  style={{ width: "65px"}}
+                  style={{ width: "65px" }}
                 />
                 <div className="w-33">
                   <strong className="f-size-20 w-100 d-block">Banners</strong>
@@ -336,9 +324,7 @@ const HomePage = () => {
                 is awesome. I'll definitely be coming back again! Thanks for
                 being great to me!
               </p>
-              <div
-                className="d-flex justify-content-around height-fitcontant w-45 mx-auto my-4"
-              >
+              <div className="d-flex justify-content-around height-fitcontant w-45 mx-auto my-4">
                 <img
                   src={reviewLogo}
                   alt="reviews"
@@ -395,21 +381,51 @@ const HomePage = () => {
             </p>
           </container>
           <container className="w-100 text-center d-flex justify-content-around p-3">
-              <div className="w-33 my-3 px-3">
-                <img src={priceTag} alt="alt" className="" style={{width:"55px"}}/>
-                <span className="f-size-20 font-weight-bold pl-3">Best Price</span>
-                <p className="pt-3">BannerBuzz offers the industry’s best prices while using only the highest</p>
-              </div>
-              <div className="w-33 my-3 px-3 design-center-div">
-                <img src={designPng} alt="alt" className="" style={{width:"55px"}}/>
-                <span className="f-size-20 font-weight-bold pl-3">Free Design Proof</span>
-                <p className="pt-3">Our industry-leading designers provide free proofs so you can be sure</p>
-              </div>
-              <div className="w-33 px-3 my-3">
-                <img src={badge} alt="alt" className="" style={{width:"55px"}}/>
-                <span className="f-size-20 font-weight-bold pl-3">Best Quality</span>
-                <p className="pt-3">If you’re not satisfied, we’re not satisfied. We’ll reprint or refund your order - guaranteed</p>
-              </div>
+            <div className="w-33 my-3 px-3">
+              <img
+                src={priceTag}
+                alt="alt"
+                className=""
+                style={{ width: "55px" }}
+              />
+              <span className="f-size-20 font-weight-bold pl-3">
+                Best Price
+              </span>
+              <p className="pt-3">
+                BannerBuzz offers the industry’s best prices while using only
+                the highest
+              </p>
+            </div>
+            <div className="w-33 my-3 px-3 design-center-div">
+              <img
+                src={designPng}
+                alt="alt"
+                className=""
+                style={{ width: "55px" }}
+              />
+              <span className="f-size-20 font-weight-bold pl-3">
+                Free Design Proof
+              </span>
+              <p className="pt-3">
+                Our industry-leading designers provide free proofs so you can be
+                sure
+              </p>
+            </div>
+            <div className="w-33 px-3 my-3">
+              <img
+                src={badge}
+                alt="alt"
+                className=""
+                style={{ width: "55px" }}
+              />
+              <span className="f-size-20 font-weight-bold pl-3">
+                Best Quality
+              </span>
+              <p className="pt-3">
+                If you’re not satisfied, we’re not satisfied. We’ll reprint or
+                refund your order - guaranteed
+              </p>
+            </div>
           </container>
           <SubscribeSection />
           <Footer />
