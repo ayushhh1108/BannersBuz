@@ -12,8 +12,8 @@ const DealerRegistration = () => {
     return (
         <div>
             <Header />
-            <div className='d-flex align-items-center'>
-                <div className='breadcrum-box p-3'>
+            <div className='d-flex align-items-center p-3'>
+                <div className='breadcrum-box '>
                     <span>Home</span>
                 </div>
                 <span className='breadcrum-color'>Dealer Registration</span>
@@ -27,42 +27,42 @@ const DealerRegistration = () => {
             </div>
             <div className='text-center'>
                 <img src={Contactus} alt='Contactus' className='mx-auto mw-100' />
-                <h4><img src={CallUs} alt='call-us' /> dealer.partner@groupbayport.com</h4>
+                <h4 className='email-ad'><img src={CallUs} alt='call-us' /> dealer.partner@groupbayport.com</h4>
             </div>
             <div className='py-5'>
                 <h3 className='text-center mb-4'>Hey Dealers! Here’s how you’re exclusive.</h3>
                 <div className='px-3 d-flex flex-wrap'>
-                    <div className='col-4'>
+                    <div className='col-12 col-sm-6 col-lg-4 px-0 px-sm-2'>
                         <div className='border my-3'>
                             <img src={Network} alt='icon' style={{ backgroundColor: "#4383b8" }} className='p-3' />
                             <h6 className='d-inline-block px-3'>Priority Turnaround</h6>
                         </div>
                     </div>
-                    <div className='col-4'>
+                    <div className='col-12 col-sm-6 col-lg-4 px-0 px-sm-2'>
                         <div className='border my-3'>
                             <img src={Network} alt='icon' style={{ backgroundColor: "#4383b8" }} className='p-3' />
                             <h6 className='d-inline-block px-3'>Priority Turnaround</h6>
                         </div>
                     </div>
-                    <div className='col-4'>
+                    <div className='col-12 col-sm-6 col-lg-4 px-0 px-sm-2'>
                         <div className='border my-3'>
                             <img src={Network} alt='icon' style={{ backgroundColor: "#4383b8" }} className='p-3' />
                             <h6 className='d-inline-block px-3'>Priority Turnaround</h6>
                         </div>
                     </div>
-                    <div className='col-4'>
+                    <div className='col-12 col-sm-6 col-lg-4 px-0 px-sm-2'>
                         <div className='border my-3'>
                             <img src={Network} alt='icon' style={{ backgroundColor: "#4383b8" }} className='p-3' />
                             <h6 className='d-inline-block px-3'>Priority Turnaround</h6>
                         </div>
                     </div>
-                    <div className='col-4'>
+                    <div className='col-12 col-sm-6 col-lg-4 px-0 px-sm-2'>
                         <div className='border my-3'>
                             <img src={Network} alt='icon' style={{ backgroundColor: "#4383b8" }} className='p-3' />
                             <h6 className='d-inline-block px-3'>Priority Turnaround</h6>
                         </div>
                     </div>
-                    <div className='col-4'>
+                    <div className='col-12 col-sm-6 col-lg-4 px-0 px-sm-2'>
                         <div className='border my-3'>
                             <img src={Network} alt='icon' style={{ backgroundColor: "#4383b8" }} className='p-3' />
                             <h6 className='d-inline-block px-3'>Priority Turnaround</h6>
@@ -74,7 +74,7 @@ const DealerRegistration = () => {
                 <h3 className='text-center mb-4'>Hey Dealers! Here’s how you’re exclusive.</h3>
 
                 <div className='d-flex flex-wrap p-3 pb-5 text-center'>
-                    <div className='col-4'>
+                    <div className='col-12 col-md-4 my-2 my-md-0'>
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Fill an online application</h5>
@@ -82,7 +82,7 @@ const DealerRegistration = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-4'>
+                    <div className='col-12 col-md-4 my-2 my-md-0'>
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Fill an online application</h5>
@@ -90,7 +90,7 @@ const DealerRegistration = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-4'>
+                    <div className='col-12 col-md-4 my-2 my-md-0'>
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Fill an online application</h5>
@@ -108,8 +108,8 @@ const DealerRegistration = () => {
                     <h2 className='text-center'>General Qualification Criteria</h2>
                     <p className='text-center pb-5'>The following industry specialists qualify for express approval:
                     </p>
-                    <div className='d-flex justify-content-center'>
-                        <div className='col-4'>
+                    <div className='d-flex flex-wrap justify-content-center'>
+                        <div className='col-12 col-md-4 '>
                             <ul class="fancyCheck">
                                 <li>Marketing Agencies</li>
                                 <li>Promotional &amp; Point of Sale (POS) Companies</li>
@@ -118,7 +118,7 @@ const DealerRegistration = () => {
                                 <li>Printing Companies</li>
                             </ul>
                         </div>
-                        <div className='col-4'>
+                        <div className='col-12 col-md-4 '>
                             <ul class="fancyCheck">
                                 <li>Marketing Agencies</li>
                                 <li>Promotional &amp; Point of Sale (POS) Companies</li>

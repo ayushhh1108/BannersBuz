@@ -1335,6 +1335,9 @@ a:hover {
   .flex-sm-nowrap .step .step-icon-wrap::after {
     display: none;
   }
+  .email-ad {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 768px) {

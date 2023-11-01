@@ -8,7 +8,6 @@ import halfstar from '../assets/half-start.svg'
 import { Tab, Tabs } from "react-bootstrap";
 import Form from 'react-bootstrap/Form';
 import cardImg from "../assets/pexels.jpg";
-import Col from 'react-bootstrap/Col';
 import ChatIcon from '../assets/chat-now.svg';
 import CreateChatIcon from '../assets/blogs.svg';
 import Row from 'react-bootstrap/Row';
@@ -23,10 +22,10 @@ const SampleKit = () => {
                 <OnlyBreadCrum />
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-4">
+                        <div className=" col-12 col-md-5 col-lg-4">
                             <ThumbsSlider />
                         </div>
-                        <div className="col-5">
+                        <div className="col-12 col-md-7 col-lg-5">
                             <h1>Free Sample Kit</h1>
                             <div className="d-flex flex-wrap align-items-center">
                                 <div className="me-4 d-flex align-items-center">
@@ -50,8 +49,8 @@ const SampleKit = () => {
                                 </div>
 
                             </div>
-                            <div className="d-flex align-items-center my-4">
-                                <span className='me-5'>Quantity</span>
+                            <div className="d-flex flex-wrap align-items-center my-4">
+                                <span className='me-5 col-12 col-sm-3'>Quantity</span>
                                 <Form.Control
                                     type="text"
                                     style={{ width: "200px" }}
@@ -59,20 +58,20 @@ const SampleKit = () => {
                                     aria-describedby="passwordHelpBlock"
                                 />
                             </div>
-                            <div className="d-flex align-items-center my-4">
-                                <span className='me-4'>Size (W X H)</span>
+                            <div className="d-flex flex-wrap align-items-center my-4">
+                                <span className='me-4 col-12 col-sm-3'>Size (W X H)</span>
                                 <Form.Select className='me-2' style={{ width: "250px" }}>
                                     <option>3 x 3</option>
                                 </Form.Select>
                             </div>
-                            <div className="d-flex align-items-center my-4">
-                                <span className='me-4'>Size (W X H)</span>
+                            <div className="d-flex flex-wrap align-items-center my-4">
+                                <span className='me-4 col-12 col-sm-3'>Size (W X H)</span>
                                 <Form.Select className='me-2' style={{ width: "250px" }}>
                                     <option>3 x 3</option>
                                 </Form.Select>
                             </div>
-                            <div className="d-flex align-items-center my-4">
-                                <span className='me-4'>Size (W X H)</span>
+                            <div className="d-flex flex-wrap align-items-center my-4">
+                                <span className='me-4 col-12 col-sm-3'>Size (W X H)</span>
                                 <Form.Select className='me-2' style={{ width: "250px" }}>
                                     <option>3 x 3</option>
                                 </Form.Select>
@@ -80,16 +79,25 @@ const SampleKit = () => {
 
 
                             <hr className="hr" />
-                            <div className="d-flex align-items-center my-4">
-                                <span className='me-4 col-3'>Specific Instructions (optional)</span>
+                            <div className="d-flex flex-wrap align-items-center my-4">
+                                <span className='me-4 col-12 col-sm-3'>Specific Instructions (optional)</span>
                                 <Form.Control className='me-2'
                                     style={{ width: "250px" }}
                                     as="textarea" rows={3}
                                 />
 
                             </div>
+                            <div className="border p-4  d-block d-lg-none text-center">
+                                <div className="text-center">
+                                    <h3>$ 0.00</h3>
+                                </div>
+
+                                <hr />
+                                <button className="btn btn-primary">Add to Cart</button>
+
+                            </div>
                         </div>
-                        <div className="col-3">
+                        <div className="col-3 d-none d-lg-block">
                             <div className="border p-4 text-center">
                                 <div className="text-center">
                                     <h3>$ 0.00</h3>
@@ -114,15 +122,15 @@ const SampleKit = () => {
                                     title="Frequently Asked Questions"
                                 >
                                     <div className="d-flex flex-wrap">
-                                        <div className="col-6 my-5">
+                                        <div className=" col-12 col-md-6 my-5">
                                             <h5>Still have questions? Drop us a line.</h5>
                                             <Row className="mb-3">
-                                                <Form.Group as={Col} controlId="formGridEmail">
+                                                <Form.Group className='col-12 col-sm-6' controlId="formGridEmail">
                                                     <Form.Label>Name<span className="text-danger">*</span></Form.Label>
                                                     <Form.Control type="text" placeholder="Enter name" />
                                                 </Form.Group>
 
-                                                <Form.Group as={Col} controlId="formGridPassword">
+                                                <Form.Group className='col-12 col-sm-6' controlId="formGridPassword">
                                                     <Form.Label>Email<span className="text-danger">*</span></Form.Label>
                                                     <Form.Control type="text" placeholder="Enter Email" />
                                                 </Form.Group>
@@ -136,14 +144,14 @@ const SampleKit = () => {
                                             </Form.Group>
                                             <button className="btn btn-primary">Help Me Out</button>
                                         </div>
-                                        <div className="col-6 my-5">
+                                        <div className=" col-12 col-md-6 my-0 my-md-5">
                                             <h5>Free Sample Kit - FAQ</h5><p>There is no question &amp; answer for this product</p>
                                         </div>
                                     </div>
                                 </Tab>
                                 <Tab eventKey="works" title="Customer Reviews" className="text-left">
                                     <div className="d-flex justify-content-between flex-wrap my-5">
-                                        <div className="col-5">
+                                        <div className="col-md-5 col-12">
                                             <div class="inner">
                                                 <div class="rating">
                                                     <span class="rating-num">4.0</span>
@@ -212,9 +220,9 @@ const SampleKit = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-7 d-flex flex-column align-items-end">
-                                            <button className="btn btn-light my-2"><img src={CreateChatIcon} /> Write a Review</button>
-                                            <button className="btn btn-light"><img src={ChatIcon} /> ask a Question</button>
+                                        <div className="col-12 col-md-7 d-flex flex-column align-items-end">
+                                            <button className="btn btn-light my-2"><img src={CreateChatIcon} alt='' /> Write a Review</button>
+                                            <button className="btn btn-light"><img src={ChatIcon} alt='' /> ask a Question</button>
                                         </div>
                                     </div>
                                     <div class="review-list">
@@ -241,7 +249,7 @@ const SampleKit = () => {
                                                         </h4>
                                                         <div class="country d-flex align-items-center">
                                                             <span>
-                                                                <img class="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar6.png" />
+                                                                <img class="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar6.png" alt='' />
                                                             </span>
                                                             <div class="country-name font-accent">India</div>
                                                         </div>
@@ -294,7 +302,7 @@ const SampleKit = () => {
                                                                 </h4>
                                                                 <div class="country d-flex align-items-center">
                                                                     <span>
-                                                                        <img class="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar3.png" />
+                                                                        <img class="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar3.png" alt='' />
                                                                     </span>
                                                                     <div class="country-name font-accent">India</div>
                                                                 </div>
@@ -335,7 +343,7 @@ const SampleKit = () => {
                                                         </h4>
                                                         <div class="country d-flex align-items-center">
                                                             <span>
-                                                                <img class="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar6.png" />
+                                                                <img class="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar6.png" alt='' />
                                                             </span>
                                                             <div class="country-name font-accent">India</div>
                                                         </div>
@@ -388,7 +396,7 @@ const SampleKit = () => {
                                                                 </h4>
                                                                 <div class="country d-flex align-items-center">
                                                                     <span>
-                                                                        <img class="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar3.png" />
+                                                                        <img class="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar3.png" alt='' />
                                                                     </span>
                                                                     <div class="country-name font-accent">India</div>
                                                                 </div>
