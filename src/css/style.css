@@ -226,10 +226,10 @@ a:hover {
 .nav-item {
   transition: 1s;
 }
-.nav-category{
+.nav-category {
   position: relative;
 }
-.nav-category-menu{
+.nav-category-menu {
   position: absolute;
   width: 500px;
   height: 500px;
@@ -1350,17 +1350,19 @@ a:hover {
   }
 }
 
-@media (max-width: 768px) {
-  .flex-md-nowrap .step .step-icon-wrap::before,
-  .flex-md-nowrap .step .step-icon-wrap::after {
-    display: none;
-  }
-}
-
 @media (max-width: 991px) {
   .flex-lg-nowrap .step .step-icon-wrap::before,
   .flex-lg-nowrap .step .step-icon-wrap::after {
     display: none;
+  }
+  .w-card {
+    width: 100%;
+  }
+  .w-man-1 {
+    width: 60% !important;
+  }
+  .w-man-2 {
+    width: 40% !important;
   }
 }
 
@@ -1396,11 +1398,20 @@ a:hover {
   .right-sideheader {
     width: 55%;
   }
-  .main-navbar{
+  .main-navbar {
     overflow-x: scroll;
   }
 }
+
 @media only screen and (max-width: 768px) {
+  .flex-md-nowrap .step .step-icon-wrap::before,
+  .flex-md-nowrap .step .step-icon-wrap::after {
+    display: none;
+  }
+  .w-man-1,
+  .w-man-2 {
+    width: 100% !important;
+  }
   .chatBox {
     width: 40%;
   }
@@ -1410,19 +1421,23 @@ a:hover {
   .map-box {
     height: 300px;
   }
-  .main-navbar{
+  .main-navbar {
     width: 100%;
+  }
+  .rightArrow {
+    margin-top: 0 !important;
+    transform: rotate(90deg);
   }
 }
 @media only screen and (max-width: 600px) {
-  .Subscribe-box{
+  .Subscribe-box {
     display: flex;
     flex-wrap: wrap;
   }
-  .Subscribe-box .w-33{
+  .Subscribe-box .w-33 {
     width: 100%;
   }
-  .Subscribe-box .w-45{
+  .Subscribe-box .w-45 {
     width: 100%;
   }
 }

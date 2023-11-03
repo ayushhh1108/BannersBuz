@@ -34,31 +34,31 @@ const CharityBannerPage = () => {
           In four easy steps, your organization can avail a free banner, that we
           are sure can be of help on various occasions.
         </p>
-        <Container className="d-flex justify-content-around my-5">
-          <div className="w-20 text-center">
+        <Container className="d-flex flex-wrap justify-content-around my-5">
+          <div className="col-12 col-md-4 col-lg-2 text-center">
             <img src={step1} alt="step-1" className="mw-100" />
             <p className="black-color text-center f-size-14 my-2 sub-gray-text">
               Fill up the form below and we’ll be in touch before you know.
             </p>
           </div>
-          <img src={rightArrow} alt="step-2" className="rightArrow mt-65" />
-          <div className="w-20 text-center">
+          <img src={rightArrow} alt="step-2" className="rightArrow mt-65 col-2 col-lg-1" />
+          <div className="col-12 col-md-4 col-lg-2 text-center">
             <img src={step2} alt="step-1" className="mw-100" />
             <p className="black-color text-center f-size-14 my-2 sub-gray-text">
               Add a few lines about your experience with us on your website, so
               that more organizations can get in touch with us for this service.
             </p>
           </div>
-          <img src={rightArrow} alt="step-2" className="rightArrow mt-65" />
-          <div className="w-20 text-center">
+          <img src={rightArrow} alt="step-2" className="rightArrow mt-65 d-block d-md-none d-lg-block col-2 col-lg-1" />
+          <div className="col-12 col-md-4 col-lg-2 text-center">
             <img src={step3} alt="step-1" className="mw-100" />
             <p className="black-color text-center f-size-14 my-2 sub-gray-text">
               In four easy steps, your organization can avail a free banner,
               that we are sure can be of help on various occasions.
             </p>
           </div>
-          <img src={rightArrow} alt="step-2" className="rightArrow mt-65" />
-          <div className="w-20 text-center">
+          <img src={rightArrow} alt="step-2" className="rightArrow mt-65 col-2 col-lg-1" />
+          <div className="col-12 col-md-4 col-lg-2 text-center">
             <img src={step4} alt="step-1" className="mw-100" />
             <p className="black-color text-center f-size-14 my-2 sub-gray-text">
               In four easy steps, your organization can avail a free banner,
@@ -74,11 +74,11 @@ const CharityBannerPage = () => {
           are sure can be of help on various occasions.In
         </p>
         <Container
-          className="d-flex p-4 align-item-center my-5 rounded"
+          className="d-flex p-4 align-item-center flex-wrap justify-content-between my-5 rounded"
           style={{ backgroundColor: "#f5f5f5" }}
         >
-          <div className="d-flex w-45 align-item-center">
-            <h4 className="text-center heading-color d-inline height-fitcontant w-50">
+          <div className="d-flex align-item-center flex-wrap">
+            <h4 className="text-center heading-color d-inline height-fitcontant me-2">
               Select Banner Size
             </h4>
             <Form.Select
@@ -91,12 +91,12 @@ const CharityBannerPage = () => {
               <option value="3">Three</option>
             </Form.Select>
           </div>
-          <p className="primary-color w-70 text-right mb-0 pr-3">
+          <p className="primary-color text-right mb-0 pr-3 mt-2 mt-sm-0">
             * Required Fields *
           </p>
         </Container>
-        <Container className="d-flex justify-content-between">
-          <div className="w-48 mb-5">
+        <Container className="d-flex justify-content-between flex-wrap">
+          <div className="col-12 col-md-6">
             <form>
               <h5 className="bb-grey py-4 mb-2">Your Details</h5>
               <div className="form-row mt-3">
@@ -182,16 +182,9 @@ const CharityBannerPage = () => {
                   </select>
                 </div>
               </div>
-              <p className="my-3 f-size-14">
-                By clicking Apply now button, I agree to the{" "}
-                <a href="#">Terms & Conditions</a>
-              </p>
-              <button type="submit" className="btn btn-primary px-4">
-                Apply Now
-              </button>
             </form>
           </div>
-          <div className="w-48">
+          <div className="col-12 col-md-6">
             <form>
               <h5 className="bb-grey py-4 mb-2">
                 Charity or Non-Profit Details
@@ -231,6 +224,15 @@ const CharityBannerPage = () => {
                 SELECT FILES
               </Button>
             </form>
+          </div>
+          <div className="col-12">
+            <p className="my-3 f-size-14">
+              By clicking Apply now button, I agree to the{" "}
+              <a href="#">Terms & Conditions</a>
+            </p>
+            <button type="submit" className="btn btn-primary px-4 mb-5">
+              Apply Now
+            </button>
           </div>
         </Container>
       </div>
