@@ -62,9 +62,9 @@ function App() {
         <Route path='/blogs' element={<BlogPage />} />                                      // done
         <Route path='/blogs/category' element={<BlogByCategoryPage />} />                     // done
         <Route path='/blogs/category/:id' element={<CategoryWithBlog />} />                      // done
-        <Route path='/affiliate-program' element={<AffiliateProgram />} />
-        <Route path='/local' element={<LocalStoresPage />} />
-        <Route path='/free-charity-banner' element={<CharityBannerPage />} />
+        <Route path='/affiliate-program' element={<AffiliateProgram />} />                    // done
+        <Route path='/local' element={<LocalStoresPage />} />                                 // done
+        <Route path='/free-charity-banner' element={<CharityBannerPage />} />                 // done
         <Route path='/login' element={<LoginPage />} />
         <Route path='/sign-up' element={<SignUPPage />} />
         <Route path='/customer/account' element={<DashboardPage />} />
@@ -78,8 +78,8 @@ function App() {
         <Route path='/customer/design' element={<ProfileDesignPage />} />
         <Route path='/checkout/cart' element={<CheckoutCartPage />} />
         <Route path='/onepagecheckout' element={<OnePageCheckout />} />                           // done
-        <Route path='/checkout/success' element={<CheckoutSuccessPage />} />
-        <Route path='/order/status' element={<OrdersStatusPage />} />
+        <Route path='/checkout/success' element={<CheckoutSuccessPage />} />                    // done
+        <Route path='/order/status' element={<OrdersStatusPage />} />                           // done
       </Route>
     </Routes>
   );

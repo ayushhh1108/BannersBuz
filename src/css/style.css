@@ -226,10 +226,10 @@ a:hover {
 .nav-item {
   transition: 1s;
 }
-.nav-category{
+.nav-category {
   position: relative;
 }
-.nav-category-menu{
+.nav-category-menu {
   position: absolute;
   width: 500px;
   height: 500px;
@@ -1398,7 +1398,7 @@ a:hover {
   .right-sideheader {
     width: 55%;
   }
-  .main-navbar{
+  .main-navbar {
     overflow-x: scroll;
   }
 }
@@ -1421,19 +1421,23 @@ a:hover {
   .map-box {
     height: 300px;
   }
-  .main-navbar{
+  .main-navbar {
     width: 100%;
+  }
+  .rightArrow {
+    margin-top: 0 !important;
+    transform: rotate(90deg);
   }
 }
 @media only screen and (max-width: 600px) {
-  .Subscribe-box{
+  .Subscribe-box {
     display: flex;
     flex-wrap: wrap;
   }
-  .Subscribe-box .w-33{
+  .Subscribe-box .w-33 {
     width: 100%;
   }
-  .Subscribe-box .w-45{
+  .Subscribe-box .w-45 {
     width: 100%;
   }
 }

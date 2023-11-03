@@ -13,8 +13,8 @@ import "../../css/style.css";
 const ProfileBox = () => {
   return (
     <div class="container d-flex">
-      <div class="card-profile p-3 w-45">
-        <div class="media w-100">
+      <div class="card-profile p-3">
+        <div class="media flex-wrap w-100">
           <img src="https://imgur.com/ZnxJ2SY.png" class="mr-3" />
           <div class="media-body w-100 d-flex flex-wrap">
             <h4 class="mt-2 mb-0 w-fit-content">
