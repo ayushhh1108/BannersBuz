@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 import { Card } from "react-bootstrap";
 import { OnHBorderBtnCard } from "../product-box";
 import { RightArrowbtn } from "../RightArrowBTN";
+import { Link } from "react-router-dom";
 const SliderCard = () => {
   const [array, setArray] = useState([1, 2, 3, 4, 4, 5, 6, 7, 8, 9]);
   return (
@@ -46,7 +47,9 @@ const SliderCard = () => {
                       <span className="test-dec">Starts at </span>$6.99
                     </Card.Text>
                   </div>
-                  <RightArrowbtn text={"View Details"} />
+                  <Link to="/stands-and-displays">
+                    <RightArrowbtn text={"View Details"} />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -93,7 +96,9 @@ const VerticalImgCardSlider = () => {
                       <span className="test-dec ">Starts at </span>$6.99
                     </Card.Text>
                   </div>
-                  <RightArrowbtn text={"View Details"} />
+                  <Link to='/photo-magnets'>
+                    <RightArrowbtn text={"View Details"} />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -114,7 +119,7 @@ const OnHBorderBtnCardSlider = ({ secound }) => {
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper p-5 py-5"
-        style={{ height: "fit-content" }}
+        style={{  height:  "fit-content"  }}
       >
         {array.map((i) => (
           <SwiperSlide style={{ height: "fit-content" }}>

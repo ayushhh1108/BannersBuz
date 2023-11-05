@@ -11,6 +11,7 @@ import { Accordion } from "react-bootstrap";
 import googleTrusted from "../assets/google-trust.svg";
 import securityBudgeIcon from "../assets/security-badges.jpg";
 import SubscribeSection from "../components/SecoundLast";
+import { Link } from "react-router-dom";
 
 const OnePageCheckout = () => {
     return (
@@ -269,8 +270,9 @@ const OnePageCheckout = () => {
                                 </div>
 
                                 <p className="mt-3">By clicking on the button below, I accept the T&C of BannerBuzz.</p>
-
-                                <button className="w-100 btn btn-primary btn-lg">Place Your Order</button>
+                                <Link to="/checkout/success">
+                                    <button className="w-100 btn btn-primary btn-lg">Place Your Order</button>
+                                </Link>
                             </div>
                             <img src={securityBudgeIcon} alt="security" className="mw-100 my-3 mt-4" />
                             <img src={googleTrusted} alt="security" className="mw-100 my-3" />

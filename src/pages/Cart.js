@@ -10,6 +10,7 @@ import securityBudgeIcon from "../assets/security-badges.jpg";
 import SecurityBudgeFooter from "../components/SecurityBudgeFooter";
 import Stepper from "../components/Stepper/Step";
 import { CartItemBox, ProductBox } from "../components/product-box";
+import { Link } from "react-router-dom";
 
 const CheckoutCartPage = () => {
   return (
@@ -227,11 +228,13 @@ const CheckoutCartPage = () => {
               $505.70
             </h4>
           </div>
-          <Button
-            className="rounded-0 f-size-14 px-4 mx-auto w-100 d-flex align-items-center my-3 border-0 justify-content-center"
-          >
-            PROCEED TO CHECKOUT
-          </Button>
+          <Link to="/onepagecheckout">
+            <Button
+              className="rounded-0 f-size-14 px-4 mx-auto w-100 d-flex align-items-center my-3 border-0 justify-content-center"
+            >
+              PROCEED TO CHECKOUT
+            </Button>
+          </Link>
           <h6 className="text-center height-fitcontant light-grey">OR</h6>
           <Button
             className="f-size-14 px-4 mx-auto w-100 d-flex align-items-center my-3 border-0 justify-content-center"
@@ -239,23 +242,23 @@ const CheckoutCartPage = () => {
           >
             PAY WITH AMAZON
           </Button>
-          
+
           <img src={securityBudgeIcon} alt="security" className="mw-100 my-3 mt-4" />
           <img src={googleTrusted} alt="security" className="mw-100 my-3" />
         </div>
       </div>
       <Container className="text-center mt-5">
-      <h3 className="text-center w-100 mt-3">Recommended Categories</h3>
-          <span className="text-center w-100 sub-gray-text ">
+        <h3 className="text-center w-100 mt-3">Recommended Categories</h3>
+        <span className="text-center w-100 sub-gray-text ">
           More Trending Custom-Built Category by BannerBuzz
-          </span>
-          <div className="my-5 d-flex flex-wrap justify-content-around">
-              <ProductBox />
-              <ProductBox />
-              <ProductBox />
-              <ProductBox />
-              <ProductBox />
-          </div>
+        </span>
+        <div className="my-5 d-flex flex-wrap justify-content-around">
+          <ProductBox />
+          <ProductBox />
+          <ProductBox />
+          <ProductBox />
+          <ProductBox />
+        </div>
       </Container>
       <SecurityBudgeFooter IsCard={true} />
     </div>

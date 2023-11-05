@@ -13,7 +13,7 @@ const BlogPage = ({ shopByCategory }) => {
   const arrayOfTen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
   return (
     <div>
-      {/* <Header upperLineNone={true} /> */}
+      <Header upperLineNone={true} />
       <Container className="my-5 d-flex flex-wrap">
         <div className="w-70 w-man-1 d-flex justify-content-between flex-wrap height-fitcontant">
           {arrayOfTen?.map((i) => {
