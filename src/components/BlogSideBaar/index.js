@@ -5,8 +5,9 @@ import facebookIcon from "../../assets/facebook-icon.png";
 import printrestIcon from "../../assets/pinterest-icon.png";
 import instaIcon from "../../assets/instagram-icon.png";
 import youtubeIcon from "../../assets/youtube-icon.png";
+import { Link } from "react-router-dom";
 
-function BlogSideBaar({shopByCategory}) {
+function BlogSideBaar({ shopByCategory }) {
   const sidebarData = [
     "Banners (333)",
     "Clothing (6)",
@@ -49,20 +50,20 @@ function BlogSideBaar({shopByCategory}) {
     "Maximizing ROI with Pay-Per-Click Advertising",
     "Effective Social Media Advertising: Best Practices",
   ];
-  const cardsCount = [1,2,3,4,5]
+  const cardsCount = [1, 2, 3, 4, 5]
 
   return (
     <div>
-      {shopByCategory?<div className="py-1 ">
+      {shopByCategory ? <div className="py-1 ">
         <h5 className="py-1 mx-4 light-grey bb-grey mb-4">SHOP BY CATEGORY</h5>
-        {cardsCount.map((i)=>{
-            return <ShopCategoryBox key={i}/>
+        {cardsCount.map((i) => {
+          return <ShopCategoryBox key={i} />
         })}
-      </div>:""}
+      </div> : ""}
       <div className="py-1 ">
         <h5 className="py-1 mx-4 light-grey bb-grey mb-4">CATEGORIES</h5>
         {sidebarData.map((i) => {
-          return <p className="py-1 mx-4 mb-1 light-grey bb-grey">{i}</p>;
+          return <Link to='/blogs/category'><p className="py-1 mx-4 mb-1 light-grey bb-grey">{i}</p></Link>;
         })}
       </div>
       <div className="py-1 mt-5">

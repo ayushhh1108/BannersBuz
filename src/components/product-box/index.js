@@ -12,16 +12,19 @@ import CrossIcon from "../../assets/crossIcon";
 import PlusIcon from "../../assets/Plus";
 import MinusIcon from "../../assets/Minus";
 import { OrangeButton } from "../RightArrowBTN";
+import { Link } from "react-router-dom";
 
 const ProductBox = () => {
   return (
     <div className="w-18 cursor-pointer product-box my-3">
-      <div className="border rounded product-img-box">
-        <img src={products} alt="alt" className="w-100" />
-      </div>
-      <p className="text-center py-3 f-size-18 mb-0 product-label">
-        Custom Flags
-      </p>
+      <Link to='/stands-and-displays'>
+        <div className="border rounded product-img-box">
+          <img src={products} alt="alt" className="w-100" />
+        </div>
+        <p className="text-center text-dark py-3 f-size-18 mb-0 product-label">
+          Custom Flags
+        </p>
+      </Link>
     </div>
   );
 };
@@ -41,8 +44,7 @@ const OnHBorderBtnCard = ({ secound }) => {
         $7.59
       </span>
       <span className="f-size-18 font-weight-bolder"><strong> $5.42</strong></span>
-      <a
-        href="#"
+      <Link to='/stands-and-displays'
         className="d-flex card-title w-100 justify-content-center p-3 costomize-text"
       >
         View Details{" "}
@@ -52,7 +54,7 @@ const OnHBorderBtnCard = ({ secound }) => {
           className="pl-2 right-arrows"
           style={{ width: "36px" }}
         />
-      </a>
+      </Link>
     </div>
   );
 };
@@ -73,7 +75,9 @@ const TipsSuggetionCard = ({ width }) => {
         calendar year, second in prominence only to Christmas. Families and
       </p>
       <div className="w-90 d-flex justify-content-between align-items-center mx-auto px-1 my-2 py-2">
-        <OrangeButton text="Read more" />
+        <Link to='/blogs/category/:id'>
+          <OrangeButton text="Read more" />
+        </Link>
         <span className="f-size-12">SEPTEMBER 15TH, 2023</span>
       </div>
     </div>
@@ -165,10 +169,10 @@ const SocialMediaShareBox = () => {
   );
 };
 
-const CartItemBox = ({cartModel}) => {
+const CartItemBox = ({ cartModel }) => {
   return (
     <div className="card rounded-3 mb-4">
-      <div className="card-body p-3">{console.log(cartModel,"cartModel")}
+      <div className="card-body p-3">{console.log(cartModel, "cartModel")}
         <div className="row d-flex justify-content-between align-items-center">
           <div className="col-md-2 col-lg-2 col-xl-2">
             <img
@@ -193,7 +197,7 @@ const CartItemBox = ({cartModel}) => {
                 Patterns: 1 Logo Basic
               </span>
             </p>
-            {!cartModel?<table className="w-100 f-size-12">
+            {!cartModel ? <table className="w-100 f-size-12">
               <tr>
                 <th>Qty:</th>
                 <td>2 - 5</td>
@@ -210,7 +214,7 @@ const CartItemBox = ({cartModel}) => {
                 <td>$50.53</td>
                 <td>$200.53</td>
               </tr>
-            </table>:""}
+            </table> : ""}
           </div>
           <div className="col-md-2 col-lg-2 col-xl-2 d-flex flex-wrap justify-content-center">
             <p className="w-100 text-center mb-2">Qty</p>

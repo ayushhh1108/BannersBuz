@@ -19,6 +19,7 @@ import { ProductBox } from "../components/product-box";
 import products from "../assets/468.jpg";
 import SubscribeSection from "../components/SecoundLast";
 import Accordion from 'react-bootstrap/Accordion';
+import { Link } from "react-router-dom";
 
 const PhotoMegnets = () => {
   const arrayOfTen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -186,7 +187,9 @@ const PhotoMegnets = () => {
 
                 </Form.Check>
                 <hr />
-                <button className="btn btn-primary w-100">UPLOAD ARTWORK & CHECKOUT</button>
+                <Link to='/checkout/cart'>
+                  <button className="btn btn-primary w-100">UPLOAD ARTWORK & CHECKOUT</button>
+                </Link>
 
               </div>
             </div>
@@ -221,8 +224,9 @@ const PhotoMegnets = () => {
 
                 </Form.Check>
                 <hr />
-                <button className="btn btn-primary w-100">UPLOAD ARTWORK & CHECKOUT</button>
-
+                <Link to='/checkout/cart'>
+                  <button className="btn btn-primary w-100">UPLOAD ARTWORK & CHECKOUT</button>
+                </Link>
               </div>
             </div>
             <div className='text-center my-5'>

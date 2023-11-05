@@ -65,8 +65,8 @@ function App() {
         <Route path='/affiliate-program' element={<AffiliateProgram />} />                    // done
         <Route path='/local' element={<LocalStoresPage />} />                                 // done
         <Route path='/free-charity-banner' element={<CharityBannerPage />} />                 // done
-        <Route path='/login' element={<LoginPage />} />
-        <Route path='/sign-up' element={<SignUPPage />} />
+        <Route path='/login' element={<LoginPage />} />                                       // done
+        <Route path='/sign-up' element={<SignUPPage />} />                                    // done
         <Route path='/customer/account' element={<DashboardPage />} />
         <Route path='/customer/order' element={<ProfileOrderPage />} />
         <Route path='/customer/quotations' element={<ProfileQuotesPage />} />
