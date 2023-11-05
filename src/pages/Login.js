@@ -9,39 +9,15 @@ import facebookIcon from "../assets/facebook.png";
 import googleIcon from "../assets/social.png";
 import twitterIcon from "../assets/twitter-icon.png";
 import SecurityBudgeFooter from "../components/SecurityBudgeFooter";
+import QualityBar from "../components/QualityBar/QualityBar";
 
 const LoginPage = () => {
   return (
     <div>
       <Header upperLineNone={true} searchNone={true} categoryNone={true} />
-      <Container className="my-5 w-1100 d-flex">
-        <div className="w-100 d-flex justify-content-between">
-          <div className="w-fit-content light-grey">
-            <img src={badgeIcon} alt="icons" className="mw-100 w-24px mr-2" />
-            Quality Guarantee
-          </div>
-          <div className="w-fit-content light-grey">
-            <img src={PriceIcon} alt="icons" className="mw-100 w-24px mr-2" />
-            Best Prices
-          </div>
-          <div className="w-fit-content light-grey">
-            <img
-              src={deliveryIcon}
-              alt="icons"
-              className="mw-100 w-24px mr-2"
-            />
-            Free Shipping
-          </div>
-          <div className="w-fit-content light-grey">
-            <img
-              src={colorPallateIcon}
-              alt="icons"
-              className="mw-100 w-24px mr-2"
-            />
-            Free Design Proofs
-          </div>
-        </div>
-      </Container>
+      <div className="container">
+        <QualityBar />
+      </div>
       <Container>
         <h2 className="text-center pt-3 mt-5 heading-color">
           Log in to your account
@@ -50,8 +26,8 @@ const LoginPage = () => {
           Don't have an account? <a href="sign-up">Create an account!</a>
         </p>
       </Container>
-      <Container className="d-flex w-50 justify-content-between mb-5">
-        <div className="w-50 text-left">
+      <Container className="d-flex col-12 col-lg-8 col-xl-6 flex-wrap justify-content-between mb-5">
+        <div className="col-12 col-sm-6 text-left">
           <h4 className=" pt-3 mt-5 heading-color">
             Existing customers, log in
           </h4>
@@ -84,7 +60,7 @@ const LoginPage = () => {
             </Button>
           </div>
         </div>
-        <div className="w-45 text-left">
+        <div className="col-6 d-none d-sm-block text-left">
           <h4 className=" pt-3 mt-5 heading-color">New customers, sign up</h4>
           <p className="black-color f-size-14 my-2 sub-gray-text">
             Sign up quickly with your social accounts
@@ -103,7 +79,7 @@ const LoginPage = () => {
             </Button>
             <Button
               className="rounded-0 f-size-14 px-4 mx-auto w-100 d-flex align-items-center my-3 border-0"
-              style={{ backgroundColor:"#e02f2f"}}
+              style={{ backgroundColor: "#e02f2f" }}
             >
               <img
                 src={googleIcon}
@@ -114,7 +90,7 @@ const LoginPage = () => {
             </Button>
             <Button
               className="rounded-0 f-size-14 px-4 mx-auto w-100 d-flex align-items-center my-3 border-0"
-              style={{backgroundColor: "#55acee"}}
+              style={{ backgroundColor: "#55acee" }}
             >
               <img
                 src={twitterIcon}
@@ -122,6 +98,41 @@ const LoginPage = () => {
                 className="mw-100 w-24px mr-2"
               />
               SIGN IN WITH FACEBOOK
+            </Button>
+          </div>
+        </div>
+        <div className="d-flex flex-wrap d-block d-sm-none text-center col-12 justify-content-center">
+          <p className="my-3">or Sign in with Social</p>
+          <div className="w-100 text-center d-flex">
+            <Button
+              className="rounded-0 f-size-14 px-4 mx-auto d-flex align-items-center my-3"
+              variant="primary"
+            >
+              <img
+                src={facebookIcon}
+                alt="facebookIcon"
+                className="mw-100 w-24px"
+              />
+            </Button>
+            <Button
+              className="rounded-0 f-size-14 px-4 mx-auto d-flex align-items-center my-3 border-0"
+              style={{ backgroundColor: "#e02f2f" }}
+            >
+              <img
+                src={googleIcon}
+                alt="googleIcon"
+                className="mw-100 w-24px "
+              />
+            </Button>
+            <Button
+              className="rounded-0 f-size-14 px-4 mx-auto d-flex align-items-center my-3 border-0"
+              style={{ backgroundColor: "#55acee" }}
+            >
+              <img
+                src={twitterIcon}
+                alt="facebookIcon"
+                className="mw-100 w-24px "
+              />
             </Button>
           </div>
         </div>

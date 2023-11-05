@@ -6,41 +6,17 @@ import PriceIcon from "../assets/best-price.png";
 import deliveryIcon from "../assets/delivery.png";
 import colorPallateIcon from "../assets/color-palette.png";
 import SecurityBudgeFooter from "../components/SecurityBudgeFooter";
+import QualityBar from "../components/QualityBar/QualityBar";
 
 const SignUPPage = () => {
   return (
     <div>
       <Header upperLineNone={true} searchNone={true} categoryNone={true} />
-      <Container className="my-5 w-1100 d-flex">
-        <div className="w-100 d-flex justify-content-between">
-          <div className="w-fit-content light-grey">
-            <img src={badgeIcon} alt="icons" className="mw-100 w-24px mr-2" />
-            Quality Guarantee
-          </div>
-          <div className="w-fit-content light-grey">
-            <img src={PriceIcon} alt="icons" className="mw-100 w-24px mr-2" />
-            Best Prices
-          </div>
-          <div className="w-fit-content light-grey">
-            <img
-              src={deliveryIcon}
-              alt="icons"
-              className="mw-100 w-24px mr-2"
-            />
-            Free Shipping
-          </div>
-          <div className="w-fit-content light-grey">
-            <img
-              src={colorPallateIcon}
-              alt="icons"
-              className="mw-100 w-24px mr-2"
-            />
-            Free Design Proofs
-          </div>
-        </div>
-      </Container>
+      <div className="container">
+        <QualityBar />
+      </div>
       <Container>
-        <h2 className="text-center pt-3 mt-5 heading-color">
+        <h2 className="text-center pt-3 mt-2 mt-md-5 heading-color">
           Create my account
         </h2>
         <p className="black-color text-center f-size-14 my-2 sub-gray-text">
@@ -48,8 +24,8 @@ const SignUPPage = () => {
           better, and makes both our lives easier!
         </p>
       </Container>
-      <Container className="d-flex w-50 justify-content-center mb-5">
-        <div className="w-50 text-left">
+      <Container className="d-flex col-12 col-md-6 justify-content-center mb-5">
+        <div className="col-12 col-lg-10 col-xl-8 text-left">
           <div className="form-group col-md-12 my-4 px-0">
             <label for="inputEmail4" className="sub-gray-text">
               Email Address<a href="sign-up">*</a>

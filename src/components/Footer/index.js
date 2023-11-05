@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import FacebookIcon from "../../assets/facebookSvg";
 import InstagramIcon from "../../assets/instaSvg";
 import YoutubeIcon from "../../assets/youtubeSvg";
@@ -28,29 +29,29 @@ const Footer = () => {
 
               <ul className="list-unstyled">
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
+                  <Link to='/stands-and-displays' className="text-dark f-size-14">
                     Flags
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
+                  <Link to='/stands-and-displays' className="text-dark f-size-14">
                     Step and Repeat Displays
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
+                  <Link to='/stands-and-displays' className="text-dark f-size-14">
                     Banners
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
+                  <Link to='/stands-and-displays' className="text-dark f-size-14">
                     Canopies
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
+                  <Link to='/stands-and-displays' className="text-dark f-size-14">
                     Table Covers and Throws
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -58,34 +59,34 @@ const Footer = () => {
               <h5 className="text-uppercase mb-4 f-size-18">Information</h5>
               <ul className="list-unstyled">
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
+                  <Link to="/orderstatus" className="text-dark f-size-14">
                     Order Tracking
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
+                  <Link to="/country" className="text-dark f-size-14">
                     International Shipping
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
+                  <Link to="/reviews" className="text-dark f-size-14">
                     Customer Reviews
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
+                  <Link to="/coupons" className="text-dark f-size-14">
                     Special Offers
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
+                  <Link to="/" className="text-dark f-size-14">
                     Sitemap
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
+                  <Link to="/stands-and-displays" className="text-dark f-size-14">
                     Safety Signs & Banners
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -93,34 +94,34 @@ const Footer = () => {
               <h5 className="text-uppercase mb-4 f-size-18">Information</h5>
               <ul className="list-unstyled">
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
-                    Order Tracking
-                  </a>
+                  <Link to="/contact-us" className="text-dark f-size-14">
+                    Contact us
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
-                    International Shipping
-                  </a>
+                  <Link to="/privacy-policy" className="text-dark f-size-14">
+                    Privacy Policy
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
-                    Customer Reviews
-                  </a>
+                  <Link to="/terms-and-conditions" className="text-dark f-size-14">
+                    Terms of Use
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
-                    Special Offers
-                  </a>
+                  <Link to="/affiliate-program" className="text-dark f-size-14">
+                    Affiliate Program
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
-                    Sitemap
-                  </a>
+                  <Link to="/local" className="text-dark f-size-14">
+                    Areas of Service
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
+                  <Link to="/" className="text-dark f-size-14">
                     Safety Signs & Banners
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -128,34 +129,29 @@ const Footer = () => {
               <h5 className="text-uppercase mb-4 f-size-18">Information</h5>
               <ul className="list-unstyled">
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
-                    Order Tracking
-                  </a>
+                  <Link to="/faqs" className="text-dark f-size-14">
+                    FAQs
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
-                    International Shipping
-                  </a>
+                  <Link to="/faqs" className="text-dark f-size-14">
+                    Return Policy
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
-                    Customer Reviews
-                  </a>
+                  <Link to="/faqs" className="text-dark f-size-14">
+                    Free Design Proofs
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
-                    Special Offers
-                  </a>
+                  <Link to="/faqs" className="text-dark f-size-14">
+                    Shipping
+                  </Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
-                    Sitemap
-                  </a>
-                </li>
-                <li className="mb-2">
-                  <a href="#!" className="text-dark f-size-14">
-                    Safety Signs & Banners
-                  </a>
+                  <Link to="/sampal-kit" className="text-dark f-size-14">
+                    Sample Kit
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -179,19 +175,19 @@ const Footer = () => {
 
               <ul className="list-unstyled d-flex flex-row justify-content-center">
                 <li>
-                  <a className=" px-2" href="#!">
+                  <Link className=" px-2" to="/">
                     <FacebookIcon />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className=" px-2" href="#!">
+                  <Link className=" px-2" to="/">
                     <InstagramIcon />
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className=" ps-2" href="#!">
+                  <Link className=" ps-2" to="/">
                     <YoutubeIcon />
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

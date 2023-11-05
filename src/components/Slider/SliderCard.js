@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 import { Card } from "react-bootstrap";
 import { OnHBorderBtnCard } from "../product-box";
 import { RightArrowbtn } from "../RightArrowBTN";
+import { Link } from "react-router-dom";
 const SliderCard = () => {
   const [array, setArray] = useState([1, 2, 3, 4, 4, 5, 6, 7, 8, 9]);
   return (
@@ -47,7 +48,9 @@ const SliderCard = () => {
                       <span className="test-dec">Starts at </span>$6.99
                     </Card.Text>
                   </div>
-                  <RightArrowbtn text={"View Details"} />
+                  <Link to="/stands-and-displays">
+                    <RightArrowbtn text={"View Details"} />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -68,10 +71,10 @@ const VerticalImgCardSlider = () => {
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper p-4"
-        style={{height:"fit-content"}}
+        style={{ height: "fit-content" }}
       >
         {array.map((i) => (
-          <SwiperSlide style={{height:"fit-content"}}>
+          <SwiperSlide style={{ height: "fit-content" }}>
             <div className="col-sm-12 rounded border p-0">
               <div className="card-body d-flex flex-wrap justify-content-center">
                 <div className="img-container w-100 px-5 py-3">
@@ -94,7 +97,9 @@ const VerticalImgCardSlider = () => {
                       <span className="test-dec">Starts at </span>$6.99
                     </Card.Text>
                   </div>
-                  <RightArrowbtn text={"View Details"} />
+                  <Link to='/photo-magnets'>
+                    <RightArrowbtn text={"View Details"} />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -105,7 +110,7 @@ const VerticalImgCardSlider = () => {
   );
 };
 
-const OnHBorderBtnCardSlider = ({secound}) => {
+const OnHBorderBtnCardSlider = ({ secound }) => {
   const array = [1, 2, 3, 4, 4, 5, 6, 7, 8, 9];
   return (
     <>
@@ -115,11 +120,11 @@ const OnHBorderBtnCardSlider = ({secound}) => {
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper p-5 py-4"
-        style={{height:"fit-content"}}
+        style={{ height: "fit-content" }}
       >
         {array.map((i) => (
-          <SwiperSlide style={{height:"fit-content"}}>
-            <OnHBorderBtnCard secound={secound}/>
+          <SwiperSlide style={{ height: "fit-content" }}>
+            <OnHBorderBtnCard secound={secound} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -127,4 +132,4 @@ const OnHBorderBtnCardSlider = ({secound}) => {
   );
 };
 
-export {SliderCard , VerticalImgCardSlider, OnHBorderBtnCardSlider};
+export { SliderCard, VerticalImgCardSlider, OnHBorderBtnCardSlider };
