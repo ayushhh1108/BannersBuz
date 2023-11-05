@@ -16,11 +16,16 @@ import searchIcon from "../../assets/search.svg";
 import "../../css/style.css";
 import CreatableSelect from "react-select/creatable";
 import CartModel from "../Model";
+import SideBaar from "../SideBaar";
 const Header = ({ upperLineNone, categoryNone, searchNone }) => {
   const [cart, setCart] = useState(false);
+  const [sideBaar, setSideBaar] = useState(false);
   const handleClose = () => {
     setCart(false);
   };
+  const handleCloseSideBaar = () => {
+    setSideBaar(false);
+  }
   const menuItems = [
     "Banners",
     "Stands & Displays",
@@ -107,9 +112,9 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
   return (
     <header>
       {!upperLineNone ? (
-        <div className="topbar d-flex justify-content-between">
-          <div className="toppbar_left d-flex align-items-center header-first-sec">
-            <Link to="" className="text-muted font-size-13">
+        <div className="topbar d-flex justify-content-between px-4">
+          <div className="toppbar_left d-flex flex-nowrap align-items-center header-first-sec">
+            <Link to="" className="text-light font-size-13">
               {" "}
               <img
                 src={order_track}
@@ -118,10 +123,10 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
               />{" "}
               Order Tracking
             </Link>
-            <div className="quick_links">
+            <div className="quick_links w-fit-content">
               <div className="dropdown show">
                 <Link
-                  className="dropdown-toggle text-muted font-size-13"
+                  className="dropdown-toggle text-light font-size-13"
                   to="#"
                   role="button"
                   id="dropdownMenuLink"
@@ -148,9 +153,13 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
               </div>
             </div>
           </div>
-          <div className="topbar_right d-flex font-size-13 right-sideheader w-46">
+          <div className="topbar_right d-flex font-size-13 right-sideheader w-46 ">
+            <div className="text-light font-size-13 d-sm-none" onClick={()=>setSideBaar(true)}>
+              <img src={account} alt="account" className="profile-png" /> Hi,
+              Vraj
+            </div>
             <Link
-              className="dropdown-toggle text-muted font-size-13"
+              className="dropdown-toggle text-light font-size-13 d-none d-md-inline d-sm-inline d-lg-inline d-xl-inline"
               to="#"
               role="button"
               id="dropdownMenuLink"
@@ -163,7 +172,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
               Vraj
             </Link>
             <div
-              className="dropdown-menu font-size-13 py-0"
+              className="dropdown-menu font-size-13 py-0 profile-dropdown"
               aria-labelledby="dropdownMenuLink"
             >
               <Link className="dropdown-item px-3" to="#">
@@ -181,7 +190,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
             </div>
             <Link
               to=""
-              className="hover_orange text-muted"
+              className="hover_orange text-light"
               onClick={() => {
                 setCart(true);
               }}
@@ -192,7 +201,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
             </Link>
             <div className="dropdown show pr-1">
               <Link
-                className="dropdown-toggle text-muted"
+                className="dropdown-toggle text-light"
                 to="#"
                 role="button"
                 id="dropdownMenuLink"
@@ -264,8 +273,8 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
         ""
       )}
       <div className="main_wrapper">
-        <div>
-          <img src={logo} className="" alt="logo" />
+        <div className="header-logo d-flex align-item-center">
+          <img src={logo} className="mw-100" alt="logo" />
         </div>
         <div className="search-select-box d-flex align-items-center">
           {!searchNone ? (
@@ -335,6 +344,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
         </div>
       )}
       <CartModel open={cart} handleClose={handleClose} />
+      <SideBaar open={sideBaar} handleClose={handleCloseSideBaar} categoryData={CategoryData} />
     </header>
   );
 };

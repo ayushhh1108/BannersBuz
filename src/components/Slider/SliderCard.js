@@ -10,6 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Card } from "react-bootstrap";
 import { OnHBorderBtnCard } from "../product-box";
+import { RightArrowbtn } from "../RightArrowBTN";
 const SliderCard = () => {
   const [array, setArray] = useState([1, 2, 3, 4, 4, 5, 6, 7, 8, 9]);
   return (
@@ -19,12 +20,12 @@ const SliderCard = () => {
         spaceBetween={30}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper p-5"
-        style={{ backgroundColor: "#f8f8f8" }}
+        className="mySwiper p-5 height-fitcontant"
+        style={{ backgroundColor: "#ef28001a" }}
       >
         {array.map((i) => (
           <SwiperSlide>
-            <div className="col-sm-12 rounded border p-0">
+            <div className="col-sm-12 rounded border p-0 bg-light">
               <div className="card-body d-flex p-2">
                 <div className="img-container w-35 overflow-hidden rounded border">
                   <img src={cardImg} alt="card-img" />
@@ -46,14 +47,7 @@ const SliderCard = () => {
                       <span className="test-dec">Starts at </span>$6.99
                     </Card.Text>
                   </div>
-                  <a href="#" className="d-flex card-title w-75">
-                    View Details{" "}
-                    <img
-                      src={rightArrow}
-                      alt="right-arrow"
-                      className="w-15 pl-2"
-                    />
-                  </a>
+                  <RightArrowbtn text={"View Details"} />
                 </div>
               </div>
             </div>
@@ -73,7 +67,7 @@ const VerticalImgCardSlider = () => {
         spaceBetween={30}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper p-5"
+        className="mySwiper p-4"
         style={{height:"fit-content"}}
       >
         {array.map((i) => (
@@ -100,14 +94,7 @@ const VerticalImgCardSlider = () => {
                       <span className="test-dec">Starts at </span>$6.99
                     </Card.Text>
                   </div>
-                  <a href="#" className="d-flex card-title w-100 align-item-center p-3 mx-auto justify-content-center slider-customize-hover">
-                    View Details{" "}
-                    <img
-                      src={rightArrow}
-                      alt="right-arrow"
-                      className="w-12 pl-2"
-                    />
-                  </a>
+                  <RightArrowbtn text={"View Details"} />
                 </div>
               </div>
             </div>
@@ -127,7 +114,7 @@ const OnHBorderBtnCardSlider = ({secound}) => {
         spaceBetween={30}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper p-5"
+        className="mySwiper p-5 py-4"
         style={{height:"fit-content"}}
       >
         {array.map((i) => (

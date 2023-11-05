@@ -11,11 +11,12 @@ import categoryPoster from "../../assets/custom-vinyl.jpg";
 import CrossIcon from "../../assets/crossIcon";
 import PlusIcon from "../../assets/Plus";
 import MinusIcon from "../../assets/Minus";
+import { OrangeButton } from "../RightArrowBTN";
 
 const ProductBox = () => {
   return (
     <div className="w-18 cursor-pointer product-box my-3">
-      <div className="border rounded">
+      <div className="border rounded product-img-box">
         <img src={products} alt="alt" className="w-100" />
       </div>
       <p className="text-center py-3 f-size-18 mb-0 product-label">
@@ -33,22 +34,22 @@ const OnHBorderBtnCard = ({ secound }) => {
       >
         <img src={secound ? product2 : products} alt="alt" className="w-100" />
       </div>
-      <p className="text-center py-3 px-1 f-size-18 mb-0 product-label">
+      <p className="all-titles text-center py-3 px-1 f-size-16 mb-0 product-label">
         Address Labels / Return Address Labels
       </p>
       <span className="f-size-14 sub-gray-text text-decoration-line-through">
         $7.59
       </span>
-      <span className="f-size-18 font-weight-bolder"> $5.42</span>
+      <span className="f-size-18 font-weight-bolder"><strong> $5.42</strong></span>
       <a
         href="#"
-        className="d-flex card-title w-100 justify-content-center p-3 invisible costomize-text"
+        className="d-flex card-title w-100 justify-content-center p-3 costomize-text"
       >
         View Details{" "}
         <img
           src={rightArrow}
           alt="right-arrow"
-          className="pl-2"
+          className="pl-2 right-arrows"
           style={{ width: "36px" }}
         />
       </a>
@@ -60,7 +61,6 @@ const TipsSuggetionCard = ({ width }) => {
   return (
     <div
       className={"cursor-pointer text-center " + width}
-      style={{ boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}
     >
       <div className={"text-center pt-3"}>
         <img src={tipsImg} alt="alt" className="w-90" />
@@ -72,10 +72,8 @@ const TipsSuggetionCard = ({ width }) => {
         Halloween ranks as one of the most consumer-driven holidays in the
         calendar year, second in prominence only to Christmas. Families and
       </p>
-      <div className="w-90 d-flex justify-content-between mx-auto px-1 my-2 py-2">
-        <span className="f-size-12" style={{ color: "blue" }}>
-          Read more
-        </span>
+      <div className="w-90 d-flex justify-content-between align-items-center mx-auto px-1 my-2 py-2">
+        <OrangeButton text="Read more" />
         <span className="f-size-12">SEPTEMBER 15TH, 2023</span>
       </div>
     </div>
