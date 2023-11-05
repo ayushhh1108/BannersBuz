@@ -19,97 +19,123 @@ import {
   SliderCard,
   VerticalImgCardSlider,
 } from "../components/Slider/SliderCard";
-import { Button, Form } from "react-bootstrap";
+import { Button, Container, Form } from "react-bootstrap";
 import { ProductBox, TipsSuggetionCard } from "../components/product-box";
 import Footer from "../components/Footer";
 import SubscribeSection from "../components/SecoundLast";
+import { OrangeButton } from "../components/RightArrowBTN";
+import {
+  CircularProgressbar,
+  CircularProgressbarWithChildren,
+  buildStyles,
+} from "react-circular-progressbar";
+import ShippingIcon from "../assets/ShippingSvg";
+import DroneIcon from "../assets/DroneIcon";
+import ShoppingIcon from "../assets/ShoppingBag";
 
 const HomePage = () => {
   const arrayOfTen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   return (
     <div>
       <Header />
-      <div className="main-container w-cm">
+      <div className="main-container">
         <div className="carosal-box d-flex flex-wrap mb-5">
-          <Carousal />
-          <div className="w-25 d-flex flex-wrap justify-content-center">
-            <h5 className="w-100 text-center pt-3">Beat the Clock & Save!</h5>
-            <div className="w-75 d-flex justify-content-space-evenly">
-              <div className="rounded small-calander text-center p-1">
-                <h5 className="days-count">2</h5>
-                <span className="border-top">Days</span>
+          <div className="w-cm d-flex">
+            <Carousal />
+            <div className="w-25 d-flex flex-wrap justify-content-center">
+              <h5 className="w-100 text-center pt-3">Beat the Clock & Save!</h5>
+              <div className="w-75 d-flex justify-content-space-evenly">
+                <div className="rounded small-calander text-center p-1">
+                  <h5 className="days-count">2</h5>
+                  <span className="border-top">Days</span>
+                </div>
+                <div className="rounded small-calander text-center p-1">
+                  <h5 className="days-count">10</h5>
+                  <span className="border-top">HRS</span>
+                </div>
+                <div className="rounded small-calander text-center p-1">
+                  <h5 className="days-count">30</h5>
+                  <span className="border-top">MIN</span>
+                </div>
+                <div className="rounded small-calander text-center p-1">
+                  <h5 className="days-count">35</h5>
+                  <span className="border-top">SEC</span>
+                </div>
               </div>
-              <div className="rounded small-calander text-center p-1">
-                <h5 className="days-count">10</h5>
-                <span className="border-top">HRS</span>
+              <h5 className="w-100 text-center height-fitcontant">
+                Fall Flash Sale
+              </h5>
+              <h4 className="w-100 text-center text-warning">
+                22% off Sitewide
+              </h4>
+              <div className="d-flex height-fitcontant w-100 justify-content-space-evenly">
+                <div className="w-50 d-flex height-fitcontant p-2 copy-side justify-content-between">
+                  <p className="mb-0">FLASH</p>
+                  <img src={copy} alt="copy" className="copy-icon" />
+                </div>
+                <button type="button" className="btn shop-now-btn">
+                  Shop now
+                </button>
               </div>
-              <div className="rounded small-calander text-center p-1">
-                <h5 className="days-count">30</h5>
-                <span className="border-top">MIN</span>
-              </div>
-              <div className="rounded small-calander text-center p-1">
-                <h5 className="days-count">35</h5>
-                <span className="border-top">SEC</span>
-              </div>
-            </div>
-            <h5 className="w-100 text-center height-fitcontant">
-              Fall Flash Sale
-            </h5>
-            <h4 className="w-100 text-center text-warning">22% off Sitewide</h4>
-            <div className="d-flex height-fitcontant w-100 justify-content-space-evenly">
-              <div className="w-50 d-flex height-fitcontant p-2 copy-side justify-content-between">
-                <p className="mb-0">FLASH</p>
-                <img src={copy} alt="copy" className="copy-icon" />
-              </div>
-              <button type="button" className="btn shop-now-btn">
-                Shop now
-              </button>
-            </div>
-          </div>
-          <div className="w-100 d-flex carosal-bottum-part">
-            <div className="sameday-shiping w-33 d-flex align-items-center">
-              <h4 className="p-2 h4-heading">Same Day Shipping</h4>
-              <span>on selected products</span>
-            </div>
-            <div className="sameday-shiping w-33 d-flex align-items-center">
-              <h4 className="p-2 h4-heading">Same Day Shipping</h4>
-              <span>on selected products</span>
-            </div>
-            <div className="sameday-shiping w-33 d-flex align-items-center">
-              <h4 className="p-2 h4-heading">Same Day Shipping</h4>
-              <span>on selected products</span>
             </div>
           </div>
-          <h4 className="text-center mx-auto mt-4 mb-4">Most Loved Products</h4>
-          <SliderCard />
-          <h2 className="p-4 mx-auto">
-            Offering Custom Banners and Signs For Business/Home Needs
-          </h2>
-          <div className="select-product-box w-100 d-flex justify-content-center align-items-center p-4 flex-wrap">
-            <h5 className="d-inline m-2">Select Your Product</h5>
-            <Form.Select
-              aria-label="Default select example"
-              className="d-inline w-15 m-2"
-            >
-              <option>Banners</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </Form.Select>
-            <Form.Select
-              aria-label="Default select example"
-              className="d-inline w-15 m-2"
-            >
-              <option>Will Banner</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </Form.Select>
-            <h6 className="w-100 text-center m-5">
-              Found <b>79 Banners</b> for your selection
-            </h6>
-            <VerticalImgCardSlider />
-            <Button variant="outline-primary">View All</Button>
+          <div className="w-cm carosal-bottum-part">
+            <div className="w-100 d-flex ">
+              <div className="sameday-shiping w-33 d-flex justify-content-center align-items-center">
+                <ShippingIcon />
+                <h4 className="py-4 h4-heading  mb-0">Same Day Shipping</h4>
+                <span>on selected products</span>
+              </div>
+              <div className="sameday-shiping w-33 justify-content-center d-flex align-items-center">
+                <DroneIcon />
+                <h4 className="py-4 h4-heading mb-0">Same Day Shipping</h4>
+                <span>on selected products</span>
+              </div>
+              <div className="sameday-shiping justify-content-center w-33 d-flex align-items-center">
+                <ShoppingIcon />
+                <h4 className="py-4 h4-heading mb-0">Same Day Shipping</h4>
+                <span>on selected products</span>
+              </div>
+            </div>
+          </div>
+          <div className="w-100">
+            <h3 className="all-titles text-center mx-auto mt-4 mb-4 w-cm">
+              Most Loved Products
+            </h3>
+            <SliderCard />
+          </div>
+          <div className="w-cm">
+            <h3 className="all-titles p-4 mx-auto text-center">
+              Offering Custom Banners and Signs For Business/Home Needs
+            </h3>
+            <div className="select-product-box w-100 d-flex justify-content-center align-items-center p-4 flex-wrap">
+              <h5 className="d-inline m-2">Select Your Product</h5>
+              <Form.Select
+                aria-label="Default select example"
+                className="d-inline w-15 m-2"
+              >
+                <option>Banners</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </Form.Select>
+              <Form.Select
+                aria-label="Default select example"
+                className="d-inline w-15 m-2"
+              >
+                <option>Will Banner</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </Form.Select>
+              <h6 className="w-100 text-center mt-4 mb-0">
+                Found <b>79 Banners</b> for your selection
+              </h6>
+              <VerticalImgCardSlider />
+              <Button variant="outline-primary bg-orange border-0 text-light">
+                View All
+              </Button>
+            </div>
           </div>
           <div className="w-100 border rounded my-5">
             <div className=" w-75 d-flex justify-content-between mx-auto py-3 px-2 ">
@@ -153,16 +179,18 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <h3 className="text-center w-100 mt-3">Our Best Sellers</h3>
-          <span className="text-center w-100 sub-gray-text">
+          <h3 className="text-center all-titles w-100 mt-3 w-cm">
+            Our Best Sellers
+          </h3>
+          <span className="text-center w-100 sub-gray-text w-cm">
             Boost Sales with Top-Charting Categories
           </span>
-          <div className="my-5 d-flex flex-wrap justify-content-around">
+          <div className="my-5 d-flex flex-wrap justify-content-around w-cm">
             {arrayOfTen.map((i) => (
               <ProductBox />
             ))}
           </div>
-          <div className="w-100 d-flex justify-content-around poster-box my-4">
+          <div className="w-100 d-flex justify-content-around poster-box my-4 w-cm">
             <img
               src={poster1}
               alt="poster"
@@ -174,23 +202,27 @@ const HomePage = () => {
               className="w-49 rounded overflow-hidden"
             />
           </div>
-          <h3 className="text-center w-100 mt-3">Customer Picks</h3>
+          <h3 className="all-titles text-center w-100 mt-3 w-cm">
+            Customer Picks
+          </h3>
           <span className="text-center w-100 sub-gray-text">
             Explore Our Most Popular Products
           </span>
           <OnHBorderBtnCardSlider />
-          <Button variant="outline-primary mx-auto mb-3">View All</Button>
+          <div className="w-100 text-right p-4">
+            <OrangeButton text="View All" />
+          </div>
           <div
-            className="w-100 text-center py-2"
+            className="w-100 text-center py-2 w-cm"
             style={{ background: "rgb(247, 247, 255)" }}
           >
-            <h3 className="text-center w-100 mt-3">New Arrivals</h3>
+            <h3 className="all-titles text-center w-100 mt-3">New Arrivals</h3>
             <span className="text-center w-100 sub-gray-text">
               Check Out Our Latest Products
             </span>
             <OnHBorderBtnCardSlider secound={true} />
           </div>
-          <container className="d-flex w-100 flex-wrap justify-content-around my-5">
+          <container className="d-flex w-100 flex-wrap justify-content-around my-5 w-cm">
             <div
               className="w-48 d-flex align-items-center justify-content-between p-1830 rounded my-2"
               style={{
@@ -276,15 +308,15 @@ const HomePage = () => {
               </div>
             </div>
           </container>
-          <container className="w-100 d-flex justify-content-around my-3">
+          <container className="w-100 d-flex justify-content-around my-3 w-cm">
             <div
               className="w-49 rounded d-flex flex-wrap"
               style={{ backgroundColor: "#fffdec" }}
             >
-              <h3 className="text-center w-100 mt-3 font-weight-light d-block">
+              <h3 className="text-center w-100 mt-5 font-weight-bold d-block">
                 Reviews & Ratings
               </h3>
-              <div className="d-flex justify-content-around w-90 mx-auto my-5">
+              <div className="d-flex flex-wrap justify-content-around w-90 mx-auto my-5">
                 <img
                   src={reviewLogo}
                   alt="reviews"
@@ -308,13 +340,105 @@ const HomePage = () => {
                   </div>
                   <span className="">Customer Reviews</span>
                 </div>
+                <div className="w-100 d-flex mt-5">
+                  <div className="w-33 d-flex">
+                    <div style={{ width: "65px", height: "65px" }}>
+                      <CircularProgressbarWithChildren
+                        value={66}
+                        styles={{
+                          trail: {
+                            // Trail color
+                            stroke: "transparent",
+                          },
+                          path: {
+                            // Path color
+                            stroke: `#5a9d79`,
+                          },
+                        }}
+                      >
+                        <div
+                          style={{
+                            fontSize: 16,
+                            marginTop: 0,
+                            color: "#5a9d79",
+                          }}
+                        >
+                          <strong>66%</strong>
+                        </div>
+                      </CircularProgressbarWithChildren>
+                    </div>
+                    <h5 className="mb-0 d-inline fw-bold ml-2">
+                      Customers Support
+                    </h5>
+                  </div>
+                  <div className="w-33 d-flex">
+                    <div style={{ width: "65px", height: "65px" }}>
+                      <CircularProgressbarWithChildren
+                        value={66}
+                        styles={{
+                          trail: {
+                            // Trail color
+                            stroke: "transparent",
+                          },
+                          path: {
+                            // Path color
+                            stroke: `#5a9d79`,
+                          },
+                        }}
+                      >
+                        <div
+                          style={{
+                            fontSize: 16,
+                            marginTop: 0,
+                            color: "#5a9d79",
+                          }}
+                        >
+                          <strong>66%</strong>
+                        </div>
+                      </CircularProgressbarWithChildren>
+                    </div>
+                    <h5 className="mb-0 d-inline fw-bold ml-2">
+                      Customers Review
+                    </h5>
+                  </div>
+                  <div className="w-33 d-flex">
+                    <div style={{ width: "65px", height: "65px" }}>
+                      <CircularProgressbarWithChildren
+                        value={66}
+                        styles={{
+                          trail: {
+                            // Trail color
+                            stroke: "transparent",
+                          },
+                          path: {
+                            // Path color
+                            stroke: `#5a9d79`,
+                          },
+                        }}
+                      >
+                        <div
+                          style={{
+                            fontSize: 16,
+                            marginTop: 0,
+                            color: "#5a9d79",
+                          }}
+                        >
+                          <strong>66%</strong>
+                        </div>
+                      </CircularProgressbarWithChildren>
+                    </div>
+                    <h5 className="mb-0 d-inline fw-bold ml-2">
+                      Repeat Customers
+                    </h5>
+                  </div>
+                </div>
               </div>
             </div>
             <div
               className="w-49 rounded"
               style={{ backgroundColor: "#f2f2f2" }}
             >
-              <h3 className="text-center w-100 mt-3 font-weight-light">
+              <h3 className="text-center w-100 mt-5 font-weight-bold">
                 Our customers speak for us!
               </h3>
               <p className="mb-0 w-75 mx-auto text-center mt-4">
@@ -324,7 +448,7 @@ const HomePage = () => {
                 is awesome. I'll definitely be coming back again! Thanks for
                 being great to me!
               </p>
-              <div className="d-flex justify-content-around height-fitcontant w-45 mx-auto my-4">
+              <div className="d-flex justify-content-around height-fitcontant w-45 mx-auto my-5">
                 <img
                   src={reviewLogo}
                   alt="reviews"
@@ -347,8 +471,8 @@ const HomePage = () => {
               </div>
             </div>
           </container>
-          <container className="w-100 my-3 text-center">
-            <h3 className="text-center w-100 mt-3 mx-auto">
+          <container className="w-100 my-3 text-right w-cm">
+            <h3 className="all-titles text-center w-100 mt-3 mx-auto">
               Check out our Blog For Printing Tips & Suggestions
             </h3>
             <div className="w-100 d-flex my-4 justify-content-around">
@@ -357,11 +481,11 @@ const HomePage = () => {
               <TipsSuggetionCard width="w-24" />
               <TipsSuggetionCard width="w-24" />
             </div>
-            <Button variant="outline-primary" className="mx-auto my-3">
-              View All
-            </Button>
+            <div className="w-100 text-right p-4">
+              <OrangeButton text="View All" />
+            </div>
           </container>
-          <container className="w-100 text-left">
+          <container className="w-100 text-left w-cm">
             <h5 className="pl-3 w-100 mt-3 f-size-20">
               Check out our Blog For Printing Tips & Suggestions
             </h5>
@@ -380,7 +504,7 @@ const HomePage = () => {
               the brand/event and get them delivered to your
             </p>
           </container>
-          <container className="w-100 text-center d-flex justify-content-around p-3">
+          <container className="w-100 text-center d-flex justify-content-around p-3 w-cm">
             <div className="w-33 my-3 px-3">
               <img
                 src={priceTag}
