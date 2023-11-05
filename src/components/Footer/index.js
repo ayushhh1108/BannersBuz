@@ -6,7 +6,7 @@ import SecurityBudgeFooter from "../SecurityBudgeFooter";
 
 const Footer = () => {
   return (
-    <div className="container mw-100 m-0 p-0">
+    <div className="container mw-100 m-0 p-0 w-cm mx-auto">
       <footer className=" text-center text-lg-start  w-100 ">
         <div className="container mw-100 p-4 pb-0">
           <div className="row my-4 justify-content-between">

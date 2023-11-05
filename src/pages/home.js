@@ -99,16 +99,19 @@ const HomePage = () => {
             </div>
           </div>
           <div className="w-100">
-            <h3 className="all-titles text-center mx-auto mt-4 mb-4 w-cm">
+            <h3 className="all-titles text-center mx-auto my-4 w-cm">
               Most Loved Products
             </h3>
             <SliderCard />
           </div>
-          <div className="w-cm">
-            <h3 className="all-titles p-4 mx-auto text-center">
-              Offering Custom Banners and Signs For Business/Home Needs
-            </h3>
-            <div className="select-product-box w-100 d-flex justify-content-center align-items-center p-4 flex-wrap">
+          <h3
+            className="all-titles p-4 mx-auto text-center"
+            style={{ fontSize: "29px" }}
+          >
+            Offering Custom Banners and Signs For Business/Home Needs
+          </h3>
+          <div className="w-100 select-product-box">
+            <div className="w-cm w-100 d-flex justify-content-center align-items-center p-4 flex-wrap">
               <h5 className="d-inline m-2">Select Your Product</h5>
               <Form.Select
                 aria-label="Default select example"
@@ -132,13 +135,17 @@ const HomePage = () => {
                 Found <b>79 Banners</b> for your selection
               </h6>
               <VerticalImgCardSlider />
-              <Button variant="outline-primary bg-orange border-0 text-light">
+              <Button
+                variant="outline-primary"
+                style={{ padding: "10px 20px" }}
+                className=" bg-orange border-0 text-light"
+              >
                 View All
               </Button>
             </div>
           </div>
-          <div className="w-100 border rounded my-5">
-            <div className=" w-75 d-flex justify-content-between mx-auto py-3 px-2 ">
+          <div className="w-100 border rounded my-5 w-cm">
+            <div className=" w-90 d-flex justify-content-between mx-auto py-3 px-2 ">
               <h3 className="w-25">Ways to get the Right Print</h3>
               <div className="d-flex align-item-center">
                 <img
@@ -179,18 +186,18 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <h3 className="text-center all-titles w-100 mt-3 w-cm">
-            Our Best Sellers
-          </h3>
-          <span className="text-center w-100 sub-gray-text w-cm">
-            Boost Sales with Top-Charting Categories
-          </span>
+          <div className="w-100 text-center">
+            <h3 className="text-center all-titles w-100">Our Best Sellers</h3>
+            <span className="text-center w-100 sub-gray-text">
+              Boost Sales with Top-Charting Categories
+            </span>
+          </div>
           <div className="my-5 d-flex flex-wrap justify-content-around w-cm">
             {arrayOfTen.map((i) => (
               <ProductBox />
             ))}
           </div>
-          <div className="w-100 d-flex justify-content-around poster-box my-4 w-cm">
+          <div className="w-100 d-flex justify-content-around poster-box my-5 w-cm">
             <img
               src={poster1}
               alt="poster"
@@ -208,19 +215,23 @@ const HomePage = () => {
           <span className="text-center w-100 sub-gray-text">
             Explore Our Most Popular Products
           </span>
-          <OnHBorderBtnCardSlider />
-          <div className="w-100 text-right p-4">
-            <OrangeButton text="View All" />
+          <div className="w-cm">
+            <OnHBorderBtnCardSlider />
+            <div className="w-100 text-right p-4">
+              <OrangeButton text="View All" />
+            </div>
           </div>
           <div
-            className="w-100 text-center py-2 w-cm"
+            className="w-100 text-center py-2 "
             style={{ background: "rgb(247, 247, 255)" }}
           >
-            <h3 className="all-titles text-center w-100 mt-3">New Arrivals</h3>
+            <h3 className="all-titles text-center w-100 pt-4">New Arrivals</h3>
             <span className="text-center w-100 sub-gray-text">
               Check Out Our Latest Products
             </span>
-            <OnHBorderBtnCardSlider secound={true} />
+            <div className="w-cm">
+              <OnHBorderBtnCardSlider secound={true} />
+            </div>
           </div>
           <container className="d-flex w-100 flex-wrap justify-content-around my-5 w-cm">
             <div

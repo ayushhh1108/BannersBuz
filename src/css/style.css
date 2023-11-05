@@ -7,6 +7,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: 'Inter', sans-serif !important;
 }
 .gap-3 {
   gap: 30px;
@@ -232,7 +233,7 @@ a:hover {
 }
 .w-cm {
   margin: 0px auto;
-  width: 96%;
+  width: 1570px !important;
 }
 .topbar {
   padding-top: 5px;
@@ -505,22 +506,24 @@ a:hover {
 }
 .product-h-box {
   transition: all 0.7s;
-}
-.product-h-box:hover {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
-.product-h-box:hover .card-img-box {
+.costomize-text:hover{
+  color: white;
+  background-color: var(--orange);
+}
+.card-img-box {
   border-bottom: none !important;
 }
-.product-h-box:hover .costomize-text {
+.costomize-text {
   color: white;
   background-color: var(--blue-color);
   margin-top: 15px;
 }
-.product-h-box:hover .right-arrows {
+.right-arrows {
   display: none;
 }
 .design-center-div {
@@ -916,10 +919,10 @@ a:hover {
 
 }
 .mySwiper .swiper-button-prev:after, .mySwiper .swiper-button-next:after{
-  font-size: 20px;
+  font-size: 12px;
   color: white;
   background-color: #100F5D;
-  padding: 6px 9px;
+  padding: 7px 10px;
   border-radius: 5px;
   font-weight: bold;
 }

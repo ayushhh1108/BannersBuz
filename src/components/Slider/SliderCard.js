@@ -15,14 +15,13 @@ import { Link } from "react-router-dom";
 const SliderCard = () => {
   const [array, setArray] = useState([1, 2, 3, 4, 4, 5, 6, 7, 8, 9]);
   return (
-    <>
+    <div className="w-100" style={{ backgroundColor: "#ef28001a" }}>
       <Swiper
         slidesPerView={3}
-        spaceBetween={30}
+        spaceBetween={50}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper p-5 height-fitcontant"
-        style={{ backgroundColor: "#ef28001a" }}
+        className="mySwiper p-5 height-fitcontant w-cm"
       >
         {array.map((i) => (
           <SwiperSlide>
@@ -32,7 +31,7 @@ const SliderCard = () => {
                   <img src={cardImg} alt="card-img" />
                 </div>
                 <div className="d-flex flex-wrap align-items-center pl-3 w-75">
-                  <h5 className="card-title text-left mb-0">
+                  <h5 className="card-title text-left mb-0 f-size-18 fw-bold">
                     Special title treatment
                   </h5>
                   <div className="w-100">
@@ -42,7 +41,7 @@ const SliderCard = () => {
                       <img src={star} alt="star" />
                       <img src={star} alt="star" />
                       <img src={halfstar} alt="star" />
-                      <span className="ms-1">(4.5/5)</span>
+                      <span className="ms-1 f-size-14">(4.5/5)</span>
                     </div>
                     <Card.Text className="text-left">
                       <span className="test-dec">Starts at </span>$6.99
@@ -57,7 +56,7 @@ const SliderCard = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </div>
   );
 };
 
@@ -80,8 +79,8 @@ const VerticalImgCardSlider = () => {
                 <div className="img-container w-100 px-5 py-3">
                   <img src={cardImg} alt="card-img" />
                 </div>
-                <div className="d-flex flex-wrap align-items-center w-100 justify-content-center">
-                  <h5 className="card-title text-center mb-0 p-2">
+                <div className="pb-4 d-flex flex-wrap align-items-center w-100 justify-content-center">
+                  <h5 className="card-title text-center mb-0 p-2 f-size-18 fw-bold">
                     Special title treatment
                   </h5>
                   <div className="w-100 p-2">
@@ -91,10 +90,10 @@ const VerticalImgCardSlider = () => {
                       <img src={star} alt="star" />
                       <img src={star} alt="star" />
                       <img src={halfstar} alt="star" />
-                      <span className="ms-1 font-weight-light">3980</span>
+                      <span className="ms-1 font-weight-light f-size-14">3980</span>
                     </div>
-                    <Card.Text className="text-center p-2">
-                      <span className="test-dec">Starts at </span>$6.99
+                    <Card.Text className="text-center p-2 f-size-16">
+                      <span className="test-dec ">Starts at </span>$6.99
                     </Card.Text>
                   </div>
                   <Link to='/photo-magnets'>
@@ -116,11 +115,11 @@ const OnHBorderBtnCardSlider = ({ secound }) => {
     <>
       <Swiper
         slidesPerView={4}
-        spaceBetween={30}
+        spaceBetween={55}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper p-5 py-4"
-        style={{ height: "fit-content" }}
+        className="mySwiper p-5 py-5"
+        style={{  height:  "fit-content"  }}
       >
         {array.map((i) => (
           <SwiperSlide style={{ height: "fit-content" }}>

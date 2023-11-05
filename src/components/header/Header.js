@@ -298,9 +298,15 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
           )}
         </div>
         <div className="d-none d-md-flex w-20 justify-content-around chat-now-box">
-          <div className="d-flex justify-content-between align-items-center w-50 callUsBox">
+          <div className="d-flex align-items-center w-50 callUsBox">
             <img src={callUs} alt="callUs" className="call-us connect" />
-            <span className="small-sub-text">
+            <span className="small-sub-text ml-3">
+              Chat now
+            </span>
+          </div>
+          <div className="d-flex align-items-center w-50 callUsBox">
+            <img src={callUs} alt="callUs" className="call-us connect" />
+            <span className="small-sub-text ml-3">
               Call us
               <p className="mb-0">800-580-4489</p>
             </span>

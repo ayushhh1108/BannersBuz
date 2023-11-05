@@ -19,7 +19,7 @@ const ProductBox = () => {
     <div className="w-18 cursor-pointer product-box my-3">
       <Link to='/stands-and-displays'>
         <div className="border rounded product-img-box">
-          <img src={products} alt="alt" className="w-100" />
+          <img src={products} alt="alt" className="w-100 rounded" />
         </div>
         <p className="text-center text-dark py-3 f-size-18 mb-0 product-label">
           Custom Flags
@@ -35,7 +35,7 @@ const OnHBorderBtnCard = ({ secound }) => {
       <div
         className={secound ? "border rounded " : "border rounded card-img-box"}
       >
-        <img src={secound ? product2 : products} alt="alt" className="w-100" />
+        <img src={secound ? product2 : products} alt="alt" className="w-100 rounded" />
       </div>
       <p className="all-titles text-center py-3 px-1 f-size-16 mb-0 product-label">
         Address Labels / Return Address Labels
@@ -48,12 +48,6 @@ const OnHBorderBtnCard = ({ secound }) => {
         className="d-flex card-title w-100 justify-content-center p-3 costomize-text"
       >
         View Details{" "}
-        <img
-          src={rightArrow}
-          alt="right-arrow"
-          className="pl-2 right-arrows"
-          style={{ width: "36px" }}
-        />
       </Link>
     </div>
   );
