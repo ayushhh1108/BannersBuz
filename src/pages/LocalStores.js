@@ -43,16 +43,16 @@ const LocalStoresPage = () => {
           Yes, Bannerbuzz not just serves the best-in-class banners and signs,
           they are available across all the 50 States and Canada.
         </p>
-        <p className="text-center my-5">
+        <p className="text-center d-flex flex-wrap justify-content-center my-5">
           {data.map((i) => {
             return <span className="p-2">{i}</span>;
           })}
         </p>
         <div className="w-100 d-flex flex-wrap">
           <div className="w-100 d-flex my-4">
-            <div className="w-20 f-size-70 heading-color">A</div>
-            <div className="w-80 d-flex flex-wrap">
-              <div className="w-25 mb-4">
+            <div className="col-2 d-none d-lg-block f-size-70 heading-color">A</div>
+            <div className="col-12 col-lg-10 d-flex flex-wrap ">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h6 className="heading-color font-weight-bold">Alabama, US</h6>
                 <p className="black-color f-size-14 my-1 light-grey">
                   Alabama Vinyl Banners
@@ -64,7 +64,7 @@ const LocalStoresPage = () => {
                   Alabama Vinyl Banners
                 </p>
               </div>
-              <div className="w-25 mb-4">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h6 className="heading-color font-weight-bold">Alabama, US</h6>
                 <p className="black-color f-size-14 my-1 light-grey">
                   Alabama Vinyl Banners
@@ -76,7 +76,7 @@ const LocalStoresPage = () => {
                   Alabama Vinyl Banners
                 </p>
               </div>
-              <div className="w-25 mb-4">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h6 className="heading-color font-weight-bold">Alabama, US</h6>
                 <p className="black-color f-size-14 my-1 light-grey">
                   Alabama Vinyl Banners
@@ -88,7 +88,7 @@ const LocalStoresPage = () => {
                   Alabama Vinyl Banners
                 </p>
               </div>
-              <div className="w-25 mb-4">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h6 className="heading-color font-weight-bold">Alabama, US</h6>
                 <p className="black-color f-size-14 my-1 light-grey">
                   Alabama Vinyl Banners
@@ -100,7 +100,7 @@ const LocalStoresPage = () => {
                   Alabama Vinyl Banners
                 </p>
               </div>
-              <div className="w-25 mb-4">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h6 className="heading-color font-weight-bold">Alabama, US</h6>
                 <p className="black-color f-size-14 my-1 light-grey">
                   Alabama Vinyl Banners
@@ -112,84 +112,7 @@ const LocalStoresPage = () => {
                   Alabama Vinyl Banners
                 </p>
               </div>
-              <div className="w-25 mb-4">
-                <h6 className="heading-color font-weight-bold">Alabama, US</h6>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="w-100 d-flex my-4">
-            <div className="w-20 f-size-70 heading-color">B</div>
-            <div className="w-80 d-flex flex-wrap">
-              <div className="w-25 mb-4">
-                <h6 className="heading-color font-weight-bold">Alabama, US</h6>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-              </div>
-              <div className="w-25 mb-4">
-                <h6 className="heading-color font-weight-bold">Alabama, US</h6>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-              </div>
-              <div className="w-25 mb-4">
-                <h6 className="heading-color font-weight-bold">Alabama, US</h6>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-              </div>
-              <div className="w-25 mb-4">
-                <h6 className="heading-color font-weight-bold">Alabama, US</h6>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-              </div>
-              <div className="w-25 mb-4">
-                <h6 className="heading-color font-weight-bold">Alabama, US</h6>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-              </div>
-              <div className="w-25 mb-4">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h6 className="heading-color font-weight-bold">Alabama, US</h6>
                 <p className="black-color f-size-14 my-1 light-grey">
                   Alabama Vinyl Banners
@@ -204,9 +127,9 @@ const LocalStoresPage = () => {
             </div>
           </div>
           <div className="w-100 d-flex my-4">
-            <div className="w-20 f-size-70 heading-color">C</div>
-            <div className="w-80 d-flex flex-wrap">
-              <div className="w-25 mb-4">
+            <div className="col-2 d-none d-lg-block f-size-70 heading-color">B</div>
+            <div className="col-12 col-lg-10 d-flex flex-wrap ">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h6 className="heading-color font-weight-bold">Alabama, US</h6>
                 <p className="black-color f-size-14 my-1 light-grey">
                   Alabama Vinyl Banners
@@ -218,7 +141,7 @@ const LocalStoresPage = () => {
                   Alabama Vinyl Banners
                 </p>
               </div>
-              <div className="w-25 mb-4">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h6 className="heading-color font-weight-bold">Alabama, US</h6>
                 <p className="black-color f-size-14 my-1 light-grey">
                   Alabama Vinyl Banners
@@ -230,7 +153,7 @@ const LocalStoresPage = () => {
                   Alabama Vinyl Banners
                 </p>
               </div>
-              <div className="w-25 mb-4">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h6 className="heading-color font-weight-bold">Alabama, US</h6>
                 <p className="black-color f-size-14 my-1 light-grey">
                   Alabama Vinyl Banners
@@ -242,12 +165,7 @@ const LocalStoresPage = () => {
                   Alabama Vinyl Banners
                 </p>
               </div>
-            </div>
-          </div>
-          <div className="w-100 d-flex my-4">
-            <div className="w-20 f-size-70 heading-color">D</div>
-            <div className="w-80 d-flex flex-wrap">
-              <div className="w-25 mb-4">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h6 className="heading-color font-weight-bold">Alabama, US</h6>
                 <p className="black-color f-size-14 my-1 light-grey">
                   Alabama Vinyl Banners
@@ -259,7 +177,7 @@ const LocalStoresPage = () => {
                   Alabama Vinyl Banners
                 </p>
               </div>
-              <div className="w-25 mb-4">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h6 className="heading-color font-weight-bold">Alabama, US</h6>
                 <p className="black-color f-size-14 my-1 light-grey">
                   Alabama Vinyl Banners
@@ -271,24 +189,7 @@ const LocalStoresPage = () => {
                   Alabama Vinyl Banners
                 </p>
               </div>
-            </div>
-          </div>
-          <div className="w-100 d-flex my-4">
-            <div className="w-20 f-size-70 heading-color">D</div>
-            <div className="w-80 d-flex flex-wrap">
-              <div className="w-25 mb-4">
-                <h6 className="heading-color font-weight-bold">Alabama, US</h6>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-                <p className="black-color f-size-14 my-1 light-grey">
-                  Alabama Vinyl Banners
-                </p>
-              </div>
-              <div className="w-25 mb-4">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h6 className="heading-color font-weight-bold">Alabama, US</h6>
                 <p className="black-color f-size-14 my-1 light-grey">
                   Alabama Vinyl Banners
@@ -303,9 +204,9 @@ const LocalStoresPage = () => {
             </div>
           </div>
           <div className="w-100 d-flex my-4">
-            <div className="w-20 f-size-70 heading-color">V</div>
-            <div className="w-80 d-flex flex-wrap">
-              <div className="w-25 mb-4">
+            <div className="col-2 d-none d-lg-block f-size-70 heading-color">C</div>
+            <div className="col-12 col-lg-10 d-flex flex-wrap ">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h6 className="heading-color font-weight-bold">Alabama, US</h6>
                 <p className="black-color f-size-14 my-1 light-grey">
                   Alabama Vinyl Banners
@@ -317,7 +218,19 @@ const LocalStoresPage = () => {
                   Alabama Vinyl Banners
                 </p>
               </div>
-              <div className="w-25 mb-4">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <h6 className="heading-color font-weight-bold">Alabama, US</h6>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+              </div>
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h6 className="heading-color font-weight-bold">Alabama, US</h6>
                 <p className="black-color f-size-14 my-1 light-grey">
                   Alabama Vinyl Banners
@@ -332,9 +245,9 @@ const LocalStoresPage = () => {
             </div>
           </div>
           <div className="w-100 d-flex my-4">
-            <div className="w-20 f-size-70 heading-color">W</div>
-            <div className="w-80 d-flex flex-wrap">
-              <div className="w-25 mb-4">
+            <div className="col-2 d-none d-lg-block f-size-70 heading-color">D</div>
+            <div className="col-12 col-lg-10 d-flex flex-wrap ">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h6 className="heading-color font-weight-bold">Alabama, US</h6>
                 <p className="black-color f-size-14 my-1 light-grey">
                   Alabama Vinyl Banners
@@ -346,7 +259,7 @@ const LocalStoresPage = () => {
                   Alabama Vinyl Banners
                 </p>
               </div>
-              <div className="w-25 mb-4">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h6 className="heading-color font-weight-bold">Alabama, US</h6>
                 <p className="black-color f-size-14 my-1 light-grey">
                   Alabama Vinyl Banners
@@ -358,7 +271,12 @@ const LocalStoresPage = () => {
                   Alabama Vinyl Banners
                 </p>
               </div>
-              <div className="w-25 mb-4">
+            </div>
+          </div>
+          <div className="w-100 d-flex my-4">
+            <div className="col-2 d-none d-lg-block f-size-70 heading-color">D</div>
+            <div className="col-12 col-lg-10 d-flex flex-wrap ">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h6 className="heading-color font-weight-bold">Alabama, US</h6>
                 <p className="black-color f-size-14 my-1 light-grey">
                   Alabama Vinyl Banners
@@ -370,7 +288,7 @@ const LocalStoresPage = () => {
                   Alabama Vinyl Banners
                 </p>
               </div>
-              <div className="w-25 mb-4">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h6 className="heading-color font-weight-bold">Alabama, US</h6>
                 <p className="black-color f-size-14 my-1 light-grey">
                   Alabama Vinyl Banners
@@ -382,7 +300,89 @@ const LocalStoresPage = () => {
                   Alabama Vinyl Banners
                 </p>
               </div>
-              <div className="w-25 mb-4">
+            </div>
+          </div>
+          <div className="w-100 d-flex my-4">
+            <div className="col-2 d-none d-lg-block f-size-70 heading-color">V</div>
+            <div className="col-12 col-lg-10 d-flex flex-wrap ">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <h6 className="heading-color font-weight-bold">Alabama, US</h6>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+              </div>
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <h6 className="heading-color font-weight-bold">Alabama, US</h6>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="w-100 d-flex my-4">
+            <div className="col-2 d-none d-lg-block f-size-70 heading-color">W</div>
+            <div className="col-12 col-lg-10 d-flex flex-wrap ">
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <h6 className="heading-color font-weight-bold">Alabama, US</h6>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+              </div>
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <h6 className="heading-color font-weight-bold">Alabama, US</h6>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+              </div>
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <h6 className="heading-color font-weight-bold">Alabama, US</h6>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+              </div>
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <h6 className="heading-color font-weight-bold">Alabama, US</h6>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+                <p className="black-color f-size-14 my-1 light-grey">
+                  Alabama Vinyl Banners
+                </p>
+              </div>
+              <div className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                 <h6 className="heading-color font-weight-bold">Alabama, US</h6>
                 <p className="black-color f-size-14 my-1 light-grey">
                   Alabama Vinyl Banners

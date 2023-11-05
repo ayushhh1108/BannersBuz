@@ -11,7 +11,7 @@ const CheckoutSuccessPage = () => {
       <div className="main-container w-cm">
         <div className="carosal-box d-flex flex-wrap mb-5">
           <Container className="my-5 text-center">
-            <Card className="w-75 mx-auto">
+            <Card className="col-12 col-lg-9 mx-auto">
               <Card.Body className="py-5">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
