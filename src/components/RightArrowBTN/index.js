@@ -5,16 +5,19 @@ const RightArrowbtn = ({ text }) => {
   return (
     <a
       href="#"
-      className="d-flex card-title align-items-center px-4 rounded py-2 justify-content-around w-fit-content text-light bg-blue-btn"
+      className="d-flex card-title align-items-center px-3 rounded py-1 justify-content-around w-fit-content text-light bg-blue-btn"
     >
-      <span className="pr-2">{text}</span> <RightSideArrowIcon />
+      <span className="pr-2 f-size-16">{text}</span> <RightSideArrowIcon />
     </a>
   );
 };
 
 const OrangeButton = ({ text }) => {
   return (
-    <Button variant="outline-primary outline-primary bg-orange border-0 py-1 text-light">
+    <Button
+      variant="outline-primary outline-primary bg-orange border-0 text-light"
+      style={{ padding: "10px 20px" }}
+    >
       {text}
     </Button>
   );
