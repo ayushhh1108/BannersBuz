@@ -38,6 +38,7 @@ import CheckoutCartPage from './pages/Cart';
 import OnePageCheckout from './pages/OnePageCheckout';
 import OrdersStatusPage from './pages/OrdersStatus';
 import CheckoutSuccessPage from './pages/CheckoutSuccess';
+import AboutUs from './pages/AboutUs';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
         <Route path='/reviews' element={<Reviews />} />                                      //done
         <Route path='/coupons' element={<Coupons />} />                                       // done
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />                        // done
+        <Route path='/about-us' element={<AboutUs />} />                                  // done
         <Route path='/terms-and-conditions' element={<TermsandConditions />} />             //done
         <Route path='/contact-us' element={<Contactus />} />                              // done
         <Route path='/faqs' element={<Faq />} />                                            // done
