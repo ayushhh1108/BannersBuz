@@ -157,7 +157,7 @@ const PhotoMegnets = () => {
                 />
 
               </div>
-              <div className="border d-block d-lg-none p-4 ">
+              <div className="border d-block d-lg-none p-2 p-sm-4 ">
                 <div className="text-center">
                   <span className="text-decoration-line-through fw-bold ">$ 39.32</span>
                   <h3>$ 23.43</h3>
