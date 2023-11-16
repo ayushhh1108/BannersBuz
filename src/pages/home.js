@@ -38,7 +38,7 @@ const HomePage = () => {
   return (
     <div>
       <Header />
-      <div className="main-container">
+      {/* <div className="main-container">
         <div className="carosal-box d-flex flex-wrap mb-5">
           <div className="w-cm d-flex">
             <Carousal />
@@ -68,7 +68,7 @@ const HomePage = () => {
               <h4 className="w-100 text-center text-warning">
                 22% off Sitewide
               </h4>
-              <div className="d-flex height-fitcontant w-100 justify-content-space-evenly">
+              <div className="d-flex flex-wrap height-fitcontant w-100 justify-content-space-evenly">
                 <div className="w-50 d-flex height-fitcontant p-2 copy-side justify-content-between">
                   <p className="mb-0">FLASH</p>
                   <img src={copy} alt="copy" className="copy-icon" />
@@ -274,7 +274,7 @@ const HomePage = () => {
               </div>
               <div className="poster-side2">
                 <img src={item1} alt="poster" className="w-90" />
-              </div>
+              </div>  
             </div>
             <div
               className="w-48 height-fitcontant d-flex align-items-center justify-content-between p-1830 rounded my-2"
@@ -319,9 +319,9 @@ const HomePage = () => {
               </div>
             </div>
           </container>
-          <container className="w-100 d-flex justify-content-around my-3 w-cm">
+          <container className="w-100 d-flex flex-wrap justify-content-around my-3 w-cm px-2">
             <div
-              className="w-49 rounded d-flex flex-wrap"
+              className="w-49 rounded d-flex flex-wrap review-container"
               style={{ backgroundColor: "#fffdec" }}
             >
               <h3 className="text-center w-100 mt-5 font-weight-bold d-block">
@@ -378,7 +378,7 @@ const HomePage = () => {
                         </div>
                       </CircularProgressbarWithChildren>
                     </div>
-                    <h5 className="mb-0 d-inline fw-bold ml-2">
+                    <h5 className="mb-0 d-inline fw-bold ml-2 review-box-title">
                       Customers Support
                     </h5>
                   </div>
@@ -408,7 +408,7 @@ const HomePage = () => {
                         </div>
                       </CircularProgressbarWithChildren>
                     </div>
-                    <h5 className="mb-0 d-inline fw-bold ml-2">
+                    <h5 className="mb-0 d-inline fw-bold ml-2 review-box-title">
                       Customers Review
                     </h5>
                   </div>
@@ -438,7 +438,7 @@ const HomePage = () => {
                         </div>
                       </CircularProgressbarWithChildren>
                     </div>
-                    <h5 className="mb-0 d-inline fw-bold ml-2">
+                    <h5 className="mb-0 d-inline fw-bold ml-2 review-box-title">
                       Repeat Customers
                     </h5>
                   </div>
@@ -446,7 +446,7 @@ const HomePage = () => {
               </div>
             </div>
             <div
-              className="w-49 rounded"
+              className="w-49 rounded review-container"
               style={{ backgroundColor: "#f2f2f2" }}
             >
               <h3 className="text-center w-100 mt-5 font-weight-bold">
@@ -565,7 +565,7 @@ const HomePage = () => {
           <SubscribeSection />
           <Footer />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
