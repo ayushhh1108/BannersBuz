@@ -12,11 +12,14 @@ import chat from "../../assets/chat-now.svg";
 import callUs from "../../assets/call-us.svg";
 import order_track from "../../assets/order-tracking.svg";
 import logo from "../../assets/logo.svg";
+import sidebaarIcon from "../../assets/menu-button-header.png";
 import searchIcon from "../../assets/search.svg";
 import "../../css/style.css";
 import CreatableSelect from "react-select/creatable";
 import CartModel from "../Model";
 import SideBaar from "../SideBaar";
+import BagIcon from "../../assets/BagIcon";
+import ProfileIcon from "../../assets/ProfileIcon";
 const Header = ({ upperLineNone, categoryNone, searchNone }) => {
   const [cart, setCart] = useState(false);
   const [sideBaar, setSideBaar] = useState(false);
@@ -25,7 +28,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
   };
   const handleCloseSideBaar = () => {
     setSideBaar(false);
-  }
+  };
   const menuItems = [
     "Banners",
     "Stands & Displays",
@@ -154,7 +157,10 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
             </div>
           </div>
           <div className="topbar_right d-flex font-size-13 right-sideheader w-46 ">
-            <div className="text-light font-size-13 d-sm-none" onClick={()=>setSideBaar(true)}>
+            <div
+              className="text-light font-size-13 d-sm-none"
+              onClick={() => setSideBaar(true)}
+            >
               <img src={account} alt="account" className="profile-png" /> Hi,
               Vraj
             </div>
@@ -273,10 +279,16 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
         ""
       )}
       <div className="main_wrapper">
-        <div className="header-logo d-flex align-item-center">
-          <img src={logo} className="mw-100" alt="logo" />
+        <div className="header-logo d-flex align-items-center">
+          <img
+            src={sidebaarIcon}
+            className=" d-none side-baar-icon"
+            onClick={() => setSideBaar(true)}
+            alt="logo"
+          />
+          <img src={logo} className="mw-90" alt="logo" />
         </div>
-        <div className="search-select-box d-flex align-items-center">
+        <div className="search-select-box d-flex align-items-center ">
           {!searchNone ? (
             <CreatableSelect
               components={{
@@ -297,12 +309,10 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
             ""
           )}
         </div>
-        <div className="d-none d-md-flex w-20 justify-content-around chat-now-box">
+        <div className="d-flex w-20 justify-content-around chat-now-box">
           <div className="d-flex align-items-center w-50 callUsBox">
-            <img src={callUs} alt="callUs" className="call-us connect" />
-            <span className="small-sub-text ml-3">
-              Chat now
-            </span>
+            <img src={chat} alt="callUs" className="call-us connect" />
+            <span className="small-sub-text ml-3">Chat now</span>
           </div>
           <div className="d-flex align-items-center w-50 callUsBox">
             <img src={callUs} alt="callUs" className="call-us connect" />
@@ -311,46 +321,110 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
               <p className="mb-0">800-580-4489</p>
             </span>
           </div>
+          <div className="Icons-header">
+            <Link
+              className="dropdown-toggle text-dark "
+              to="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <ProfileIcon />
+            </Link>
+            <div
+              className="dropdown-menu font-size-13 py-0 profile-dropdown"
+              aria-labelledby="dropdownMenuLink"
+            >
+              <Link className="dropdown-item px-3" to="#">
+                My Account
+              </Link>
+              <Link className="dropdown-item px-3" to="#">
+                My design
+              </Link>
+              <Link
+                className="dropdown-item px-3 bg-secondary text-light"
+                to="#"
+              >
+                Logout
+              </Link>
+            </div>
+            <div
+              onClick={() => {
+                setCart(true);
+              }}
+            >
+              <BagIcon />
+            </div>
+          </div>
         </div>
       </div>
+      <div className="search-select-box-mobile d-none align-items-center ">
+        {!searchNone ? (
+          <CreatableSelect
+            components={{
+              DropdownIndicator: () => (
+                <img src={searchIcon} className="pr-3" />
+              ),
+              IndicatorSeparator: () => null,
+            }}
+            styles={{
+              control: (baseStyles) => ({
+                ...baseStyles,
+              }),
+            }}
+            placeholder="Search for "
+            className="w-100"
+          />
+        ) : (
+          ""
+        )}
+      </div>
       {!categoryNone && (
-        <div className="main-navbar d-none d-md-flex navbar-color justify-content-around">
-          {menuItems.map((item) => (
-            <>
-              <Link
-                className="dropdown-toggle text-light d-flex align-items-center"
-                to="#"
-                role="button"
-                id="dropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <div className="prl-2 nav-item cursor-pointer">{item}</div>
-              </Link>
-              <div
-                className="dropdown-menu font-size-13 p-2 w-65"
-                aria-labelledby="dropdownMenuLink"
-              >
-                <div className="w-100 d-flex flex-wrap">
-                  {CategoryData.map((i) => (
-                    <div className="w-20 py-2">
-                      <p className="px-3 py-1 mb-0 text-center d-flex justify-content-between cursor-pointer f-size-16 text-primary">
-                        {i.category}
-                      </p>
-                      {i.subcategories.map((sub) => (
-                        <p className="text-secondary mb-0 px-3">{sub}</p>
-                      ))}
-                    </div>
-                  ))}
+        <div className="main-navbar navbar-color">
+          <div className=" d-none d-md-flex  justify-content-around">
+            {menuItems.map((item) => (
+              <>
+                <Link
+                  className="dropdown-toggle text-light d-flex align-items-center w-fit-content mx-2"
+                  to="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <div className="prl-2 nav-item cursor-pointer">{item}</div>
+                </Link>
+                <div
+                  className="dropdown-menu font-size-13 p-2 w-65"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <div className="w-100 d-flex flex-wrap">
+                    {CategoryData.map((i) => (
+                      <div className="w-20 py-2">
+                        <p className="px-3 py-1 mb-0 text-center d-flex justify-content-between cursor-pointer f-size-16 text-primary">
+                          {i.category}
+                        </p>
+                        {i.subcategories.map((sub) => (
+                          <p className="text-secondary mb-0 px-3">{sub}</p>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </>
-          ))}
+              </>
+            ))}
+          </div>
         </div>
       )}
       <CartModel open={cart} handleClose={handleClose} />
-      <SideBaar open={sideBaar} handleClose={handleCloseSideBaar} categoryData={CategoryData} />
+      <SideBaar
+        open={sideBaar}
+        handleClose={handleCloseSideBaar}
+        categoryData={CategoryData}
+      />
     </header>
   );
 };

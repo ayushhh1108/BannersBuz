@@ -68,7 +68,7 @@ const TipsSuggetionCard = ({ width }) => {
         Halloween ranks as one of the most consumer-driven holidays in the
         calendar year, second in prominence only to Christmas. Families and
       </p>
-      <div className="w-90 d-flex justify-content-between align-items-center mx-auto px-1 my-2 py-2">
+      <div className="w-90 d-flex flex-wrap justify-content-between align-items-center mx-auto px-1 my-2 py-2">
         <Link to='/blogs/category/:id'>
           <OrangeButton text="Read more" />
         </Link>
