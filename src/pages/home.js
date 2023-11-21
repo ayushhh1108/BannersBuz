@@ -38,7 +38,7 @@ const HomePage = () => {
   return (
     <div>
       <Header />
-      {/* <div className="main-container">
+      <div className="main-container">
         <div className="carosal-box d-flex flex-wrap mb-5">
           <div className="w-cm d-flex">
             <Carousal />
@@ -565,7 +565,7 @@ const HomePage = () => {
           <SubscribeSection />
           <Footer />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
