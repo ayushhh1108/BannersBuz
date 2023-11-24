@@ -34,7 +34,7 @@ function BreadCrum() {
 
 function OnlyBreadCrum() {
     return (
-        <div className='col-12 p-3 d-flex align-items-center'>
+        <div className='col-12 p-3 d-flex align-items-center z-n1'>
             <div className='breadcrum-box'>
                 <span>Home</span>
             </div>
