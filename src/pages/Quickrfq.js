@@ -19,7 +19,7 @@ const Quickrfq = () => {
             <Header />
             <div className="container">
                 <QualityBar />
-                <div className="quotation mt-5">
+                <div className="quotation mt-5 z-n1">
                     <h2 className="text-light">Our Quotation</h2>
                     <div className="dateMainBox d-none d-sm-block">
                         28th October 2023

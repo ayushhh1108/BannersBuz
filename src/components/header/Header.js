@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import usa from "../../assets/usa.svg";
 import account from "../../assets/account.svg";
 import items from "../../assets/items.svg";
@@ -23,6 +23,7 @@ import ProfileIcon from "../../assets/ProfileIcon";
 const Header = ({ upperLineNone, categoryNone, searchNone }) => {
   const [cart, setCart] = useState(false);
   const [sideBaar, setSideBaar] = useState(false);
+  const navigate = useNavigate();
   const handleClose = () => {
     setCart(false);
   };
@@ -117,7 +118,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
       {!upperLineNone ? (
         <div className="topbar d-flex justify-content-between px-4">
           <div className="toppbar_left d-flex flex-nowrap align-items-center header-first-sec">
-            <Link to="" className="text-light font-size-13">
+            <Link to="/orderstatus" className="text-light font-size-13">
               {" "}
               <img
                 src={order_track}
@@ -143,14 +144,26 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
                   className="dropdown-menu font-size-13"
                   aria-labelledby="dropdownMenuLink"
                 >
-                  <Link className="dropdown-item px-2" to="#">
-                    Action
+                  <Link className="dropdown-item px-2" to="/photo-magnets">
+                    Vectorization
                   </Link>
-                  <Link className="dropdown-item px-2" to="#">
-                    Another action
+                  <Link className="dropdown-item px-2" to="/quickrfq">
+                    Instant Quote
                   </Link>
-                  <Link className="dropdown-item px-2" to="#">
-                    Something else here
+                  <Link
+                    className="dropdown-item px-2"
+                    to="/dealer-registration"
+                  >
+                    Dealer Registration
+                  </Link>
+                  <Link className="dropdown-item px-2" to="/free-charity-banner">
+                    Banners for a Cause
+                  </Link>
+                  <Link className="dropdown-item px-2" to="/sampal-kit">
+                    Sample Kit
+                  </Link>
+                  <Link className="dropdown-item px-2" to="/blogs">
+                    Blogs
                   </Link>
                 </div>
               </div>
@@ -181,7 +194,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
               className="dropdown-menu font-size-13 py-0 profile-dropdown"
               aria-labelledby="dropdownMenuLink"
             >
-              <Link className="dropdown-item px-3" to="#">
+              <Link className="dropdown-item px-3" to="/customer/account">
                 My Account
               </Link>
               <Link className="dropdown-item px-3" to="#">
@@ -404,11 +417,11 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
                   <div className="w-100 d-flex flex-wrap">
                     {CategoryData.map((i) => (
                       <div className="w-20 py-2">
-                        <p className="px-3 py-1 mb-0 text-center d-flex justify-content-between cursor-pointer f-size-16 text-primary">
+                        <p className="px-3 py-1 mb-0 text-center d-flex justify-content-between cursor-pointer f-size-16 text-primary" onClick={()=>navigate("/stands-and-displays")}>
                           {i.category}
                         </p>
                         {i.subcategories.map((sub) => (
-                          <p className="text-secondary mb-0 px-3">{sub}</p>
+                          <p className="text-secondary mb-0 px-3" onClick={()=>navigate("/banner")}>{sub}</p>
                         ))}
                       </div>
                     ))}
