@@ -47,7 +47,7 @@ const SliderCard = () => {
                       <span className="test-dec">Starts at </span>$6.99
                     </Card.Text>
                   </div>
-                  <Link to="/stands-and-displays">
+                  <Link to="/banner">
                     <RightArrowbtn text={"View Details"} />
                   </Link>
                 </div>

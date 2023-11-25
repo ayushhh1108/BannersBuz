@@ -45,43 +45,43 @@ function App() {
     <Routes>
       <Route path="/">
         <Route index element={<HomePage />} />
-        <Route path='/stands-and-displays' element={<StandPage />} />                   // done
-        <Route path='/photo-magnets' element={<PhotoMegnets />} />                        // done
-        <Route path='/orderstatus' element={<OrderStatus />} />                           // done
-        <Route path='/country' element={<Country />} />                                         //done
-        <Route path='/reviews' element={<Reviews />} />                                      //done
-        <Route path='/coupons' element={<Coupons />} />                                       // done
-        <Route path='/privacy-policy' element={<PrivacyPolicy />} />                        // done
-        <Route path='/about-us' element={<AboutUs />} />                                  // done
-        <Route path='/terms-and-conditions' element={<TermsandConditions />} />             //done
-        <Route path='/contact-us' element={<Contactus />} />                              // done
-        <Route path='/faqs' element={<Faq />} />                                            // done
-        <Route path='/banner' element={<Banner />} />                                       // done
-        <Route path='/sampal-kit' element={<SampleKit />} />                              // done
-        <Route path='/quickrfq' element={<Quickrfq />} />                                 //done
-        <Route path='/dealer-registration' element={<DealerRegistration />} />            // done
-        <Route path='/dealerregistration' element={<DealerRegistrationForm />} />         // done
-        <Route path='/blogs' element={<BlogPage />} />                                      // done
-        <Route path='/blogs/category' element={<BlogByCategoryPage />} />                     // done
-        <Route path='/blogs/category/:id' element={<CategoryWithBlog />} />                      // done
-        <Route path='/affiliate-program' element={<AffiliateProgram />} />                    // done
-        <Route path='/local' element={<LocalStoresPage />} />                                 // done
-        <Route path='/free-charity-banner' element={<CharityBannerPage />} />                 // done
-        <Route path='/login' element={<LoginPage />} />                                       // done
-        <Route path='/sign-up' element={<SignUPPage />} />                                    // done
-        <Route path='/customer/account' element={<DashboardPage />} />
-        <Route path='/customer/order' element={<ProfileOrderPage />} />
-        <Route path='/customer/quotations' element={<ProfileQuotesPage />} />
-        <Route path='/customer/credit' element={<ProfileCreditPage />} />
-        <Route path='/customer/address' element={<ProfileAddress />} />
-        <Route path='/customer/account/edit' element={<ProfilePage />} />
-        <Route path='/customer/wallet' element={<ProfileWalletPage />} />
-        <Route path='/customer/tickets' element={<ProfileSupportPage />} />
-        <Route path='/customer/design' element={<ProfileDesignPage />} />
-        <Route path='/checkout/cart' element={<CheckoutCartPage />} />
-        <Route path='/onepagecheckout' element={<OnePageCheckout />} />                           // done
-        <Route path='/checkout/success' element={<CheckoutSuccessPage />} />                    // done
-        <Route path='/order/status' element={<OrdersStatusPage />} />                           // done
+        <Route path='/stands-and-displays' element={<StandPage />} />                   // done o
+        <Route path='/photo-magnets' element={<PhotoMegnets />} />                        // done o
+        <Route path='/orderstatus' element={<OrderStatus />} />                           // doneo
+        <Route path='/country' element={<Country />} />                                         //doneo
+        <Route path='/reviews' element={<Reviews />} />                                      //doneo
+        <Route path='/coupons' element={<Coupons />} />                                       // doneo
+        <Route path='/privacy-policy' element={<PrivacyPolicy />} />                        // doneo
+        <Route path='/about-us' element={<AboutUs />} />                                  // doneo
+        <Route path='/terms-and-conditions' element={<TermsandConditions />} />             //doneo
+        <Route path='/contact-us' element={<Contactus />} />                              // done o
+        <Route path='/faqs' element={<Faq />} />                                            // doneo
+        <Route path='/banner' element={<Banner />} />                                       // doneo
+        <Route path='/sampal-kit' element={<SampleKit />} />                              // doneo
+        <Route path='/quickrfq' element={<Quickrfq />} />                                 //done o
+        <Route path='/dealer-registration' element={<DealerRegistration />} />            // doneo
+        <Route path='/dealerregistration' element={<DealerRegistrationForm />} />         // doneo
+        <Route path='/blogs' element={<BlogPage />} />                                      // doneo
+        <Route path='/blogs/category' element={<BlogByCategoryPage />} />                     // doneo
+        <Route path='/blogs/category/:id' element={<CategoryWithBlog />} />                      // doneo
+        <Route path='/affiliate-program' element={<AffiliateProgram />} />                    // doneo
+        <Route path='/local' element={<LocalStoresPage />} />                                 // doneo
+        <Route path='/free-charity-banner' element={<CharityBannerPage />} />                 // doneo
+        <Route path='/login' element={<LoginPage />} />                                       // doneo
+        <Route path='/sign-up' element={<SignUPPage />} />                                    // doneo
+        <Route path='/customer/account' element={<DashboardPage />} />                        //
+        <Route path='/customer/order' element={<ProfileOrderPage />} />                        //
+        <Route path='/customer/quotations' element={<ProfileQuotesPage />} />                        //
+        <Route path='/customer/credit' element={<ProfileCreditPage />} />                        //
+        <Route path='/customer/address' element={<ProfileAddress />} />                        //
+        <Route path='/customer/account/edit' element={<ProfilePage />} />                        //
+        <Route path='/customer/wallet' element={<ProfileWalletPage />} />                        //
+        <Route path='/customer/tickets' element={<ProfileSupportPage />} />                        //
+        <Route path='/customer/design' element={<ProfileDesignPage />} />                        //
+        <Route path='/checkout/cart' element={<CheckoutCartPage />} />                        //
+        <Route path='/onepagecheckout' element={<OnePageCheckout />} />                           // done o
+        <Route path='/checkout/success' element={<CheckoutSuccessPage />} />                    // done o
+        <Route path='/order/status' element={<OrdersStatusPage />} />                           // done o
       </Route>
     </Routes>
   );
