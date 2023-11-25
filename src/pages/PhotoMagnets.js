@@ -35,10 +35,10 @@ const PhotoMegnets = () => {
         <OnlyBreadCrum />
         <div className="container-fluid">
           <div className="row">
-            <div className=" col-12 col-md-5 col-lg-4">
+            <div className=" col-12 col-md-5 col-lg-4 z-n1">
               <ThumbsSlider />
             </div>
-            <div className="col-12 col-md-7 col-lg-5">
+            <div className="col-12 col-md-7 col-lg-5 z-n1">
               <h1>Photo Magnets</h1>
               <div className="d-flex flex-wrap align-items-center">
                 <div className="me-4 d-flex align-items-center">
@@ -193,7 +193,7 @@ const PhotoMegnets = () => {
 
               </div>
             </div>
-            <div className="col-3 d-none d-lg-block">
+            <div className="col-3 d-none d-lg-block z-n1">
               <div className="border p-4 ">
                 <div className="text-center">
                   <span className="text-decoration-line-through fw-bold ">$ 39.32</span>
@@ -229,12 +229,12 @@ const PhotoMegnets = () => {
                 </Link>
               </div>
             </div>
-            <div className='text-center my-5'>
+            <div className='text-center my-5 z-n1'>
               <h2>Templates of Photo Magnets</h2>
               <p>Just like these, you can make your own personalized banners. Go on, it’s an empty canvas!
               </p>
             </div>
-            <div className="d-flex flex-wrap align-items-center justify-content-around">
+            <div className="d-flex flex-wrap align-items-center justify-content-around z-n1">
               <div className="img-box position-relative">
                 <img src={Emoji} alt="Avatar" class="image" />
                 <div class="middle">
@@ -316,7 +316,7 @@ const PhotoMegnets = () => {
 
 
             </div>
-            <div className="col-12 d-none d-md-block">
+            <div className="col-12 d-none d-md-block z-n1">
               <Nav variant="underline" defaultActiveKey="/home">
                 <Nav.Item>
                   <Nav.Link className="fs-5" href="/home">Description</Nav.Link>
