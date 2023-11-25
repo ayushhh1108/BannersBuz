@@ -21,9 +21,9 @@ import axios from "axios";
 
 const SignUPPage = () => {
 
-  
   const navigate = useNavigate();
   const [loginError, setLoginError] = useState("");
+
   const formik = useFormik({
     initialValues: {
       first_name: "",
@@ -54,6 +54,7 @@ const SignUPPage = () => {
         })
     }
   })
+
   const onGoogleSignup = () => {
     signInWithPopup(auth, new GoogleAuthProvider())
       .then((res) => {
@@ -89,6 +90,7 @@ const SignUPPage = () => {
       })
       .catch((error) => console.log("google error: ", error));
   }
+
   return (
     <div>
       <Header upperLineNone={true} searchNone={true} categoryNone={true} />
@@ -133,7 +135,6 @@ const SignUPPage = () => {
                 {...formik.getFieldProps("first_name")}
               />
               {formik.touched.first_name && formik.errors.first_name && <span className="text-danger mt-1">{formik.errors.first_name}</span>}
-             
             </div>
             <div className="form-group col-md-6">
               <label for="inputEmail4" className="sub-gray-text">
@@ -189,7 +190,7 @@ const SignUPPage = () => {
           </div>
           <div class="form-group">
             <div class="form-check">
-            <input
+              <input
                 class="form-check-input"
                 type="checkbox"
                 id="gridCheck"
@@ -240,7 +241,7 @@ const SignUPPage = () => {
               MAKE ME A PART OF BUZZ
             </Button>
             <p className="text-center f-size-14 sub-gray-text">
-            Already have an account? <a href="/login">Log In</a>{" "}
+              Already have an account? <a href="/login">Log In</a>{" "}
             </p>
           </div>
           <div className="d-flex flex-wrap d-block text-center col-12 justify-content-center">

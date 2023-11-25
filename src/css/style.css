@@ -158,9 +158,6 @@ a {
 .gap-15 {
   gap: 15px;
 }
-.carousel{
-  z-index: -1 !important;
-}
 a:hover {
   text-decoration: none;
 }

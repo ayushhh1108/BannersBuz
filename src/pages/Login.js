@@ -10,10 +10,23 @@ import googleIcon from "../assets/social.png";
 import twitterIcon from "../assets/twitter-icon.png";
 import SecurityBudgeFooter from "../components/SecurityBudgeFooter";
 import QualityBar from "../components/QualityBar/QualityBar";
+import { useFormik } from "formik";
+import { loginValidationSchema } from "../utils/validation";
+import { useNavigate } from "react-router-dom";
+import { API, BASE_URl } from "../utils/api";
+import { saveUser } from "../utils/localStorage";
+import {
+  GoogleAuthProvider,
+  signInWithPopup,
+} from "firebase/auth";
+import auth from "../utils/firebase";
+import axios from "axios";
 
 const LoginPage = () => {
+
   const navigate = useNavigate();
   const [loginError, setLoginError] = useState("");
+
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -37,6 +50,7 @@ const LoginPage = () => {
         })
     }
   });
+
   const onGoogleLogin = () => {
     signInWithPopup(auth, new GoogleAuthProvider())
       .then((res) => {
@@ -170,7 +184,6 @@ const LoginPage = () => {
                 alt="facebookIcon"
                 className="mw-100 w-24px mr-2"
               />
-              SIGN IN WITH FACEBOOK
               SIGN IN WITH Twitter
             </Button>
           </div>
