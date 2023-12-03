@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/header/Header";
 import { Button, Container } from "react-bootstrap";
-import badgeIcon from "../assets/badge black.png";
-import PriceIcon from "../assets/best-price.png";
-import deliveryIcon from "../assets/delivery.png";
-import colorPallateIcon from "../assets/color-palette.png";
 import facebookIcon from "../assets/facebook.png";
 import googleIcon from "../assets/social.png";
 import twitterIcon from "../assets/twitter-icon.png";

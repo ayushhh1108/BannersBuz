@@ -143,7 +143,7 @@ const HomePage = () => {
               <Button
                 variant="outline-primary"
                 style={{ padding: "10px 20px" }}
-                className=" bg-orange border-0 text-light"
+                className=" bg-orange border-0 text-light shop-now-btn"
               >
                 View All
               </Button>

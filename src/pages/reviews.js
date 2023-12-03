@@ -47,7 +47,7 @@ const Reviews = () => {
                             <div className="d-flex">
                                 <div className="left">
                                     <span>
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" className="profile-pict-img img-fluid" alt="" />
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" className="profile-pict-img img-fluid" alt="profile-pict" />
                                     </span>
                                 </div>
                                 <div className="right">
@@ -65,7 +65,7 @@ const Reviews = () => {
                                     </h4>
                                     <div className="country d-flex align-items-center">
                                         <span>
-                                            <img className="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar6.png" />
+                                            <img className="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar6.png" alt='country-flag' />
                                         </span>
                                         <div className="country-name font-accent">India</div>
                                     </div>
@@ -118,7 +118,7 @@ const Reviews = () => {
                                             </h4>
                                             <div className="country d-flex align-items-center">
                                                 <span>
-                                                    <img className="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar3.png" />
+                                                    <img className="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar3.png" alt='country-flag' />
                                                 </span>
                                                 <div className="country-name font-accent">India</div>
                                             </div>
@@ -159,7 +159,7 @@ const Reviews = () => {
                                     </h4>
                                     <div className="country d-flex align-items-center">
                                         <span>
-                                            <img className="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar6.png" />
+                                            <img className="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar6.png" alt='country-flag' />
                                         </span>
                                         <div className="country-name font-accent">India</div>
                                     </div>
@@ -212,7 +212,7 @@ const Reviews = () => {
                                             </h4>
                                             <div className="country d-flex align-items-center">
                                                 <span>
-                                                    <img className="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar3.png" />
+                                                    <img className="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar3.png" alt='country-flag' />
                                                 </span>
                                                 <div className="country-name font-accent">India</div>
                                             </div>
