@@ -9,7 +9,7 @@ const Contactus = () => {
             <Header />
             <div className='container'>
                 <div className='row'>
-                    <div className='d-flex align-items-center mt-3'>
+                    <div className='d-flex align-items-center mt-3 z-n1'>
                         <div className='breadcrum-box'>
                             <span>Home</span>
                         </div>
@@ -20,12 +20,12 @@ const Contactus = () => {
             <section class="Material-contact-section section-padding section-dark mb-4">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12 mt-5 wow animated fadeInLeft" data-wow-delay=".2s">
+                        <div class="col-md-12 mt-5 wow animated fadeInLeft z-n1" data-wow-delay=".2s">
                             <h1 class="section-title">Love to Hear From You</h1>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+                        <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft z-n1" data-wow-delay=".2s">
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content.</p>
 
                             <div class="find-widget">
@@ -46,7 +46,7 @@ const Contactus = () => {
                             </div>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14879.232056221374!2d72.86359727382654!3d21.19978430932327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04fae4c1324ed%3A0xb92305741dc247bd!2sUnity%20Hospital%2FUnity%20Trauma%20Center%20and%20ICU!5e0!3m2!1sen!2sin!4v1697738990463!5m2!1sen!2sin" width="100%" className='map-box' style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+                        <div class="col-md-6 wow animated fadeInRight z-n1" data-wow-delay=".2s">
                             <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
                                 <div class="form-group label-floating">
                                     <label class="control-label" for="name">Name</label>

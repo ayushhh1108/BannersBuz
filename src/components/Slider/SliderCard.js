@@ -109,7 +109,7 @@ const VerticalImgCardSlider = () => {
   );
 };
 
-const OnHBorderBtnCardSlider = ({ secound }) => {
+const OnHBorderBtnCardSlider = ({ secound, customerPicks }) => {
   const array = [1, 2, 3, 4, 4, 5, 6, 7, 8, 9];
   return (
     <>
@@ -123,7 +123,7 @@ const OnHBorderBtnCardSlider = ({ secound }) => {
       >
         {array.map((i) => (
           <SwiperSlide style={{ height: "fit-content" }}>
-            <OnHBorderBtnCard secound={secound} />
+            <OnHBorderBtnCard secound={secound} customerPicks={customerPicks} />
           </SwiperSlide>
         ))}
       </Swiper>

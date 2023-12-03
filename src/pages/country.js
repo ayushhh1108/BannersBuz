@@ -28,7 +28,7 @@ const Country = () => {
             <Header />
             <div className='container mb-5'>
                 <div className='row'>
-                    <div className='col-12 col-md-8'>
+                    <div className='col-12 col-md-8 z-n1'>
                         <div className='d-flex align-items-center mt-3'>
                             <div className='breadcrum-box'>
                                 <span>Home</span>
@@ -138,7 +138,7 @@ const Country = () => {
                         <button type="button" class="btn btn-primary"> Got it. Place order. </button>
                         <p>Prices mentioned are in USD. Your local taxes and duties may still be applicable.</p>
                     </div>
-                    <div className='col-12 fancyCheck col-md-4'>
+                    <div className='col-12 fancyCheck col-md-4 z-n1'>
                         <h6 className='mt-5'>All about shipping to Finland</h6>
                         <hr />
                         <ul>
