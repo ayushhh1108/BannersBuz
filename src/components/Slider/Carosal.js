@@ -10,7 +10,7 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
 const Carousal = () => {
   return (
-    <div className="w-75 home-page-carousal" >
+    <div className="w-75 home-page-carousal z-n1" >
       <Swiper
         cssMode={true}
         navigation={true}
