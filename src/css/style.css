@@ -399,6 +399,7 @@ a:hover {
   position: relative;
   transition: all 0.5s ease 0s;
   cursor: pointer;
+  z-index: -1 !important;
 }
 .breadcrum-box:hover span {
   color: var(--primary2-color);

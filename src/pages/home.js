@@ -19,22 +19,27 @@ import {
   SliderCard,
   VerticalImgCardSlider,
 } from "../components/Slider/SliderCard";
-import { Button, Container, Form } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import { ProductBox, TipsSuggetionCard } from "../components/product-box";
 import Footer from "../components/Footer";
 import SubscribeSection from "../components/SecoundLast";
 import { OrangeButton } from "../components/RightArrowBTN";
 import {
-  CircularProgressbar,
   CircularProgressbarWithChildren,
-  buildStyles,
 } from "react-circular-progressbar";
 import ShippingIcon from "../assets/ShippingSvg";
 import DroneIcon from "../assets/DroneIcon";
 import ShoppingIcon from "../assets/ShoppingBag";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
+import { useNavigate } from "react-router-dom";
 const HomePage = () => {
   const arrayOfTen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const navigate = useNavigate();
   return (
     <div>
       <Header />
@@ -201,12 +206,14 @@ const HomePage = () => {
             <img
               src={poster1}
               alt="poster"
-              className="w-49 rounded overflow-hidden"
+              className="w-49 rounded overflow-hidden cursor-pointer"
+              onClick={()=>navigate("/stands-and-displays")}
             />
             <img
               src={poster2}
               alt="poster"
-              className="w-49 rounded overflow-hidden"
+              className="w-49 rounded overflow-hidden cursor-pointer"
+              onClick={()=>navigate("/stands-and-displays")}
             />
           </div>
           <h3 className="all-titles text-center w-100 mt-3 w-cm">
@@ -216,7 +223,7 @@ const HomePage = () => {
             Explore Our Most Popular Products
           </span>
           <div className="w-cm">
-            <OnHBorderBtnCardSlider />
+            <OnHBorderBtnCardSlider customerPicks="banner" />
             <div className="w-100 text-right p-4">
               <OrangeButton text="View All" />
             </div>
@@ -274,7 +281,7 @@ const HomePage = () => {
               </div>
               <div className="poster-side2">
                 <img src={item1} alt="poster" className="w-90" />
-              </div>  
+              </div>
             </div>
             <div
               className="w-48 height-fitcontant d-flex align-items-center justify-content-between p-1830 rounded my-2"
@@ -328,31 +335,36 @@ const HomePage = () => {
                 Reviews & Ratings
               </h3>
               <div className="d-flex flex-wrap justify-content-around w-90 mx-auto my-5">
-                <img
-                  src={reviewLogo}
-                  alt="reviews"
-                  className="height-fitcontant"
-                  style={{ width: "65px" }}
-                />
-                <div className="w-33">
-                  <strong className="f-size-20 w-100 d-block">Banners</strong>
-                  <span className="">Customer Reviews</span>
-                </div>
-                <div className="w-33">
-                  <div className="d-flex align-items-center justify-content-center w-50 d-block">
-                    <span className="ms-1">
-                      <strong className="f-size-20 w-100">4.5</strong>
-                    </span>
-                    <img src={star} alt="star" />
-                    <img src={star} alt="star" />
-                    <img src={star} alt="star" />
-                    <img src={star} alt="star" />
-                    <img src={halfstar} alt="star" />
+                <div
+                  className="d-flex justify-content-center align-items-center p-2"
+                  style={{ backgroundColor: "#fff2cd", borderRadius: "55px" }}
+                >
+                  <img
+                    src={reviewLogo}
+                    alt="reviews"
+                    className="height-fitcontant"
+                    style={{ width: "80px", marginRight: "60px" }}
+                  />
+                  <div className="w-33" style={{ marginRight: "60px" }}>
+                    <strong className="f-size-20 w-100 d-block">Banners</strong>
+                    <span className="">Customer Reviews</span>
                   </div>
-                  <span className="">Customer Reviews</span>
+                  <div className="" style={{ width: "240px" }}>
+                    <div className="d-flex align-items-center justify-content-center w-50 d-block">
+                      <span className="ms-1">
+                        <strong className="f-size-20 w-100">4.5</strong>
+                      </span>
+                      <img src={star} alt="star" />
+                      <img src={star} alt="star" />
+                      <img src={star} alt="star" />
+                      <img src={star} alt="star" />
+                      <img src={halfstar} alt="star" />
+                    </div>
+                    <span className="">Customer Reviews</span>
+                  </div>
                 </div>
-                <div className="w-100 d-flex mt-5">
-                  <div className="w-33 d-flex">
+                <div className="w-100 d-flex mt-5 justify-content-center">
+                  <div className="w-30 d-flex">
                     <div style={{ width: "65px", height: "65px" }}>
                       <CircularProgressbarWithChildren
                         value={66}
@@ -382,7 +394,7 @@ const HomePage = () => {
                       Customers Support
                     </h5>
                   </div>
-                  <div className="w-33 d-flex">
+                  <div className="w-30 d-flex">
                     <div style={{ width: "65px", height: "65px" }}>
                       <CircularProgressbarWithChildren
                         value={66}
@@ -412,7 +424,7 @@ const HomePage = () => {
                       Customers Review
                     </h5>
                   </div>
-                  <div className="w-33 d-flex">
+                  <div className="w-30 d-flex">
                     <div style={{ width: "65px", height: "65px" }}>
                       <CircularProgressbarWithChildren
                         value={66}
@@ -452,33 +464,110 @@ const HomePage = () => {
               <h3 className="text-center w-100 mt-5 font-weight-bold">
                 Our customers speak for us!
               </h3>
-              <p className="mb-0 w-75 mx-auto text-center mt-4">
-                I comeback to those who provide outstanding quality and this is
-                one of those companies that go above and beyond for you. Easy
-                designing and the codes they provide for you to save even more
-                is awesome. I'll definitely be coming back again! Thanks for
-                being great to me!
-              </p>
-              <div className="d-flex justify-content-around height-fitcontant w-45 mx-auto my-5">
-                <img
-                  src={reviewLogo}
-                  alt="reviews"
-                  className=""
-                  style={{ width: "55px" }}
-                />
-                <div className="w-75">
-                  <strong className="f-size-20 w-100 d-block ml-1">
-                    Banners
-                  </strong>
-                  <div className="d-flex align-items-center justify-content-start w-50 d-block">
-                    <span className="ms-1 mr-2">5.0</span>
-                    <img src={star} alt="star" />
-                    <img src={star} alt="star" />
-                    <img src={star} alt="star" />
-                    <img src={star} alt="star" />
-                    <img src={star} alt="star" />
-                  </div>
-                </div>
+              <div className="w-100">
+                <Swiper
+                  centeredSlides={true}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  modules={[Autoplay, Pagination]}
+                  className="mySwiper"
+                >
+                  <SwiperSlide>
+                    <p className="mb-0 w-75 mx-auto text-center mt-4">
+                      I comeback to those who provide outstanding quality and
+                      this is one of those companies that go above and beyond
+                      for you. Easy designing and the codes they provide for you
+                      to save even more is awesome. I'll definitely be coming
+                      back again! Thanks for being great to me!
+                    </p>
+                    <div className="d-flex height-fitcontant w-45 mx-auto my-5 justify-content-center">
+                      <img
+                        src={reviewLogo}
+                        alt="reviews"
+                        className="mr-3"
+                        style={{ width: "55px" }}
+                      />
+                      <div className="">
+                        <strong className="f-size-20 w-100 d-block ml-1 text-left">
+                          Banners
+                        </strong>
+                        <div className="d-flex align-items-center text-left justify-content-start w-50 d-block">
+                          <img src={star} alt="star" />
+                          <img src={star} alt="star" />
+                          <img src={star} alt="star" />
+                          <img src={star} alt="star" />
+                          <img src={star} alt="star" />
+                          <span className="ms-1 mr-2">5.0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <p className="mb-0 w-75 mx-auto text-center mt-4">
+                      I comeback to those who provide outstanding quality and
+                      this is one of those companies that go above and beyond
+                      for you. Easy designing and the codes they provide for you
+                      to save even more is awesome. I'll definitely be coming
+                      back again! Thanks for being great to me!
+                    </p>
+                    <div className="d-flex height-fitcontant w-45 mx-auto my-5 justify-content-center">
+                      <img
+                        src={reviewLogo}
+                        alt="reviews"
+                        className="mr-3"
+                        style={{ width: "55px" }}
+                      />
+                      <div className="">
+                        <strong className="f-size-20 w-100 d-block ml-1 text-left">
+                          Banners
+                        </strong>
+                        <div className="d-flex align-items-center text-left justify-content-start w-50 d-block">
+                          <img src={star} alt="star" />
+                          <img src={star} alt="star" />
+                          <img src={star} alt="star" />
+                          <img src={star} alt="star" />
+                          <img src={star} alt="star" />
+                          <span className="ms-1 mr-2">5.0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <p className="mb-0 w-75 mx-auto text-center mt-4">
+                      I comeback to those who provide outstanding quality and
+                      this is one of those companies that go above and beyond
+                      for you. Easy designing and the codes they provide for you
+                      to save even more is awesome. I'll definitely be coming
+                      back again! Thanks for being great to me!
+                    </p>
+                    <div className="d-flex height-fitcontant w-45 mx-auto my-5 justify-content-center">
+                      <img
+                        src={reviewLogo}
+                        alt="reviews"
+                        className="mr-3"
+                        style={{ width: "55px" }}
+                      />
+                      <div className="">
+                        <strong className="f-size-20 w-100 d-block ml-1 text-left">
+                          Banners
+                        </strong>
+                        <div className="d-flex align-items-center text-left justify-content-start w-50 d-block">
+                          <img src={star} alt="star" />
+                          <img src={star} alt="star" />
+                          <img src={star} alt="star" />
+                          <img src={star} alt="star" />
+                          <img src={star} alt="star" />
+                          <span className="ms-1 mr-2">5.0</span>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
               </div>
             </div>
           </container>

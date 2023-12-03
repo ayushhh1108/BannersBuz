@@ -11,7 +11,7 @@ const Reviews = () => {
         <div>
             <Header />
             <div className='d-flex ms-5 align-items-center my-3'>
-                <div className='breadcrum-box'>
+                <div className='breadcrum-box z-n1'>
                     <span>Home</span>
                 </div>
                 <span className='breadcrum-color'>Customer Reviews</span>
