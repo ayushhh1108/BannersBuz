@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import usa from "../../assets/usa.svg";
-import account from "../../assets/account.svg";
+import account from "../../assets/user.png";
 import items from "../../assets/items.svg";
 import uk from "../../assets/uk.svg";
 import ca from "../../assets/ca.svg";

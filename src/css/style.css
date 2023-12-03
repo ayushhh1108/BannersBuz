@@ -452,6 +452,11 @@ a:hover {
 .shop-now-btn {
   background-color: var(--orange);
   color: white;
+  transition: all 0.5s;
+}
+.shop-now-btn:hover{
+  background-color: #c92200 !important;
+  color: white !important;
 }
 .carosal-bottum-part {
   border-bottom: 2px solid rgb(173, 173, 173);
@@ -1545,6 +1550,10 @@ a:hover {
   line-height: 28px;
   margin-bottom: 7px;
 }
+.callUsBox{
+  cursor: pointer;
+}
+
 @media (max-width: 576px) {
   .flex-sm-nowrap .step .step-icon-wrap::before,
   .flex-sm-nowrap .step .step-icon-wrap::after {
