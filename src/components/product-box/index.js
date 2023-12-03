@@ -29,7 +29,7 @@ const ProductBox = () => {
   );
 };
 
-const OnHBorderBtnCard = ({ secound }) => {
+const OnHBorderBtnCard = ({ secound, customerPicks }) => {
   return (
     <div className="cursor-pointer product-h-box">
       <div
@@ -44,7 +44,7 @@ const OnHBorderBtnCard = ({ secound }) => {
         $7.59
       </span>
       <span className="f-size-18 font-weight-bolder"><strong> $5.42</strong></span>
-      <Link to='/stands-and-displays'
+      <Link to={customerPicks?customerPicks:'/photo-magnets'}
         className="d-flex card-title w-100 justify-content-center p-3 costomize-text"
       >
         View Details{" "}
