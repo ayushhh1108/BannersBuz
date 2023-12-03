@@ -306,7 +306,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
             onClick={() => setSideBaar(true)}
             alt="logo"
           />
-          <img src={logo} className="mw-90" alt="logo" />
+          <img src={logo} className="mw-90 cursor-pointer" alt="logo" onClick={() => navigate("/")} />
         </div>
         <div className="search-select-box d-flex align-items-center ">
           {!searchNone ? (

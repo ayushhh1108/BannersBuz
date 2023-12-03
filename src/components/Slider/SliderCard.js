@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import cardImg from "../../assets/pexels.jpg";
 import star from "../../assets/star.svg";
 import halfstar from "../../assets/half-start.svg";
-import rightArrow from "../../assets/right-arrow.png";
 import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -75,7 +74,7 @@ const VerticalImgCardSlider = () => {
         {array.map((i) => (
           <SwiperSlide style={{ height: "fit-content" }}>
             <div className="col-sm-12 rounded border p-0">
-              <div className="card-body d-flex flex-wrap justify-content-center">
+              <div className="card-body d-flex flex-wrap justify-content-center select-product-box-body">
                 <div className="img-container w-100 px-5 py-3">
                   <img src={cardImg} alt="card-img" />
                 </div>
@@ -97,7 +96,7 @@ const VerticalImgCardSlider = () => {
                     </Card.Text>
                   </div>
                   <Link to='/photo-magnets'>
-                    <RightArrowbtn text={"View Details"} />
+                    <RightArrowbtn text={"Customize"} />
                   </Link>
                 </div>
               </div>

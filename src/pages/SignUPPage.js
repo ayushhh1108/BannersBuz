@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/header/Header";
 import { Button, Container } from "react-bootstrap";
-import badgeIcon from "../assets/badge black.png";
-import PriceIcon from "../assets/best-price.png";
-import deliveryIcon from "../assets/delivery.png";
-import colorPallateIcon from "../assets/color-palette.png";
 import SecurityBudgeFooter from "../components/SecurityBudgeFooter";
 import QualityBar from "../components/QualityBar/QualityBar";
 import { useFormik } from "formik";

@@ -1545,7 +1545,7 @@ a:hover {
   border-radius: 16px;
   margin: 0px 30px;
 }
-.Contenttitle {
+.Contenttitle { 
   font-size: 24px;
   color: rgb(255, 255, 255);
   line-height: 28px;
@@ -1553,6 +1553,10 @@ a:hover {
 }
 .callUsBox{
   cursor: pointer;
+}
+.select-product-box-body{
+  background-color: white !important;
+  border-radius: 5px;
 }
 
 @media (max-width: 576px) {

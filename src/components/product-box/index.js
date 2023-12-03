@@ -1,7 +1,6 @@
 import products from "../../assets/468.jpg";
 import product2 from "../../assets/470.png";
 import tipsImg from "../../assets/Untitled.webp";
-import rightArrow from "../../assets/right-arrow.png";
 import logo from "../../assets/logo.svg";
 import { Button } from "react-bootstrap";
 import facebookIcon from "../../assets/facebook.png";
