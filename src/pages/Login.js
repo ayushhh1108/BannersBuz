@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../components/header/Header";
 import { Button, Container } from "react-bootstrap";
 import badgeIcon from "../assets/badge black.png";
@@ -10,8 +10,77 @@ import googleIcon from "../assets/social.png";
 import twitterIcon from "../assets/twitter-icon.png";
 import SecurityBudgeFooter from "../components/SecurityBudgeFooter";
 import QualityBar from "../components/QualityBar/QualityBar";
+import { useFormik } from "formik";
+import { loginValidationSchema } from "../utils/validation";
+import { useNavigate } from "react-router-dom";
+import { API, BASE_URl } from "../utils/api";
+import { saveUser } from "../utils/localStorage";
+import {
+  GoogleAuthProvider,
+  signInWithPopup,
+} from "firebase/auth";
+import auth from "../utils/firebase";
+import axios from "axios";
 
 const LoginPage = () => {
+
+  const navigate = useNavigate();
+  const [loginError, setLoginError] = useState("");
+
+  const formik = useFormik({
+    initialValues: {
+      email: "",
+      password: ""
+    },
+    validationSchema: loginValidationSchema,
+    onSubmit: (values) => {
+      setLoginError("");
+      console.log("values: ", values);
+      API("/login", "post", values, "")
+        .then(res => {
+          setLoginError("");
+          console.log("login res: ", res?.data);
+          saveUser(res?.data);
+          formik.resetForm();
+          navigate("/");
+        })
+        .catch(error => {
+          console.log("Failed to login: ", error);
+          setLoginError(error?.response?.data?.data);
+        })
+    }
+  });
+
+  const onGoogleLogin = () => {
+    signInWithPopup(auth, new GoogleAuthProvider())
+      .then((res) => {
+        console.log("google res: ", res);
+        axios({
+          method: "post",
+          url: `${BASE_URl}/login`,
+          data: {
+            email: res.user.email,
+            password: res?.user?.uid,
+          },
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+        })
+          .then((res) => {
+            setLoginError("");
+            console.log("login api res: ", res.data);
+            saveUser(res?.data?.data);
+            navigate("/");
+          })
+          .catch((error) => {
+            console.log("login api error: ", error);
+            setLoginError(error?.response?.data?.data);
+          });
+      })
+      .catch((error) => console.log("google error: ", error));
+  };
+
   return (
     <div>
       <Header upperLineNone={true} searchNone={true} categoryNone={true} />
@@ -26,6 +95,7 @@ const LoginPage = () => {
           Don't have an account? <a href="sign-up">Create an account!</a>
         </p>
       </Container>
+      {loginError && <div className="text-danger text-center d-flex justify-content-center"><span>{loginError}</span></div>}
       <Container className="d-flex col-12 col-lg-8 col-xl-6 flex-wrap justify-content-between mb-5">
         <div className="col-12 col-sm-6 text-left">
           <h4 className=" pt-3 mt-5 heading-color">
@@ -38,23 +108,39 @@ const LoginPage = () => {
             <label for="inputEmail4" className="sub-gray-text">
               Email Address<a href="sign-up">*</a>
             </label>
-            <input type="email" className="form-control" id="inputEmail4" />
+            <input
+              type="email"
+              autoFocus={false}
+              className="form-control"
+              id="inputEmail4"
+              {...formik.getFieldProps("email")}
+            />
+            {formik.errors.email && <span className="text-danger mt-1">{formik.errors.email}</span>}
           </div>
           <div className="form-group col-md-12 my-4 px-0">
             <label for="inputEmail4" className="sub-gray-text">
               Password<a href="sign-up">*</a>
             </label>
-            <input type="Password" className="form-control" id="Password" />
+            <input
+              type="Password"
+              className="form-control"
+              id="Password"
+              {...formik.getFieldProps("password")}
+            // value={formik.values.password}
+            // onChange={(e) => formik.setFieldValue("password", e.target.value.trim())}
+            />
+            {formik.touched.password && formik.errors.password && <span className="text-danger mt-1">{formik.errors.password}</span>}
           </div>
           <p className="text-right">
             {" "}
-            <a href="sign-up">Forgot Password?</a> |{" "}
-            <a href="sign-up">Login With Email OTP</a>
+            <a href="#">Forgot Password?</a> |{" "}
+            <a href="#">Login With Email OTP</a>
           </p>
           <div className="w-100 text-center">
             <Button
               className="rounded-0 f-size-12 px-4 mx-auto w-fit-content"
               variant="primary"
+              onClick={formik.handleSubmit}
             >
               LOG IN TO MY ACCOUNT
             </Button>
@@ -80,6 +166,7 @@ const LoginPage = () => {
             <Button
               className="rounded-0 f-size-14 px-4 mx-auto w-100 d-flex align-items-center my-3 border-0"
               style={{ backgroundColor: "#e02f2f" }}
+              onClick={onGoogleLogin}
             >
               <img
                 src={googleIcon}
@@ -97,7 +184,7 @@ const LoginPage = () => {
                 alt="facebookIcon"
                 className="mw-100 w-24px mr-2"
               />
-              SIGN IN WITH FACEBOOK
+              SIGN IN WITH Twitter
             </Button>
           </div>
         </div>
@@ -117,6 +204,7 @@ const LoginPage = () => {
             <Button
               className="rounded-0 f-size-14 px-4 mx-auto d-flex align-items-center my-3 border-0"
               style={{ backgroundColor: "#e02f2f" }}
+              onClick={onGoogleLogin}
             >
               <img
                 src={googleIcon}

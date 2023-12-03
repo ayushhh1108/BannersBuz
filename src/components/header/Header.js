@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import usa from "../../assets/usa.svg";
 import account from "../../assets/account.svg";
@@ -20,9 +20,17 @@ import CartModel from "../Model";
 import SideBaar from "../SideBaar";
 import BagIcon from "../../assets/BagIcon";
 import ProfileIcon from "../../assets/ProfileIcon";
+import { getUser, removeUser } from "../../utils/localStorage";
+import { useRequest } from "../../hook/useRequest";
+import { DataContext } from "../../context/dataContext";
 const Header = ({ upperLineNone, categoryNone, searchNone }) => {
   const [cart, setCart] = useState(false);
   const [sideBaar, setSideBaar] = useState(false);
+  const data = useContext(DataContext);
+  const { getCategories } = useRequest();
+  useEffect(() => {
+    getCategories();
+  }, []);
   const navigate = useNavigate();
   const handleClose = () => {
     setCart(false);
@@ -113,6 +121,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
       ],
     },
   ];
+  const user = getUser();
   return (
     <header>
       {!upperLineNone ? (
@@ -170,12 +179,9 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
             </div>
           </div>
           <div className="topbar_right d-flex font-size-13 right-sideheader w-46 ">
-            <div
-              className="text-light font-size-13 d-sm-none"
-              onClick={() => setSideBaar(true)}
-            >
+          <div className="text-light font-size-13 d-sm-none" onClick={() => setSideBaar(true)}>
               <img src={account} alt="account" className="profile-png" /> Hi,
-              Vraj
+              {user ? " " + user?.first_name : " User"}
             </div>
             <Link
               className="dropdown-toggle text-light font-size-13 d-none d-md-inline d-sm-inline d-lg-inline d-xl-inline"
@@ -188,7 +194,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
             >
               {" "}
               <img src={account} alt="account" className="profile-png" /> Hi,
-              Vraj
+              {user ? " " + user?.first_name : " User"}
             </Link>
             <div
               className="dropdown-menu font-size-13 py-0 profile-dropdown"
@@ -203,6 +209,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
               <Link
                 className="dropdown-item px-3 bg-secondary text-light"
                 to="#"
+                onClick={() => removeUser()}
               >
                 Logout
               </Link>
