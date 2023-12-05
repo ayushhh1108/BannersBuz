@@ -37,34 +37,34 @@ const Quickrfq = () => {
                     </div>
                     <div className="col-12 d-flex flex-wrap my-4">
                         <div className="col-12 col-md-6 col-3 ">
-                            <Form.Label>Name<span className="text-danger">*</span></Form.Label>
-                            <Form.Control type="text" placeholder="Enter name" />
+                            <Form.Label className="mb-1" >Name<span className="text-danger">*</span></Form.Label>
+                            <Form.Control className="mb-3" type="text" placeholder="Enter name" />
                         </div>
                         <div className="col-12 col-md-6 col-3 ">
-                            <Form.Label>Company Name<span className="text-danger">*</span></Form.Label>
-                            <Form.Control type="text" placeholder="Enter name" />
+                            <Form.Label className="mb-1">Company Name<span className="text-danger">*</span></Form.Label>
+                            <Form.Control className="mb-3" type="text" placeholder="Enter name" />
                         </div>
                         <div className="col-12 col-md-6 col-3 ">
-                            <Form.Label>Email Address<span className="text-danger">*</span></Form.Label>
-                            <Form.Control type="text" placeholder="Enter name" />
+                            <Form.Label className="mb-1">Email Address<span className="text-danger">*</span></Form.Label>
+                            <Form.Control className="mb-3" type="text" placeholder="Enter name" />
                         </div>
                         <div className="col-12 col-md-6 col-3 ">
-                            <Form.Label>Phone Number<span className="text-danger">*</span></Form.Label>
-                            <Form.Control type="text" placeholder="Enter name" />
+                            <Form.Label className="mb-1">Phone Number<span className="text-danger">*</span></Form.Label>
+                            <Form.Control className="mb-3" type="text" placeholder="Enter name" />
                         </div>
                     </div>
                     <div className="col-12 d-flex flex-wrap my-4">
                         <div className="col-12 col-md-6 col-3 ">
-                            <Form.Label>Post Code<span className="text-danger">*</span></Form.Label>
-                            <Form.Control type="text" placeholder="Enter name" />
+                            <Form.Label className="mb-1">Post Code<span className="text-danger">*</span></Form.Label>
+                            <Form.Control className="mb-3" type="text" placeholder="Enter name" />
                         </div>
                         <div className="col-12 col-md-6 col-3 ">
-                            <Form.Label>State<span className="text-danger">*</span></Form.Label>
-                            <Form.Control type="text" placeholder="Enter name" />
+                            <Form.Label className="mb-1">State<span className="text-danger">*</span></Form.Label>
+                            <Form.Control className="mb-3" type="text" placeholder="Enter name" />
                         </div>
                         <div className="col-12 col-md-6 col-3 ">
-                            <Form.Label>Country<span className="text-danger">*</span></Form.Label>
-                            <Form.Control type="text" disabled placeholder="Enter name" />
+                            <Form.Label className="mb-1">Country<span className="text-danger">*</span></Form.Label>
+                            <Form.Control className="mb-3" type="text" disabled placeholder="Enter name" />
                         </div>
 
                     </div>

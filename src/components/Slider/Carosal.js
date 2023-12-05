@@ -6,18 +6,24 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
 
 const Carousal = () => {
   return (
     <div className="w-75 home-page-carousal z-n1" >
       <Swiper
-        cssMode={true}
         navigation={true}
-        pagination={true}
-        mousewheel={true}
-        keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        Navigation={{
+          clickable: true
+        }}
+        modules={[Navigation, Pagination, Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide><img className=" w-100" src={slider2} alt="Second slide" /></SwiperSlide>

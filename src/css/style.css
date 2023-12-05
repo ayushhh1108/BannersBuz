@@ -18,6 +18,9 @@
 .primary-color {
   color: var(--primary-color) !important;
 }
+.primary-background{
+  background-color: var(--primary-color) !important;
+}
 .light-grey {
   color: rgb(94, 94, 94) !important;
 }
@@ -462,7 +465,13 @@ a:hover {
 .carosal-bottum-part {
   border-bottom: 2px solid rgb(173, 173, 173);
 }
-
+.primary-button-css{
+  background-color: var(--primary-color);
+  transition: all 0.5s;
+}
+.primary-button-css:hover{
+  background-color: var(--orange);
+}
 .h4-heading {
   padding-left: 20px !important;
 }
@@ -1244,7 +1253,7 @@ a:hover {
   background-position: -33px -282px;
 }
 .quotation {
-  background: #4383b8;
+  background: var(--primary-color);
   padding: 27px;
   margin: 0px 0px 40px;
   position: relative;
@@ -1307,7 +1316,7 @@ a:hover {
 .detail-box {
   padding: 10px 17px;
   border-radius: 50%;
-  background-color: #4383b8;
+  background-color: var(--primary-color);
   color: #ffffff;
 }
 
