@@ -14,7 +14,7 @@ const OrderStatus = () => {
                     <label for="exampleInputEmail1" class="form-label">Email address<span className='text-danger'>*</span></label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                 </div>
-                <button type="submit" class="btn btn-primary"> All good, update me </button>
+                <button type="submit" class="btn btn-primary border-0 shadow-none primary-button-css"> All good, update me </button>
 
             </div>
             <SubscribeSection />

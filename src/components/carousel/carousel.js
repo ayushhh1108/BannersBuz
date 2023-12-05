@@ -4,11 +4,11 @@ import CarouselImg from "../../assets/BB_US_CA_AU_NZ_Oct_10-12_Banner_1920x380_S
 function IntervalCarousel() {
     return (
         <div className='mb-5 Carousel-box'>
-            <Carousel data-bs-theme="dark">
-                <Carousel.Item interval={10000}>
+            <Carousel data-bs-theme="dark" className='z-n1'>
+                <Carousel.Item interval={10000} className='z-n1'>
                     <img src={CarouselImg} width='100%' />
                 </Carousel.Item>
-                <Carousel.Item interval={10000}>
+                <Carousel.Item interval={10000} className='z-n1'>
                     <img src={CarouselImg} width='100%' />
                 </Carousel.Item>
             </Carousel>
