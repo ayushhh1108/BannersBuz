@@ -27,49 +27,55 @@ const CharityBannerPage = () => {
             className="mw-100 mx-auto"
           />
         </div>
-        <h2 className="text-center pt-3 mt-5 heading-color">
+        <h3
+            className="all-titles p-4 mx-auto text-center mt-5 pb-0"
+            style={{ fontSize: "29px" }}
+          >
           Claiming your free banner is as easy as this
-        </h2>
-        <p className="black-color text-center f-size-14 my-2 sub-gray-text">
+        </h3>
+        <p className="text-center w-100 sub-gray-text w-100">
           In four easy steps, your organization can avail a free banner, that we
           are sure can be of help on various occasions.
         </p>
         <Container className="d-flex flex-wrap justify-content-around my-5">
           <div className="col-12 col-md-4 col-lg-2 text-center">
-            <img src={step1} alt="step-1" className="mw-100" />
+            <img src={step1} alt="step-1" className="mw-100 steps-img" />
             <p className="black-color text-center f-size-14 my-2 sub-gray-text">
               Fill up the form below and we’ll be in touch before you know.
             </p>
           </div>
-          <img src={rightArrow} alt="step-2" className="rightArrow mt-65 col-2 col-lg-1" />
+          <img src={rightArrow} alt="step-2" className="rightArrow mt-47 col-2 col-lg-1" />
           <div className="col-12 col-md-4 col-lg-2 text-center">
-            <img src={step2} alt="step-1" className="mw-100" />
+            <img src={step2} alt="step-1" className="mw-100 steps-img" />
             <p className="black-color text-center f-size-14 my-2 sub-gray-text">
               Add a few lines about your experience with us on your website, so
               that more organizations can get in touch with us for this service.
             </p>
           </div>
-          <img src={rightArrow} alt="step-2" className="rightArrow mt-65 d-block d-md-none d-lg-block col-2 col-lg-1" />
+          <img src={rightArrow} alt="step-2" className="rightArrow mt-47 d-block d-md-none d-lg-block col-2 col-lg-1" />
           <div className="col-12 col-md-4 col-lg-2 text-center">
-            <img src={step3} alt="step-1" className="mw-100" />
+            <img src={step3} alt="step-1" className="mw-100 steps-img" />
             <p className="black-color text-center f-size-14 my-2 sub-gray-text">
               In four easy steps, your organization can avail a free banner,
               that we are sure can be of help on various occasions.
             </p>
           </div>
-          <img src={rightArrow} alt="step-2" className="rightArrow mt-65 col-2 col-lg-1" />
+          <img src={rightArrow} alt="step-2" className="rightArrow mt-47 col-2 col-lg-1" />
           <div className="col-12 col-md-4 col-lg-2 text-center">
-            <img src={step4} alt="step-1" className="mw-100" />
+            <img src={step4} alt="step-1" className="mw-100 steps-img" />
             <p className="black-color text-center f-size-14 my-2 sub-gray-text">
               In four easy steps, your organization can avail a free banner,
               that we are sure can be of help on various occasions.
             </p>
           </div>
         </Container>
-        <h2 className="text-center pt-3 mt-5 heading-color">
+        <h3
+            className="all-titles p-4 mx-auto text-center mt-5 pb-0"
+            style={{ fontSize: "29px" }}
+          >
           It’s time to choose your ideal banner
-        </h2>
-        <p className="black-color text-center f-size-14 my-2 sub-gray-text">
+        </h3>
+        <p className="text-center w-100 sub-gray-text w-100">
           four easy steps, your organization can avail a free banner, that we
           are sure can be of help on various occasions.In
         </p>

@@ -152,14 +152,22 @@ a {
 .w-225px {
   width: 225px !important;
 }
-.mt-65 {
-  margin-top: 65px !important;
+.mt-47 {
+  margin-top: 47px !important;
 }
 .prl-2 {
   padding: 10px 10px;
 }
 .gap-15 {
   gap: 15px;
+}
+.steps-img{
+  height: 130px;
+  width: 140px;
+}
+.steps-img:last-child{
+  height: 145px;
+  width: 155px;
 }
 a:hover {
   text-decoration: none;
