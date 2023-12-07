@@ -36,12 +36,42 @@
 .bc-transparent {
   border-color: transparent !important;
 }
+.border-primary-btn{
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  transition: all 0.4s;
+}
+.border-primary-btn:hover{
+  background-color: var(--primary-color);
+  color: white;
+}
+.form-wraper label{
+  color: grey;
+  font-size: 14px;
+  display: inline-block;
+}
+.pagination-primary a{
+  color: var(--primary-color);
+}
+.pagination-primary a:focus{
+  z-index: 3;
+  color: var(--primary-color);
+  background-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+.pagination-primary-active span{
+  background-color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color) !important;
+}
 .bg-blue-btn {
   background-color: #100f5d;
   transition: all 0.4s;
+  color: white;
 }
 .bg-blue-btn:hover {
   background-color: var(--orange) !important;
+  color: white;
 }
 .bg-orange {
   background-color: var(--orange) !important;

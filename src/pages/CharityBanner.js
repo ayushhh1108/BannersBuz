@@ -80,11 +80,11 @@ const CharityBannerPage = () => {
           are sure can be of help on various occasions.In
         </p>
         <Container
-          className="d-flex p-4 align-item-center flex-wrap justify-content-between my-5 rounded"
+          className="d-flex p-4 align-item-center flex-wrap justify-content-between my-5 rounded form-wraper"
           style={{ backgroundColor: "#f5f5f5" }}
         >
-          <div className="d-flex align-item-center flex-wrap">
-            <h4 className="text-center heading-color d-inline height-fitcontant me-2">
+          <div className="d-flex align-items-center flex-wrap ">
+            <h4 className="text-center heading-color d-inline height-fitcontant me-2 mb-0">
               Select Banner Size
             </h4>
             <Form.Select
@@ -101,7 +101,7 @@ const CharityBannerPage = () => {
             * Required Fields *
           </p>
         </Container>
-        <Container className="d-flex justify-content-between flex-wrap">
+        <Container className="d-flex justify-content-between flex-wrap form-wraper">
           <div className="col-12 col-md-6">
             <form>
               <h5 className="bb-grey py-4 mb-2">Your Details</h5>
@@ -226,7 +226,7 @@ const CharityBannerPage = () => {
               <p className="my-3 f-size-14">
                 Registration Certificate<a href="#">*</a>
               </p>
-              <Button variant="outline-primary" type="submit" className="px-4">
+              <Button variant="outline-primary" type="submit" className="px-4 border-primary-btn">
                 SELECT FILES
               </Button>
             </form>
@@ -236,7 +236,7 @@ const CharityBannerPage = () => {
               By clicking Apply now button, I agree to the{" "}
               <a href="#">Terms & Conditions</a>
             </p>
-            <button type="submit" className="btn btn-primary px-4 mb-5">
+            <button type="submit" className="btn bg-blue-btn px-4 mb-5">
               Apply Now
             </button>
           </div>

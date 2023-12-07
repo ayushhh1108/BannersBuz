@@ -4,21 +4,21 @@ function Paginationn() {
   return (
     <div className="mx-auto">
       <Pagination className="mx-auto my-4 flex-wrap">
-        <Pagination.First />
-        <Pagination.Prev />
-        <Pagination.Item>{1}</Pagination.Item>
-        <Pagination.Ellipsis />
+        <Pagination.First className="pagination-primary" />
+        <Pagination.Prev className="pagination-primary" />
+        <Pagination.Item  className="pagination-primary">{1}</Pagination.Item>
+        <Pagination.Ellipsis className="pagination-primary" />
 
-        <Pagination.Item>{10}</Pagination.Item>
-        <Pagination.Item>{11}</Pagination.Item>
-        <Pagination.Item active>{12}</Pagination.Item>
-        <Pagination.Item>{13}</Pagination.Item>
-        <Pagination.Item disabled>{14}</Pagination.Item>
+        <Pagination.Item className="pagination-primary">{10}</Pagination.Item>
+        <Pagination.Item className="pagination-primary">{11}</Pagination.Item>
+        <Pagination.Item active  className="pagination-primary-active">{12}</Pagination.Item>
+        <Pagination.Item  className="pagination-primary">{13}</Pagination.Item>
+        <Pagination.Item className="pagination-primary" disabled>{14}</Pagination.Item>
 
-        <Pagination.Ellipsis />
-        <Pagination.Item>{20}</Pagination.Item>
-        <Pagination.Next />
-        <Pagination.Last />
+        <Pagination.Ellipsis className="pagination-primary" />
+        <Pagination.Item className="pagination-primary">{20}</Pagination.Item>
+        <Pagination.Next className="pagination-primary" />
+        <Pagination.Last className="pagination-primary" />
       </Pagination>
     </div>
   );
