@@ -31,7 +31,7 @@ const Banner = () => {
     return (
         <div>
             <Header />
-            <div className="">
+            <div className="w-cm">
                 <OnlyBreadCrum />
                 <div className="container-fluid">
                     <div className="row">
