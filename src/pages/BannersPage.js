@@ -21,8 +21,10 @@ import CreateChatIcon from '../assets/blogs.svg';
 import cardImg from "../assets/pexels.jpg";
 import { Card } from "react-bootstrap";
 import SubscribeSection from "../components/SecoundLast";
+import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
+    const navigate = useNavigate();
     const renderTooltip = (props) => (
         <Tooltip id="button-tooltip" {...props}>
             Simple tooltip
@@ -41,8 +43,8 @@ const Banner = () => {
                             </div>
                         </div>
                         <div className="col-12 col-md-7">
-                            <h1>Photo Magnets</h1>
-                            <div className="d-flex flex-wrap align-items-center">
+                            <h1 className="f-size-18 fw-bold">Photo Magnets</h1>
+                            <div className="d-flex flex-wrap align-items-center f-size-14">
                                 <div className="me-4 d-flex align-items-center">
                                     <img src={star} alt='star' />
                                     <img src={star} alt='star' />
@@ -50,22 +52,22 @@ const Banner = () => {
                                     <img src={star} alt='star' />
                                     <img src={halfstar} alt='star' />
                                 </div>
-                                <div>
-                                    <span className="text-primary">3279 Reviews</span> <span> | </span>
-                                    <span className="text-primary"> Product Specifications </span> <span> | </span>
-                                    <span className="text-primary"> Ask a Question </span><span> | </span>
+                                <div className="f-size-14">
+                                    <a className="text-primary cursor-pointer primary-color" href="#">3279 Reviews</a> <span> | </span>
+                                    <a className="text-primary cursor-pointer primary-color" href="#"> Product Specifications </a> <span> | </span>
+                                    <a className="text-primary cursor-pointer primary-color" href="#"> Ask a Question </a><span> | </span>
                                     <span>SKU : BBPTMT01</span>
                                 </div>
                             </div>
-                            <div className="p-2 d-inline-block my-2" style={{ backgroundColor: '#fff2d3' }}>
+                            <div className="px-2 py-1 d-inline-block my-2 f-size-14" style={{ backgroundColor: '#fff2d3' }}>
                                 <span>Priority Overnight by 26 Oct, Thursday | 30102, US | </span>
                                 <OverlayTrigger
                                     placement="right"
                                     delay={{ show: 250, hide: 400 }}
                                     overlay={renderTooltip}
-                                ><button type="button" class="btn btn-light">Check</button></OverlayTrigger>
+                                ><button type="button" class="btn btn-light py-0 px-2 f-size-12">Change</button></OverlayTrigger>
                             </div>
-                            <div className="d-flex flex-wrap justify-content-around py-4">
+                            <div className="d-flex flex-wrap justify-content-around py-4 w-90 mx-auto">
                                 <div className="text-center">
                                     <img src={Truck} />
                                     <p className="font-monospace mt-3">Free Shipping</p>
@@ -84,7 +86,7 @@ const Banner = () => {
                                 </div>
                             </div>
                             <p className="fw-bold">Choose Material</p>
-                            <div className="d-flex">
+                            <div className="d-flex f-size-14 ">
                                 <div className="text-center me-3">
                                     <div className="Material-box active"></div>
                                     Viny!
@@ -94,13 +96,13 @@ const Banner = () => {
                                     Polyester
                                 </div>
                             </div>
-                            <div className="d-flex align-items-center my-4">
+                            <div className="d-flex align-items-center my-4 f-size-14">
                                 <span className='me-4'>Size (W X H)</span>
-                                <Form.Select className='me-2' style={{ width: "120px" }}>
+                                <Form.Select className='me-2 f-size-14' style={{ width: "120px" }}>
                                     <option>3 x 3</option>
                                 </Form.Select>
                             </div>
-                            <Nav variant="tabs" defaultActiveKey="/home">
+                            <Nav variant="tabs" defaultActiveKey="/home" className="f-size-14">
                                 <Nav.Item>
                                     <Nav.Link href="/home">Popular Sizes</Nav.Link>
                                 </Nav.Item>
@@ -108,31 +110,31 @@ const Banner = () => {
                                     <Nav.Link eventKey="link-1">Custom Size</Nav.Link>
                                 </Nav.Item>
                             </Nav>
-                            <div className="d-flex flex-wrap clip-box">
-                                <div className="clip-border active">3 x 2</div>
-                                <div className="clip-border">3 x 2</div>
-                                <div className="clip-border">3 x 2</div>
-                                <div className="clip-border">3 x 2</div>
-                                <div className="clip-border">3 x 2</div>
-                                <div className="clip-border">3 x 2</div>
-                                <div className="clip-border">3 x 2</div>
-                                <div className="clip-border">3 x 2</div>
-                                <div className="clip-border">3 x 2</div>
-                                <div className="clip-border">3 x 2</div>
-                                <div className="clip-border">3 x 2</div>
-                                <div className="clip-border">3 x 2</div>
-                                <div className="clip-border">3 x 2</div>
-                                <div className="clip-border-bg">Custom Size</div>
+                            <div className="d-flex flex-wrap clip-box f-size-14">
+                                <div className="clip-border active m-1">3 x 2</div>
+                                <div className="clip-border m-1">3 x 2</div>
+                                <div className="clip-border m-1">3 x 2</div>
+                                <div className="clip-border m-1">3 x 2</div>
+                                <div className="clip-border m-1">3 x 2</div>
+                                <div className="clip-border m-1">3 x 2</div>
+                                <div className="clip-border m-1">3 x 2</div>
+                                <div className="clip-border m-1">3 x 2</div>
+                                <div className="clip-border m-1">3 x 2</div>
+                                <div className="clip-border m-1">3 x 2</div>
+                                <div className="clip-border m-1">3 x 2</div>
+                                <div className="clip-border m-1">3 x 2</div>
+                                <div className="clip-border m-1">3 x 2</div>
+                                <div className="clip-border-bg primary-button-css m-1">Custom Size</div>
                             </div>
                             <p className="fw-bold mt-5 mb-4">Print Sides</p>
                             <div className="d-flex flex-wrap ">
-                                <div className="text-center position-relative  me-2">
+                                <div className="text-center position-relative  me-2 f-size-14">
                                     <img src={Bannerside} alt="Banner" className="banner-box active" />
                                     <div className="sale-box">Best saler</div>
                                     <p>Single Sided</p>
                                     <span className="price-box active">$ 0.00</span>
                                 </div>
-                                <div className="text-center">
+                                <div className="text-center f-size-14">
                                     <img src={Bannerside} alt="Banner" className="banner-box" />
                                     <p>Single Sided</p>
                                     <span className="price-box">$ 0.00</span>
@@ -142,13 +144,13 @@ const Banner = () => {
                             <p className="fw-bold mt-5 mb-4">Material Weight
                             </p>
                             <div className="d-flex flex-wrap ">
-                                <div className="text-center position-relative  me-2">
+                                <div className="text-center position-relative  me-2 f-size-14">
                                     <img src={Bannerside} alt="Banner" className="banner-box active" />
                                     <div className="sale-box">Best saler</div>
-                                    <p>Single Sided</p>
+                                    <p className="f-size-14">Single Sided</p>
                                     <span className="price-box active">$ 0.00</span>
                                 </div>
-                                <div className="text-center">
+                                <div className="text-center f-size-14">
                                     <img src={Bannerside} alt="Banner" className="banner-box" />
                                     <p>Single Sided</p>
                                     <span className="price-box">$ 0.00</span>
@@ -181,7 +183,7 @@ const Banner = () => {
                                 >
 
                                     <SwiperSlide>
-                                        <div className="text-center position-relative ">
+                                        <div className="text-center position-relative f-size-14">
                                             <img src={Bannerside} alt="Banner" className="banner-box active" />
                                             <div className="sale-box">Best saler</div>
                                             <p>Single Sided</p>
@@ -189,49 +191,49 @@ const Banner = () => {
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <div className="text-center">
+                                        <div className="text-center f-size-14">
                                             <img src={Bannerside} alt="Banner" className="banner-box" />
                                             <p>Single Sided</p>
                                             <span className="price-box">$ 0.00</span>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <div className="text-center">
+                                        <div className="text-center f-size-14">
                                             <img src={Bannerside} alt="Banner" className="banner-box" />
                                             <p>Single Sided</p>
                                             <span className="price-box">$ 0.00</span>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <div className="text-center">
+                                        <div className="text-center f-size-14">
                                             <img src={Bannerside} alt="Banner" className="banner-box" />
                                             <p>Single Sided</p>
                                             <span className="price-box">$ 0.00</span>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <div className="text-center">
+                                        <div className="text-center f-size-14">
                                             <img src={Bannerside} alt="Banner" className="banner-box" />
                                             <p>Single Sided</p>
                                             <span className="price-box">$ 0.00</span>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <div className="text-center">
+                                        <div className="text-center f-size-14">
                                             <img src={Bannerside} alt="Banner" className="banner-box" />
                                             <p>Single Sided</p>
                                             <span className="price-box">$ 0.00</span>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <div className="text-center">
+                                        <div className="text-center f-size-14">
                                             <img src={Bannerside} alt="Banner" className="banner-box" />
                                             <p>Single Sided</p>
                                             <span className="price-box">$ 0.00</span>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <div className="text-center">
+                                        <div className="text-center f-size-14">
                                             <img src={Bannerside} alt="Banner" className="banner-box" />
                                             <p>Single Sided</p>
                                             <span className="price-box">$ 0.00</span>
@@ -242,13 +244,13 @@ const Banner = () => {
                             <p className="fw-bold mt-5 mb-4">Lamination
                             </p>
                             <div className="d-flex flex-wrap ">
-                                <div className="text-center position-relative  me-2">
+                                <div className="text-center position-relative  me-2 f-size-14">
                                     <img src={Bannerside} alt="Banner" className="banner-box active" />
                                     <div className="sale-box">Best saler</div>
                                     <p>Single Sided</p>
                                     <span className="price-box active">$ 0.00</span>
                                 </div>
-                                <div className="text-center">
+                                <div className="text-center f-size-14">
                                     <img src={Bannerside} alt="Banner" className="banner-box" />
                                     <p>Single Sided</p>
                                     <span className="price-box">$ 0.00</span>
@@ -257,13 +259,13 @@ const Banner = () => {
                             <p className="fw-bold mt-5 mb-4">Wind Flaps
                             </p>
                             <div className="d-flex flex-wrap ">
-                                <div className="text-center position-relative  me-2">
+                                <div className="text-center position-relative f-size-14 me-2">
                                     <img src={Bannerside} alt="Banner" className="banner-box active" />
                                     <div className="sale-box">Best saler</div>
                                     <p>Single Sided</p>
                                     <span className="price-box active">$ 0.00</span>
                                 </div>
-                                <div className="text-center">
+                                <div className="text-center f-size-14">
                                     <img src={Bannerside} alt="Banner" className="banner-box" />
                                     <p>Single Sided</p>
                                     <span className="price-box">$ 0.00</span>
@@ -281,7 +283,7 @@ const Banner = () => {
                             />
 
                             <div className="d-flex align-items-center justify-content-between flex-wrap border p-3 my-3 bg-white position-sticky bottom-0" style={{ zIndex: 12000 }}>
-                                <div className="d-flex align-items-center flex-wrap">
+                                <div className="d-flex align-items-center flex-wrap f-size-14">
                                     <p className="m-0 me-4">$ 6.99</p>
                                     <div className="me-4">
                                         <p className="text-decoration-line-through m-0">$ 9.79</p>
@@ -293,7 +295,7 @@ const Banner = () => {
                                         <button class="plus" aria-label="Increase">+</button>
                                     </div>
                                 </div>
-                                <button className="btn btn-primary mt-2 mt-sm-0">Select Design Method</button>
+                                <button className="btn primary-button-css mt-2 mt-sm-0">Select Design Method</button>
 
                             </div>
 
@@ -743,7 +745,7 @@ const Banner = () => {
                                         <Form.Label>What do you want to know?<span className="text-danger">*</span></Form.Label>
                                         <Form.Control type="text" placeholder="name" />
                                     </Form.Group>
-                                    <button className="btn btn-primary mt-3">submit</button>
+                                    <button className="btn primary-button-css mt-3">Submit</button>
                                 </div>
                             </div>
 
@@ -781,7 +783,7 @@ const Banner = () => {
                                     >
 
                                         <SwiperSlide>
-                                            <div className=" rounded border  suggest-box mx-auto">
+                                            <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={()=>navigate("/banner")}>
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
                                                     <div className="img-container w-100 px-5 py-3">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />
@@ -808,7 +810,7 @@ const Banner = () => {
                                             </div>
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <div className=" rounded border  suggest-box mx-auto">
+                                            <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={()=>navigate("/banner")}>
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
                                                     <div className="img-container w-100 px-5 py-3">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />
@@ -835,7 +837,7 @@ const Banner = () => {
                                             </div>
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <div className=" rounded border  suggest-box mx-auto">
+                                            <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={()=>navigate("/banner")}>
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
                                                     <div className="img-container w-100 px-5 py-3">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />
@@ -862,7 +864,7 @@ const Banner = () => {
                                             </div>
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <div className=" rounded border  suggest-box mx-auto">
+                                            <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={()=>navigate("/banner")}>
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
                                                     <div className="img-container w-100 px-5 py-3">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />
@@ -889,7 +891,7 @@ const Banner = () => {
                                             </div>
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <div className=" rounded border  suggest-box mx-auto">
+                                            <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={()=>navigate("/banner")}>
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
                                                     <div className="img-container w-100 px-5 py-3">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />
