@@ -1180,19 +1180,33 @@ a:hover {
   padding: 1em;
   background-color: white;
   overflow: hidden;
-  position: relative;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
+  width: 100%;
+  display: flex;
 }
 
 .rating {
-  float: left;
-  width: 45%;
-  margin-right: 5%;
+  width: 30%;
   text-align: center;
 }
-
+.stars-review{
+  display: flex;
+  flex-wrap: wrap;
+  width: min-content;
+}
+.stars-review div{
+  width: 100%;
+}
+.bar{
+  padding-top: 0px !important; 
+  padding-bottom: 0px !important; 
+}
+.bar-block{
+  background-color: #ededed !important;
+  margin: 2px;
+}
 .rating-num {
   color: #333333;
   font-size: 72px;
@@ -1215,7 +1229,7 @@ a:hover {
 
 .histo {
   float: left;
-  width: 50%;
+  width: 30%;
   font-size: 13px;
 }
 

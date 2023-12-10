@@ -3,7 +3,8 @@ import Header from "../components/header/Header";
 import Footer from "../components/Footer";
 import { OnlyBreadCrum } from "../components/breadcrum/breadcrum";
 import ThumbsSlider from "../components/ThumbsSlider";
-import star from '../assets/star.svg'
+import star from '../assets/star.svg';
+import unfillStar from '../assets/unFillStart.svg';
 import halfstar from '../assets/half-start.svg'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
@@ -159,7 +160,7 @@ const Banner = () => {
                             <p className="fw-bold mt-5 mb-4">Hanging Options</p>
                             <div>
                                 <Swiper
-                                    slidesPerView={5}
+                                    slidesPerView={5.55}
                                     spaceBetween={30}
                                     navigation={true}
                                     modules={[Pagination, Navigation]}
@@ -301,7 +302,7 @@ const Banner = () => {
 
 
                         </div>
-                        <div className="px-2 px-sm-5">
+                        <div className="px-2 px-sm-5 mt-4">
                             <Nav variant="tabs" defaultActiveKey="/home">
                                 <Nav.Item>
                                     <Nav.Link href="/home">Description</Nav.Link>
@@ -314,9 +315,9 @@ const Banner = () => {
                                 </Nav.Item>
                             </Nav>
                             <div style={{ background: '#fafafa' }}>
-                                <div className=" mt-4 right">
+                                <div className=" mt-4 right f-size-14">
                                     <img src="https://cdn.bannerbuzz.com/media/wysiwyg/new-description/custom-vinyl-banner.png" width='520px' className="float-start mw-100" alt="" />
-                                    <h2>Buy Premium Custom Vinyl Banners to Maximize Your Brand Visibility</h2>
+                                    <h2 className="f-size-20 fw-bold">Buy Premium Custom Vinyl Banners to Maximize Your Brand Visibility</h2>
                                     <p>From grand openings to store sales, you can advertise your cause with our versatile vinyl banners. We offer a huge inventory of pre-designed <strong>custom vinyl banners</strong> to suit your advertising needs. You can get the most out of these banners through custom sizing and personalizing. Get creative and create a persistent impression on your potential customers now.</p>
                                     <p>Our business banners can last for a long time as they are made of sturdy material. They are durable enough to withstand outdoor elements over a period. We make them with high-quality PVC flex. Their graphic weight is 13 Oz and becomes 16 Oz after upgrading to a UV-resistant print.</p>
                                     <p>We offer our vinyl banners and signs in pre-defined sizes and custom sizes to choose from. Depending on your requirement, you can select your ideal banner in fixed sizes available on the website or get it customized in custom sizes. The banners will highlight your product even from a distance due to its clear and vibrant printing.</p>
@@ -347,28 +348,28 @@ const Banner = () => {
                             </div>
 
                             <div className="my-5">
-                                <h2>Printing Options</h2>
+                                <h2 className="f-size-20 fw-bold">Printing Options</h2>
                                 <div className="col-12 d-flex flex-wrap mt-5">
                                     <div className="col-12 col-lg-6 flex-wrap flex-sm-nowrap d-flex my-3">
-                                        <img src="https://cdn.bannerbuzz.com/media/wysiwyg/new-description/single-sided-banner.jpg" width='160px' className="rounded me-4" height='160px' />
-                                        <div>
-                                            <h4>Single Sided Printing</h4>
-                                            <p>The standard single-sided printing option prints on one side, with white on the front and gray on the back.</p>
+                                        <img src="https://cdn.bannerbuzz.com/media/wysiwyg/new-description/single-sided-banner.jpg" width='150px' className="rounded me-4" height='150px' />
+                                        <div className="py-3 px-2">
+                                            <h4 className="f-size-18 fw-bold">Single Sided Printing</h4>
+                                            <p className="f-size-14">The standard single-sided printing option prints on one side, with white on the front and gray on the back.</p>
                                         </div>
                                     </div>
 
                                     <div className="col-12 col-lg-6 flex-wrap flex-sm-nowrap d-flex my-3">
-                                        <img src="https://cdn.bannerbuzz.com/media/wysiwyg/new-description/single-sided-banner.jpg" width='160px' className="rounded me-4" height='160px' />
-                                        <div>
-                                            <h4>Single Sided Printing</h4>
-                                            <p>The standard single-sided printing option prints on one side, with white on the front and gray on the back.</p>
+                                        <img src="https://cdn.bannerbuzz.com/media/wysiwyg/new-description/single-sided-banner.jpg" width='150px' className="rounded me-4" height='150px' />
+                                        <div className="py-3 px-2">
+                                            <h4 className="f-size-18 fw-bold">Single Sided Printing</h4>
+                                            <p className="f-size-14">The standard single-sided printing option prints on one side, with white on the front and gray on the back.</p>
                                         </div>
                                     </div>
                                     <div className="col-12 col-lg-6 flex-wrap flex-sm-nowrap d-flex my-3">
-                                        <img src="https://cdn.bannerbuzz.com/media/wysiwyg/new-description/single-sided-banner.jpg" width='160px' className="rounded me-4" height='160px' />
-                                        <div>
-                                            <h4>Single Sided Printing</h4>
-                                            <p>The standard single-sided printing option prints on one side, with white on the front and gray on the back.</p>
+                                        <img src="https://cdn.bannerbuzz.com/media/wysiwyg/new-description/single-sided-banner.jpg" width='150px' className="rounded me-4" height='150px' />
+                                        <div className="py-3 px-2">
+                                            <h4 className="f-size-18 fw-bold">Single Sided Printing</h4>
+                                            <p className="f-size-14">The standard single-sided printing option prints on one side, with white on the front and gray on the back.</p>
                                         </div>
                                     </div>
 
@@ -377,7 +378,7 @@ const Banner = () => {
                             </div>
 
                             <div className="my-5">
-                                <h2>Customer Reviews</h2>
+                                <h2 className="f-size-18 fw-bold">Customer Reviews</h2>
                                 <div className="d-flex justify-content-between flex-wrap">
                                     <div className="col-md-5 col-12">
                                         <div class="inner">
@@ -394,11 +395,47 @@ const Banner = () => {
                                                     <i class="icon-user"></i> 1,014,004 total
                                                 </div>
                                             </div>
-
+                                            <div className="stars-review">
+                                                <div className="d-inline d-flex align-items-center">
+                                                    <img src={star} alt='star' />
+                                                    <img src={star} alt='star' />
+                                                    <img src={star} alt='star' />
+                                                    <img src={star} alt='star' />
+                                                    <img src={star} alt='star' />
+                                                </div>
+                                                <div className="d-flex align-items-center">
+                                                    <img src={star} alt='star' />
+                                                    <img src={star} alt='star' />
+                                                    <img src={star} alt='star' />
+                                                    <img src={star} alt='star' />
+                                                    <img src={unfillStar} alt='star' />
+                                                </div>
+                                                <div className="d-flex align-items-center">
+                                                    <img src={star} alt='star' />
+                                                    <img src={star} alt='star' />
+                                                    <img src={star} alt='star' />
+                                                    <img src={unfillStar} alt='star' />
+                                                    <img src={unfillStar} alt='star' />
+                                                </div>
+                                                <div className="d-flex align-items-center">
+                                                    <img src={star} alt='star' />
+                                                    <img src={star} alt='star' />
+                                                    <img src={unfillStar} alt='star' />
+                                                    <img src={unfillStar} alt='star' />
+                                                    <img src={unfillStar} alt='star' />
+                                                </div>
+                                                <div className="d-flex align-items-center">
+                                                    <img src={star} alt='star' />
+                                                    <img src={unfillStar} alt='star' />
+                                                    <img src={unfillStar} alt='star' />
+                                                    <img src={unfillStar} alt='star' />
+                                                    <img src={unfillStar} alt='star' />
+                                                </div>
+                                            </div>
                                             <div class="histo">
                                                 <div class="five histo-rate">
                                                     <span class="histo-star">
-                                                        <i class="active icon-star"></i> 5           </span>
+                                                        <i class="active icon-star"></i>            </span>
                                                     <span class="bar-block">
                                                         <span id="bar-five" class="bar">
                                                             <span>566,784</span>&nbsp;
@@ -408,7 +445,7 @@ const Banner = () => {
 
                                                 <div class="four histo-rate">
                                                     <span class="histo-star">
-                                                        <i class="active icon-star"></i> 4           </span>
+                                                        <i class="active icon-star"></i>         </span>
                                                     <span class="bar-block">
                                                         <span id="bar-four" class="bar">
                                                             <span>171,298</span>&nbsp;
@@ -418,7 +455,7 @@ const Banner = () => {
 
                                                 <div class="three histo-rate">
                                                     <span class="histo-star">
-                                                        <i class="active icon-star"></i> 3           </span>
+                                                        <i class="active icon-star"></i>            </span>
                                                     <span class="bar-block">
                                                         <span id="bar-three" class="bar">
                                                             <span>94,940</span>&nbsp;
@@ -428,7 +465,7 @@ const Banner = () => {
 
                                                 <div class="two histo-rate">
                                                     <span class="histo-star">
-                                                        <i class="active icon-star"></i> 2           </span>
+                                                        <i class="active icon-star"></i>          </span>
                                                     <span class="bar-block">
                                                         <span id="bar-two" class="bar">
                                                             <span>44,525</span>&nbsp;
@@ -438,7 +475,7 @@ const Banner = () => {
 
                                                 <div class="one histo-rate">
                                                     <span class="histo-star">
-                                                        <i class="active icon-star"></i> 1           </span>
+                                                        <i class="active icon-star"></i>            </span>
                                                     <span class="bar-block">
                                                         <span id="bar-one" class="bar">
                                                             <span>136,457</span>&nbsp;
@@ -783,7 +820,7 @@ const Banner = () => {
                                     >
 
                                         <SwiperSlide>
-                                            <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={()=>navigate("/banner")}>
+                                            <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={() => navigate("/banner")}>
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
                                                     <div className="img-container w-100 px-5 py-3">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />
@@ -810,7 +847,7 @@ const Banner = () => {
                                             </div>
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={()=>navigate("/banner")}>
+                                            <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={() => navigate("/banner")}>
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
                                                     <div className="img-container w-100 px-5 py-3">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />
@@ -837,7 +874,7 @@ const Banner = () => {
                                             </div>
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={()=>navigate("/banner")}>
+                                            <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={() => navigate("/banner")}>
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
                                                     <div className="img-container w-100 px-5 py-3">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />
@@ -864,7 +901,7 @@ const Banner = () => {
                                             </div>
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={()=>navigate("/banner")}>
+                                            <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={() => navigate("/banner")}>
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
                                                     <div className="img-container w-100 px-5 py-3">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />
@@ -891,7 +928,7 @@ const Banner = () => {
                                             </div>
                                         </SwiperSlide>
                                         <SwiperSlide>
-                                            <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={()=>navigate("/banner")}>
+                                            <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={() => navigate("/banner")}>
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
                                                     <div className="img-container w-100 px-5 py-3">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />
