@@ -96,16 +96,16 @@ const StandPage = () => {
             </div>
           </div>
         </div>
-        <div class="container">
-          <h3>
+        <div class="container mt-4">
+          <h3 className="f-size-18">
             <strong>
               Grab Your Audience's Attention With Long-Lasting Vinyl Banners
             </strong>
           </h3>
-          <h4>
+          <h4 className="f-size-18">
             Customize Full-Color Business Banners to Suit Your Marketing Needs
           </h4>
-          <p>
+          <p className="f-size-12">
             Growing your audience is necessary to ensure consistent earnings,
             especially if yours is a start-up business. Through our premium
             custom vinyl banners, your can announce your products and services
@@ -117,8 +117,8 @@ const StandPage = () => {
             fully original sign that represents your brand? Upload your own
             artwork or work with one of our professional designers.
           </p>
-          <h4>Durable Vinyl Banners for Outdoor Promotional Use</h4>
-          <p>
+          <h4 className="f-size-18">Durable Vinyl Banners for Outdoor Promotional Use</h4>
+          <p className="f-size-12">
             Make a smart business investment by purchasing durable signage you
             can display repeatedly for various purposes. We craft our special
             banners using 11-ounce or 16-ounce PVC flex for superior durability
@@ -129,8 +129,8 @@ const StandPage = () => {
             the sign hangs in gusty areas, while metal grommets keep the edges
             sturdy against tight ropes or cords.
           </p>
-          <h4>Bulk Discounts for Easy-to-Install Custom Banners</h4>
-          <p>
+          <h4  className="f-size-18">Bulk Discounts for Easy-to-Install Custom Banners</h4>
+          <p className="f-size-12">
             Easy to use, our custom vinyl banners are flexible to facilitate set
             up, relocation, and storage. Vinyl banner printing offers
             versatility, durability, and vibrant visuals, making it a popular
@@ -144,7 +144,11 @@ const StandPage = () => {
             more units you order, whether you purchase two or 500 banners at a
             time.
           </p>
-          <h3>FAQs for Vinyl Banners</h3>
+          <h3 className="f-size-18">
+            <strong>
+            FAQs for Vinyl Banners
+            </strong>
+          </h3>
           <div
             class="schema-faq-code"
             itemscope=""
@@ -156,7 +160,7 @@ const StandPage = () => {
               itemtype="https://schema.org/Question"
               class="faq-question"
             >
-              <h3 itemprop="name" class="faq-q">
+              <h3 itemprop="name" class="faq-q f-size-18">
                 1. Can I use my own template to print vinyl banners?
               </h3>
               <div
@@ -164,7 +168,7 @@ const StandPage = () => {
                 itemprop="acceptedAnswer"
                 itemtype="https://schema.org/Answer"
               >
-                <p itemprop="text" class="faq-a">
+                <p itemprop="text" class="faq-a f-size-12">
                   Ans: Yes, we print customized vinyl posters with sizes as big
                   as 8" x 20". You can easily upload artwork from your computer
                   or drag and drop the files directly to the website. You also
@@ -180,7 +184,7 @@ const StandPage = () => {
               itemtype="https://schema.org/Question"
               class="faq-question"
             >
-              <h3 itemprop="name" class="faq-q">
+              <h3 itemprop="name" class="faq-q f-size-18">
                 2. Are vinyl banners suitable for outdoor use?
               </h3>
               <div
@@ -188,7 +192,7 @@ const StandPage = () => {
                 itemprop="acceptedAnswer"
                 itemtype="https://schema.org/Answer"
               >
-                <p itemprop="text" class="faq-a">
+                <p itemprop="text" class="faq-a f-size-12">
                   Ans: Yes, our vinyl banners are perfectly suitable for both
                   indoor and outdoor display, making them a great option for
                   promotional advertising, marketing campaigns, backdrops for
@@ -202,7 +206,7 @@ const StandPage = () => {
               itemtype="https://schema.org/Question"
               class="faq-question"
             >
-              <h3 itemprop="name" class="faq-q">
+              <h3 itemprop="name" class="faq-q f-size-18">
                 3. Are your vinyl banners available in different weights?
               </h3>
               <div
@@ -210,7 +214,7 @@ const StandPage = () => {
                 itemprop="acceptedAnswer"
                 itemtype="https://schema.org/Answer"
               >
-                <p itemprop="text" class="faq-a">
+                <p itemprop="text" class="faq-a f-size-12">
                   Ans: Yes, they are available in two scrim vinyl options. Both
                   of these material options are suitable as indoor and outdoor
                   banners. 1. 13 oz vinyl (Glossy or Matte) 2.18 oz extra
@@ -224,7 +228,7 @@ const StandPage = () => {
               itemtype="https://schema.org/Question"
               class="faq-question"
             >
-              <h3 itemprop="name" class="faq-q">
+              <h3 itemprop="name" class="faq-q f-size-18">
                 4. How large or small can my vinyl banners be?
               </h3>
               <div
@@ -232,7 +236,7 @@ const StandPage = () => {
                 itemprop="acceptedAnswer"
                 itemtype="https://schema.org/Answer"
               >
-                <p itemprop="text" class="faq-a">
+                <p itemprop="text" class="faq-a f-size-12">
                   Ans: The smallest banner size we offer is a 1’ x 1’ banner and
                   the maximum size we offer is 16’ x 50’ without seams.
                 </p>
@@ -244,7 +248,7 @@ const StandPage = () => {
               itemtype="https://schema.org/Question"
               class="faq-question"
             >
-              <h3 itemprop="name" class="faq-q">
+              <h3 itemprop="name" class="faq-q f-size-18">
                 5. Can you recycle vinyl banners?
               </h3>
               <div
@@ -252,7 +256,7 @@ const StandPage = () => {
                 itemprop="acceptedAnswer"
                 itemtype="https://schema.org/Answer"
               >
-                <p itemprop="text" class="faq-a">
+                <p itemprop="text" class="faq-a f-size-12">
                   Ans: Yes, they can be, the most common way to recycle them is
                   by upcycling them. Some businesses will take your old,
                   unwanted vinyl banners and turn them into totes bags, duffle
@@ -269,7 +273,7 @@ const StandPage = () => {
               itemtype="https://schema.org/Question"
               class="faq-question"
             >
-              <h3 itemprop="name" class="faq-q">
+              <h3 itemprop="name" class="faq-q f-size-18">
                 6. Are vinyl banners waterproof?
               </h3>
               <div
@@ -277,7 +281,7 @@ const StandPage = () => {
                 itemprop="acceptedAnswer"
                 itemtype="https://schema.org/Answer"
               >
-                <p itemprop="text" class="faq-a">
+                <p itemprop="text" class="faq-a f-size-12">
                   Ans: Yes, they are. All three vinyl banner materials we use, 9
                   oz. mesh, 13 oz. standard, and 15 oz. premium, are waterproof.
                   They can be displayed outdoors for years.
@@ -290,7 +294,7 @@ const StandPage = () => {
               itemtype="https://schema.org/Question"
               class="faq-question"
             >
-              <h3 itemprop="name" class="faq-q">
+              <h3 itemprop="name" class="faq-q f-size-18">
                 7. Can I print on both sides of the vinyl banner?
               </h3>
               <div
@@ -298,12 +302,12 @@ const StandPage = () => {
                 itemprop="acceptedAnswer"
                 itemtype="https://schema.org/Answer"
               >
-                <p itemprop="text" class="faq-a">
+                <p itemprop="text" class="faq-a f-size-12">
                   Ans: Yes. Our high-quality vinyl poster printing will allow
                   you to print on both the front and the back side of your vinyl
                   poster.
                 </p>
-                <p className="w-90 mb-0 f-size-14 text-left mx-auto px-1 font-weight-lighter light-grey">
+                <p className="w-90 mb-0 f-size-14 text-left mx-auto px-1 font-weight-lighter light-grey mt-3">
                   Halloween ranks as one of the most consumer-driven holidays in
                   the calendar year, second in prominence only to Christmas.
                   Families and

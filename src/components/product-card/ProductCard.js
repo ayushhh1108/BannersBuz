@@ -24,7 +24,7 @@ const ProductCard = () => {
                         <Card.Text>
                             <span className='test-dec'>3' x 2' Starts at </span>$6.99
                         </Card.Text>
-                        <Button variant="primary">Customize</Button>
+                        <Button variant="primary" className='primary-button-css'>Customize</Button>
                     </Card.Body>
                 </Card>
             </Link>

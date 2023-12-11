@@ -41,7 +41,7 @@ function OrderBar() {
                     </InputGroup>
 
                     <div class="priceBox"><div class="pricesBox my-3"><span class="priceLabel">Price</span><span class="oldPrice">$9.79</span><span class="newPrice">$6.99</span></div></div>
-                    <button className='btn  btn-primary' >BUY NOW</button>
+                    <button className='btn primary-button-css' >BUY NOW</button>
                 </div>
             </div>
         </div>

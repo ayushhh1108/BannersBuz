@@ -15,7 +15,6 @@ const SubscribeSection = ({ upperLineNone }) => {
         <Form.Control
           type="text"
           className="w-45 height-fitcontant"
-          placeholder="Normal text"
         />
         <Button variant="light" className="height-fitcontant px-2 my-2">
           SUBSCRIBE
