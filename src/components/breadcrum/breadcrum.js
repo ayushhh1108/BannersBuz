@@ -12,9 +12,11 @@ function BreadCrum() {
                     <span className='breadcrum-color'>StandPage</span>
                 </div>
                 <div className='col-12'>
-                    <h1 className='breadcrumhead'>
+                    <h1 className='breadcrumhead fw-bold'>
                         StandPage
                     </h1>
+                    <p className='f-size-12'>Get your striking and attention-drawing banner printed on premium-quality art cotton canvas, polyester fabric, or processed fabric. Our full-color, 600DPI, UV Printing will bring your banner graphics to life with vibrant, bold, and imposing colors. Versatile display options, lamination, and UV printing are available. Our free to use design templates and online design tool makes custom banner designing easy and quick. These aesthetically appealing fabric banners are popularly used at churches, indoor events, in-store displays, retail stores, etc. Order yours now to avail the best price guarantee and FREE SHIPPING.
+                    </p>
                 </div>
                 <div className='p-3'></div>
                 <div className='mb-3'>

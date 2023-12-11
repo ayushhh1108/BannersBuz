@@ -329,7 +329,7 @@ const Banner = () => {
                                     <p>Maintaining these custom vinyl banners is easy and simple. You can simply clean them using a soft, damp cloth without a cleaning solution. So, shop these personalized custom vinyl banners printed using premium vinyl printing now and boost your sales. Now order the banners from BannerBuzz and get doorstep delivery. Place bulk order and enjoy huge discounts.</p>
                                 </div>
                                 <div className="fancyCheck mb-4"><strong>Product Specification</strong>
-                                    <ul>
+                                    <ul className="f-size-14">
                                         <li>Material: High Quality PVC Flex</li>
                                         <li>Graphic Weight :13 Oz and 16 Oz after upgrade</li>
                                         <li>Graphic Weight:13 Oz (For two sided)</li>
@@ -379,7 +379,7 @@ const Banner = () => {
 
                             <div className="my-5">
                                 <h2 className="f-size-18 fw-bold">Customer Reviews</h2>
-                                <div className="d-flex justify-content-between flex-wrap">
+                                <div className="d-flex justify-content-between flex-wrap mb-3">
                                     <div className="col-md-5 col-12">
                                         <div class="inner">
                                             <div class="rating">
@@ -492,7 +492,7 @@ const Banner = () => {
                                 </div>
                                 <div class="review-list">
                                     <ul>
-                                        <li>
+                                        <li className="p-0">
                                             <div class="d-flex">
                                                 <div class="left">
                                                     <span>
@@ -513,17 +513,17 @@ const Banner = () => {
                                                         </span>
                                                     </h4>
                                                     <div class="country d-flex align-items-center">
-                                                        <span>
+                                                        <span className="d-flex">
                                                             <img class="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar6.png" />
                                                         </span>
-                                                        <div class="country-name font-accent">India</div>
+                                                        <div class="country-name font-accent f-size-12">India</div>
                                                     </div>
-                                                    <div class="review-description">
-                                                        <p>
+                                                    <div class="mt-1 review-description">
+                                                        <p className="f-size-14">
                                                             The process was smooth, after providing the required info, Pragyesh sent me an outstanding packet of wireframes. Thank you a lot!
                                                         </p>
                                                     </div>
-                                                    <span class="publish py-3 d-inline-block w-100">Published 4 weeks ago</span>
+                                                    <span class="publish pt-0 py-1 f-size-12 d-inline-block w-100">Published 4 weeks ago</span>
                                                     <div class="helpful-thumbs">
                                                         <div class="helpful-thumb text-body-2">
                                                             <span class="fit-icon thumbs-icon">
@@ -533,7 +533,7 @@ const Banner = () => {
                                                                     ></path>
                                                                 </svg>
                                                             </span>
-                                                            <span class="thumb-title ms-2">Helpful</span>
+                                                            <span class="thumb-title ms-2 f-size-13">Helpful</span>
                                                         </div>
                                                         <div class="helpful-thumb text-body-2 ml-3">
                                                             <span class="fit-icon thumbs-icon">
@@ -543,7 +543,7 @@ const Banner = () => {
                                                                     ></path>
                                                                 </svg>
                                                             </span>
-                                                            <span class="thumb-title ms-2">Not Helpful</span>
+                                                            <span class="thumb-title ms-2 f-size-13">Not Helpful</span>
                                                         </div>
                                                     </div>
                                                     <div class="response-item mt-4 d-flex">
@@ -566,17 +566,17 @@ const Banner = () => {
                                                                 </span>
                                                             </h4>
                                                             <div class="country d-flex align-items-center">
-                                                                <span>
+                                                                <span className="d-flex">
                                                                     <img class="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar3.png" />
                                                                 </span>
-                                                                <div class="country-name font-accent">India</div>
+                                                                <div class="country-name font-accent f-size-12">India</div>
                                                             </div>
-                                                            <div class="review-description">
+                                                            <div class="mt-1 review-description">
                                                                 <p>
                                                                     The process was smooth, after providing the required info, Pragyesh sent me an outstanding packet of wireframes. Thank you a lot!
                                                                 </p>
                                                             </div>
-                                                            <span class="publish py-3 d-inline-block w-100">Published 4 weeks ago</span>
+                                                            <span class="publish pt-0 py-3 d-inline-block w-100">Published 4 weeks ago</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -586,7 +586,7 @@ const Banner = () => {
                                 </div>
                                 <div class="review-list">
                                     <ul>
-                                        <li>
+                                        <li className="p-0">
                                             <div class="d-flex">
                                                 <div class="left">
                                                     <span>
@@ -607,17 +607,17 @@ const Banner = () => {
                                                         </span>
                                                     </h4>
                                                     <div class="country d-flex align-items-center">
-                                                        <span>
+                                                        <span className="d-flex">
                                                             <img class="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar6.png" />
                                                         </span>
-                                                        <div class="country-name font-accent">India</div>
+                                                        <div class="country-name font-accent f-size-12">India</div>
                                                     </div>
-                                                    <div class="review-description">
-                                                        <p>
+                                                    <div class="mt-1 review-description">
+                                                        <p className="f-size-14">
                                                             The process was smooth, after providing the required info, Pragyesh sent me an outstanding packet of wireframes. Thank you a lot!
                                                         </p>
                                                     </div>
-                                                    <span class="publish py-3 d-inline-block w-100">Published 4 weeks ago</span>
+                                                    <span class="publish pt-0 py-1 f-size-12 d-inline-block w-100">Published 4 weeks ago</span>
                                                     <div class="helpful-thumbs">
                                                         <div class="helpful-thumb text-body-2">
                                                             <span class="fit-icon thumbs-icon">
@@ -627,7 +627,7 @@ const Banner = () => {
                                                                     ></path>
                                                                 </svg>
                                                             </span>
-                                                            <span class="thumb-title ms-2">Helpful</span>
+                                                            <span class="thumb-title ms-2 f-size-13">Helpful</span>
                                                         </div>
                                                         <div class="helpful-thumb text-body-2 ml-3">
                                                             <span class="fit-icon thumbs-icon">
@@ -637,7 +637,7 @@ const Banner = () => {
                                                                     ></path>
                                                                 </svg>
                                                             </span>
-                                                            <span class="thumb-title ms-2">Not Helpful</span>
+                                                            <span class="thumb-title ms-2 f-size-13">Not Helpful</span>
                                                         </div>
                                                     </div>
                                                     <div class="response-item mt-4 d-flex">
@@ -660,17 +660,17 @@ const Banner = () => {
                                                                 </span>
                                                             </h4>
                                                             <div class="country d-flex align-items-center">
-                                                                <span>
+                                                                <span className="d-flex">
                                                                     <img class="country-flag img-fluid" src="https://bootdey.com/img/Content/avatar/avatar3.png" />
                                                                 </span>
-                                                                <div class="country-name font-accent">India</div>
+                                                                <div class="country-name font-accent f-size-12">India</div>
                                                             </div>
-                                                            <div class="review-description">
+                                                            <div class="mt-1 review-description">
                                                                 <p>
                                                                     The process was smooth, after providing the required info, Pragyesh sent me an outstanding packet of wireframes. Thank you a lot!
                                                                 </p>
                                                             </div>
-                                                            <span class="publish py-3 d-inline-block w-100">Published 4 weeks ago</span>
+                                                            <span class="publish pt-0 py-3 d-inline-block w-100">Published 4 weeks ago</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -681,9 +681,9 @@ const Banner = () => {
                             </div>
 
                             <div className="py-5">
-                                <h2>Frequently Asked Questions</h2>
+                                <h2 className="f-size-18 fw-bold">Frequently Asked Questions</h2>
 
-                                <div className="mt-4">
+                                <div className="mt-4 f-size-14">
                                     <p className="mb-1">Q: What type of vinyl is used for banners?</p>
                                     <p className="mb-1">A: The most commonly used material is a heavy weight vinyl technically known as PVC.</p>
                                     <div class="helpful-thumbs float-end">
@@ -695,7 +695,7 @@ const Banner = () => {
                                                     ></path>
                                                 </svg>
                                             </span>
-                                            <span class="thumb-title ms-2">Helpful</span>
+                                            <span class="thumb-title ms-2 f-size-13">Helpful</span>
                                         </div>
                                         <div class="helpful-thumb text-body-2 ml-3">
                                             <span class="fit-icon thumbs-icon">
@@ -705,7 +705,7 @@ const Banner = () => {
                                                     ></path>
                                                 </svg>
                                             </span>
-                                            <span class="thumb-title ms-2">Not Helpful</span>
+                                            <span class="thumb-title ms-2 f-size-13">Not Helpful</span>
                                         </div>
                                     </div>
                                     <hr style={{ clear: 'right' }} />
@@ -722,7 +722,7 @@ const Banner = () => {
                                                     ></path>
                                                 </svg>
                                             </span>
-                                            <span class="thumb-title ms-2">Helpful</span>
+                                            <span class="thumb-title ms-2 f-size-13">Helpful</span>
                                         </div>
                                         <div class="helpful-thumb text-body-2 ml-3">
                                             <span class="fit-icon thumbs-icon">
@@ -732,7 +732,7 @@ const Banner = () => {
                                                     ></path>
                                                 </svg>
                                             </span>
-                                            <span class="thumb-title ms-2">Not Helpful</span>
+                                            <span class="thumb-title ms-2 f-size-13">Not Helpful</span>
                                         </div>
                                     </div>
                                     <hr style={{ clear: 'right' }} />
@@ -749,7 +749,7 @@ const Banner = () => {
                                                     ></path>
                                                 </svg>
                                             </span>
-                                            <span class="thumb-title ms-2">Helpful</span>
+                                            <span class="thumb-title ms-2 f-size-13">Helpful</span>
                                         </div>
                                         <div class="helpful-thumb text-body-2 ml-3">
                                             <span class="fit-icon thumbs-icon">
@@ -759,7 +759,7 @@ const Banner = () => {
                                                     ></path>
                                                 </svg>
                                             </span>
-                                            <span class="thumb-title ms-2">Not Helpful</span>
+                                            <span class="thumb-title ms-2 f-size-13">Not Helpful</span>
                                         </div>
                                     </div>
                                     <hr style={{ clear: 'right' }} />
@@ -768,27 +768,27 @@ const Banner = () => {
                             </div>
 
                             <div className="p-5" style={{ background: '#f0f0f0' }}>
-                                <h4>Still have questions? Drop us a line</h4>
-                                <div className="d-flex align-items-center flex-wrap">
+                                <h4 className="f-size-18 fw-bold">Still have questions? Drop us a line</h4>
+                                <div className="d-flex align-items-center flex-wrap f-size-14">
                                     <Form.Group className="mb-3 me-2" style={{ width: '250px' }} controlId="formGroupEmail">
-                                        <Form.Label>Name<span className="text-danger">*</span></Form.Label>
-                                        <Form.Control type="text" placeholder="name" />
+                                        <Form.Label className="f-size-13 mb-1">Name<span className="text-danger">*</span></Form.Label>
+                                        <Form.Control type="text" />
                                     </Form.Group>
                                     <Form.Group className="mb-3 me-2" style={{ width: '250px' }} controlId="formGroupPassword">
-                                        <Form.Label>Email<span className="text-danger">*</span></Form.Label>
-                                        <Form.Control type="text" placeholder="Email" />
+                                        <Form.Label className="f-size-13 mb-1">Email<span className="text-danger">*</span></Form.Label>
+                                        <Form.Control type="text" />
                                     </Form.Group>
                                     <Form.Group className="mb-3 me-2 input-qes" controlId="formGroupEmail">
-                                        <Form.Label>What do you want to know?<span className="text-danger">*</span></Form.Label>
-                                        <Form.Control type="text" placeholder="name" />
+                                        <Form.Label className="f-size-13 mb-1">What do you want to know?<span className="text-danger">*</span></Form.Label>
+                                        <Form.Control type="text" />
                                     </Form.Group>
-                                    <button className="btn primary-button-css mt-3">Submit</button>
+                                    <button className="btn primary-button-css mt-2 f-size-13 py-2">Submit</button>
                                 </div>
                             </div>
 
                             <div className="text-center py-5">
-                                <h2>Recommended Products</h2>
-                                <p>We curated a few products we think might interest you based on your shopping history.
+                                <h2 className="f-size-18 fw-bold">Recommended Products</h2>
+                                <p className="sub-gray-text f-size-14 mb-2">We curated a few products we think might interest you based on your shopping history.
                                 </p>
                                 <div className="d-flex flex-wrap  justify-content-around">
                                     <Swiper
@@ -796,7 +796,7 @@ const Banner = () => {
                                         spaceBetween={30}
                                         navigation={true}
                                         modules={[Pagination, Navigation]}
-                                        className="mySwiper p-5"
+                                        className="mySwiper p-5 pt-2"
                                         breakpoints={
                                             {
                                                 300: {
@@ -822,11 +822,11 @@ const Banner = () => {
                                         <SwiperSlide>
                                             <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={() => navigate("/banner")}>
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
-                                                    <div className="img-container w-100 px-5 py-3">
+                                                    <div className="img-container w-100 px-2 py-2">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />
                                                     </div>
                                                     <div className="d-flex flex-wrap align-items-center w-100 justify-content-center">
-                                                        <h5 className="card-title text-center mb-0 p-2">
+                                                        <h5 className="card-title text-center mb-0 p-1 f-size-14 fw-bold">
                                                             Special title treatment
                                                         </h5>
                                                         <div className="w-100 p-2">
@@ -836,7 +836,7 @@ const Banner = () => {
                                                                 <img src={star} alt="star" />
                                                                 <img src={star} alt="star" />
                                                                 <img src={halfstar} alt="star" />
-                                                                <span className="ms-1 font-weight-light">3980</span>
+                                                                <span className="ms-1 f-size-12">3980</span>
                                                             </div>
                                                             <Card.Text className="text-center p-2">
                                                                 <span className="test-dec">Starts at </span>$6.99
@@ -849,11 +849,11 @@ const Banner = () => {
                                         <SwiperSlide>
                                             <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={() => navigate("/banner")}>
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
-                                                    <div className="img-container w-100 px-5 py-3">
+                                                    <div className="img-container w-100 px-2 py-2">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />
                                                     </div>
                                                     <div className="d-flex flex-wrap align-items-center w-100 justify-content-center">
-                                                        <h5 className="card-title text-center mb-0 p-2">
+                                                        <h5 className="card-title text-center mb-0 p-1 f-size-14 fw-bold">
                                                             Special title treatment
                                                         </h5>
                                                         <div className="w-100 p-2">
@@ -863,7 +863,7 @@ const Banner = () => {
                                                                 <img src={star} alt="star" />
                                                                 <img src={star} alt="star" />
                                                                 <img src={halfstar} alt="star" />
-                                                                <span className="ms-1 font-weight-light">3980</span>
+                                                                <span className="ms-1 f-size-12">3980</span>
                                                             </div>
                                                             <Card.Text className="text-center p-2">
                                                                 <span className="test-dec">Starts at </span>$6.99
@@ -876,11 +876,11 @@ const Banner = () => {
                                         <SwiperSlide>
                                             <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={() => navigate("/banner")}>
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
-                                                    <div className="img-container w-100 px-5 py-3">
+                                                    <div className="img-container w-100 px-2 py-2">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />
                                                     </div>
                                                     <div className="d-flex flex-wrap align-items-center w-100 justify-content-center">
-                                                        <h5 className="card-title text-center mb-0 p-2">
+                                                        <h5 className="card-title text-center mb-0 p-1 f-size-14 fw-bold">
                                                             Special title treatment
                                                         </h5>
                                                         <div className="w-100 p-2">
@@ -890,7 +890,7 @@ const Banner = () => {
                                                                 <img src={star} alt="star" />
                                                                 <img src={star} alt="star" />
                                                                 <img src={halfstar} alt="star" />
-                                                                <span className="ms-1 font-weight-light">3980</span>
+                                                                <span className="ms-1 f-size-12">3980</span>
                                                             </div>
                                                             <Card.Text className="text-center p-2">
                                                                 <span className="test-dec">Starts at </span>$6.99
@@ -903,11 +903,11 @@ const Banner = () => {
                                         <SwiperSlide>
                                             <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={() => navigate("/banner")}>
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
-                                                    <div className="img-container w-100 px-5 py-3">
+                                                    <div className="img-container w-100 px-2 py-2">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />
                                                     </div>
                                                     <div className="d-flex flex-wrap align-items-center w-100 justify-content-center">
-                                                        <h5 className="card-title text-center mb-0 p-2">
+                                                        <h5 className="card-title text-center mb-0 p-1 f-size-14 fw-bold">
                                                             Special title treatment
                                                         </h5>
                                                         <div className="w-100 p-2">
@@ -917,7 +917,7 @@ const Banner = () => {
                                                                 <img src={star} alt="star" />
                                                                 <img src={star} alt="star" />
                                                                 <img src={halfstar} alt="star" />
-                                                                <span className="ms-1 font-weight-light">3980</span>
+                                                                <span className="ms-1 f-size-12">3980</span>
                                                             </div>
                                                             <Card.Text className="text-center p-2">
                                                                 <span className="test-dec">Starts at </span>$6.99
@@ -930,11 +930,11 @@ const Banner = () => {
                                         <SwiperSlide>
                                             <div className="cursor-pointer rounded border  suggest-box mx-auto" onClick={() => navigate("/banner")}>
                                                 <div className="card-body d-flex flex-wrap justify-content-center">
-                                                    <div className="img-container w-100 px-5 py-3">
+                                                    <div className="img-container w-100 px-2 py-2">
                                                         <img src={cardImg} alt="card-img" className="img-fluid" />
                                                     </div>
                                                     <div className="d-flex flex-wrap align-items-center w-100 justify-content-center">
-                                                        <h5 className="card-title text-center mb-0 p-2">
+                                                        <h5 className="card-title text-center mb-0 p-1 f-size-14 fw-bold">
                                                             Special title treatment
                                                         </h5>
                                                         <div className="w-100 p-2">
@@ -944,7 +944,7 @@ const Banner = () => {
                                                                 <img src={star} alt="star" />
                                                                 <img src={star} alt="star" />
                                                                 <img src={halfstar} alt="star" />
-                                                                <span className="ms-1 font-weight-light">3980</span>
+                                                                <span className="ms-1 f-size-12">3980</span>
                                                             </div>
                                                             <Card.Text className="text-center p-2">
                                                                 <span className="test-dec">Starts at </span>$6.99
@@ -954,16 +954,13 @@ const Banner = () => {
                                                 </div>
                                             </div>
                                         </SwiperSlide>
-
                                     </Swiper>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-
             <SubscribeSection />
             <Footer />
         </div>

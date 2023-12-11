@@ -95,6 +95,9 @@
 .f-size-12 {
   font-size: 12px !important;
 }
+.f-size-10 {
+  font-size: 10px !important;
+}
 .f-size-13 {
   font-size: 13px !important;
 }
@@ -359,13 +362,13 @@ a:hover {
   margin: 0px 15px 0px 0px;
   text-transform: uppercase;
   line-height: 19px;
-  font-size: 16px;
+  font-size: 14px;
   color: rgb(73, 73, 73);
   font-weight: normal;
 }
 .startBox span {
   display: block;
-  font-size: 24px;
+  font-size: 22px;
 }
 .input-box {
   width: calc(100% - 115px);
@@ -392,7 +395,8 @@ a:hover {
   position: absolute;
   left: 45px;
   top: -14px;
-  margin-top: 0px;
+  margin: 0px 10px 0px;
+  font-size: 13px;
 }
 .pricesBox .oldPrice::before {
   content: "";
@@ -415,8 +419,8 @@ a:hover {
   font-weight: normal;
 }
 .pricesBox .newPrice {
-  font-size: 22px;
-  margin: 10px 10px 0px;
+  font-size: 20px;
+  margin: 4px 10px 0px;
 }
 
 .breadcrum-color {
@@ -451,6 +455,7 @@ a:hover {
 .breadcrumhead {
   margin: 20px 0;
   font-weight: 400;
+  font-size: 30px;
   color: #4e4e4e;
 }
 .primary-hover {
@@ -507,6 +512,10 @@ a:hover {
   background-color: var(--primary-color);
   transition: all 0.5s;
   color: white;
+  border: none;
+}
+.primary-button-css:focus{
+  box-shadow: none;
 }
 .primary-button-css:hover{
   background-color: var(--orange);
@@ -1045,7 +1054,7 @@ a:hover {
   opacity: 1;
 }
 .suggest-box {
-  width: 240px;
+  width: 100%;
   margin: 20px;
 }
 .Material-box {
