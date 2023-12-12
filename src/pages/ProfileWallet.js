@@ -18,7 +18,7 @@ const ProfileWalletPage = () => {
         </div>
         <div className="w-75">
           <ProfileBox />
-          <h2 className="text-left pt-3 mt-5 heading-color mb-4">
+          <h2 className="text-left pt-3 mt-5 heading-color mb-4 f-size-24 fw-bold">
             All About Your Wallet
           </h2>
           <div className="w-100 d-flex justify-content-around">
@@ -30,11 +30,11 @@ const ProfileWalletPage = () => {
                       <img src={wallateIcon} alt="wallet" className="w-35px" />
                     </div>
                     <div class="media-body text-right">
-                      <h5>Wallet Details</h5>
-                      <span className="f-size-14">
+                      <h5 className="f-size-18">Wallet Details</h5>
+                      <span className="f-size-13">
                         Available Wallet Points : 0.00
                       </span>
-                      <p className="f-size-14 mb-0">(1 Point = $1.00)</p>
+                      <p className="f-size-13 mb-0">(1 Point = $1.00)</p>
                     </div>
                   </div>
                 </div>
@@ -48,8 +48,8 @@ const ProfileWalletPage = () => {
                       <img src={arrowWalletIcon} alt="wallet" className="w-35px" />
                     </div>
                     <div class="media-body text-right">
-                      <h5>Next Expiration Date</h5>
-                      <span className="f-size-14">02/12/2023</span>
+                      <h5 className="f-size-18">Next Expiration Date</h5>
+                      <span className="f-size-13">02/12/2023</span>
                     </div>
                   </div>
                 </div>
@@ -63,8 +63,8 @@ const ProfileWalletPage = () => {
                       <img src={moneyIcon} alt="wallet" className="w-35px" />
                     </div>
                     <div class="media-body text-right">
-                      <h5>Points to be expired</h5>
-                      <span className="f-size-14">0.00</span>
+                      <h5 className="f-size-18">Points to be expired</h5>
+                      <span className="f-size-13">0.00</span>
                     </div>
                   </div>
                 </div>
@@ -78,7 +78,7 @@ const ProfileWalletPage = () => {
             Your Wallet-Transaction History
           </p>
           <table className="w-100">
-            <tr>
+            <tr className="f-size-14">
               <th>Transaction ID</th>
               <th>Date</th>
               <th>Transaction Type</th>
@@ -87,7 +87,7 @@ const ProfileWalletPage = () => {
               <th>Expiration Date</th>
               <th>Available Balance</th>
             </tr>
-            <tr>
+            <tr className="f-size-14">
               <td>9909</td>
               <td>12-02-2023</td>
               <td>Credit</td>

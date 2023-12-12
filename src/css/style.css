@@ -107,6 +107,9 @@
 .f-size-20 {
   font-size: 20px !important;
 }
+.f-size-24 {
+  font-size: 24px !important;
+}
 .f-size-70 {
   font-size: 70px !important;
 }
@@ -1477,12 +1480,12 @@ a:hover {
 
 .steps .step.completed .step-icon-wrap::before,
 .steps .step.completed .step-icon-wrap::after {
-  background-color: #0da9ef;
+  background-color: var(--primary-color);
 }
 
 .steps .step.completed .step-icon {
-  border-color: #0da9ef;
-  background-color: #0da9ef;
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
   color: #fff;
 }
 

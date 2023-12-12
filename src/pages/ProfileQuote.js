@@ -15,19 +15,19 @@ const ProfileQuotesPage = () => {
         </div>
         <div className="w-75">
           <ProfileBox />
-          <h2 className="text-left pt-3 mt-5 heading-color mb-4">
+          <h2 className="text-left pt-3 mt-5 heading-color mb-4 f-size-24">
             All Quotations
           </h2>
           <table className="w-100">
-            <tr>
+            <tr className="f-size-14">
               <th>Quotation ID</th>
               <th>Date</th>
               <th>Contact Name</th>
             </tr>
-            <tr>
-                <td>214213</td>
-                <td>12-02-2023</td>
-                <td>MAtt hanrry</td>
+            <tr className="f-size-14">
+              <td>214213</td>
+              <td>12-02-2023</td>
+              <td>MAtt hanrry</td>
             </tr>
           </table>
         </div>

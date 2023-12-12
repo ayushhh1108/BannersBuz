@@ -17,10 +17,10 @@ const ProfileSupportPage = () => {
         </div>
         <div className="w-75 text-center">
           <ProfileBox />
-          <h2 className="text-left pt-3 mt-5 heading-color mb-4">
+          <h2 className="text-left pt-3 mt-5 heading-color mb-4 f-size-24">
             HELP & SUPPORT
           </h2>
-          <img src={supportImg} alt="supportImg" className="w-75" />
+          <img src={supportImg} alt="supportImg" className="w-50" />
           <div className="w-50 d-flex mx-auto">
             <Button
               className="f-size-12 px-4 mx-auto w-fit-content"

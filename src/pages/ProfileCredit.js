@@ -15,23 +15,23 @@ const ProfileCreditPage = () => {
         </div>
         <div className="w-75">
           <ProfileBox />
-          <h2 className="text-left pt-3 mt-5 heading-color mb-4">
+          <h2 className="text-left pt-3 mt-5 heading-color mb-4 f-size-24">
             All About Your Credits
           </h2>
-          <p className="text-muted black-color light-grey text-left f-size-15 my-4 sub-gray-text">
+          <p className="text-muted black-color light-grey text-left f-size-13 my-4 sub-gray-text">
             Your Credit Amount: <strong>$0.00</strong>
           </p>
-          <p className="text-muted black-color p-3 light-grey text-left f-size-15 my-4 sub-gray-text" style={{backgroundColor:"aliceblue"}}>
+          <p className="text-muted black-color p-3 light-grey text-left f-size-13 my-4 sub-gray-text" style={{backgroundColor:"aliceblue"}}>
             Your Credit-Transaction History
           </p>
           <table className="w-100">
-            <tr>
+            <tr className="f-size-14">
               <th>Date</th>
               <th>Credit Amount Redeemed</th>
               <th>Credit Amount Added</th>
               <th>Comment</th>
             </tr>
-            <tr>
+            <tr className="f-size-14">
               <td>12-02-2023</td>
               <td>$214</td>
               <td>$213</td>
