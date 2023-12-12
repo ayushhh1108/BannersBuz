@@ -15,10 +15,10 @@ const ProfileOrderPage = () => {
         </div>
         <div className="w-75">
           <ProfileBox />
-          <h2 className="text-left pt-3 mt-5 heading-color">
+          <h2 className="text-left pt-3 mt-5 heading-color f-size-24">
           Orders
           </h2>
-          <p className="text-muted black-color light-grey text-left f-size-15 my-4 sub-gray-text">
+          <p className="text-muted black-color light-grey text-left f-size-13 my-4 mt-2  sub-gray-text">
             No order placed
           </p>
         </div>

@@ -16,16 +16,16 @@ const ProfileAddress = () => {
         <div className="w-75">
           <ProfileBox />
           <div className="w-70">
-            <div className="form-row mt-5">
-              <h2 className="text-left pt-3 heading-color mb-4 w-100">
+            <div className="form-row mt-3">
+              <h2 className="text-left pt-3 heading-color mb-4 w-100 f-size-24">
                 Add a New Address
               </h2>
               <div className="form-group col-md-6">
-                <label for="inputEmail4">First Name*</label>
+                <label for="inputEmail4" className="f-size-13">First Name*</label>
                 <input type="text" className="form-control" id="inputEmail4" />
               </div>
               <div className="form-group col-md-6">
-                <label for="inputPassword4">Last Name*</label>
+                <label for="inputPassword4" className="f-size-13">Last Name*</label>
                 <input
                   type="text"
                   className="form-control"
@@ -33,7 +33,7 @@ const ProfileAddress = () => {
                 />
               </div>
               <div className="form-group col-md-6">
-                <label for="inputPassword4">Company*</label>
+                <label for="inputPassword4" className="f-size-13">Company*</label>
                 <input
                   type="text"
                   className="form-control"
@@ -41,7 +41,7 @@ const ProfileAddress = () => {
                 />
               </div>
               <div className="form-group col-md-6">
-                <label for="inputPassword4">Cell Phone Number*</label>
+                <label for="inputPassword4" className="f-size-13">Cell Phone Number*</label>
                 <input
                   type="text"
                   className="form-control"
@@ -49,10 +49,10 @@ const ProfileAddress = () => {
                 />
               </div>
               <div className="form-group col-md-12">
-                <label for="inputPassword4">Street Address*</label>
+                <label for="inputPassword4" className="f-size-13">Street Address*</label>
                 <input
                   type="text"
-                  className="form-control my-2"
+                  className="form-control my-2 mt-0"
                   id="inputPassword4"
                 />
                 <input
@@ -69,7 +69,7 @@ const ProfileAddress = () => {
                 </label>
               </div>
               <div className="form-group col-md-6">
-                <label for="inputPassword4">Zip/Postal Code*</label>
+                <label for="inputPassword4" className="f-size-13">Zip/Postal Code*</label>
                 <input
                   type="text"
                   className="form-control"
@@ -77,7 +77,7 @@ const ProfileAddress = () => {
                 />
               </div>
               <div className="form-group col-md-6">
-                <label for="inputPassword4">City*</label>
+                <label for="inputPassword4" className="f-size-13">City*</label>
                 <input
                   type="text"
                   className="form-control"
@@ -85,17 +85,17 @@ const ProfileAddress = () => {
                 />
               </div>
               <div className="form-group col-md-6">
-                <label for="inputState">State/Province*</label>
+                <label for="inputState" className="f-size-13">State/Province*</label>
                 <select id="inputState" className="form-control">
-                  <option selected>Gujrat</option>
-                  <option>...</option>
+                  <option selected></option>
+                  <option>Gujrat</option>
                 </select>
               </div>
               <div className="form-group col-md-6">
-                <label for="inputState">Country*</label>
+                <label for="inputState" className="f-size-13">Country*</label>
                 <select id="inputState" className="form-control">
-                  <option selected>India</option>
-                  <option>...</option>
+                  <option selected></option>
+                  <option>India</option>
                 </select>
               </div>
               <div class="form-check col-md-12 ml-3">
@@ -106,7 +106,7 @@ const ProfileAddress = () => {
                   id="flexCheckDefault"
                 />
                 <label
-                  class="form-check-label f-size-14"
+                  class="form-check-label f-size-13"
                   for="flexCheckDefault"
                 >
                   This is my default billing address
@@ -120,13 +120,13 @@ const ProfileAddress = () => {
                   id="flexCheckDefault"
                 />
                 <label
-                  class="form-check-label f-size-14"
+                  class="form-check-label f-size-13"
                   for="flexCheckDefault"
                 >
                   This is my default shipping address
                 </label>
               </div>
-              <button type="submit" className="btn btn-primary px-4 f-size-13 mt-4">
+              <button type="submit" className="btn primary-button-css px-4 mt-4 f-size-12">
                 DONE SAVE ADDRESS
               </button>
             </div>

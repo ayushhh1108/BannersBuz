@@ -30,7 +30,7 @@ const ProfilePage = () => {
               >
                 <div className="form-row mt-5">
                   <div className="form-group col-md-6">
-                    <label for="inputEmail4">First Name*</label>
+                    <label for="inputEmail4" className="f-size-13">First Name*</label>
                     <input
                       type="text"
                       className="form-control"
@@ -38,7 +38,7 @@ const ProfilePage = () => {
                     />
                   </div>
                   <div className="form-group col-md-6">
-                    <label for="inputPassword4">Last Name*</label>
+                    <label for="inputPassword4" className="f-size-13">Last Name*</label>
                     <input
                       type="text"
                       className="form-control"
@@ -46,7 +46,7 @@ const ProfilePage = () => {
                     />
                   </div>
                   <div className="form-group col-md-6">
-                    <label for="inputPassword4">Cell Phone Number*</label>
+                    <label for="inputPassword4" className="f-size-13">Cell Phone Number*</label>
                     <input
                       type="text"
                       className="form-control"
@@ -61,7 +61,7 @@ const ProfilePage = () => {
                       id="flexCheckDefault"
                     />
                     <label
-                      class="form-check-label f-size-14"
+                      class="form-check-label f-size-13"
                       for="flexCheckDefault"
                     >
                       I’d like to be updated via SMS/TEXT
@@ -75,14 +75,14 @@ const ProfilePage = () => {
                       id="flexCheckDefault"
                     />
                     <label
-                      class="form-check-label f-size-14"
+                      class="form-check-label f-size-13"
                       for="flexCheckDefault"
                     >
                       Change Email
                     </label>
                   </div>
                   <div className="form-group col-md-6 mt-3">
-                    <label for="inputPassword4">Email Address*</label>
+                    <label for="inputPassword4" className="f-size-13">Email Address*</label>
                     <input
                       type="text"
                       className="form-control"
@@ -90,14 +90,14 @@ const ProfilePage = () => {
                     />
                   </div>
                   <div className="form-group col-md-6 mt-3">
-                    <label for="inputPassword4">Current Password*</label>
+                    <label for="inputPassword4" className="f-size-13">Current Password*</label>
                     <input
                       type="text"
                       className="form-control"
                       id="inputPassword4"
                     />
                   </div>
-                  <button type="submit" className="btn btn-primary px-4">
+                  <button type="submit" className="btn primary-button-css px-4 f-size-12">
                     OK SUBMIT
                   </button>
                 </div>
@@ -109,7 +109,7 @@ const ProfilePage = () => {
               >
                 <div className="form-row mt-5">
                   <div className="form-group col-md-6">
-                    <label for="inputEmail4">Current Password*</label>
+                    <label for="inputEmail4" className="f-size-13">Current Password*</label>
                     <input
                       type="text"
                       className="form-control"
@@ -117,14 +117,14 @@ const ProfilePage = () => {
                     />
                   </div>
                   <div className="form-group col-md-6">
-                    <label for="inputPassword4">New Password*</label>
+                    <label for="inputPassword4" className="f-size-13">New Password*</label>
                     <input
                       type="text"
                       className="form-control"
                       id="inputPassword4"
                     />
                   </div>
-                  <p className="text-left w-100 font-weight-bold f-size-14 mb-0">
+                  <p className="text-left w-100 font-weight-bold f-size-13 mb-0">
                     Password must meet the following requirements:
                   </p>
                   <p
@@ -134,7 +134,7 @@ const ProfilePage = () => {
                     Password must have at least 6 characters.
                   </p>
                 </div>
-                <button type="submit" className="btn btn-primary px-4">
+                <button type="submit" className="btn primary-button-css px-4 f-size-12">
                   OK SUBMIT
                 </button>
               </Tab>

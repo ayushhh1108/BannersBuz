@@ -87,7 +87,7 @@ const CheckoutCartPage = () => {
             />{" "}
             <span class="input-group-append">
               {" "}
-              <button class="btn btn-primary btn-apply coupon">
+              <button class="btn btn-primary btn-apply coupon primary-background">
                 Apply
               </button>{" "}
             </span>{" "}
@@ -230,7 +230,7 @@ const CheckoutCartPage = () => {
           </div>
           <Link to="/onepagecheckout">
             <Button
-              className="rounded-0 f-size-14 px-4 mx-auto w-100 d-flex align-items-center my-3 border-0 justify-content-center"
+              className="rounded-0 f-size-14 primary-button-css px-4 mx-auto w-100 d-flex align-items-center my-3 border-0 justify-content-center"
             >
               PROCEED TO CHECKOUT
             </Button>

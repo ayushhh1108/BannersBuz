@@ -36,19 +36,19 @@ const Country = () => {
                             <span className='breadcrum-color'>Finland</span>
                         </div>
                         <div className='country-head'>
-                            <h2 className='mt-3'>
+                            <h2 className='mt-3 f-size-18 fw-bold'>
                                 Shipping in Finland
 
                             </h2>
-                            <p>We’re buzzing in Finland! Our plans? Making you happy. We’re partnering with local businesses,
+                            <p className='f-size-13'>We’re buzzing in Finland! Our plans? Making you happy. We’re partnering with local businesses,
                                 using some production facilities, and partnering there to offer great services at the lowest
                                 rates.</p>
                         </div>
-                        <h5>$0.99/SF for all banners over 200 sq.ft.</h5>
-                        <h6 className='mb-4'>Shipping Charges:</h6>
+                        <h5 className='f-size-13 fw-bold'>$0.99/SF for all banners over 200 sq.ft.</h5>
+                        <h6 className='mb-4 f-size-14 fw-bold'>Shipping Charges:</h6>
                         <table class="table d-none d-md-block mb-5">
                             <thead>
-                                <tr>
+                                <tr className='f-size-13 fw-bold'>
                                     <th scope="col">ORDER VALUE ($)</th>
                                     <th scope="col">PRIORITY</th>
                                     <th scope="col">EXPRESS</th>
@@ -56,7 +56,7 @@ const Country = () => {
                                     <th scope="col">SUPER SAVER</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody className='f-size-13'>
                                 <tr>
                                     <td>0 - 99</td>
                                     <td >$28.93</td>
@@ -120,28 +120,28 @@ const Country = () => {
                                 </tr>
                             </tbody>
                         </table>
-                        <h5>Got question? Just give us a call, anytime.</h5>
-                        <div className="d-flex justify-content-between mb-5 flex-wrap">
-                            <div className="">
-                                <h6>USA/CANADA</h6>
+                        <h5 className='f-size-16 fw-bold mb-2'>Got question? Just give us a call, anytime.</h5>
+                        <div className="d-flex justify-content-between mb-3 flex-wrap f-size-16">
+                            <div className="f-size-14 w-50 mb-3">
+                                <h6 className="f-size-13 mb-0">USA/CANADA</h6>
                                 <a href="tel:1800-580-4489">1800-580-4489</a> / <a href="mailto:sales@bannerbuzz.com">sales@bannerbuzz.com</a>
                             </div>
-                            <div className="">
-                                <h6>United Kingdom</h6>
+                            <div className="f-size-14 w-50">
+                                <h6 className='f-size-13 mb-0'>United Kingdom</h6>
                                 <a href="tel:020-3514-3788">020-3514-3788 </a> / <a href="mailto:sales@bannerbuzz.co.uk">sales@bannerbuzz.co.uk</a>
                             </div>
-                            <div className="">
-                                <h6>Australia</h6>
+                            <div className="f-size-14">
+                                <h6 className='f-size-13 mb-0'>Australia</h6>
                                 <a className='' href="tel:+61 283104315">+61 283104315</a> / <a href="mailto:sales@bannerbuzz.com.au">sales@bannerbuzz.com.au</a>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-primary"> Got it. Place order. </button>
-                        <p>Prices mentioned are in USD. Your local taxes and duties may still be applicable.</p>
+                        <button type="button" class="btn primary-button-css f-size-14"> Got it. Place order. </button>
+                        <p className='f-size-13 mt-2'>Prices mentioned are in USD. Your local taxes and duties may still be applicable.</p>
                     </div>
                     <div className='col-12 fancyCheck col-md-4 z-n1'>
                         <h6 className='mt-5'>All about shipping to Finland</h6>
                         <hr />
-                        <ul>
+                        <ul  className='f-size-13'>
                             <li>All international orders will be shipped via UPS or FedEx with a two-day international
                                 priority shipping mode.</li>
                             <li>In case we do not produce a product locally, it will be shipped from one of our own
@@ -161,78 +161,78 @@ const Country = () => {
                     <div className='d-flex flex-wrap mt-2 mt-md-0 justify-content-center justify-content-md-start text-center'>
                         <div className='w-124 me-2'>
                             <img alt='country-img' src={cu1} />
-                            <p>Finland</p>
+                            <p className='f-size-14'>Finland</p>
                         </div>
                         <div className='w-124 me-2'>
                             <img alt='country-img' src={cu2} />
-                            <p>Finland</p>
+                            <p className='f-size-14'>Finland</p>
                         </div>
                         <div className='w-124 me-2'>
                             <img alt='country-img' src={cu3} />
-                            <p>Finland</p>
+                            <p className='f-size-14'>Finland</p>
                         </div>
                         <div className='w-124 me-2'>
                             <img alt='country-img' src={cu4} />
-                            <p>Finland</p>
+                            <p className='f-size-14'>Finland</p>
                         </div>
                         <div className='w-124 me-2'>
                             <img alt='country-img' src={cu5} />
-                            <p>Finland</p>
+                            <p className='f-size-14'>Finland</p>
                         </div>
                         <div className='w-124 me-2'>
                             <img alt='country-img' src={cu6} />
-                            <p>Finland</p>
+                            <p className='f-size-14'>Finland</p>
                         </div>
                         <div className='w-124 me-2'>
                             <img alt='country-img' src={cu7} />
-                            <p>Finland</p>
+                            <p className='f-size-14'>Finland</p>
                         </div>
                         <div className='w-124 me-2'>
                             <img alt='country-img' src={cu8} />
-                            <p>Finland</p>
+                            <p className='f-size-14'>Finland</p>
                         </div>
                         <div className='w-124 me-2'>
                             <img alt='country-img' src={cu9} />
-                            <p>Finland</p>
+                            <p className='f-size-14'>Finland</p>
                         </div>
                         <div className='w-124 me-2'>
                             <img alt='country-img' src={cu10} />
-                            <p>Finland</p>
+                            <p className='f-size-14'>Finland</p>
                         </div>
                         <div className='w-124 me-2'>
                             <img alt='country-img' src={cu11} />
-                            <p>Finland</p>
+                            <p className='f-size-14'>Finland</p>
                         </div> <div className='w-124 me-2'>
                             <img alt='country-img' src={cu12} />
-                            <p>Finland</p>
+                            <p className='f-size-14'>Finland</p>
                         </div>
                         <div className='w-124 me-2'>
                             <img alt='country-img' src={cu13} />
-                            <p>Finland</p>
+                            <p className='f-size-14'>Finland</p>
                         </div>
                         <div className='w-124 me-2'>
                             <img alt='country-img' src={cu14} />
-                            <p>Finland</p>
+                            <p className='f-size-14'>Finland</p>
                         </div>
                         <div className='w-124 me-2'>
                             <img alt='country-img' src={cu15} />
-                            <p>Finland</p>
+                            <p className='f-size-14'>Finland</p>
                         </div>
                         <div className='w-124 me-2'>
                             <img alt='country-img' src={cu16} />
-                            <p>Finland</p>
+                            <p className='f-size-14'>Finland</p>
                         </div>
                         <div className='w-124 me-2'>
                             <img alt='country-img' src={cu17} />
-                            <p>Finland</p>
+                            <p className='f-size-14'>Finland</p>
                         </div>
                         <div className='w-124 me-2'>
                             <img alt='country-img' src={cu18} />
-                            <p>Finland</p>
+                            <p className='f-size-14'>Finland</p>
                         </div>
                         <div className='w-124 me-2'>
                             <img alt='country-img' src={cu19} />
-                            <p>Finland</p>
+                            <p className='f-size-14'>Finland</p>
                         </div>
                     </div>
                 </div>
