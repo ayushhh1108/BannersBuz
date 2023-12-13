@@ -424,11 +424,11 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
                   <div className="w-100 d-flex flex-wrap">
                     {CategoryData.map((i) => (
                       <div className="w-20 py-2">
-                        <p className="px-3 py-1 mb-0 text-center d-flex justify-content-between cursor-pointer f-size-16 text-primary" onClick={()=>navigate("/stands-and-displays")}>
+                        <p className="px-3 py-1 mb-0 text-center d-flex justify-content-between cursor-pointer f-size-16 primary-color" onClick={()=>navigate("/stands-and-displays")}>
                           {i.category}
                         </p>
                         {i.subcategories.map((sub) => (
-                          <p className="text-secondary mb-0 px-3" onClick={()=>navigate("/banner")}>{sub}</p>
+                          <p className="text-secondary cursor-pointer mb-0 px-3" onClick={()=>navigate("/banner")}>{sub}</p>
                         ))}
                       </div>
                     ))}

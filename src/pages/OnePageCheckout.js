@@ -230,52 +230,54 @@ const OnePageCheckout = () => {
                             </div>
                         </div>
                         <div className="col-12 col-lg-4 py-5" >
-                            <div className="p-3" style={{ backgroundColor: "aliceblue" }}>
-                                <h5 className="fs-6 mb-4">ORDER SUMMARY
-                                </h5>
-                                <Accordion className="bg-transparent mb-4">
-                                    <Accordion.Item eventKey="1" className="bg-transparent border-0">
-                                        <Accordion.Header className="bg-transparent">
-                                            Cart Items (2)
-                                        </Accordion.Header>
-                                        <Accordion.Body className="px-0 py-1">
-                                            <div>
-                                                <p className="m-0">Roll Up Banner Stands- Graphic</p>
-                                                <span className="mr-3 d-inline-block">Quantity: 1</span>
-                                                <span>Price: $49.40</span>
-                                            </div>
-                                            <hr />
-                                            <div>
-                                                <p className="m-0">Roll Up Banner Stands- Graphic</p>
-                                                <span className="mr-3 d-inline-block">Quantity: 1</span>
-                                                <span>Price: $49.40</span>
-                                            </div>
-                                        </Accordion.Body>
-                                    </Accordion.Item>
-                                </Accordion>
+                            <div className="right-sidebaar-sticky">
+                                <div className="p-3" style={{ backgroundColor: "aliceblue" }}>
+                                    <h5 className="fs-6 mb-4">ORDER SUMMARY
+                                    </h5>
+                                    <Accordion className="bg-transparent mb-4">
+                                        <Accordion.Item eventKey="1" className="bg-transparent border-0">
+                                            <Accordion.Header className="bg-transparent">
+                                                Cart Items (2)
+                                            </Accordion.Header>
+                                            <Accordion.Body className="px-0 py-1">
+                                                <div>
+                                                    <p className="m-0">Roll Up Banner Stands- Graphic</p>
+                                                    <span className="mr-3 d-inline-block">Quantity: 1</span>
+                                                    <span>Price: $49.40</span>
+                                                </div>
+                                                <hr />
+                                                <div>
+                                                    <p className="m-0">Roll Up Banner Stands- Graphic</p>
+                                                    <span className="mr-3 d-inline-block">Quantity: 1</span>
+                                                    <span>Price: $49.40</span>
+                                                </div>
+                                            </Accordion.Body>
+                                        </Accordion.Item>
+                                    </Accordion>
 
-                                <div className="d-flex align-items-center justify-content-between">
-                                    <span>Subtotal:</span>
-                                    <span>$102.60</span>
+                                    <div className="d-flex align-items-center justify-content-between">
+                                        <span>Subtotal:</span>
+                                        <span>$102.60</span>
+                                    </div>
+
+                                    <div className="d-flex mb-3 align-items-center justify-content-between">
+                                        <span>Shipping Charges:</span>
+                                        <span>$102.60</span>
+                                    </div>
+
+                                    <div className="d-flex align-items-center justify-content-between">
+                                        <h6>Shipping Charges:</h6>
+                                        <h6 className="text-primary">$151.12</h6>
+                                    </div>
+
+                                    <p className="mt-3">By clicking on the button below, I accept the T&C of BannerBuzz.</p>
+                                    <Link to="/checkout/success">
+                                        <button className="w-100 btn primary-button-css btn-lg">Place Your Order</button>
+                                    </Link>
                                 </div>
-
-                                <div className="d-flex mb-3 align-items-center justify-content-between">
-                                    <span>Shipping Charges:</span>
-                                    <span>$102.60</span>
-                                </div>
-
-                                <div className="d-flex align-items-center justify-content-between">
-                                    <h6>Shipping Charges:</h6>
-                                    <h6 className="text-primary">$151.12</h6>
-                                </div>
-
-                                <p className="mt-3">By clicking on the button below, I accept the T&C of BannerBuzz.</p>
-                                <Link to="/checkout/success">
-                                    <button className="w-100 btn primary-button-css btn-lg">Place Your Order</button>
-                                </Link>
+                                <img src={securityBudgeIcon} alt="security" className="mw-100 my-3 mt-4" />
+                                <img src={googleTrusted} alt="security" className="mw-100 my-3" />
                             </div>
-                            <img src={securityBudgeIcon} alt="security" className="mw-100 my-3 mt-4" />
-                            <img src={googleTrusted} alt="security" className="mw-100 my-3" />
                         </div>
                     </div>
                 </div>

@@ -6,11 +6,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 const Carousal = () => {
   return (
-    <div className="w-75 home-page-carousal z-n1" >
+    <div className="w-75 home-page-carousal" >
       <Swiper
         navigation={true}
         autoplay={{
