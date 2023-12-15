@@ -146,7 +146,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
   ];
   const user = getUser();
   return (
-    <header>
+    <header className="overflow-hidden">
       {!upperLineNone ? (
         <div className="topbar d-flex justify-content-between px-4">
           <div className="toppbar_left d-flex flex-nowrap align-items-center header-first-sec">
