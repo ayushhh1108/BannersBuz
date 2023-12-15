@@ -165,7 +165,7 @@ const SocialMediaShareBox = () => {
 const CartItemBox = ({ cartModel }) => {
   return (
     <div className="card rounded-3 mb-4">
-      <div className="card-body p-3">{console.log(cartModel, "cartModel")}
+      <div className="card-body p-3">
         <div className="row d-flex justify-content-between align-items-center">
           <div className="col-md-2 col-lg-2 col-xl-2">
             <img

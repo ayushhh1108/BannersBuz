@@ -23,9 +23,11 @@ import ProfileIcon from "../../assets/ProfileIcon";
 import { getUser, removeUser } from "../../utils/localStorage";
 import { useRequest } from "../../hook/useRequest";
 import { DataContext } from "../../context/dataContext";
+import rightArrow from '../../assets/rightArrow.svg';
 const Header = ({ upperLineNone, categoryNone, searchNone }) => {
   const [cart, setCart] = useState(false);
   const [sideBaar, setSideBaar] = useState(false);
+  const [subCategories, setSubCategories] = useState([]);
   const data = useContext(DataContext);
   const { getCategories } = useRequest();
   useEffect(() => {
@@ -38,6 +40,17 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
   const handleCloseSideBaar = () => {
     setSideBaar(false);
   };
+
+  const handleOnHover = (category) => {
+    const subCat = CategoryData.find((i) => i.category === category).subcategories;
+    setSubCategories(chunk(subCat,5))
+  }
+
+  const chunk = (arr, size) =>
+    Array.from({ length: Math.ceil(arr.length / size) }, (v, i) =>
+      arr.slice(i * size, i * size + size)
+    );
+
   const menuItems = [
     "Banners",
     "Stands & Displays",
@@ -53,6 +66,16 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
     {
       category: "Category 1",
       subcategories: [
+        "Subcategory 1.1",
+        "Subcategory 1.2",
+        "Subcategory 1.3",
+        "Subcategory 1.4",
+        "Subcategory 1.5",
+        "Subcategory 1.1",
+        "Subcategory 1.2",
+        "Subcategory 1.3",
+        "Subcategory 1.4",
+        "Subcategory 1.5",
         "Subcategory 1.1",
         "Subcategory 1.2",
         "Subcategory 1.3",
@@ -179,7 +202,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
             </div>
           </div>
           <div className="topbar_right d-flex font-size-13 right-sideheader w-46 ">
-          <div className="text-light font-size-13 d-sm-none" onClick={() => setSideBaar(true)}>
+            <div className="text-light font-size-13 d-sm-none" onClick={() => setSideBaar(true)}>
               <img src={account} alt="account" className="profile-png" /> Hi,
               {user ? " " + user?.first_name : " User"}
             </div>
@@ -422,16 +445,25 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
                   aria-labelledby="dropdownMenuLink"
                 >
                   <div className="w-100 d-flex flex-wrap">
-                    {CategoryData.map((i) => (
-                      <div className="w-20 py-2">
-                        <p className="px-3 py-1 mb-0 text-center d-flex justify-content-between cursor-pointer f-size-16 primary-color" onClick={()=>navigate("/stands-and-displays")}>
-                          {i.category}
-                        </p>
-                        {i.subcategories.map((sub) => (
-                          <p className="text-secondary cursor-pointer mb-0 px-3" onClick={()=>navigate("/banner")}>{sub}</p>
-                        ))}
-                      </div>
-                    ))}
+                    <div className="w-12">
+                      {CategoryData.map((i) => (
+                        <div className="w-100 m-1 d-flex flex-wrap justify-content-between cursor-pointer" onMouseOver={() => { handleOnHover(i.category) }} >
+                          <p className="m-0 text-center d-flex justify-content-between f-size-12 primary-color" onClick={() => navigate("/stands-and-displays")}>
+                            {i.category}
+                          </p>
+                          <img src={rightArrow} alt="rightArrow" />
+                        </div>
+                      ))}
+                    </div>
+                    <div className="w-80 d-flex">
+                      {subCategories?.map((mainn) => {
+                        return<div className="w-20 ml-4 mt-1">
+                          {mainn?.map((itemss) => {
+                            return<p className="text-secondary f-size-11 cursor-pointer mb-0" onClick={() => navigate("/banner")}>{itemss}</p>
+                          })}
+                        </div>
+                      })}
+                    </div>
                   </div>
                 </div>
               </>
