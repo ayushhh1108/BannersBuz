@@ -34,7 +34,7 @@ const SliderCard = () => {
                     Special title treatment
                   </h5>
                   <div className="w-100">
-                    <div className="d-flex align-items-center justify-content-center w-50">
+                    <div className="d-flex align-items-center justify-content-center w-fit-content">
                       <img src={star} alt="star" />
                       <img src={star} alt="star" />
                       <img src={star} alt="star" />
