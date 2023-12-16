@@ -41,7 +41,7 @@ const HomePage = () => {
   const arrayOfTen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="home-page-main-div">
       <Header />
       <div className="main-container">
         <div className="carosal-box d-flex flex-wrap mb-5">

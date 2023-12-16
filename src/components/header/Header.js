@@ -146,7 +146,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
   ];
   const user = getUser();
   return (
-    <header className="overflow-hidden">
+    <header className="">
       {!upperLineNone ? (
         <div className="topbar d-flex justify-content-between px-4">
           <div className="toppbar_left d-flex flex-nowrap align-items-center header-first-sec">
@@ -426,7 +426,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
       </div>
       {!categoryNone && (
         <div className="main-navbar navbar-color">
-          <div className=" d-none d-md-flex  justify-content-around">
+          <div className=" d-none d-md-flex header-navigation-width justify-content-around ">
             {menuItems.map((item) => (
               <>
                 <Link
