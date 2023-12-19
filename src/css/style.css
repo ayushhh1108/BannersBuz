@@ -1651,6 +1651,9 @@ a:hover {
   position: sticky;
   top: 0;
 }
+.sider-of-carousal{
+  width: 25% !important;
+}
 
 @media (max-width: 576px) {
   .flex-sm-nowrap .step .step-icon-wrap::before,
@@ -1720,6 +1723,54 @@ a:hover {
   }
   .header-navigation-width{
     overflow-x: scroll;
+  }
+  .sider-of-carousal{
+    width: 95% !important;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    justify-content: space-between !important;
+    margin-top: 20px;
+  }
+  .main-carousal-div{
+    flex-wrap: wrap;
+  }
+  .home-page-carousal{
+    width: 95% !important;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .slider-offer-section{
+    width: 30% !important;
+    align-content: center;
+  }
+  .offer-clock-time-text{
+    padding-top: 0px !important;
+    font-size: 16px;
+  }
+  .days-count{
+    margin-bottom: 0px;
+  }
+  .carosal-bottum-part{
+    width: 95% !important;
+    margin: 2 0px auto;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+  .sameday-shiping{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .h4-heading{
+    padding: 3px 0px !important;
+  }
+  .review-container{
+    width: 70% !important;
+    margin-bottom: 20px;
   }
 }
 

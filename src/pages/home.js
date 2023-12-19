@@ -45,47 +45,53 @@ const HomePage = () => {
       <Header />
       <div className="main-container">
         <div className="carosal-box d-flex flex-wrap mb-5">
-          <div className="w-cm d-flex">
+          <div className="w-cm d-flex main-carousal-div">
             <Carousal />
-            <div className="w-25 d-flex flex-wrap justify-content-center">
-              <h5 className="w-100 text-center pt-3">Beat the Clock & Save!</h5>
-              <div className="w-75 d-flex justify-content-space-evenly">
-                <div className="rounded small-calander text-center p-1">
-                  <h5 className="days-count">2</h5>
-                  <span className="border-top">Days</span>
-                </div>
-                <div className="rounded small-calander text-center p-1">
-                  <h5 className="days-count">10</h5>
-                  <span className="border-top">HRS</span>
-                </div>
-                <div className="rounded small-calander text-center p-1">
-                  <h5 className="days-count">30</h5>
-                  <span className="border-top">MIN</span>
-                </div>
-                <div className="rounded small-calander text-center p-1">
-                  <h5 className="days-count">35</h5>
-                  <span className="border-top">SEC</span>
+            <div className="d-flex flex-wrap justify-content-center sider-of-carousal">
+              <div className="w-100 d-flex flex-wrap justify-content-center slider-offer-section align-items-center">
+                <h5 className="w-100 text-center pt-3 offer-clock-time-text">Beat the Clock & Save!</h5>
+                <div className="w-75 d-flex justify-content-space-evenly">
+                  <div className="rounded small-calander text-center p-1">
+                    <h5 className="days-count">2</h5>
+                    <span className="border-top">Days</span>
+                  </div>
+                  <div className="rounded small-calander text-center p-1">
+                    <h5 className="days-count">10</h5>
+                    <span className="border-top">HRS</span>
+                  </div>
+                  <div className="rounded small-calander text-center p-1">
+                    <h5 className="days-count">30</h5>
+                    <span className="border-top">MIN</span>
+                  </div>
+                  <div className="rounded small-calander text-center p-1">
+                    <h5 className="days-count">35</h5>
+                    <span className="border-top">SEC</span>
+                  </div>
                 </div>
               </div>
-              <h5 className="w-100 text-center height-fitcontant">
-                Fall Flash Sale
-              </h5>
-              <h4 className="w-100 text-center text-warning">
-                22% off Sitewide
-              </h4>
-              <div className="d-flex flex-wrap height-fitcontant w-100 justify-content-space-evenly">
-                <div className="w-50 d-flex height-fitcontant p-2 copy-side justify-content-between">
-                  <p className="mb-0">FLASH</p>
-                  <img src={copy} alt="copy" className="copy-icon" />
+              <div className="w-100 d-flex flex-wrap justify-content-center slider-offer-section align-items-center">
+                <h5 className="w-100 text-center height-fitcontant">
+                  Fall Flash Sale
+                </h5>
+                <h4 className="w-100 text-center text-warning">
+                  22% off Sitewide
+                </h4>
+              </div>
+              <div className="w-100 d-flex flew-100 d-flex flex-wrap justify-content-around my-3 w-cm px-2x-wrap justify-content-center slider-offer-section align-items-center">
+                <div className="d-flex flex-wrap height-fitcontant w-100 justify-content-space-evenly">
+                  <div className="w-50 d-flex height-fitcontant p-2 copy-side justify-content-between">
+                    <p className="mb-0">FLASH</p>
+                    <img src={copy} alt="copy" className="copy-icon" />
+                  </div>
+                  <button type="button" className="btn shop-now-btn">
+                    Shop now
+                  </button>
                 </div>
-                <button type="button" className="btn shop-now-btn">
-                  Shop now
-                </button>
               </div>
             </div>
           </div>
           <div className="w-cm carosal-bottum-part">
-            <div className="w-100 d-flex ">
+            <div className="w-100 d-flex justify-content-center">
               <div className="sameday-shiping w-33 d-flex justify-content-center align-items-center">
                 <ShippingIcon />
                 <h4 className="py-4 h4-heading  mb-0">Same Day Shipping</h4>
@@ -207,13 +213,13 @@ const HomePage = () => {
               src={poster1}
               alt="poster"
               className="w-49 rounded overflow-hidden cursor-pointer"
-              onClick={()=>navigate("/stands-and-displays")}
+              onClick={() => navigate("/stands-and-displays")}
             />
             <img
               src={poster2}
               alt="poster"
               className="w-49 rounded overflow-hidden cursor-pointer"
-              onClick={()=>navigate("/stands-and-displays")}
+              onClick={() => navigate("/stands-and-displays")}
             />
           </div>
           <h3 className="all-titles text-center w-100 mt-3 w-cm">
@@ -326,7 +332,7 @@ const HomePage = () => {
               </div>
             </div>
           </container>
-          <container className="w-100 d-flex flex-wrap justify-content-around my-3 w-cm px-2">
+          <container className="w-100 d-flex flex-wrap justify-content-around my-3 w-cm px-2 ">
             <div
               className="w-49 rounded d-flex flex-wrap review-container"
               style={{ backgroundColor: "#fffdec" }}

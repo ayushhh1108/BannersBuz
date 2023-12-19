@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../../css/style.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import cardImg from "../../assets/pexels.jpg";
@@ -13,15 +13,27 @@ import { RightArrowbtn } from "../RightArrowBTN";
 import { Link } from "react-router-dom";
 const SliderCard = () => {
   const [array, setArray] = useState([1, 2, 3, 4, 4, 5, 6, 7, 8, 9]);
+  const [screenWidth,setScreenWidth] = useState(window.innerWidth);
+  const [slides,setSlides] = useState(3);
+  useEffect(() => {
+    console.log("screenWidthscreenWidth",screenWidth<1200)
+    if(screenWidth<900){
+      setSlides(1);
+    }else if(screenWidth<1200){
+      setSlides(2);
+    }else{
+      setSlides(3)
+    }
+  },[]);
   return (
     <div className="w-100" style={{ backgroundColor: "#ef28001a" }}>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={slides}
         spaceBetween={50}
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper p-5 height-fitcontant w-cm"
-      >
+      >{console.log("screenWidth",screenWidth)}
         {array.map((i) => (
           <SwiperSlide>
             <div className="col-sm-12 rounded border p-0 bg-light">
