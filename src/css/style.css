@@ -143,9 +143,6 @@ a {
 .w-35 {
   width: 35%;
 }
-.w-30 {
-  width: 30%;
-}
 .w-33 {
   width: 33%;
 }
@@ -1782,7 +1779,7 @@ a:hover {
 
 @media only screen and (max-width: 992px) {
   .chat-now-box {
-    width: 43% !important;
+    width: 18% !important;
   }
   .review-container{
     width: 90%;
@@ -1931,6 +1928,25 @@ a:hover {
   }
   .search-select-box{
     width: 56%;
+  }
+  .way-to-get-section{
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .design-template-sec{
+    width: 50% !important;
+  }
+  .banner-poster-box{
+    flex-wrap: wrap !important;
+  }
+  .banner-poster{
+    width: 80% !important;
+  }
+  .quality-box{
+    width: 60%;
+  }
+  .design-center-div{
+    border: none !important;
   }
 }
 @media only screen and (max-width: 600px) {

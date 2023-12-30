@@ -156,9 +156,9 @@ const HomePage = () => {
             </div>
           </div>
           <div className="w-100 border rounded my-5 w-cm">
-            <div className=" w-90 d-flex justify-content-between mx-auto py-3 px-2 ">
-              <h3 className="w-25">Ways to get the Right Print</h3>
-              <div className="d-flex align-item-center">
+            <div className=" w-90 d-flex justify-content-between mx-auto py-3 px-2 way-to-get-section">
+              <h3 className="w-25 ">Ways to get the Right Print</h3>
+              <div className="d-flex align-item-center design-template-sec">
                 <img
                   src={designPng}
                   alt="designPng"
@@ -171,7 +171,7 @@ const HomePage = () => {
                   <p className="mb-0 d-inline">Professionally Designed</p>
                 </div>
               </div>
-              <div className="d-flex align-item-center">
+              <div className="d-flex align-item-center design-template-sec">
                 <img
                   src={uploadPng}
                   alt="uploadPng"
@@ -184,7 +184,7 @@ const HomePage = () => {
                   <p className="mb-0 d-inline">Perfect Print</p>
                 </div>
               </div>
-              <div className="d-flex align-item-center">
+              <div className="d-flex align-item-center design-template-sec">
                 <img src={hirePng} alt="hirePng" className="ways-png-width" />
                 <div className="p-2">
                   <span className="font-weight-bold d-block">
@@ -246,9 +246,9 @@ const HomePage = () => {
               <OnHBorderBtnCardSlider secound={true} />
             </div>
           </div>
-          <container className="d-flex w-100 flex-wrap justify-content-around my-5 w-cm">
+          <container className="d-flex w-100 flex-wrap justify-content-around my-5 w-cm banner-poster-box">
             <div
-              className="w-48 d-flex align-items-center justify-content-between p-1830 rounded my-2"
+              className="w-48 d-flex align-items-center justify-content-between p-1830 rounded my-2 banner-poster"
               style={{
                 border: "1px solid rgb(238, 238, 238)",
                 backgroundImage:
@@ -269,7 +269,7 @@ const HomePage = () => {
               </div>
             </div>
             <div
-              className="height-fitcontant w-48 d-flex align-items-center justify-content-between p-1830 rounded my-2"
+              className="height-fitcontant w-48 d-flex align-items-center justify-content-between p-1830 rounded my-2 banner-poster"
               style={{
                 border: "1px solid rgb(238, 238, 238)",
                 backgroundImage:
@@ -290,7 +290,7 @@ const HomePage = () => {
               </div>
             </div>
             <div
-              className="w-48 height-fitcontant d-flex align-items-center justify-content-between p-1830 rounded my-2"
+              className="w-48 height-fitcontant d-flex align-items-center justify-content-between p-1830 rounded my-2 banner-poster"
               style={{
                 border: "1px solid rgb(238, 238, 238)",
                 backgroundImage:
@@ -311,7 +311,7 @@ const HomePage = () => {
               </div>
             </div>
             <div
-              className="w-48 height-fitcontant d-flex align-items-center jutent-between p-1830 rounded my-2"
+              className="w-48 height-fitcontant d-flex align-items-center jutent-between p-1830 rounded my-2 banner-poster"
               style={{
                 border: "1px solid rgb(238, 238, 238)",
                 backgroundImage:
@@ -582,10 +582,10 @@ const HomePage = () => {
               Check out our Blog For Printing Tips & Suggestions
             </h3>
             <div className="w-100 d-flex my-4 justify-content-around">
-              <TipsSuggetionCard width="w-24" />
-              <TipsSuggetionCard width="w-24" />
-              <TipsSuggetionCard width="w-24" />
-              <TipsSuggetionCard width="w-24" />
+              <TipsSuggetionCard width={window.innerWidth>800?"w-24":"w-30"} />
+              <TipsSuggetionCard width={window.innerWidth>800?"w-24":"w-30"} />
+              <TipsSuggetionCard width={window.innerWidth>800?"w-24":"w-30"} />
+              {window.innerWidth>800?<TipsSuggetionCard width="w-24" />:""}
             </div>
             <div className="w-100 text-right p-4">
               <OrangeButton text="View All" />
@@ -610,8 +610,8 @@ const HomePage = () => {
               the brand/event and get them delivered to your
             </p>
           </container>
-          <container className="w-100 text-center d-flex justify-content-around p-3 w-cm">
-            <div className="w-33 my-3 px-3">
+          <container className="w-100 text-center d-flex justify-content-around p-3 w-cm flex-wrap">
+            <div className="w-33 my-3 px-3 quality-box">
               <img
                 src={priceTag}
                 alt="alt"
@@ -626,7 +626,7 @@ const HomePage = () => {
                 the highest
               </p>
             </div>
-            <div className="w-33 my-3 px-3 design-center-div">
+            <div className="w-33 my-3 px-3 design-center-div quality-box">
               <img
                 src={designPng}
                 alt="alt"
@@ -641,7 +641,7 @@ const HomePage = () => {
                 sure
               </p>
             </div>
-            <div className="w-33 px-3 my-3">
+            <div className="w-33 px-3 my-3 quality-box">
               <img
                 src={badge}
                 alt="alt"
