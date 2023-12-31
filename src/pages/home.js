@@ -73,7 +73,7 @@ const HomePage = () => {
                 <h5 className="w-100 text-center height-fitcontant">
                   Fall Flash Sale
                 </h5>
-                <h4 className="w-100 text-center text-warning">
+                <h4 className="w-100 text-center text-warning mb-0">
                   22% off Sitewide
                 </h4>
               </div>
@@ -91,7 +91,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className="w-cm carosal-bottum-part">
-            <div className="w-100 d-flex justify-content-center">
+            <div className="w-100 d-flex justify-content-center fetures-section">
               <div className="sameday-shiping w-33 d-flex justify-content-center align-items-center">
                 <ShippingIcon />
                 <h4 className="py-4 h4-heading  mb-0">Same Day Shipping</h4>
@@ -116,7 +116,7 @@ const HomePage = () => {
             <SliderCard />
           </div>
           <h3
-            className="all-titles p-4 mx-auto text-center"
+            className="all-titles p-4 mx-auto text-center offer-title"
             style={{ fontSize: "29px" }}
           >
             Offering Custom Banners and Signs For Business/Home Needs
@@ -157,7 +157,7 @@ const HomePage = () => {
           </div>
           <div className="w-100 border rounded my-5 w-cm">
             <div className=" w-90 d-flex justify-content-between mx-auto py-3 px-2 way-to-get-section">
-              <h3 className="w-25 ">Ways to get the Right Print</h3>
+              <h3 className="col-xs-12 col-3">Ways to get the Right Print</h3>
               <div className="d-flex align-item-center design-template-sec">
                 <img
                   src={designPng}
@@ -208,17 +208,17 @@ const HomePage = () => {
               <ProductBox />
             ))}
           </div>
-          <div className="w-100 d-flex justify-content-around poster-box my-5 w-cm">
+          <div className="w-100 d-flex justify-content-around poster-box my-5 w-cm flex-wrap">
             <img
               src={poster1}
               alt="poster"
-              className="w-49 rounded overflow-hidden cursor-pointer"
+              className="w-49 w-xs-11 mh-100 rounded overflow-hidden cursor-pointer mb-2"
               onClick={() => navigate("/stands-and-displays")}
             />
             <img
               src={poster2}
               alt="poster"
-              className="w-49 rounded overflow-hidden cursor-pointer"
+              className="w-49 w-xs-11 mh-100 rounded overflow-hidden cursor-pointer"
               onClick={() => navigate("/stands-and-displays")}
             />
           </div>
@@ -342,7 +342,7 @@ const HomePage = () => {
               </h3>
               <div className="d-flex flex-wrap justify-content-around w-90 mx-auto my-5">
                 <div
-                  className="d-flex justify-content-center align-items-center p-2"
+                  className="d-flex justify-content-center align-items-center p-2 mw-100"
                   style={{ backgroundColor: "#fff2cd", borderRadius: "55px" }}
                 >
                   <img

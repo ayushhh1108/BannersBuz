@@ -1986,12 +1986,55 @@ a:hover {
   .sidebaar-canvas{
     width: 100% !important;
   }
+  .home-page-carousal{
+    margin-top: 20px;
+  }
+  .slider-offer-section{
+    width: 100% !important;
+  }
+  .small-calander{
+    margin-bottom: 12px;
+  }
+  .sider-of-carousal{
+    margin-bottom: 15px;
+  }
+  .fetures-section{
+    flex-wrap: wrap;
+  }
+  .sameday-shiping{
+    width: 100%;
+  }
+  .offer-title{
+    font-size: 24px !important;
+  }
+  .form-select{
+    width: 40% !important;
+  }
+  .design-template-sec{
+    width: 100% !important;
+    margin-top: 10px;
+  }
+  .col-xs-12{
+    width: 100%;
+    max-width: 100%;
+  }
+  .product-box{
+    width: 30% !important;
+  }
+  .w-xs-11{
+    width: 90% !important;
+  }
+  .poster-box{
+    height: fit-content !important;
+    margin-top: 0 !important;
+  }
 }
 
 @media only screen and (max-width: 425px) {
   .header-logo{
     width: 45% !important;
   }
+
 }
 @media only screen and (max-width: 380px) {
   .header-logo{
