@@ -342,20 +342,20 @@ const HomePage = () => {
               </h3>
               <div className="d-flex flex-wrap justify-content-around w-90 mx-auto my-5">
                 <div
-                  className="d-flex justify-content-center align-items-center p-2 mw-100"
+                  className="d-flex justify-content-center align-items-center p-2 mw-100 review-main-box"
                   style={{ backgroundColor: "#fff2cd", borderRadius: "55px" }}
                 >
                   <img
                     src={reviewLogo}
                     alt="reviews"
-                    className="height-fitcontant"
-                    style={{ width: "80px", marginRight: "60px" }}
+                    className="height-fitcontant review-mr-60"
+                    style={{ width: "80px"}}
                   />
-                  <div className="w-33" style={{ marginRight: "60px" }}>
+                  <div className="w-33 review-mr-60" >
                     <strong className="f-size-20 w-100 d-block">Banners</strong>
                     <span className="">Customer Reviews</span>
                   </div>
-                  <div className="" style={{ width: "240px" }}>
+                  <div className="review-rating-star" style={{ width: "240px" }}>
                     <div className="d-flex align-items-center justify-content-center w-50 d-block">
                       <span className="ms-1">
                         <strong className="f-size-20 w-100">4.5</strong>
@@ -369,7 +369,7 @@ const HomePage = () => {
                     <span className="">Customer Reviews</span>
                   </div>
                 </div>
-                <div className="w-100 d-flex mt-5 justify-content-center">
+                <div className="w-100 d-flex mt-5 justify-content-center customers-review-box">
                   <div className="w-30 d-flex">
                     <div style={{ width: "65px", height: "65px" }}>
                       <CircularProgressbarWithChildren
@@ -581,10 +581,10 @@ const HomePage = () => {
             <h3 className="all-titles text-center w-100 mt-3 mx-auto">
               Check out our Blog For Printing Tips & Suggestions
             </h3>
-            <div className="w-100 d-flex my-4 justify-content-around">
-              <TipsSuggetionCard width={window.innerWidth>800?"w-24":"w-30"} />
-              <TipsSuggetionCard width={window.innerWidth>800?"w-24":"w-30"} />
-              <TipsSuggetionCard width={window.innerWidth>800?"w-24":"w-30"} />
+            <div className="w-100 d-flex my-4 justify-content-around ">
+              <TipsSuggetionCard width={window.innerWidth>800?"w-24":window.innerWidth<600?"w-80":"w-30"} />
+              {window.innerWidth>600?<TipsSuggetionCard width={window.innerWidth>800?"w-24":"w-30"} />:""}
+              {window.innerWidth>600?<TipsSuggetionCard width={window.innerWidth>800?"w-24":"w-30"} />:""}
               {window.innerWidth>800?<TipsSuggetionCard width="w-24" />:""}
             </div>
             <div className="w-100 text-right p-4">
