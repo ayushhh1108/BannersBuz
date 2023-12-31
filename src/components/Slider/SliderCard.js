@@ -16,7 +16,6 @@ const SliderCard = () => {
   const [screenWidth,setScreenWidth] = useState(window.innerWidth);
   const [slides,setSlides] = useState(3);
   useEffect(() => {
-    console.log("screenWidthscreenWidth",screenWidth<1200)
     if(screenWidth<900){
       setSlides(1);
     }else if(screenWidth<1200){
@@ -27,13 +26,13 @@ const SliderCard = () => {
   },[]);
   return (
     <div className="w-100" style={{ backgroundColor: "#ef28001a" }}>
-      <Swiper
+      <Swiper 
         slidesPerView={slides}
         spaceBetween={50}
         navigation={true}
         modules={[Pagination, Navigation]}
         className="mySwiper p-5 height-fitcontant w-cm"
-      >{console.log("screenWidth",screenWidth)}
+      >
         {array.map((i) => (
           <SwiperSlide>
             <div className="col-sm-12 rounded border p-0 bg-light">
@@ -73,10 +72,21 @@ const SliderCard = () => {
 
 const VerticalImgCardSlider = () => {
   const array = [1, 2, 3, 4, 4, 5, 6, 7, 8, 9];
+  const [screenWidth,setScreenWidth] = useState(window.innerWidth);
+  const [slides,setSlides] = useState(4);
+  useEffect(() => {
+    if(screenWidth<900){
+      setSlides(2);
+    }else if(screenWidth<1200){
+      setSlides(3);
+    }else{
+      setSlides(4)
+    }
+  },[]);
   return (
     <>
       <Swiper
-        slidesPerView={4}
+        slidesPerView={slides}
         spaceBetween={30}
         navigation={true}
         modules={[Pagination, Navigation]}
@@ -122,10 +132,21 @@ const VerticalImgCardSlider = () => {
 
 const OnHBorderBtnCardSlider = ({ secound, customerPicks }) => {
   const array = [1, 2, 3, 4, 4, 5, 6, 7, 8, 9];
+  const [screenWidth,setScreenWidth] = useState(window.innerWidth);
+  const [slides,setSlides] = useState(4);
+  useEffect(() => {
+    if(screenWidth<800){
+      setSlides(3);
+    }else if(screenWidth<1200){
+      setSlides(4);
+    }else{
+      setSlides(4)
+    }
+  },[]);
   return (
     <>
       <Swiper
-        slidesPerView={4}
+        slidesPerView={slides}
         spaceBetween={55}
         navigation={true}
         modules={[Pagination, Navigation]}
