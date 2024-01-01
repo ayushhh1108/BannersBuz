@@ -214,7 +214,9 @@ a:hover {
 .w-fit-content {
   width: fit-content !important;
 }
-
+.review-mr-60{
+  margin-right: 60PX;
+}
 .acc-items .accordion-button {
   padding: 5px 5px;
   padding-right: 8px;
@@ -1000,8 +1002,7 @@ a:hover {
 .ThumbsSlider .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
 }
-.mySwiper {
-}
+
 .mySwiper .swiper-button-prev:after,
 .mySwiper .swiper-button-next:after {
   font-size: 12px;
@@ -2028,13 +2029,58 @@ a:hover {
     height: fit-content !important;
     margin-top: 0 !important;
   }
+  .f-size-28{
+    font-size: 22px !important;
+  }
+  .poster-side2 > .w-90{
+    width: 100% !important;
+  }
+  .banner-poster{
+    width: 95% !important;
+  }
+  .review-mr-60{
+    margin-right: 20px;
+  }
+  .review-main-box{
+    flex-wrap: wrap;
+  }
+  .review-rating-star{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .customers-review-box{
+    flex-wrap: wrap;
+  }
+  .customers-review-box > .w-30{
+    width: fit-content !important;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .customers-review-box > .w-30 > div{
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .quality-box{
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 425px) {
   .header-logo{
     width: 45% !important;
   }
-
+  .f-size-28{
+    font-size: 18px !important;
+  }
+  .btn-dark{
+    font-size: 14px;
+    padding: 3px 6px;
+  }
+  .review-container{
+    width: 95% !important;
+  }
 }
 @media only screen and (max-width: 380px) {
   .header-logo{

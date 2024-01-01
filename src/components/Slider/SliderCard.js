@@ -135,7 +135,9 @@ const OnHBorderBtnCardSlider = ({ secound, customerPicks }) => {
   const [screenWidth,setScreenWidth] = useState(window.innerWidth);
   const [slides,setSlides] = useState(4);
   useEffect(() => {
-    if(screenWidth<800){
+    if(screenWidth<600){
+      setSlides(2);
+    }else if(screenWidth<800){
       setSlides(3);
     }else if(screenWidth<1200){
       setSlides(4);
