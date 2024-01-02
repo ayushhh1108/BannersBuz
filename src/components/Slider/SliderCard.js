@@ -36,7 +36,7 @@ const SliderCard = () => {
         {array.map((i) => (
           <SwiperSlide>
             <div className="col-sm-12 rounded border p-0 bg-light">
-              <div className="card-body d-flex p-2">
+              <div className="card-body d-flex p-2 most-loved-card">
                 <div className="img-container w-35 overflow-hidden rounded border">
                   <img src={cardImg} alt="card-img" />
                 </div>
@@ -75,7 +75,9 @@ const VerticalImgCardSlider = () => {
   const [screenWidth,setScreenWidth] = useState(window.innerWidth);
   const [slides,setSlides] = useState(4);
   useEffect(() => {
-    if(screenWidth<900){
+    if(screenWidth<415){
+      setSlides(1);
+    }else if(screenWidth<900){
       setSlides(2);
     }else if(screenWidth<1200){
       setSlides(3);
@@ -135,14 +137,16 @@ const OnHBorderBtnCardSlider = ({ secound, customerPicks }) => {
   const [screenWidth,setScreenWidth] = useState(window.innerWidth);
   const [slides,setSlides] = useState(4);
   useEffect(() => {
-    if(screenWidth<600){
+    if(screenWidth<400){
+      setSlides(1);
+    }else if(screenWidth<600){
       setSlides(2);
     }else if(screenWidth<800){
       setSlides(3);
     }else if(screenWidth<1200){
       setSlides(4);
     }else{
-      setSlides(4)
+      setSlides(4);
     }
   },[]);
   return (

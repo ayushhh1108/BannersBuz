@@ -1992,6 +1992,7 @@ a:hover {
   }
   .slider-offer-section{
     width: 100% !important;
+    margin-bottom: 0px !important;
   }
   .small-calander{
     margin-bottom: 12px;
@@ -2063,7 +2064,41 @@ a:hover {
     height: 50px !important;
   }
   .quality-box{
-    width: 90%;
+    width: 100%;
+  }
+  .chat-now-box{
+    width: 22% !important;
+  }
+  .sider-of-carousal{
+    width: 80% !important;
+  }
+  .carosal-bottum-part{
+    width: 80% !important;
+  }
+  .days-count{
+    font-size: 14px;
+  }
+  .border-top{
+    font-size: 12px;
+  }
+  .slider-offer-section > h4{
+    font-size: 16px;
+  }
+  .slider-offer-section > h5{
+    font-size: 15px;
+  }
+  .copy-side > p {
+    font-size: 11px;
+  }
+  .shop-now-btn {
+    font-size: 12px;
+    padding: 0px 12px;
+  }
+  .sameday-shiping > h4{
+    font-size: 16px;
+  }
+  .sameday-shiping > span{
+    font-size: 13px;
   }
 }
 
@@ -2081,6 +2116,24 @@ a:hover {
   .review-container{
     width: 95% !important;
   }
+  .product-box{
+    width: 45% !important;
+  }
+  .bg-blue-btn{
+    padding: 1px 7px !important;
+  }
+  .bg-blue-btn > .f-size-16 {
+    font-size: 12px !important;
+  }
+  .most-loved-card > .w-75 > h5{
+    font-size: 16px !important;
+  }
+  .most-loved-card > .w-75 > .w-100 > .card-text{
+    font-size: 13px !important;
+  }  
+  .most-loved-card > .w-75 > .w-100 > .d-flex > span{
+    font-size: 11px !important;
+  }
 }
 @media only screen and (max-width: 380px) {
   .header-logo{
@@ -2089,5 +2142,8 @@ a:hover {
   .input-qes {
     width: 100%;
     min-width: auto;
+  }
+  .chat-now-box{
+    width: 26% !important;
   }
 }
