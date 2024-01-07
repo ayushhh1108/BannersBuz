@@ -1872,6 +1872,12 @@ a:hover {
   .ShippingContent {
     margin-right: 32px;
   }
+  .account-side-baar {
+    width: 20% !important;
+  }
+  .dashbord-main-box{
+    width: 81% !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1948,6 +1954,9 @@ a:hover {
   }
   .design-center-div{
     border: none !important;
+  }
+  .dashbord-main-box{
+    width: 100% !important;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -2100,6 +2109,78 @@ a:hover {
   .sameday-shiping > span{
     font-size: 13px;
   }
+  .card-profile{
+    padding: 0px !important;
+  }
+  .card-profile > .media > img{
+    width: 60px;
+    margin-right: 2px !important;
+  }
+  .card-profile > .media > .media-body > h4{
+    font-size: 18px;
+  }
+  .card-profile > .media > .media-body > span{
+    font-size: 12px !important;
+    margin-left: 5px !important;
+  }
+  .card-profile > .media > .media-body > .d-flex > small{
+    font-size: 13px !important;
+  }
+  .dashbord-main-box{
+    flex-wrap: wrap;
+  }
+  .account-side-baar{
+    width: 100% !important;
+    margin-bottom: 20px !important;
+  }
+  .account-side-baar > .account-sidebaar > .w-100{
+    width: 33% !important;
+  }
+  .account-side-baar > .account-sidebaar{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .dropdown-sidebar{
+    display: flex !important;
+  }
+  .account-page{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% !important;
+  }
+  .dashbord-main-box > .w-75,
+  .profile-main-box > .w-75,
+  .address-main-box > .w-75,
+  .wallet-main-box > .w-75,
+  .credit-main-box > .w-75,
+  .quote-main-box > .w-75,
+  .support-main-box > .w-75,
+  .order-main-box > .w-75{
+    width: 90% !important;
+  }
+  .profile-main-box > .w-75 > .w-70,
+  .address-main-box > .w-75 > .w-70{
+    width: 100% !important;
+  }
+  .address-main-box > .w-75 > .w-70{
+    padding: 0 12px;
+  }
+  .order-main-box > .w-75 > .heading-color,
+  .order-main-box > .w-75 > .sub-gray-text{
+    padding: 0 12px;
+  }
+  .wallet-main-box > .w-75 > .d-flex{
+    flex-wrap: wrap;
+  }
+  .wallet-main-box > .w-75 > .d-flex > .card{
+    width: 90% !important;
+    margin-bottom: 3px;
+  }
+  .support-button-box{
+    width: 100% !important;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -2145,5 +2226,53 @@ a:hover {
   }
   .chat-now-box{
     width: 26% !important;
+  }
+  .dashbord-main-box > .w-75,
+  .profile-main-box > .w-75,
+  .address-main-box > .w-75,
+  .wallet-main-box > .w-75,
+  .credit-main-box > .w-75,
+  .quote-main-box > .w-75,
+  .support-main-box > .w-75,
+  .order-main-box > .w-75{
+    width: 100% !important;
+  }
+  .card-profile > .media > img{
+    width: 40px;
+    margin-right: 4px !important;
+  }
+  .card-profile > .media > .media-body > h4{
+    font-size: 16px;
+    margin-top: 3px !important;
+  }
+  .card-profile > .media > .media-body > span{
+    font-size: 10px !important;
+    margin-top: 10px !important;
+  }
+  .card-profile > .media > .media-body > .d-flex > small{
+    font-size: 11px !important;
+  }
+  .dashbord-order-box{
+    width: 50% !important;
+    padding: 9px !important;
+  }
+  .dashbord-order-main{
+    margin-bottom: 0 !important;
+  }
+  .profile-main-box > .w-75 > .w-70 > .tab-content{
+    padding: 20px !important;
+  }
+  .address-main-box > .w-75 > .w-70 > .form-row{
+    padding: 12px !important;
+  }
+  .wallet-main-box > .w-75 > h2,
+  .credit-main-box > .w-75 > h2,
+  .quote-main-box > .w-75 > h2,
+  .support-main-box > .w-75 > h2,
+  .credit-main-box > .w-75 > p,
+  .credit-main-box > .w-75 > .overflow-auto,
+  .quote-main-box > .w-75 > .overflow-auto,
+  .wallet-main-box > .w-75 > .overflow-auto{
+    padding-left: 14px;
   }
 }

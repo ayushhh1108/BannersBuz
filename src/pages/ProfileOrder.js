@@ -9,14 +9,12 @@ const ProfileOrderPage = () => {
   return (
     <div>
       <Header upperLineNone={true} />
-      <div className="my-5 w-90 d-flex mx-auto justify-content-around">
-        <div className="w-15 d-flex flex-wrap">
-          <DashboardSideBaar active={3}/>
-        </div>
+      <div className="my-5 w-90 d-flex mx-auto justify-content-around account-page order-main-box">
+        <DashboardSideBaar active={3} />
         <div className="w-75">
           <ProfileBox />
           <h2 className="text-left pt-3 mt-5 heading-color f-size-24">
-          Orders
+            Orders
           </h2>
           <p className="text-muted black-color light-grey text-left f-size-13 my-4 mt-2  sub-gray-text">
             No order placed
