@@ -9,10 +9,8 @@ const ProfileAddress = () => {
   return (
     <div>
       <Header upperLineNone={true} />
-      <div className="my-5 w-90 d-flex mx-auto justify-content-around">
-        <div className="w-15 d-flex flex-wrap">
-          <DashboardSideBaar active={2} />
-        </div>
+      <div className="my-5 w-90 d-flex mx-auto justify-content-around account-page address-main-box">
+        <DashboardSideBaar active={2} />
         <div className="w-75">
           <ProfileBox />
           <div className="w-70">

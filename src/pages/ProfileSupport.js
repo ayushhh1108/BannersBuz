@@ -11,19 +11,17 @@ const ProfileSupportPage = () => {
   return (
     <div>
       <Header upperLineNone={true} />
-      <div className="my-5 w-90 d-flex mx-auto justify-content-around">
-        <div className="w-15 d-flex flex-wrap">
-          <DashboardSideBaar active={7} />
-        </div>
+      <div className="my-5 w-90 d-flex mx-auto justify-content-around account-page support-main-box">
+        <DashboardSideBaar active={7} />
         <div className="w-75 text-center">
           <ProfileBox />
           <h2 className="text-left pt-3 mt-5 heading-color mb-4 f-size-24">
             HELP & SUPPORT
           </h2>
           <img src={supportImg} alt="supportImg" className="w-50" />
-          <div className="w-50 d-flex mx-auto">
+          <div className="w-50 d-flex mx-auto support-button-box ">
             <Button
-              className="f-size-12 px-4 mx-auto w-fit-content"
+              className="f-size-12 px-4 mx-auto w-fit-content border-0"
               variant="primary"
               style={{ backgroundColor: "#4383b8" }}
             >
@@ -31,7 +29,7 @@ const ProfileSupportPage = () => {
             </Button>
             <Button
               style={{ backgroundColor: "#4383b8" }}
-              className="f-size-12 px-4 mx-auto w-fit-content"
+              className="f-size-12 px-4 mx-auto w-fit-content border-0"
               variant="primary"
             >
               TRACK MY ORDER

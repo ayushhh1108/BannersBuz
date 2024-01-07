@@ -12,10 +12,8 @@ const ProfileWalletPage = () => {
   return (
     <div>
       <Header upperLineNone={true} />
-      <div className="my-5 w-90 d-flex mx-auto justify-content-around">
-        <div className="w-15 d-flex flex-wrap">
-          <DashboardSideBaar active={4} />
-        </div>
+      <div className="my-5 w-90 d-flex mx-auto justify-content-around account-page wallet-main-box">
+        <DashboardSideBaar active={4} />
         <div className="w-75">
           <ProfileBox />
           <h2 className="text-left pt-3 mt-5 heading-color mb-4 f-size-24 fw-bold">
@@ -77,26 +75,28 @@ const ProfileWalletPage = () => {
           >
             Your Wallet-Transaction History
           </p>
-          <table className="w-100">
-            <tr className="f-size-14">
-              <th>Transaction ID</th>
-              <th>Date</th>
-              <th>Transaction Type</th>
-              <th>Transaction Details</th>
-              <th>Points</th>
-              <th>Expiration Date</th>
-              <th>Available Balance</th>
-            </tr>
-            <tr className="f-size-14">
-              <td>9909</td>
-              <td>12-02-2023</td>
-              <td>Credit</td>
-              <td>By online Transaction</td>
-              <td>1100</td>
-              <td>12-02-2023</td>
-              <td>1100</td>
-            </tr>
-          </table>
+          <div className="w-100 overflow-auto">
+            <table className="w-100" style={{minWidth:"770px"}}>
+              <tr className="f-size-14">
+                <th>Transaction ID</th>
+                <th>Date</th>
+                <th>Transaction Type</th>
+                <th>Transaction Details</th>
+                <th>Points</th>
+                <th>Expiration Date</th>
+                <th>Available Balance</th>
+              </tr>
+              <tr className="f-size-14">
+                <td>9909</td>
+                <td>12-02-2023</td>
+                <td>Credit</td>
+                <td>By online Transaction</td>
+                <td>1100</td>
+                <td>12-02-2023</td>
+                <td>1100</td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
       <SubscribeSection />
