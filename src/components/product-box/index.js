@@ -12,13 +12,15 @@ import PlusIcon from "../../assets/Plus";
 import MinusIcon from "../../assets/Minus";
 import { OrangeButton } from "../RightArrowBTN";
 import { Link } from "react-router-dom";
+import './product-box.sass'
+import img2 from "../../assets/redesign/img2.jpg";
 
 const ProductBox = () => {
   return (
     <div className="w-18 cursor-pointer product-box my-3">
       <Link to='/stands-and-displays'>
-        <div className="border rounded product-img-box">
-          <img src={products} alt="alt" className="w-100 rounded" />
+        <div className="border rounded-30 product-img-box">
+          <img src={products} alt="alt" className="w-100 rounded-30" />
         </div>
         <p className="text-center text-dark py-3 f-size-18 mb-0 product-label">
           Custom Flags
@@ -32,11 +34,11 @@ const OnHBorderBtnCard = ({ secound, customerPicks }) => {
   return (
     <div className="cursor-pointer product-h-box">
       <div
-        className={secound ? "border rounded " : "border rounded card-img-box"}
+        className={secound ? "img-container" : "img-container card-img-box"}
       >
-        <img src={secound ? product2 : products} alt="alt" className="w-100 rounded" />
+        <img src={img2} alt="alt" className="w-100" />
       </div>
-      <p className="all-titles text-center py-3 px-1 f-size-16 mb-0 product-label">
+      <p className="all-titles text-center py-3 px-2 f-size-16 mb-0 product-label">
         Address Labels / Return Address Labels
       </p>
       <span className="f-size-14 sub-gray-text text-decoration-line-through">

@@ -14,6 +14,9 @@ import item1 from "../assets/2banner.png";
 import priceTag from "../assets/price-tag (1).png";
 import badge from "../assets/badge (1).png";
 import reviewLogo from "../assets/reviewLogo.png";
+import img1 from "../assets/redesign/img1.jpg";
+import img2 from "../assets/redesign/img2.jpg";
+import img3 from "../assets/redesign/img3.jpg";
 import {
   OnHBorderBtnCardSlider,
   SliderCard,
@@ -36,7 +39,9 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import "../css/home.sass"
+
 const HomePage = () => {
   const arrayOfTen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const navigate = useNavigate();
@@ -109,20 +114,70 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <div className="w-100">
+
+          {/* designed  */}
+          <div className="w-cm bb_top_selling-main">
             <h3 className="all-titles text-center mx-auto my-4 w-cm">
+              Top Selling Products
+            </h3>
+            <div className="bb_top_selling d-flex flex-wrap justify-content-center">
+              <Link to="/">
+                <div>
+                  <img src={img1} alt="img1" />
+                </div>
+                <p>Best Sellers</p>
+              </Link>
+              <Link to="/">
+                <div>
+                  <img src={img2} alt="img1" />
+                </div>
+                <p>Best Sellers</p>
+              </Link>
+              <Link to="/">
+                <div>
+                  <img src={img3} alt="img1" />
+                </div>
+                <p>Best Sellers</p>
+              </Link>
+              <Link to="/">
+                <div>
+                  <img src={img3} alt="img1" />
+                </div>
+                <p>Best Sellers</p>
+              </Link>
+              <Link to="/">
+                <div>
+                  <img src={img2} alt="img1" />
+                </div>
+                <p>Best Sellers</p>
+              </Link>
+              <Link to="/">
+                <div>
+                  <img src={img1} alt="img1" />
+                </div>
+                <p>Best Sellers</p>
+              </Link>
+            </div>
+
+          </div>
+
+          {/* designed  */}
+          <div className="w-100 py-5" style={{ backgroundColor: "#ef28001a" }}>
+            <h3 className="all-titles text-center mx-auto mb-4 w-cm">
               Most Loved Products
             </h3>
             <SliderCard />
           </div>
-          <h3
-            className="all-titles p-4 mx-auto text-center offer-title"
-            style={{ fontSize: "29px" }}
-          >
-            Offering Custom Banners and Signs For Business/Home Needs
-          </h3>
-          <div className="w-100 select-product-box">
-            <div className="w-cm w-100 d-flex justify-content-center align-items-center p-4 flex-wrap">
+
+          {/* designed  */}
+          <div className="w-100 select-product-box py-5">
+            <h3
+              className="all-titles px-4 mx-auto text-center offer-title"
+              style={{ fontSize: "29px" }}
+            >
+              Offering Custom Banners and Signs For Business/Home Needs
+            </h3>
+            <div className="w-cm w-100 d-flex justify-content-center align-items-center px-4 pt-4 flex-wrap">
               <h5 className="d-inline m-2">Select Your Product</h5>
               <Form.Select
                 aria-label="Default select example"
@@ -155,9 +210,11 @@ const HomePage = () => {
               </Button>
             </div>
           </div>
-          <div className="w-100 border rounded my-5 w-cm">
-            <div className=" w-90 d-flex justify-content-between mx-auto py-3 px-2 way-to-get-section">
-              <h3 className="col-xs-12 col-3">Ways to get the Right Print</h3>
+
+          {/* designed  */}
+          <div className="w-100 border rounded-30 my-5 w-cm p-3 px-5 text-center">
+            {/* <h3 className="">Ways to get the Right Print</h3>s */}
+            <div className="d-flex justify-content-between mx-auto py-3 px-2 way-to-get-section">
               <div className="d-flex align-item-center design-template-sec">
                 <img
                   src={designPng}
@@ -197,6 +254,8 @@ const HomePage = () => {
               </div>
             </div>
           </div>
+
+          {/* designed  */}
           <div className="w-100 text-center">
             <h3 className="text-center all-titles w-100">Our Best Sellers</h3>
             <span className="text-center w-100 sub-gray-text">
@@ -208,20 +267,31 @@ const HomePage = () => {
               <ProductBox />
             ))}
           </div>
+
           <div className="w-100 d-flex justify-content-around poster-box my-5 w-cm flex-wrap">
-            <img
-              src={poster1}
-              alt="poster"
-              className="w-49 w-xs-11 mh-100 rounded overflow-hidden cursor-pointer mb-2"
-              onClick={() => navigate("/stands-and-displays")}
-            />
-            <img
-              src={poster2}
-              alt="poster"
-              className="w-49 w-xs-11 mh-100 rounded overflow-hidden cursor-pointer"
-              onClick={() => navigate("/stands-and-displays")}
-            />
+            <div className="col-6 px-3">
+              <div className="img-container">
+                <img
+                  src={poster1}
+                  alt="poster"
+                  className="rounded-30 overflow-hidden cursor-pointer mb-2"
+                  onClick={() => navigate("/stands-and-displays")}
+                />
+              </div>
+            </div>
+            <div className="col-6 px-3">
+              <div className="img-container">
+                <img
+                  src={poster2}
+                  alt="poster"
+                  className="mh-100 rounded-30 overflow-hidden cursor-pointer"
+                  onClick={() => navigate("/stands-and-displays")}
+                />
+              </div>
+            </div>
           </div>
+
+
           <h3 className="all-titles text-center w-100 mt-3 w-cm">
             Customer Picks
           </h3>
@@ -349,7 +419,7 @@ const HomePage = () => {
                     src={reviewLogo}
                     alt="reviews"
                     className="height-fitcontant review-mr-60"
-                    style={{ width: "80px"}}
+                    style={{ width: "80px" }}
                   />
                   <div className="w-33 review-mr-60" >
                     <strong className="f-size-20 w-100 d-block">Banners</strong>
@@ -582,10 +652,10 @@ const HomePage = () => {
               Check out our Blog For Printing Tips & Suggestions
             </h3>
             <div className="w-100 d-flex my-4 justify-content-around ">
-              <TipsSuggetionCard width={window.innerWidth>800?"w-24":window.innerWidth<600?"w-80":"w-30"} />
-              {window.innerWidth>600?<TipsSuggetionCard width={window.innerWidth>800?"w-24":"w-30"} />:""}
-              {window.innerWidth>600?<TipsSuggetionCard width={window.innerWidth>800?"w-24":"w-30"} />:""}
-              {window.innerWidth>800?<TipsSuggetionCard width="w-24" />:""}
+              <TipsSuggetionCard width={window.innerWidth > 800 ? "w-24" : window.innerWidth < 600 ? "w-80" : "w-30"} />
+              {window.innerWidth > 600 ? <TipsSuggetionCard width={window.innerWidth > 800 ? "w-24" : "w-30"} /> : ""}
+              {window.innerWidth > 600 ? <TipsSuggetionCard width={window.innerWidth > 800 ? "w-24" : "w-30"} /> : ""}
+              {window.innerWidth > 800 ? <TipsSuggetionCard width="w-24" /> : ""}
             </div>
             <div className="w-100 text-right p-4">
               <OrangeButton text="View All" />

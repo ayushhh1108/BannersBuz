@@ -68,6 +68,7 @@
   background-color: #100f5d;
   transition: all 0.4s;
   color: white;
+  border-radius: 10px;
 }
 .bg-blue-btn:hover {
   background-color: var(--orange) !important;
@@ -568,8 +569,8 @@ a:hover {
 }
 
 .select-product-box {
-  background-color: #eeeeee;
-  border-radius: 10px;
+  /* background-color: #eeeeee; */
+  background-color: #ffffff;
 }
 .slider-customize-hover {
   transition: all 0.8s;
@@ -1698,7 +1699,7 @@ a:hover {
 
 @media only screen and (max-width: 1570px) {
   .w-cm {
-    width: 1200px !important;
+    max-width: 95% !important;
   }
   .chat-now-box{
     width: 25% !important;

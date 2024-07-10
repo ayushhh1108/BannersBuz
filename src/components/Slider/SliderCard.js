@@ -11,6 +11,9 @@ import { Card } from "react-bootstrap";
 import { OnHBorderBtnCard } from "../product-box";
 import { RightArrowbtn } from "../RightArrowBTN";
 import { Link } from "react-router-dom";
+import img1 from "../../assets/redesign/img1.jpg";
+import img2 from "../../assets/redesign/img2.jpg";
+import img3 from "../../assets/redesign/img3.jpg";
 const SliderCard = () => {
   const [array, setArray] = useState([1, 2, 3, 4, 4, 5, 6, 7, 8, 9]);
   const [screenWidth,setScreenWidth] = useState(window.innerWidth);
@@ -25,19 +28,19 @@ const SliderCard = () => {
     }
   },[]);
   return (
-    <div className="w-100" style={{ backgroundColor: "#ef28001a" }}>
+    <div className="w-100 px-3 w-cm">
       <Swiper 
         slidesPerView={slides}
-        spaceBetween={50}
+        spaceBetween={20}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper p-5 height-fitcontant w-cm"
+        className="mySwiper py-3 height-fitcontant"
       >
         {array.map((i) => (
           <SwiperSlide>
-            <div className="col-sm-12 rounded border p-0 bg-light">
+            <div className="col-sm-12 border p-0 bg-light bb_most_love_product">
               <div className="card-body d-flex p-2 most-loved-card">
-                <div className="img-container w-35 overflow-hidden rounded border">
+                <div className="img-container w-35 overflow-hidden">
                   <img src={cardImg} alt="card-img" />
                 </div>
                 <div className="d-flex flex-wrap align-items-center pl-3 w-75">
@@ -45,6 +48,9 @@ const SliderCard = () => {
                     Special title treatment
                   </h5>
                   <div className="w-100">
+                    <Card.Text className="mb-2 text-left fw-bold">
+                      <span className="test-dec fw-normal">Starts at </span>$6.99
+                    </Card.Text>
                     <div className="d-flex align-items-center justify-content-center w-fit-content">
                       <img src={star} alt="star" />
                       <img src={star} alt="star" />
@@ -53,9 +59,6 @@ const SliderCard = () => {
                       <img src={halfstar} alt="star" />
                       <span className="ms-1 f-size-14">(4.5/5)</span>
                     </div>
-                    <Card.Text className="text-left">
-                      <span className="test-dec">Starts at </span>$6.99
-                    </Card.Text>
                   </div>
                   <Link to="/banner">
                     <RightArrowbtn text={"View Details"} />
@@ -96,14 +99,14 @@ const VerticalImgCardSlider = () => {
         style={{ height: "fit-content" }}
       >
         {array.map((i) => (
-          <SwiperSlide style={{ height: "fit-content" }}>
-            <div className="col-sm-12 rounded border p-0">
+          <SwiperSlide style={{ height: "fit-content" }} className="">
+            <div className="col-sm-12 bb_custom_banners border p-0">
               <div className="card-body d-flex flex-wrap justify-content-center select-product-box-body">
-                <div className="img-container w-100 px-5 py-3">
-                  <img src={cardImg} alt="card-img" />
+                <div className="img-container w-100">
+                  <img src={img1} alt="card-img" />
                 </div>
                 <div className="pb-4 d-flex flex-wrap align-items-center w-100 justify-content-center">
-                  <h5 className="card-title text-center mb-0 p-2 f-size-18 fw-bold">
+                  <h5 className="card-title text-center mb-0 p-2 f-size-18 fw-bold mt-3">
                     Special title treatment
                   </h5>
                   <div className="w-100 p-2">
@@ -153,10 +156,10 @@ const OnHBorderBtnCardSlider = ({ secound, customerPicks }) => {
     <>
       <Swiper
         slidesPerView={slides}
-        spaceBetween={55}
+        spaceBetween={50}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper p-5 py-5"
+        className="mySwiper py-5"
         style={{  height:  "fit-content"  }}
       >
         {array.map((i) => (
