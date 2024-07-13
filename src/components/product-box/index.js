@@ -38,18 +38,22 @@ const OnHBorderBtnCard = ({ secound, customerPicks }) => {
       >
         <img src={img2} alt="alt" className="w-100" />
       </div>
-      <p className="all-titles text-center py-3 px-2 f-size-16 mb-0 product-label">
-        Address Labels / Return Address Labels
-      </p>
-      <span className="f-size-14 sub-gray-text text-decoration-line-through">
-        $7.59
-      </span>
-      <span className="f-size-18 font-weight-bolder"><strong> $5.42</strong></span>
-      <Link to={customerPicks?customerPicks:'/photo-magnets'}
-        className="d-flex card-title w-100 justify-content-center p-3 costomize-text"
-      >
-        View Details{" "}
-      </Link>
+      <div className="py-3 px-2">
+        <p className="text-center f-size-18 px-3 mb-0 product-label">
+          Address Labels / Return Address Labels, Media
+        </p>
+        <div className="d-flex justify-content-center align-items-center gap-2 mt-2">
+          <span className="f-size-18 font-weight-bolder d-block text-center"><strong> $5.42</strong></span>
+          <span className="f-size-14 sub-gray-text text-decoration-line-through">
+            $7.59
+          </span>
+        </div>
+        {/* <Link to={customerPicks ? customerPicks : '/photo-magnets'}
+          className="d-inline-block card-title justify-content-center py-2 px-3 costomize-text rounded"
+        >
+          View Details{" "}
+        </Link> */}
+      </div>
     </div>
   );
 };
@@ -60,7 +64,7 @@ const TipsSuggetionCard = ({ width }) => {
       className={"cursor-pointer text-center " + width}
     >
       <div className={"text-center pt-3"}>
-        <img src={tipsImg} alt="alt" className="w-90" />
+        <img src={tipsImg} alt="alt" className="w-90 rounded-30" />
       </div>
       <p className="text-left pt-3 pb-1 px-1 f-size-16 mb-0 product-label w-90 mx-auto sub-gray-text font-weight-bolder">
         Halloween Is Almost Here: 5 Creative Ways to Celebrate

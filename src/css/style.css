@@ -238,8 +238,11 @@ a:hover {
   box-shadow: none;
 }
 .all-titles {
+  font-size: clamp(32px, 2vw , 22px) !important;
+  letter-spacing: 0.7px;
   color: #100f5d;
-  font-weight: 700;
+  font-weight: 500;
+  font-family: "Gloock", serif !important;
 }
 .color-db {
   color: var(--blue-color);
@@ -587,6 +590,10 @@ a:hover {
 .ways-png-width {
   width: 70px !important;
 }
+.product-label{
+  font-weight: 500;
+  color: var(--blue-color);
+}
 .product-box:hover .product-label {
   color: var(--orange) !important;
 }
@@ -597,20 +604,21 @@ a:hover {
   transition: all 0.7s;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-.costomize-text:hover {
-  color: white;
-  background-color: var(--orange);
+  /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
 }
 .card-img-box {
   border-bottom: none !important;
 }
 .costomize-text {
-  color: white;
-  background-color: var(--blue-color);
+  color: var(--blue-color);
+  border: 1px solid var(--blue-color);
   margin-top: 15px;
+}
+.costomize-text:hover {
+  color: white;
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
 }
 .right-arrows {
   display: none;
@@ -1008,14 +1016,26 @@ a:hover {
   opacity: 1;
 }
 
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  background-color: #100f5d; 
+  border-radius: 100px;
+}
 .mySwiper .swiper-button-prev:after,
 .mySwiper .swiper-button-next:after {
-  font-size: 12px;
+  font-size: 13px;
   color: white;
-  background-color: #100f5d;
-  padding: 7px 10px;
+  /* padding: 7px 10px; */
   border-radius: 5px;
   font-weight: bold;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+  right: 0 !important;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+  left: 0 !important;
 }
 
 .ThumbsSlider .swiper-slide img {

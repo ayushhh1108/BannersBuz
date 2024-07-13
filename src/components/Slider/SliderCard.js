@@ -92,10 +92,10 @@ const VerticalImgCardSlider = () => {
     <>
       <Swiper
         slidesPerView={slides}
-        spaceBetween={30}
+        spaceBetween={50}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper p-4"
+        className="mySwiper p-5"
         style={{ height: "fit-content" }}
       >
         {array.map((i) => (
@@ -159,7 +159,7 @@ const OnHBorderBtnCardSlider = ({ secound, customerPicks }) => {
         spaceBetween={50}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper py-5"
+        className="mySwiper py-5 px-5"
         style={{  height:  "fit-content"  }}
       >
         {array.map((i) => (
