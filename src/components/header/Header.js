@@ -58,8 +58,6 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
     "Custom Flags",
     "Compliance Signs",
     "Signs & Decals",
-    "Clothing",
-    "Marketing Materials",
     "Accessories",
   ];
   const CategoryData = [
@@ -430,7 +428,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
       </div>
       {!categoryNone && (
         <div className="main-navbar navbar-color">
-          <div className=" d-none d-md-flex header-navigation-width justify-content-around ">
+          <div className=" d-none d-md-flex header-navigation-width justify-content-center">
             {menuItems.map((item) => (
               <>
                 <Link

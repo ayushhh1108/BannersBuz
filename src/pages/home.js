@@ -59,7 +59,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="w-cm carosal-bottum-part">
+          {/* <div className="w-cm carosal-bottum-part">
             <div className="w-100 d-flex justify-content-center fetures-section">
               <div className="sameday-shiping w-33 d-flex justify-content-center align-items-center">
                 <ShippingIcon />
@@ -77,7 +77,7 @@ const HomePage = () => {
                 <span>on selected products</span>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* designed  */}
           <div className="w-cm bb_top_selling-main">
@@ -135,12 +135,12 @@ const HomePage = () => {
 
           {/* designed  */}
           <div className="w-100 select-product-box py-5">
-            <div className="w-cm d-flex justify-content-between align-items-center">
+            <div className="w-cm px-5 d-flex justify-content-between align-items-center">
               <h3
                 className="all-titles px-4 offer-title"
                 style={{ fontSize: "29px" }}
               >
-                Offering Custom Banners and Signs For Business/Home Needs
+                Offering Custom Banners
               </h3>
               <Button
                 variant="outline-primary"
@@ -258,34 +258,46 @@ const HomePage = () => {
             </div>
           </div>
 
-
-          <h3 className="all-titles text-center w-100 mt-3 w-cm">
-            Customer Picks
-          </h3>
-          <span className="text-center w-100 sub-gray-text">
-            Explore Our Most Popular Products
-          </span>
-          <div className="w-cm">
-            <OnHBorderBtnCardSlider customerPicks="banner" />
-            <div className="w-100 text-right p-4">
+          <div className="w-cm px-5 d-flex justify-content-between align-items-center">
+            <div>
+              <h3 className="all-titles mt-3">
+                Customer Picks
+              </h3>
+              <span className="text-center sub-gray-text">
+                Explore Our Most Popular Products
+              </span>
+            </div>
+            <div className="">
               <OrangeButton text="View All" />
             </div>
           </div>
+          <div className="w-cm">
+            <OnHBorderBtnCardSlider customerPicks="banner" />
+          </div>
           <div
-            className="w-100 text-center py-2 "
+            className="w-100 py-2 "
             style={{ background: "rgb(247, 247, 255)" }}
           >
-            <h3 className="all-titles text-center w-100 pt-4">New Arrivals</h3>
-            <span className="text-center w-100 sub-gray-text">
-              Check Out Our Latest Products
-            </span>
+            <div className="w-cm px-5 d-flex justify-content-between align-items-center">
+              <div>
+                <h3 className="all-titles mt-3">
+                  New Arrivals
+                </h3>
+                <span className="sub-gray-text">
+                  Check Out Our Latest Products
+                </span>
+              </div>
+              <div className="">
+                <OrangeButton text="View All" />
+              </div>
+            </div>
             <div className="w-cm">
               <OnHBorderBtnCardSlider secound={true} />
             </div>
           </div>
           <container className="d-flex w-100 flex-wrap justify-content-around my-5 w-cm banner-poster-box">
             <div
-              className="w-48 d-flex align-items-center justify-content-between p-1830 rounded my-2 banner-poster"
+              className="w-49 d-flex align-items-center justify-content-between p-1830 rounded-30 my-2 banner-poster"
               style={{
                 border: "1px solid rgb(238, 238, 238)",
                 backgroundImage:
@@ -306,7 +318,7 @@ const HomePage = () => {
               </div>
             </div>
             <div
-              className="height-fitcontant w-48 d-flex align-items-center justify-content-between p-1830 rounded my-2 banner-poster"
+              className="height-fitcontant w-49 d-flex align-items-center justify-content-between p-1830 rounded-30 my-2 banner-poster"
               style={{
                 border: "1px solid rgb(238, 238, 238)",
                 backgroundImage:
@@ -327,7 +339,7 @@ const HomePage = () => {
               </div>
             </div>
             <div
-              className="w-48 height-fitcontant d-flex align-items-center justify-content-between p-1830 rounded my-2 banner-poster"
+              className="w-49 height-fitcontant d-flex align-items-center justify-content-between p-1830 rounded-30 my-2 banner-poster"
               style={{
                 border: "1px solid rgb(238, 238, 238)",
                 backgroundImage:
@@ -348,7 +360,7 @@ const HomePage = () => {
               </div>
             </div>
             <div
-              className="w-48 height-fitcontant d-flex align-items-center jutent-between p-1830 rounded my-2 banner-poster"
+              className="w-49 height-fitcontant d-flex align-items-center jutent-between p-1830 rounded-30 my-2 banner-poster"
               style={{
                 border: "1px solid rgb(238, 238, 238)",
                 backgroundImage:
@@ -371,7 +383,7 @@ const HomePage = () => {
           </container>
           <container className="w-100 d-flex flex-wrap justify-content-around my-3 w-cm px-2 ">
             <div
-              className="w-49 rounded d-flex flex-wrap review-container"
+              className="w-49 rounded-30 d-flex flex-wrap review-container"
               style={{ backgroundColor: "#fffdec" }}
             >
               <h3 className="text-center w-100 mt-5 font-weight-bold d-block">
@@ -501,7 +513,7 @@ const HomePage = () => {
               </div>
             </div>
             <div
-              className="w-49 rounded review-container"
+              className="w-49 rounded-30 review-container"
               style={{ backgroundColor: "#f2f2f2" }}
             >
               <h3 className="text-center w-100 mt-5 font-weight-bold">
