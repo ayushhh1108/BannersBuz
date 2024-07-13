@@ -311,9 +311,13 @@ a:hover {
 }
 .connect {
   width: 42px;
+  height: 42px;
   border: solid 1px #dbdbdb;
-  border-radius: 2px;
+  border-radius: 8px;
   padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .small-sub-text {
   font-size: 14px;
@@ -1653,6 +1657,13 @@ a:hover {
 .sider-of-carousal{
   width: 25% !important;
 }
+.sider-of-carousal img{
+  object-fit: cover;
+}
+.main-carousal-div{
+  height: 400px;
+}
+
 
 @media (max-width: 576px) {
   .flex-sm-nowrap .step .step-icon-wrap::before,

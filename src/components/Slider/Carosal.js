@@ -12,7 +12,6 @@ const Carousal = () => {
   return (
     <div className="w-75 home-page-carousal" >
       <Swiper
-        navigation={true}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
@@ -20,10 +19,7 @@ const Carousal = () => {
         pagination={{
           clickable: true,
         }}
-        Navigation={{
-          clickable: true
-        }}
-        modules={[Navigation, Pagination, Autoplay]}
+        modules={[Pagination, Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide><img className=" w-100" src={slider2} alt="Second slide" /></SwiperSlide>

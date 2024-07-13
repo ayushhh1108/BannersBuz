@@ -11,7 +11,7 @@ import ind from "../../assets/ind.svg";
 import chat from "../../assets/chat-now.svg";
 import callUs from "../../assets/call-us.svg";
 import order_track from "../../assets/order-tracking.svg";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/redesign/xaraprint.svg";
 import sidebaarIcon from "../../assets/menu-button-header.png";
 import searchIcon from "../../assets/search.svg";
 import "../../css/style.css";
@@ -43,7 +43,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
 
   const handleOnHover = (category) => {
     const subCat = CategoryData.find((i) => i.category === category).subcategories;
-    setSubCategories(chunk(subCat,5))
+    setSubCategories(chunk(subCat, 5))
   }
 
   const chunk = (arr, size) =>
@@ -150,7 +150,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
       {!upperLineNone ? (
         <div className="topbar d-flex justify-content-between px-4">
           <div className="toppbar_left d-flex flex-nowrap align-items-center header-first-sec">
-            <Link to="/orderstatus" className="text-light font-size-13">
+            <Link to="/orderstatus" className="text-light font-size-13 d-flex align-items-center">
               {" "}
               <img
                 src={order_track}
@@ -162,7 +162,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
             <div className="quick_links w-fit-content">
               <div className="dropdown show">
                 <Link
-                  className="dropdown-toggle text-light font-size-13"
+                  className="dropdown-toggle text-light font-size-13 d-flex align-items-center"
                   to="#"
                   role="button"
                   id="dropdownMenuLink"
@@ -207,7 +207,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
               {user ? " " + user?.first_name : " User"}
             </div>
             <Link
-              className="dropdown-toggle text-light font-size-13 d-none d-md-inline d-sm-inline d-lg-inline d-xl-inline"
+              className="dropdown-toggle text-light font-size-13 d-none d-sm-flex align-items-center"
               to="#"
               role="button"
               id="dropdownMenuLink"
@@ -239,7 +239,7 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
             </div>
             <Link
               to=""
-              className="hover_orange text-light"
+              className="hover_orange text-light d-flex align-items-center"
               onClick={() => {
                 setCart(true);
               }}
@@ -354,11 +354,15 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
         </div>
         <div className="d-flex w-20 justify-content-around chat-now-box">
           <div className="d-flex align-items-center w-50 callUsBox">
-            <img src={chat} alt="callUs" className="call-us connect" />
+            <div className="connect">
+              <img src={chat} alt="callUs" className="call-us" />
+            </div>
             <span className="small-sub-text ml-3">Chat now</span>
           </div>
           <div className="d-flex align-items-center w-50 callUsBox">
-            <img src={callUs} alt="callUs" className="call-us connect" />
+            <div className="connect">
+              <img src={callUs} alt="callUs" className="call-us" />
+            </div>
             <span className="small-sub-text ml-3">
               Call us
               <p className="mb-0">800-580-4489</p>
@@ -457,9 +461,9 @@ const Header = ({ upperLineNone, categoryNone, searchNone }) => {
                     </div>
                     <div className="w-80 d-flex">
                       {subCategories?.map((mainn) => {
-                        return<div className="w-20 ml-4 mt-1">
+                        return <div className="w-20 ml-4 mt-1">
                           {mainn?.map((itemss) => {
-                            return<p className="text-secondary f-size-11 cursor-pointer mb-0" onClick={() => navigate("/banner")}>{itemss}</p>
+                            return <p className="text-secondary f-size-11 cursor-pointer mb-0" onClick={() => navigate("/banner")}>{itemss}</p>
                           })}
                         </div>
                       })}

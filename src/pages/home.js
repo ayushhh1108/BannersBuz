@@ -17,6 +17,7 @@ import reviewLogo from "../assets/reviewLogo.png";
 import img1 from "../assets/redesign/img1.jpg";
 import img2 from "../assets/redesign/img2.jpg";
 import img3 from "../assets/redesign/img3.jpg";
+import special_offer from "../assets/redesign/special_offer.png";
 import {
   OnHBorderBtnCardSlider,
   SliderCard,
@@ -50,51 +51,14 @@ const HomePage = () => {
       <Header />
       <div className="main-container">
         <div className="carosal-box d-flex flex-wrap mb-5">
-          <div className="w-cm d-flex main-carousal-div">
+
+          <div className="w-100 d-flex main-carousal-div">
             <Carousal />
-            <div className="d-flex flex-wrap justify-content-center sider-of-carousal">
-              <div className="w-100 d-flex flex-wrap justify-content-center slider-offer-section align-items-center">
-                <h5 className="w-100 text-center pt-3 offer-clock-time-text">Beat the Clock & Save!</h5>
-                <div className="w-75 d-flex justify-content-space-evenly">
-                  <div className="rounded small-calander text-center p-1">
-                    <h5 className="days-count">2</h5>
-                    <span className="border-top">Days</span>
-                  </div>
-                  <div className="rounded small-calander text-center p-1">
-                    <h5 className="days-count">10</h5>
-                    <span className="border-top">HRS</span>
-                  </div>
-                  <div className="rounded small-calander text-center p-1">
-                    <h5 className="days-count">30</h5>
-                    <span className="border-top">MIN</span>
-                  </div>
-                  <div className="rounded small-calander text-center p-1">
-                    <h5 className="days-count">35</h5>
-                    <span className="border-top">SEC</span>
-                  </div>
-                </div>
-              </div>
-              <div className="w-100 d-flex flex-wrap justify-content-center slider-offer-section align-items-center">
-                <h5 className="w-100 text-center height-fitcontant">
-                  Fall Flash Sale
-                </h5>
-                <h4 className="w-100 text-center text-warning mb-0">
-                  22% off Sitewide
-                </h4>
-              </div>
-              <div className="w-100 d-flex flew-100 d-flex flex-wrap justify-content-around my-3 w-cm px-2x-wrap justify-content-center slider-offer-section align-items-center">
-                <div className="d-flex flex-wrap height-fitcontant w-100 justify-content-space-evenly">
-                  <div className="w-50 d-flex height-fitcontant p-2 copy-side justify-content-between">
-                    <p className="mb-0">FLASH</p>
-                    <img src={copy} alt="copy" className="copy-icon" />
-                  </div>
-                  <button type="button" className="btn shop-now-btn">
-                    Shop now
-                  </button>
-                </div>
-              </div>
+            <div className="sider-of-carousal">
+              <img src={special_offer} alt="special-offer" className="w-100 h-100" />
             </div>
           </div>
+
           <div className="w-cm carosal-bottum-part">
             <div className="w-100 d-flex justify-content-center fetures-section">
               <div className="sameday-shiping w-33 d-flex justify-content-center align-items-center">
@@ -171,12 +135,21 @@ const HomePage = () => {
 
           {/* designed  */}
           <div className="w-100 select-product-box py-5">
-            <h3
-              className="all-titles px-4 mx-auto text-center offer-title"
-              style={{ fontSize: "29px" }}
-            >
-              Offering Custom Banners and Signs For Business/Home Needs
-            </h3>
+            <div className="w-cm d-flex justify-content-between align-items-center">
+              <h3
+                className="all-titles px-4 offer-title"
+                style={{ fontSize: "29px" }}
+              >
+                Offering Custom Banners and Signs For Business/Home Needs
+              </h3>
+              <Button
+                variant="outline-primary"
+                style={{ padding: "10px 20px" }}
+                className=" bg-orange border-0 text-light shop-now-btn"
+              >
+                View All
+              </Button>
+            </div>
             <div className="w-cm w-100 d-flex justify-content-center align-items-center px-4 pt-4 flex-wrap">
               <h5 className="d-inline m-2">Select Your Product</h5>
               <Form.Select
@@ -201,13 +174,7 @@ const HomePage = () => {
                 Found <b>79 Banners</b> for your selection
               </h6>
               <VerticalImgCardSlider />
-              <Button
-                variant="outline-primary"
-                style={{ padding: "10px 20px" }}
-                className=" bg-orange border-0 text-light shop-now-btn"
-              >
-                View All
-              </Button>
+
             </div>
           </div>
 
@@ -731,7 +698,7 @@ const HomePage = () => {
           <Footer />
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
